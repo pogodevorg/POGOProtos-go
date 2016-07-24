@@ -30,10 +30,10 @@ package settings_master
 import proto "github.com/golang/protobuf/proto"
 import fmt "fmt"
 import math "math"
-import POGOProtos_Enums "github.com/zeeraw/pogo-protos/enums"
-import POGOProtos_Inventory_Item "github.com/zeeraw/pogo-protos/inventory_item"
-import POGOProtos_Settings_Master_Item "github.com/zeeraw/pogo-protos/settings_master_item"
-import POGOProtos_Settings_Master_Pokemon "github.com/zeeraw/pogo-protos/settings_master_pokemon"
+import POGOProtos_Enums "github.com/pkmngo-odi/pogo-protos/enums"
+import POGOProtos_Inventory_Item "github.com/pkmngo-odi/pogo-protos/inventory_item"
+import POGOProtos_Settings_Master_Item "github.com/pkmngo-odi/pogo-protos/settings_master_item"
+import POGOProtos_Settings_Master_Pokemon "github.com/pkmngo-odi/pogo-protos/settings_master_pokemon"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal

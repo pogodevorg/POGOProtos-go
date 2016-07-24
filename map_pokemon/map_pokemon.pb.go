@@ -18,8 +18,8 @@ package map_pokemon
 import proto "github.com/golang/protobuf/proto"
 import fmt "fmt"
 import math "math"
-import POGOProtos_Enums "github.com/zeeraw/pogo-protos/enums"
-import POGOProtos_Data "github.com/zeeraw/pogo-protos/data"
+import POGOProtos_Enums "github.com/pkmngo-odi/pogo-protos/enums"
+import POGOProtos_Data "github.com/pkmngo-odi/pogo-protos/data"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal

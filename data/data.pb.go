@@ -21,9 +21,9 @@ package data
 import proto "github.com/golang/protobuf/proto"
 import fmt "fmt"
 import math "math"
-import POGOProtos_Enums "github.com/zeeraw/pogo-protos/enums"
-import POGOProtos_Data_Player "github.com/zeeraw/pogo-protos/data_player"
-import POGOProtos_Inventory_Item "github.com/zeeraw/pogo-protos/inventory_item"
+import POGOProtos_Enums "github.com/pkmngo-odi/pogo-protos/enums"
+import POGOProtos_Data_Player "github.com/pkmngo-odi/pogo-protos/data_player"
+import POGOProtos_Inventory_Item "github.com/pkmngo-odi/pogo-protos/inventory_item"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal

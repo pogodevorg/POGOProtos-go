@@ -25,8 +25,8 @@ package settings_master_item
 import proto "github.com/golang/protobuf/proto"
 import fmt "fmt"
 import math "math"
-import POGOProtos_Inventory "github.com/zeeraw/pogo-protos/inventory"
-import POGOProtos_Enums "github.com/zeeraw/pogo-protos/enums"
+import POGOProtos_Inventory "github.com/pkmngo-odi/pogo-protos/inventory"
+import POGOProtos_Enums "github.com/pkmngo-odi/pogo-protos/enums"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal

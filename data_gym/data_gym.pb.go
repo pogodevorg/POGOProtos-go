@@ -17,9 +17,9 @@ package data_gym
 import proto "github.com/golang/protobuf/proto"
 import fmt "fmt"
 import math "math"
-import POGOProtos_Data "github.com/zeeraw/pogo-protos/data"
-import POGOProtos_Data_Player "github.com/zeeraw/pogo-protos/data_player"
-import POGOProtos_Map_Fort "github.com/zeeraw/pogo-protos/map_fort"
+import POGOProtos_Data "github.com/pkmngo-odi/pogo-protos/data"
+import POGOProtos_Data_Player "github.com/pkmngo-odi/pogo-protos/data_player"
+import POGOProtos_Map_Fort "github.com/pkmngo-odi/pogo-protos/map_fort"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal

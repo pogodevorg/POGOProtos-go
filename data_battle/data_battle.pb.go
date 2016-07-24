@@ -20,9 +20,9 @@ package data_battle
 import proto "github.com/golang/protobuf/proto"
 import fmt "fmt"
 import math "math"
-import POGOProtos_Data_Player "github.com/zeeraw/pogo-protos/data_player"
-import POGOProtos_Data "github.com/zeeraw/pogo-protos/data"
-import POGOProtos_Data_Gym "github.com/zeeraw/pogo-protos/data_gym"
+import POGOProtos_Data_Player "github.com/pkmngo-odi/pogo-protos/data_player"
+import POGOProtos_Data "github.com/pkmngo-odi/pogo-protos/data"
+import POGOProtos_Data_Gym "github.com/pkmngo-odi/pogo-protos/data_gym"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal

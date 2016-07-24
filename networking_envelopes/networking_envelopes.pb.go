@@ -20,7 +20,7 @@ package networking_envelopes
 import proto "github.com/golang/protobuf/proto"
 import fmt "fmt"
 import math "math"
-import POGOProtos_Networking_Requests "github.com/zeeraw/pogo-protos/networking_requests"
+import POGOProtos_Networking_Requests "github.com/pkmngo-odi/pogo-protos/networking_requests"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
