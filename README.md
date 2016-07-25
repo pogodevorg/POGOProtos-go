@@ -8,11 +8,11 @@ package main
 
 import (
   "fmt"
-  "github.com/zeeraw/pogo-protos/data"
+  p "github.com/zeeraw/pogo-protos"
 )
 
 func main() {
-  fmt.Println(data.TeamColor_BLUE)
+  fmt.Println(p.TeamColor_BLUE)
 }
 ```
 
@@ -28,5 +28,5 @@ Check out the [AeonLucid/POGOProtos](https://github.com/AeonLucid/POGOProtos) re
 ```bash
 $ git clone git@github.com:AeonLucid/POGOProtos.git
 $ cd POGOProtos
-$ python ./compile_single.py -l=go --out_path=$GOPATH/src/github.com/zeeraw/pogo-protos --go_root_package=github.com/zeeraw/pogo-protos
+$ python ./compile_single.py -l=go --out_path=$GOPATH/src/github.com/pkmngo-odi/pogo-protos --go_root_package=github.com/pkmngo-odi/pogo-protos
 ```
