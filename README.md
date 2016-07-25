@@ -8,7 +8,7 @@ package main
 
 import (
   "fmt"
-  p "github.com/zeeraw/pogo-protos"
+  p "github.com/pkmngo-odi/pogo-protos"
 )
 
 func main() {
