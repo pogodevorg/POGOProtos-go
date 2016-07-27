@@ -13,194 +13,6 @@ var _ = proto.Marshal
 var _ = fmt.Errorf
 var _ = math.Inf
 
-// Ignoring public import of BattleAction from data_battle.proto
-
-// Ignoring public import of BattleLog from data_battle.proto
-
-// Ignoring public import of BattleParticipant from data_battle.proto
-
-// Ignoring public import of BattlePokemonInfo from data_battle.proto
-
-// Ignoring public import of BattleResults from data_battle.proto
-
-// Ignoring public import of BattleActionType from data_battle.proto
-
-// Ignoring public import of BattleState from data_battle.proto
-
-// Ignoring public import of BattleType from data_battle.proto
-
-// Ignoring public import of CaptureAward from data_capture.proto
-
-// Ignoring public import of CaptureProbability from data_capture.proto
-
-// Ignoring public import of ActivityType from enums.proto
-
-// Ignoring public import of BadgeType from enums.proto
-
-// Ignoring public import of CameraInterpolation from enums.proto
-
-// Ignoring public import of CameraTarget from enums.proto
-
-// Ignoring public import of Gender from enums.proto
-
-// Ignoring public import of HoloIapItemCategory from enums.proto
-
-// Ignoring public import of ItemCategory from enums.proto
-
-// Ignoring public import of ItemEffect from enums.proto
-
-// Ignoring public import of Platform from enums.proto
-
-// Ignoring public import of PokemonFamilyId from enums.proto
-
-// Ignoring public import of PokemonId from enums.proto
-
-// Ignoring public import of PokemonMove from enums.proto
-
-// Ignoring public import of PokemonMovementType from enums.proto
-
-// Ignoring public import of PokemonRarity from enums.proto
-
-// Ignoring public import of PokemonType from enums.proto
-
-// Ignoring public import of TeamColor from enums.proto
-
-// Ignoring public import of TutorialState from enums.proto
-
-// Ignoring public import of AssetDigestEntry from data.proto
-
-// Ignoring public import of DownloadUrlEntry from data.proto
-
-// Ignoring public import of PlayerBadge from data.proto
-
-// Ignoring public import of PlayerData from data.proto
-
-// Ignoring public import of PokedexEntry from data.proto
-
-// Ignoring public import of PokemonData from data.proto
-
-// Ignoring public import of BadgeSettings from settings_master.proto
-
-// Ignoring public import of CameraSettings from settings_master.proto
-
-// Ignoring public import of EncounterSettings from settings_master.proto
-
-// Ignoring public import of EquippedBadgeSettings from settings_master.proto
-
-// Ignoring public import of GymBattleSettings from settings_master.proto
-
-// Ignoring public import of GymLevelSettings from settings_master.proto
-
-// Ignoring public import of IapItemDisplay from settings_master.proto
-
-// Ignoring public import of IapSettings from settings_master.proto
-
-// Ignoring public import of ItemSettings from settings_master.proto
-
-// Ignoring public import of MoveSequenceSettings from settings_master.proto
-
-// Ignoring public import of MoveSettings from settings_master.proto
-
-// Ignoring public import of PlayerLevelSettings from settings_master.proto
-
-// Ignoring public import of PokemonSettings from settings_master.proto
-
-// Ignoring public import of PokemonUpgradeSettings from settings_master.proto
-
-// Ignoring public import of TypeEffectiveSettings from settings_master.proto
-
-// Ignoring public import of DownloadSettingsAction from settings.proto
-
-// Ignoring public import of FortSettings from settings.proto
-
-// Ignoring public import of GlobalSettings from settings.proto
-
-// Ignoring public import of InventorySettings from settings.proto
-
-// Ignoring public import of LevelSettings from settings.proto
-
-// Ignoring public import of MapSettings from settings.proto
-
-// Ignoring public import of MapPokemon from map_pokemon.proto
-
-// Ignoring public import of NearbyPokemon from map_pokemon.proto
-
-// Ignoring public import of WildPokemon from map_pokemon.proto
-
-// Ignoring public import of ContactSettings from data_player.proto
-
-// Ignoring public import of Currency from data_player.proto
-
-// Ignoring public import of DailyBonus from data_player.proto
-
-// Ignoring public import of EquippedBadge from data_player.proto
-
-// Ignoring public import of PlayerAvatar from data_player.proto
-
-// Ignoring public import of PlayerCamera from data_player.proto
-
-// Ignoring public import of PlayerCurrency from data_player.proto
-
-// Ignoring public import of PlayerPublicProfile from data_player.proto
-
-// Ignoring public import of PlayerStats from data_player.proto
-
-// Ignoring public import of GymMembership from data_gym.proto
-
-// Ignoring public import of GymState from data_gym.proto
-
-// Ignoring public import of FortData from map_fort.proto
-
-// Ignoring public import of FortLureInfo from map_fort.proto
-
-// Ignoring public import of FortModifier from map_fort.proto
-
-// Ignoring public import of FortSummary from map_fort.proto
-
-// Ignoring public import of FortRenderingType from map_fort.proto
-
-// Ignoring public import of FortSponsor from map_fort.proto
-
-// Ignoring public import of FortType from map_fort.proto
-
-// Ignoring public import of ItemAward from inventory_item.proto
-
-// Ignoring public import of ItemData from inventory_item.proto
-
-// Ignoring public import of ItemId from inventory_item.proto
-
-// Ignoring public import of ItemType from inventory_item.proto
-
-// Ignoring public import of AppliedItem from inventory.proto
-
-// Ignoring public import of AppliedItems from inventory.proto
-
-// Ignoring public import of EggIncubator from inventory.proto
-
-// Ignoring public import of EggIncubators from inventory.proto
-
-// Ignoring public import of InventoryDelta from inventory.proto
-
-// Ignoring public import of InventoryItem from inventory.proto
-
-// Ignoring public import of InventoryItemData from inventory.proto
-
-// Ignoring public import of InventoryUpgrade from inventory.proto
-
-// Ignoring public import of InventoryUpgrades from inventory.proto
-
-// Ignoring public import of PokemonFamily from inventory.proto
-
-// Ignoring public import of EggIncubatorType from inventory.proto
-
-// Ignoring public import of InventoryUpgradeType from inventory.proto
-
-// Ignoring public import of MapCell from maps.proto
-
-// Ignoring public import of SpawnPoint from maps.proto
-
-// Ignoring public import of MapObjectsStatus from maps.proto
-
 // Ignoring public import of ActionLogEntry from data_logs.proto
 
 // Ignoring public import of CatchPokemonLogEntry from data_logs.proto
@@ -211,64 +23,193 @@ var _ = math.Inf
 
 // Ignoring public import of Result from data_logs.proto
 
-type AttackGymResponse_Result int32
+// Ignoring public import of CameraTarget from enums.proto
 
-const (
-	AttackGymResponse_UNSET                        AttackGymResponse_Result = 0
-	AttackGymResponse_SUCCESS                      AttackGymResponse_Result = 1
-	AttackGymResponse_ERROR_INVALID_ATTACK_ACTIONS AttackGymResponse_Result = 2
-	AttackGymResponse_ERROR_NOT_IN_RANGE           AttackGymResponse_Result = 3
-)
+// Ignoring public import of PokemonRarity from enums.proto
 
-var AttackGymResponse_Result_name = map[int32]string{
-	0: "UNSET",
-	1: "SUCCESS",
-	2: "ERROR_INVALID_ATTACK_ACTIONS",
-	3: "ERROR_NOT_IN_RANGE",
-}
-var AttackGymResponse_Result_value = map[string]int32{
-	"UNSET":                        0,
-	"SUCCESS":                      1,
-	"ERROR_INVALID_ATTACK_ACTIONS": 2,
-	"ERROR_NOT_IN_RANGE":           3,
-}
+// Ignoring public import of ItemCategory from enums.proto
 
-func (x AttackGymResponse_Result) String() string {
-	return proto.EnumName(AttackGymResponse_Result_name, int32(x))
-}
-func (AttackGymResponse_Result) EnumDescriptor() ([]byte, []int) { return fileDescriptor15, []int{1, 0} }
+// Ignoring public import of Gender from enums.proto
 
-type CatchPokemonResponse_CatchStatus int32
+// Ignoring public import of PokemonId from enums.proto
 
-const (
-	CatchPokemonResponse_CATCH_ERROR   CatchPokemonResponse_CatchStatus = 0
-	CatchPokemonResponse_CATCH_SUCCESS CatchPokemonResponse_CatchStatus = 1
-	CatchPokemonResponse_CATCH_ESCAPE  CatchPokemonResponse_CatchStatus = 2
-	CatchPokemonResponse_CATCH_FLEE    CatchPokemonResponse_CatchStatus = 3
-	CatchPokemonResponse_CATCH_MISSED  CatchPokemonResponse_CatchStatus = 4
-)
+// Ignoring public import of BadgeType from enums.proto
 
-var CatchPokemonResponse_CatchStatus_name = map[int32]string{
-	0: "CATCH_ERROR",
-	1: "CATCH_SUCCESS",
-	2: "CATCH_ESCAPE",
-	3: "CATCH_FLEE",
-	4: "CATCH_MISSED",
-}
-var CatchPokemonResponse_CatchStatus_value = map[string]int32{
-	"CATCH_ERROR":   0,
-	"CATCH_SUCCESS": 1,
-	"CATCH_ESCAPE":  2,
-	"CATCH_FLEE":    3,
-	"CATCH_MISSED":  4,
-}
+// Ignoring public import of TutorialState from enums.proto
 
-func (x CatchPokemonResponse_CatchStatus) String() string {
-	return proto.EnumName(CatchPokemonResponse_CatchStatus_name, int32(x))
-}
-func (CatchPokemonResponse_CatchStatus) EnumDescriptor() ([]byte, []int) {
-	return fileDescriptor15, []int{2, 0}
-}
+// Ignoring public import of CameraInterpolation from enums.proto
+
+// Ignoring public import of PokemonMovementType from enums.proto
+
+// Ignoring public import of PokemonMove from enums.proto
+
+// Ignoring public import of Platform from enums.proto
+
+// Ignoring public import of TeamColor from enums.proto
+
+// Ignoring public import of HoloIapItemCategory from enums.proto
+
+// Ignoring public import of ActivityType from enums.proto
+
+// Ignoring public import of PokemonFamilyId from enums.proto
+
+// Ignoring public import of ItemEffect from enums.proto
+
+// Ignoring public import of PokemonType from enums.proto
+
+// Ignoring public import of PokedexEntry from data.proto
+
+// Ignoring public import of PlayerData from data.proto
+
+// Ignoring public import of AssetDigestEntry from data.proto
+
+// Ignoring public import of PlayerBadge from data.proto
+
+// Ignoring public import of DownloadUrlEntry from data.proto
+
+// Ignoring public import of PokemonData from data.proto
+
+// Ignoring public import of InventoryItem from inventory.proto
+
+// Ignoring public import of Candy from inventory.proto
+
+// Ignoring public import of InventoryUpgrade from inventory.proto
+
+// Ignoring public import of EggIncubators from inventory.proto
+
+// Ignoring public import of InventoryDelta from inventory.proto
+
+// Ignoring public import of InventoryItemData from inventory.proto
+
+// Ignoring public import of AppliedItems from inventory.proto
+
+// Ignoring public import of EggIncubator from inventory.proto
+
+// Ignoring public import of AppliedItem from inventory.proto
+
+// Ignoring public import of InventoryUpgrades from inventory.proto
+
+// Ignoring public import of EggIncubatorType from inventory.proto
+
+// Ignoring public import of InventoryUpgradeType from inventory.proto
+
+// Ignoring public import of CaptureAward from data_capture.proto
+
+// Ignoring public import of CaptureProbability from data_capture.proto
+
+// Ignoring public import of GymMembership from data_gym.proto
+
+// Ignoring public import of GymState from data_gym.proto
+
+// Ignoring public import of BadgeSettings from settings_master.proto
+
+// Ignoring public import of MoveSettings from settings_master.proto
+
+// Ignoring public import of PokemonSettings from settings_master.proto
+
+// Ignoring public import of MoveSequenceSettings from settings_master.proto
+
+// Ignoring public import of EquippedBadgeSettings from settings_master.proto
+
+// Ignoring public import of PokemonUpgradeSettings from settings_master.proto
+
+// Ignoring public import of ItemSettings from settings_master.proto
+
+// Ignoring public import of CameraSettings from settings_master.proto
+
+// Ignoring public import of IapItemDisplay from settings_master.proto
+
+// Ignoring public import of TypeEffectiveSettings from settings_master.proto
+
+// Ignoring public import of GymLevelSettings from settings_master.proto
+
+// Ignoring public import of EncounterSettings from settings_master.proto
+
+// Ignoring public import of IapSettings from settings_master.proto
+
+// Ignoring public import of PlayerLevelSettings from settings_master.proto
+
+// Ignoring public import of GymBattleSettings from settings_master.proto
+
+// Ignoring public import of FortData from map_fort.proto
+
+// Ignoring public import of FortSummary from map_fort.proto
+
+// Ignoring public import of FortLureInfo from map_fort.proto
+
+// Ignoring public import of FortModifier from map_fort.proto
+
+// Ignoring public import of FortType from map_fort.proto
+
+// Ignoring public import of FortSponsor from map_fort.proto
+
+// Ignoring public import of FortRenderingType from map_fort.proto
+
+// Ignoring public import of MapPokemon from map_pokemon.proto
+
+// Ignoring public import of NearbyPokemon from map_pokemon.proto
+
+// Ignoring public import of WildPokemon from map_pokemon.proto
+
+// Ignoring public import of ItemData from inventory_item.proto
+
+// Ignoring public import of ItemAward from inventory_item.proto
+
+// Ignoring public import of ItemType from inventory_item.proto
+
+// Ignoring public import of ItemId from inventory_item.proto
+
+// Ignoring public import of BattleLog from data_battle.proto
+
+// Ignoring public import of BattlePokemonInfo from data_battle.proto
+
+// Ignoring public import of BattleResults from data_battle.proto
+
+// Ignoring public import of BattleAction from data_battle.proto
+
+// Ignoring public import of BattleParticipant from data_battle.proto
+
+// Ignoring public import of BattleState from data_battle.proto
+
+// Ignoring public import of BattleActionType from data_battle.proto
+
+// Ignoring public import of BattleType from data_battle.proto
+
+// Ignoring public import of SpawnPoint from maps.proto
+
+// Ignoring public import of MapCell from maps.proto
+
+// Ignoring public import of MapObjectsStatus from maps.proto
+
+// Ignoring public import of InventorySettings from settings.proto
+
+// Ignoring public import of FortSettings from settings.proto
+
+// Ignoring public import of LevelSettings from settings.proto
+
+// Ignoring public import of GlobalSettings from settings.proto
+
+// Ignoring public import of DownloadSettingsAction from settings.proto
+
+// Ignoring public import of MapSettings from settings.proto
+
+// Ignoring public import of ContactSettings from data_player.proto
+
+// Ignoring public import of DailyBonus from data_player.proto
+
+// Ignoring public import of PlayerCurrency from data_player.proto
+
+// Ignoring public import of Currency from data_player.proto
+
+// Ignoring public import of PlayerAvatar from data_player.proto
+
+// Ignoring public import of PlayerCamera from data_player.proto
+
+// Ignoring public import of EquippedBadge from data_player.proto
+
+// Ignoring public import of PlayerStats from data_player.proto
+
+// Ignoring public import of PlayerPublicProfile from data_player.proto
 
 type CheckCodenameAvailableResponse_Status int32
 
@@ -302,42 +243,181 @@ func (x CheckCodenameAvailableResponse_Status) String() string {
 	return proto.EnumName(CheckCodenameAvailableResponse_Status_name, int32(x))
 }
 func (CheckCodenameAvailableResponse_Status) EnumDescriptor() ([]byte, []int) {
-	return fileDescriptor15, []int{4, 0}
+	return fileDescriptor2, []int{1, 0}
 }
 
-type ClaimCodenameResponse_Status int32
+type UseItemReviveResponse_Result int32
 
 const (
-	ClaimCodenameResponse_UNSET                       ClaimCodenameResponse_Status = 0
-	ClaimCodenameResponse_SUCCESS                     ClaimCodenameResponse_Status = 1
-	ClaimCodenameResponse_CODENAME_NOT_AVAILABLE      ClaimCodenameResponse_Status = 2
-	ClaimCodenameResponse_CODENAME_NOT_VALID          ClaimCodenameResponse_Status = 3
-	ClaimCodenameResponse_CURRENT_OWNER               ClaimCodenameResponse_Status = 4
-	ClaimCodenameResponse_CODENAME_CHANGE_NOT_ALLOWED ClaimCodenameResponse_Status = 5
+	UseItemReviveResponse_UNSET                  UseItemReviveResponse_Result = 0
+	UseItemReviveResponse_SUCCESS                UseItemReviveResponse_Result = 1
+	UseItemReviveResponse_ERROR_NO_POKEMON       UseItemReviveResponse_Result = 2
+	UseItemReviveResponse_ERROR_CANNOT_USE       UseItemReviveResponse_Result = 3
+	UseItemReviveResponse_ERROR_DEPLOYED_TO_FORT UseItemReviveResponse_Result = 4
 )
 
-var ClaimCodenameResponse_Status_name = map[int32]string{
+var UseItemReviveResponse_Result_name = map[int32]string{
 	0: "UNSET",
 	1: "SUCCESS",
-	2: "CODENAME_NOT_AVAILABLE",
-	3: "CODENAME_NOT_VALID",
-	4: "CURRENT_OWNER",
-	5: "CODENAME_CHANGE_NOT_ALLOWED",
+	2: "ERROR_NO_POKEMON",
+	3: "ERROR_CANNOT_USE",
+	4: "ERROR_DEPLOYED_TO_FORT",
 }
-var ClaimCodenameResponse_Status_value = map[string]int32{
-	"UNSET":                       0,
-	"SUCCESS":                     1,
-	"CODENAME_NOT_AVAILABLE":      2,
-	"CODENAME_NOT_VALID":          3,
-	"CURRENT_OWNER":               4,
-	"CODENAME_CHANGE_NOT_ALLOWED": 5,
+var UseItemReviveResponse_Result_value = map[string]int32{
+	"UNSET":                  0,
+	"SUCCESS":                1,
+	"ERROR_NO_POKEMON":       2,
+	"ERROR_CANNOT_USE":       3,
+	"ERROR_DEPLOYED_TO_FORT": 4,
 }
 
-func (x ClaimCodenameResponse_Status) String() string {
-	return proto.EnumName(ClaimCodenameResponse_Status_name, int32(x))
+func (x UseItemReviveResponse_Result) String() string {
+	return proto.EnumName(UseItemReviveResponse_Result_name, int32(x))
 }
-func (ClaimCodenameResponse_Status) EnumDescriptor() ([]byte, []int) {
-	return fileDescriptor15, []int{5, 0}
+func (UseItemReviveResponse_Result) EnumDescriptor() ([]byte, []int) {
+	return fileDescriptor2, []int{2, 0}
+}
+
+type RecycleInventoryItemResponse_Result int32
+
+const (
+	RecycleInventoryItemResponse_UNSET                           RecycleInventoryItemResponse_Result = 0
+	RecycleInventoryItemResponse_SUCCESS                         RecycleInventoryItemResponse_Result = 1
+	RecycleInventoryItemResponse_ERROR_NOT_ENOUGH_COPIES         RecycleInventoryItemResponse_Result = 2
+	RecycleInventoryItemResponse_ERROR_CANNOT_RECYCLE_INCUBATORS RecycleInventoryItemResponse_Result = 3
+)
+
+var RecycleInventoryItemResponse_Result_name = map[int32]string{
+	0: "UNSET",
+	1: "SUCCESS",
+	2: "ERROR_NOT_ENOUGH_COPIES",
+	3: "ERROR_CANNOT_RECYCLE_INCUBATORS",
+}
+var RecycleInventoryItemResponse_Result_value = map[string]int32{
+	"UNSET":                           0,
+	"SUCCESS":                         1,
+	"ERROR_NOT_ENOUGH_COPIES":         2,
+	"ERROR_CANNOT_RECYCLE_INCUBATORS": 3,
+}
+
+func (x RecycleInventoryItemResponse_Result) String() string {
+	return proto.EnumName(RecycleInventoryItemResponse_Result_name, int32(x))
+}
+func (RecycleInventoryItemResponse_Result) EnumDescriptor() ([]byte, []int) {
+	return fileDescriptor2, []int{3, 0}
+}
+
+type SfidaActionLogResponse_Result int32
+
+const (
+	SfidaActionLogResponse_UNSET   SfidaActionLogResponse_Result = 0
+	SfidaActionLogResponse_SUCCESS SfidaActionLogResponse_Result = 1
+)
+
+var SfidaActionLogResponse_Result_name = map[int32]string{
+	0: "UNSET",
+	1: "SUCCESS",
+}
+var SfidaActionLogResponse_Result_value = map[string]int32{
+	"UNSET":   0,
+	"SUCCESS": 1,
+}
+
+func (x SfidaActionLogResponse_Result) String() string {
+	return proto.EnumName(SfidaActionLogResponse_Result_name, int32(x))
+}
+func (SfidaActionLogResponse_Result) EnumDescriptor() ([]byte, []int) {
+	return fileDescriptor2, []int{5, 0}
+}
+
+type GetIncensePokemonResponse_Result int32
+
+const (
+	GetIncensePokemonResponse_INCENSE_ENCOUNTER_UNKNOWN       GetIncensePokemonResponse_Result = 0
+	GetIncensePokemonResponse_INCENSE_ENCOUNTER_AVAILABLE     GetIncensePokemonResponse_Result = 1
+	GetIncensePokemonResponse_INCENSE_ENCOUNTER_NOT_AVAILABLE GetIncensePokemonResponse_Result = 2
+)
+
+var GetIncensePokemonResponse_Result_name = map[int32]string{
+	0: "INCENSE_ENCOUNTER_UNKNOWN",
+	1: "INCENSE_ENCOUNTER_AVAILABLE",
+	2: "INCENSE_ENCOUNTER_NOT_AVAILABLE",
+}
+var GetIncensePokemonResponse_Result_value = map[string]int32{
+	"INCENSE_ENCOUNTER_UNKNOWN":       0,
+	"INCENSE_ENCOUNTER_AVAILABLE":     1,
+	"INCENSE_ENCOUNTER_NOT_AVAILABLE": 2,
+}
+
+func (x GetIncensePokemonResponse_Result) String() string {
+	return proto.EnumName(GetIncensePokemonResponse_Result_name, int32(x))
+}
+func (GetIncensePokemonResponse_Result) EnumDescriptor() ([]byte, []int) {
+	return fileDescriptor2, []int{6, 0}
+}
+
+type ReleasePokemonResponse_Result int32
+
+const (
+	ReleasePokemonResponse_UNSET                ReleasePokemonResponse_Result = 0
+	ReleasePokemonResponse_SUCCESS              ReleasePokemonResponse_Result = 1
+	ReleasePokemonResponse_POKEMON_DEPLOYED     ReleasePokemonResponse_Result = 2
+	ReleasePokemonResponse_FAILED               ReleasePokemonResponse_Result = 3
+	ReleasePokemonResponse_ERROR_POKEMON_IS_EGG ReleasePokemonResponse_Result = 4
+)
+
+var ReleasePokemonResponse_Result_name = map[int32]string{
+	0: "UNSET",
+	1: "SUCCESS",
+	2: "POKEMON_DEPLOYED",
+	3: "FAILED",
+	4: "ERROR_POKEMON_IS_EGG",
+}
+var ReleasePokemonResponse_Result_value = map[string]int32{
+	"UNSET":                0,
+	"SUCCESS":              1,
+	"POKEMON_DEPLOYED":     2,
+	"FAILED":               3,
+	"ERROR_POKEMON_IS_EGG": 4,
+}
+
+func (x ReleasePokemonResponse_Result) String() string {
+	return proto.EnumName(ReleasePokemonResponse_Result_name, int32(x))
+}
+func (ReleasePokemonResponse_Result) EnumDescriptor() ([]byte, []int) {
+	return fileDescriptor2, []int{9, 0}
+}
+
+type UseIncenseResponse_Result int32
+
+const (
+	UseIncenseResponse_UNKNOWN                UseIncenseResponse_Result = 0
+	UseIncenseResponse_SUCCESS                UseIncenseResponse_Result = 1
+	UseIncenseResponse_INCENSE_ALREADY_ACTIVE UseIncenseResponse_Result = 2
+	UseIncenseResponse_NONE_IN_INVENTORY      UseIncenseResponse_Result = 3
+	UseIncenseResponse_LOCATION_UNSET         UseIncenseResponse_Result = 4
+)
+
+var UseIncenseResponse_Result_name = map[int32]string{
+	0: "UNKNOWN",
+	1: "SUCCESS",
+	2: "INCENSE_ALREADY_ACTIVE",
+	3: "NONE_IN_INVENTORY",
+	4: "LOCATION_UNSET",
+}
+var UseIncenseResponse_Result_value = map[string]int32{
+	"UNKNOWN":                0,
+	"SUCCESS":                1,
+	"INCENSE_ALREADY_ACTIVE": 2,
+	"NONE_IN_INVENTORY":      3,
+	"LOCATION_UNSET":         4,
+}
+
+func (x UseIncenseResponse_Result) String() string {
+	return proto.EnumName(UseIncenseResponse_Result_name, int32(x))
+}
+func (UseIncenseResponse_Result) EnumDescriptor() ([]byte, []int) {
+	return fileDescriptor2, []int{10, 0}
 }
 
 type CollectDailyBonusResponse_Result int32
@@ -366,7 +446,233 @@ func (x CollectDailyBonusResponse_Result) String() string {
 	return proto.EnumName(CollectDailyBonusResponse_Result_name, int32(x))
 }
 func (CollectDailyBonusResponse_Result) EnumDescriptor() ([]byte, []int) {
-	return fileDescriptor15, []int{6, 0}
+	return fileDescriptor2, []int{11, 0}
+}
+
+type DownloadRemoteConfigVersionResponse_Result int32
+
+const (
+	DownloadRemoteConfigVersionResponse_UNSET   DownloadRemoteConfigVersionResponse_Result = 0
+	DownloadRemoteConfigVersionResponse_SUCCESS DownloadRemoteConfigVersionResponse_Result = 1
+)
+
+var DownloadRemoteConfigVersionResponse_Result_name = map[int32]string{
+	0: "UNSET",
+	1: "SUCCESS",
+}
+var DownloadRemoteConfigVersionResponse_Result_value = map[string]int32{
+	"UNSET":   0,
+	"SUCCESS": 1,
+}
+
+func (x DownloadRemoteConfigVersionResponse_Result) String() string {
+	return proto.EnumName(DownloadRemoteConfigVersionResponse_Result_name, int32(x))
+}
+func (DownloadRemoteConfigVersionResponse_Result) EnumDescriptor() ([]byte, []int) {
+	return fileDescriptor2, []int{13, 0}
+}
+
+type EncounterTutorialCompleteResponse_Result int32
+
+const (
+	EncounterTutorialCompleteResponse_UNSET                 EncounterTutorialCompleteResponse_Result = 0
+	EncounterTutorialCompleteResponse_SUCCESS               EncounterTutorialCompleteResponse_Result = 1
+	EncounterTutorialCompleteResponse_ERROR_INVALID_POKEMON EncounterTutorialCompleteResponse_Result = 2
+)
+
+var EncounterTutorialCompleteResponse_Result_name = map[int32]string{
+	0: "UNSET",
+	1: "SUCCESS",
+	2: "ERROR_INVALID_POKEMON",
+}
+var EncounterTutorialCompleteResponse_Result_value = map[string]int32{
+	"UNSET":                 0,
+	"SUCCESS":               1,
+	"ERROR_INVALID_POKEMON": 2,
+}
+
+func (x EncounterTutorialCompleteResponse_Result) String() string {
+	return proto.EnumName(EncounterTutorialCompleteResponse_Result_name, int32(x))
+}
+func (EncounterTutorialCompleteResponse_Result) EnumDescriptor() ([]byte, []int) {
+	return fileDescriptor2, []int{14, 0}
+}
+
+type SetFavoritePokemonResponse_Result int32
+
+const (
+	SetFavoritePokemonResponse_UNSET                   SetFavoritePokemonResponse_Result = 0
+	SetFavoritePokemonResponse_SUCCESS                 SetFavoritePokemonResponse_Result = 1
+	SetFavoritePokemonResponse_ERROR_POKEMON_NOT_FOUND SetFavoritePokemonResponse_Result = 2
+	SetFavoritePokemonResponse_ERROR_POKEMON_IS_EGG    SetFavoritePokemonResponse_Result = 3
+)
+
+var SetFavoritePokemonResponse_Result_name = map[int32]string{
+	0: "UNSET",
+	1: "SUCCESS",
+	2: "ERROR_POKEMON_NOT_FOUND",
+	3: "ERROR_POKEMON_IS_EGG",
+}
+var SetFavoritePokemonResponse_Result_value = map[string]int32{
+	"UNSET":                   0,
+	"SUCCESS":                 1,
+	"ERROR_POKEMON_NOT_FOUND": 2,
+	"ERROR_POKEMON_IS_EGG":    3,
+}
+
+func (x SetFavoritePokemonResponse_Result) String() string {
+	return proto.EnumName(SetFavoritePokemonResponse_Result_name, int32(x))
+}
+func (SetFavoritePokemonResponse_Result) EnumDescriptor() ([]byte, []int) {
+	return fileDescriptor2, []int{15, 0}
+}
+
+type NicknamePokemonResponse_Result int32
+
+const (
+	NicknamePokemonResponse_UNSET                   NicknamePokemonResponse_Result = 0
+	NicknamePokemonResponse_SUCCESS                 NicknamePokemonResponse_Result = 1
+	NicknamePokemonResponse_ERROR_INVALID_NICKNAME  NicknamePokemonResponse_Result = 2
+	NicknamePokemonResponse_ERROR_POKEMON_NOT_FOUND NicknamePokemonResponse_Result = 3
+	NicknamePokemonResponse_ERROR_POKEMON_IS_EGG    NicknamePokemonResponse_Result = 4
+)
+
+var NicknamePokemonResponse_Result_name = map[int32]string{
+	0: "UNSET",
+	1: "SUCCESS",
+	2: "ERROR_INVALID_NICKNAME",
+	3: "ERROR_POKEMON_NOT_FOUND",
+	4: "ERROR_POKEMON_IS_EGG",
+}
+var NicknamePokemonResponse_Result_value = map[string]int32{
+	"UNSET":                   0,
+	"SUCCESS":                 1,
+	"ERROR_INVALID_NICKNAME":  2,
+	"ERROR_POKEMON_NOT_FOUND": 3,
+	"ERROR_POKEMON_IS_EGG":    4,
+}
+
+func (x NicknamePokemonResponse_Result) String() string {
+	return proto.EnumName(NicknamePokemonResponse_Result_name, int32(x))
+}
+func (NicknamePokemonResponse_Result) EnumDescriptor() ([]byte, []int) {
+	return fileDescriptor2, []int{16, 0}
+}
+
+type UseItemXpBoostResponse_Result int32
+
+const (
+	UseItemXpBoostResponse_UNSET                         UseItemXpBoostResponse_Result = 0
+	UseItemXpBoostResponse_SUCCESS                       UseItemXpBoostResponse_Result = 1
+	UseItemXpBoostResponse_ERROR_INVALID_ITEM_TYPE       UseItemXpBoostResponse_Result = 2
+	UseItemXpBoostResponse_ERROR_XP_BOOST_ALREADY_ACTIVE UseItemXpBoostResponse_Result = 3
+	UseItemXpBoostResponse_ERROR_NO_ITEMS_REMAINING      UseItemXpBoostResponse_Result = 4
+	UseItemXpBoostResponse_ERROR_LOCATION_UNSET          UseItemXpBoostResponse_Result = 5
+)
+
+var UseItemXpBoostResponse_Result_name = map[int32]string{
+	0: "UNSET",
+	1: "SUCCESS",
+	2: "ERROR_INVALID_ITEM_TYPE",
+	3: "ERROR_XP_BOOST_ALREADY_ACTIVE",
+	4: "ERROR_NO_ITEMS_REMAINING",
+	5: "ERROR_LOCATION_UNSET",
+}
+var UseItemXpBoostResponse_Result_value = map[string]int32{
+	"UNSET":                         0,
+	"SUCCESS":                       1,
+	"ERROR_INVALID_ITEM_TYPE":       2,
+	"ERROR_XP_BOOST_ALREADY_ACTIVE": 3,
+	"ERROR_NO_ITEMS_REMAINING":      4,
+	"ERROR_LOCATION_UNSET":          5,
+}
+
+func (x UseItemXpBoostResponse_Result) String() string {
+	return proto.EnumName(UseItemXpBoostResponse_Result_name, int32(x))
+}
+func (UseItemXpBoostResponse_Result) EnumDescriptor() ([]byte, []int) {
+	return fileDescriptor2, []int{18, 0}
+}
+
+type FortRecallPokemonResponse_Result int32
+
+const (
+	FortRecallPokemonResponse_NO_RESULT_SET             FortRecallPokemonResponse_Result = 0
+	FortRecallPokemonResponse_SUCCESS                   FortRecallPokemonResponse_Result = 1
+	FortRecallPokemonResponse_ERROR_NOT_IN_RANGE        FortRecallPokemonResponse_Result = 2
+	FortRecallPokemonResponse_ERROR_POKEMON_NOT_ON_FORT FortRecallPokemonResponse_Result = 3
+	FortRecallPokemonResponse_ERROR_NO_PLAYER           FortRecallPokemonResponse_Result = 4
+)
+
+var FortRecallPokemonResponse_Result_name = map[int32]string{
+	0: "NO_RESULT_SET",
+	1: "SUCCESS",
+	2: "ERROR_NOT_IN_RANGE",
+	3: "ERROR_POKEMON_NOT_ON_FORT",
+	4: "ERROR_NO_PLAYER",
+}
+var FortRecallPokemonResponse_Result_value = map[string]int32{
+	"NO_RESULT_SET":             0,
+	"SUCCESS":                   1,
+	"ERROR_NOT_IN_RANGE":        2,
+	"ERROR_POKEMON_NOT_ON_FORT": 3,
+	"ERROR_NO_PLAYER":           4,
+}
+
+func (x FortRecallPokemonResponse_Result) String() string {
+	return proto.EnumName(FortRecallPokemonResponse_Result_name, int32(x))
+}
+func (FortRecallPokemonResponse_Result) EnumDescriptor() ([]byte, []int) {
+	return fileDescriptor2, []int{19, 0}
+}
+
+type GetPlayerProfileResponse_Result int32
+
+const (
+	GetPlayerProfileResponse_UNSET   GetPlayerProfileResponse_Result = 0
+	GetPlayerProfileResponse_SUCCESS GetPlayerProfileResponse_Result = 1
+)
+
+var GetPlayerProfileResponse_Result_name = map[int32]string{
+	0: "UNSET",
+	1: "SUCCESS",
+}
+var GetPlayerProfileResponse_Result_value = map[string]int32{
+	"UNSET":   0,
+	"SUCCESS": 1,
+}
+
+func (x GetPlayerProfileResponse_Result) String() string {
+	return proto.EnumName(GetPlayerProfileResponse_Result_name, int32(x))
+}
+func (GetPlayerProfileResponse_Result) EnumDescriptor() ([]byte, []int) {
+	return fileDescriptor2, []int{20, 0}
+}
+
+type GetGymDetailsResponse_Result int32
+
+const (
+	GetGymDetailsResponse_UNSET              GetGymDetailsResponse_Result = 0
+	GetGymDetailsResponse_SUCCESS            GetGymDetailsResponse_Result = 1
+	GetGymDetailsResponse_ERROR_NOT_IN_RANGE GetGymDetailsResponse_Result = 2
+)
+
+var GetGymDetailsResponse_Result_name = map[int32]string{
+	0: "UNSET",
+	1: "SUCCESS",
+	2: "ERROR_NOT_IN_RANGE",
+}
+var GetGymDetailsResponse_Result_value = map[string]int32{
+	"UNSET":              0,
+	"SUCCESS":            1,
+	"ERROR_NOT_IN_RANGE": 2,
+}
+
+func (x GetGymDetailsResponse_Result) String() string {
+	return proto.EnumName(GetGymDetailsResponse_Result_name, int32(x))
+}
+func (GetGymDetailsResponse_Result) EnumDescriptor() ([]byte, []int) {
+	return fileDescriptor2, []int{21, 0}
 }
 
 type CollectDailyDefenderBonusResponse_Result int32
@@ -398,65 +704,123 @@ func (x CollectDailyDefenderBonusResponse_Result) String() string {
 	return proto.EnumName(CollectDailyDefenderBonusResponse_Result_name, int32(x))
 }
 func (CollectDailyDefenderBonusResponse_Result) EnumDescriptor() ([]byte, []int) {
-	return fileDescriptor15, []int{7, 0}
+	return fileDescriptor2, []int{22, 0}
 }
 
-type DiskEncounterResponse_Result int32
+type CatchPokemonResponse_CatchStatus int32
 
 const (
-	DiskEncounterResponse_UNKNOWN                    DiskEncounterResponse_Result = 0
-	DiskEncounterResponse_SUCCESS                    DiskEncounterResponse_Result = 1
-	DiskEncounterResponse_NOT_AVAILABLE              DiskEncounterResponse_Result = 2
-	DiskEncounterResponse_NOT_IN_RANGE               DiskEncounterResponse_Result = 3
-	DiskEncounterResponse_ENCOUNTER_ALREADY_FINISHED DiskEncounterResponse_Result = 4
-	DiskEncounterResponse_POKEMON_INVENTORY_FULL     DiskEncounterResponse_Result = 5
+	CatchPokemonResponse_CATCH_ERROR   CatchPokemonResponse_CatchStatus = 0
+	CatchPokemonResponse_CATCH_SUCCESS CatchPokemonResponse_CatchStatus = 1
+	CatchPokemonResponse_CATCH_ESCAPE  CatchPokemonResponse_CatchStatus = 2
+	CatchPokemonResponse_CATCH_FLEE    CatchPokemonResponse_CatchStatus = 3
+	CatchPokemonResponse_CATCH_MISSED  CatchPokemonResponse_CatchStatus = 4
 )
 
-var DiskEncounterResponse_Result_name = map[int32]string{
-	0: "UNKNOWN",
-	1: "SUCCESS",
-	2: "NOT_AVAILABLE",
-	3: "NOT_IN_RANGE",
-	4: "ENCOUNTER_ALREADY_FINISHED",
-	5: "POKEMON_INVENTORY_FULL",
+var CatchPokemonResponse_CatchStatus_name = map[int32]string{
+	0: "CATCH_ERROR",
+	1: "CATCH_SUCCESS",
+	2: "CATCH_ESCAPE",
+	3: "CATCH_FLEE",
+	4: "CATCH_MISSED",
 }
-var DiskEncounterResponse_Result_value = map[string]int32{
-	"UNKNOWN":                    0,
-	"SUCCESS":                    1,
-	"NOT_AVAILABLE":              2,
-	"NOT_IN_RANGE":               3,
-	"ENCOUNTER_ALREADY_FINISHED": 4,
-	"POKEMON_INVENTORY_FULL":     5,
+var CatchPokemonResponse_CatchStatus_value = map[string]int32{
+	"CATCH_ERROR":   0,
+	"CATCH_SUCCESS": 1,
+	"CATCH_ESCAPE":  2,
+	"CATCH_FLEE":    3,
+	"CATCH_MISSED":  4,
 }
 
-func (x DiskEncounterResponse_Result) String() string {
-	return proto.EnumName(DiskEncounterResponse_Result_name, int32(x))
+func (x CatchPokemonResponse_CatchStatus) String() string {
+	return proto.EnumName(CatchPokemonResponse_CatchStatus_name, int32(x))
 }
-func (DiskEncounterResponse_Result) EnumDescriptor() ([]byte, []int) {
-	return fileDescriptor15, []int{8, 0}
+func (CatchPokemonResponse_CatchStatus) EnumDescriptor() ([]byte, []int) {
+	return fileDescriptor2, []int{23, 0}
 }
 
-type DownloadRemoteConfigVersionResponse_Result int32
+type SetContactSettingsResponse_Status int32
 
 const (
-	DownloadRemoteConfigVersionResponse_UNSET   DownloadRemoteConfigVersionResponse_Result = 0
-	DownloadRemoteConfigVersionResponse_SUCCESS DownloadRemoteConfigVersionResponse_Result = 1
+	SetContactSettingsResponse_UNSET   SetContactSettingsResponse_Status = 0
+	SetContactSettingsResponse_SUCCESS SetContactSettingsResponse_Status = 1
+	SetContactSettingsResponse_FAILURE SetContactSettingsResponse_Status = 2
 )
 
-var DownloadRemoteConfigVersionResponse_Result_name = map[int32]string{
+var SetContactSettingsResponse_Status_name = map[int32]string{
 	0: "UNSET",
 	1: "SUCCESS",
+	2: "FAILURE",
 }
-var DownloadRemoteConfigVersionResponse_Result_value = map[string]int32{
+var SetContactSettingsResponse_Status_value = map[string]int32{
 	"UNSET":   0,
 	"SUCCESS": 1,
+	"FAILURE": 2,
 }
 
-func (x DownloadRemoteConfigVersionResponse_Result) String() string {
-	return proto.EnumName(DownloadRemoteConfigVersionResponse_Result_name, int32(x))
+func (x SetContactSettingsResponse_Status) String() string {
+	return proto.EnumName(SetContactSettingsResponse_Status_name, int32(x))
 }
-func (DownloadRemoteConfigVersionResponse_Result) EnumDescriptor() ([]byte, []int) {
-	return fileDescriptor15, []int{10, 0}
+func (SetContactSettingsResponse_Status) EnumDescriptor() ([]byte, []int) {
+	return fileDescriptor2, []int{25, 0}
+}
+
+type SetPlayerTeamResponse_Status int32
+
+const (
+	SetPlayerTeamResponse_UNSET            SetPlayerTeamResponse_Status = 0
+	SetPlayerTeamResponse_SUCCESS          SetPlayerTeamResponse_Status = 1
+	SetPlayerTeamResponse_TEAM_ALREADY_SET SetPlayerTeamResponse_Status = 2
+	SetPlayerTeamResponse_FAILURE          SetPlayerTeamResponse_Status = 3
+)
+
+var SetPlayerTeamResponse_Status_name = map[int32]string{
+	0: "UNSET",
+	1: "SUCCESS",
+	2: "TEAM_ALREADY_SET",
+	3: "FAILURE",
+}
+var SetPlayerTeamResponse_Status_value = map[string]int32{
+	"UNSET":            0,
+	"SUCCESS":          1,
+	"TEAM_ALREADY_SET": 2,
+	"FAILURE":          3,
+}
+
+func (x SetPlayerTeamResponse_Status) String() string {
+	return proto.EnumName(SetPlayerTeamResponse_Status_name, int32(x))
+}
+func (SetPlayerTeamResponse_Status) EnumDescriptor() ([]byte, []int) {
+	return fileDescriptor2, []int{27, 0}
+}
+
+type UseItemGymResponse_Result int32
+
+const (
+	UseItemGymResponse_UNSET              UseItemGymResponse_Result = 0
+	UseItemGymResponse_SUCCESS            UseItemGymResponse_Result = 1
+	UseItemGymResponse_ERROR_CANNOT_USE   UseItemGymResponse_Result = 2
+	UseItemGymResponse_ERROR_NOT_IN_RANGE UseItemGymResponse_Result = 3
+)
+
+var UseItemGymResponse_Result_name = map[int32]string{
+	0: "UNSET",
+	1: "SUCCESS",
+	2: "ERROR_CANNOT_USE",
+	3: "ERROR_NOT_IN_RANGE",
+}
+var UseItemGymResponse_Result_value = map[string]int32{
+	"UNSET":              0,
+	"SUCCESS":            1,
+	"ERROR_CANNOT_USE":   2,
+	"ERROR_NOT_IN_RANGE": 3,
+}
+
+func (x UseItemGymResponse_Result) String() string {
+	return proto.EnumName(UseItemGymResponse_Result_name, int32(x))
+}
+func (UseItemGymResponse_Result) EnumDescriptor() ([]byte, []int) {
+	return fileDescriptor2, []int{28, 0}
 }
 
 type EncounterResponse_Background int32
@@ -479,7 +843,7 @@ func (x EncounterResponse_Background) String() string {
 	return proto.EnumName(EncounterResponse_Background_name, int32(x))
 }
 func (EncounterResponse_Background) EnumDescriptor() ([]byte, []int) {
-	return fileDescriptor15, []int{13, 0}
+	return fileDescriptor2, []int{29, 0}
 }
 
 type EncounterResponse_Status int32
@@ -519,174 +883,111 @@ var EncounterResponse_Status_value = map[string]int32{
 func (x EncounterResponse_Status) String() string {
 	return proto.EnumName(EncounterResponse_Status_name, int32(x))
 }
-func (EncounterResponse_Status) EnumDescriptor() ([]byte, []int) {
-	return fileDescriptor15, []int{13, 1}
-}
+func (EncounterResponse_Status) EnumDescriptor() ([]byte, []int) { return fileDescriptor2, []int{29, 1} }
 
-type EncounterTutorialCompleteResponse_Result int32
+type ClaimCodenameResponse_Status int32
 
 const (
-	EncounterTutorialCompleteResponse_UNSET                 EncounterTutorialCompleteResponse_Result = 0
-	EncounterTutorialCompleteResponse_SUCCESS               EncounterTutorialCompleteResponse_Result = 1
-	EncounterTutorialCompleteResponse_ERROR_INVALID_POKEMON EncounterTutorialCompleteResponse_Result = 2
+	ClaimCodenameResponse_UNSET                       ClaimCodenameResponse_Status = 0
+	ClaimCodenameResponse_SUCCESS                     ClaimCodenameResponse_Status = 1
+	ClaimCodenameResponse_CODENAME_NOT_AVAILABLE      ClaimCodenameResponse_Status = 2
+	ClaimCodenameResponse_CODENAME_NOT_VALID          ClaimCodenameResponse_Status = 3
+	ClaimCodenameResponse_CURRENT_OWNER               ClaimCodenameResponse_Status = 4
+	ClaimCodenameResponse_CODENAME_CHANGE_NOT_ALLOWED ClaimCodenameResponse_Status = 5
 )
 
-var EncounterTutorialCompleteResponse_Result_name = map[int32]string{
+var ClaimCodenameResponse_Status_name = map[int32]string{
 	0: "UNSET",
 	1: "SUCCESS",
-	2: "ERROR_INVALID_POKEMON",
+	2: "CODENAME_NOT_AVAILABLE",
+	3: "CODENAME_NOT_VALID",
+	4: "CURRENT_OWNER",
+	5: "CODENAME_CHANGE_NOT_ALLOWED",
 }
-var EncounterTutorialCompleteResponse_Result_value = map[string]int32{
-	"UNSET":                 0,
-	"SUCCESS":               1,
-	"ERROR_INVALID_POKEMON": 2,
+var ClaimCodenameResponse_Status_value = map[string]int32{
+	"UNSET":                       0,
+	"SUCCESS":                     1,
+	"CODENAME_NOT_AVAILABLE":      2,
+	"CODENAME_NOT_VALID":          3,
+	"CURRENT_OWNER":               4,
+	"CODENAME_CHANGE_NOT_ALLOWED": 5,
 }
 
-func (x EncounterTutorialCompleteResponse_Result) String() string {
-	return proto.EnumName(EncounterTutorialCompleteResponse_Result_name, int32(x))
+func (x ClaimCodenameResponse_Status) String() string {
+	return proto.EnumName(ClaimCodenameResponse_Status_name, int32(x))
 }
-func (EncounterTutorialCompleteResponse_Result) EnumDescriptor() ([]byte, []int) {
-	return fileDescriptor15, []int{14, 0}
+func (ClaimCodenameResponse_Status) EnumDescriptor() ([]byte, []int) {
+	return fileDescriptor2, []int{30, 0}
 }
 
-type EquipBadgeResponse_Result int32
+type DiskEncounterResponse_Result int32
 
 const (
-	EquipBadgeResponse_UNSET           EquipBadgeResponse_Result = 0
-	EquipBadgeResponse_SUCCESS         EquipBadgeResponse_Result = 1
-	EquipBadgeResponse_COOLDOWN_ACTIVE EquipBadgeResponse_Result = 2
-	EquipBadgeResponse_NOT_QUALIFIED   EquipBadgeResponse_Result = 3
+	DiskEncounterResponse_UNKNOWN                    DiskEncounterResponse_Result = 0
+	DiskEncounterResponse_SUCCESS                    DiskEncounterResponse_Result = 1
+	DiskEncounterResponse_NOT_AVAILABLE              DiskEncounterResponse_Result = 2
+	DiskEncounterResponse_NOT_IN_RANGE               DiskEncounterResponse_Result = 3
+	DiskEncounterResponse_ENCOUNTER_ALREADY_FINISHED DiskEncounterResponse_Result = 4
+	DiskEncounterResponse_POKEMON_INVENTORY_FULL     DiskEncounterResponse_Result = 5
 )
 
-var EquipBadgeResponse_Result_name = map[int32]string{
+var DiskEncounterResponse_Result_name = map[int32]string{
+	0: "UNKNOWN",
+	1: "SUCCESS",
+	2: "NOT_AVAILABLE",
+	3: "NOT_IN_RANGE",
+	4: "ENCOUNTER_ALREADY_FINISHED",
+	5: "POKEMON_INVENTORY_FULL",
+}
+var DiskEncounterResponse_Result_value = map[string]int32{
+	"UNKNOWN":                    0,
+	"SUCCESS":                    1,
+	"NOT_AVAILABLE":              2,
+	"NOT_IN_RANGE":               3,
+	"ENCOUNTER_ALREADY_FINISHED": 4,
+	"POKEMON_INVENTORY_FULL":     5,
+}
+
+func (x DiskEncounterResponse_Result) String() string {
+	return proto.EnumName(DiskEncounterResponse_Result_name, int32(x))
+}
+func (DiskEncounterResponse_Result) EnumDescriptor() ([]byte, []int) {
+	return fileDescriptor2, []int{32, 0}
+}
+
+type UpgradePokemonResponse_Result int32
+
+const (
+	UpgradePokemonResponse_UNSET                        UpgradePokemonResponse_Result = 0
+	UpgradePokemonResponse_SUCCESS                      UpgradePokemonResponse_Result = 1
+	UpgradePokemonResponse_ERROR_POKEMON_NOT_FOUND      UpgradePokemonResponse_Result = 2
+	UpgradePokemonResponse_ERROR_INSUFFICIENT_RESOURCES UpgradePokemonResponse_Result = 3
+	UpgradePokemonResponse_ERROR_UPGRADE_NOT_AVAILABLE  UpgradePokemonResponse_Result = 4
+	UpgradePokemonResponse_ERROR_POKEMON_IS_DEPLOYED    UpgradePokemonResponse_Result = 5
+)
+
+var UpgradePokemonResponse_Result_name = map[int32]string{
 	0: "UNSET",
 	1: "SUCCESS",
-	2: "COOLDOWN_ACTIVE",
-	3: "NOT_QUALIFIED",
+	2: "ERROR_POKEMON_NOT_FOUND",
+	3: "ERROR_INSUFFICIENT_RESOURCES",
+	4: "ERROR_UPGRADE_NOT_AVAILABLE",
+	5: "ERROR_POKEMON_IS_DEPLOYED",
 }
-var EquipBadgeResponse_Result_value = map[string]int32{
-	"UNSET":           0,
-	"SUCCESS":         1,
-	"COOLDOWN_ACTIVE": 2,
-	"NOT_QUALIFIED":   3,
-}
-
-func (x EquipBadgeResponse_Result) String() string {
-	return proto.EnumName(EquipBadgeResponse_Result_name, int32(x))
-}
-func (EquipBadgeResponse_Result) EnumDescriptor() ([]byte, []int) {
-	return fileDescriptor15, []int{15, 0}
+var UpgradePokemonResponse_Result_value = map[string]int32{
+	"UNSET":                        0,
+	"SUCCESS":                      1,
+	"ERROR_POKEMON_NOT_FOUND":      2,
+	"ERROR_INSUFFICIENT_RESOURCES": 3,
+	"ERROR_UPGRADE_NOT_AVAILABLE":  4,
+	"ERROR_POKEMON_IS_DEPLOYED":    5,
 }
 
-type EvolvePokemonResponse_Result int32
-
-const (
-	EvolvePokemonResponse_UNSET                         EvolvePokemonResponse_Result = 0
-	EvolvePokemonResponse_SUCCESS                       EvolvePokemonResponse_Result = 1
-	EvolvePokemonResponse_FAILED_POKEMON_MISSING        EvolvePokemonResponse_Result = 2
-	EvolvePokemonResponse_FAILED_INSUFFICIENT_RESOURCES EvolvePokemonResponse_Result = 3
-	EvolvePokemonResponse_FAILED_POKEMON_CANNOT_EVOLVE  EvolvePokemonResponse_Result = 4
-	EvolvePokemonResponse_FAILED_POKEMON_IS_DEPLOYED    EvolvePokemonResponse_Result = 5
-)
-
-var EvolvePokemonResponse_Result_name = map[int32]string{
-	0: "UNSET",
-	1: "SUCCESS",
-	2: "FAILED_POKEMON_MISSING",
-	3: "FAILED_INSUFFICIENT_RESOURCES",
-	4: "FAILED_POKEMON_CANNOT_EVOLVE",
-	5: "FAILED_POKEMON_IS_DEPLOYED",
+func (x UpgradePokemonResponse_Result) String() string {
+	return proto.EnumName(UpgradePokemonResponse_Result_name, int32(x))
 }
-var EvolvePokemonResponse_Result_value = map[string]int32{
-	"UNSET":                         0,
-	"SUCCESS":                       1,
-	"FAILED_POKEMON_MISSING":        2,
-	"FAILED_INSUFFICIENT_RESOURCES": 3,
-	"FAILED_POKEMON_CANNOT_EVOLVE":  4,
-	"FAILED_POKEMON_IS_DEPLOYED":    5,
-}
-
-func (x EvolvePokemonResponse_Result) String() string {
-	return proto.EnumName(EvolvePokemonResponse_Result_name, int32(x))
-}
-func (EvolvePokemonResponse_Result) EnumDescriptor() ([]byte, []int) {
-	return fileDescriptor15, []int{16, 0}
-}
-
-type FortDeployPokemonResponse_Result int32
-
-const (
-	FortDeployPokemonResponse_NO_RESULT_SET                     FortDeployPokemonResponse_Result = 0
-	FortDeployPokemonResponse_SUCCESS                           FortDeployPokemonResponse_Result = 1
-	FortDeployPokemonResponse_ERROR_ALREADY_HAS_POKEMON_ON_FORT FortDeployPokemonResponse_Result = 2
-	FortDeployPokemonResponse_ERROR_OPPOSING_TEAM_OWNS_FORT     FortDeployPokemonResponse_Result = 3
-	FortDeployPokemonResponse_ERROR_FORT_IS_FULL                FortDeployPokemonResponse_Result = 4
-	FortDeployPokemonResponse_ERROR_NOT_IN_RANGE                FortDeployPokemonResponse_Result = 5
-	FortDeployPokemonResponse_ERROR_PLAYER_HAS_NO_TEAM          FortDeployPokemonResponse_Result = 6
-	FortDeployPokemonResponse_ERROR_POKEMON_NOT_FULL_HP         FortDeployPokemonResponse_Result = 7
-	FortDeployPokemonResponse_ERROR_PLAYER_BELOW_MINIMUM_LEVEL  FortDeployPokemonResponse_Result = 8
-)
-
-var FortDeployPokemonResponse_Result_name = map[int32]string{
-	0: "NO_RESULT_SET",
-	1: "SUCCESS",
-	2: "ERROR_ALREADY_HAS_POKEMON_ON_FORT",
-	3: "ERROR_OPPOSING_TEAM_OWNS_FORT",
-	4: "ERROR_FORT_IS_FULL",
-	5: "ERROR_NOT_IN_RANGE",
-	6: "ERROR_PLAYER_HAS_NO_TEAM",
-	7: "ERROR_POKEMON_NOT_FULL_HP",
-	8: "ERROR_PLAYER_BELOW_MINIMUM_LEVEL",
-}
-var FortDeployPokemonResponse_Result_value = map[string]int32{
-	"NO_RESULT_SET":                     0,
-	"SUCCESS":                           1,
-	"ERROR_ALREADY_HAS_POKEMON_ON_FORT": 2,
-	"ERROR_OPPOSING_TEAM_OWNS_FORT":     3,
-	"ERROR_FORT_IS_FULL":                4,
-	"ERROR_NOT_IN_RANGE":                5,
-	"ERROR_PLAYER_HAS_NO_TEAM":          6,
-	"ERROR_POKEMON_NOT_FULL_HP":         7,
-	"ERROR_PLAYER_BELOW_MINIMUM_LEVEL":  8,
-}
-
-func (x FortDeployPokemonResponse_Result) String() string {
-	return proto.EnumName(FortDeployPokemonResponse_Result_name, int32(x))
-}
-func (FortDeployPokemonResponse_Result) EnumDescriptor() ([]byte, []int) {
-	return fileDescriptor15, []int{17, 0}
-}
-
-type FortRecallPokemonResponse_Result int32
-
-const (
-	FortRecallPokemonResponse_NO_RESULT_SET             FortRecallPokemonResponse_Result = 0
-	FortRecallPokemonResponse_SUCCESS                   FortRecallPokemonResponse_Result = 1
-	FortRecallPokemonResponse_ERROR_NOT_IN_RANGE        FortRecallPokemonResponse_Result = 2
-	FortRecallPokemonResponse_ERROR_POKEMON_NOT_ON_FORT FortRecallPokemonResponse_Result = 3
-	FortRecallPokemonResponse_ERROR_NO_PLAYER           FortRecallPokemonResponse_Result = 4
-)
-
-var FortRecallPokemonResponse_Result_name = map[int32]string{
-	0: "NO_RESULT_SET",
-	1: "SUCCESS",
-	2: "ERROR_NOT_IN_RANGE",
-	3: "ERROR_POKEMON_NOT_ON_FORT",
-	4: "ERROR_NO_PLAYER",
-}
-var FortRecallPokemonResponse_Result_value = map[string]int32{
-	"NO_RESULT_SET":             0,
-	"SUCCESS":                   1,
-	"ERROR_NOT_IN_RANGE":        2,
-	"ERROR_POKEMON_NOT_ON_FORT": 3,
-	"ERROR_NO_PLAYER":           4,
-}
-
-func (x FortRecallPokemonResponse_Result) String() string {
-	return proto.EnumName(FortRecallPokemonResponse_Result_name, int32(x))
-}
-func (FortRecallPokemonResponse_Result) EnumDescriptor() ([]byte, []int) {
-	return fileDescriptor15, []int{19, 0}
+func (UpgradePokemonResponse_Result) EnumDescriptor() ([]byte, []int) {
+	return fileDescriptor2, []int{34, 0}
 }
 
 type FortSearchResponse_Result int32
@@ -718,366 +1019,7 @@ func (x FortSearchResponse_Result) String() string {
 	return proto.EnumName(FortSearchResponse_Result_name, int32(x))
 }
 func (FortSearchResponse_Result) EnumDescriptor() ([]byte, []int) {
-	return fileDescriptor15, []int{20, 0}
-}
-
-type GetGymDetailsResponse_Result int32
-
-const (
-	GetGymDetailsResponse_UNSET              GetGymDetailsResponse_Result = 0
-	GetGymDetailsResponse_SUCCESS            GetGymDetailsResponse_Result = 1
-	GetGymDetailsResponse_ERROR_NOT_IN_RANGE GetGymDetailsResponse_Result = 2
-)
-
-var GetGymDetailsResponse_Result_name = map[int32]string{
-	0: "UNSET",
-	1: "SUCCESS",
-	2: "ERROR_NOT_IN_RANGE",
-}
-var GetGymDetailsResponse_Result_value = map[string]int32{
-	"UNSET":              0,
-	"SUCCESS":            1,
-	"ERROR_NOT_IN_RANGE": 2,
-}
-
-func (x GetGymDetailsResponse_Result) String() string {
-	return proto.EnumName(GetGymDetailsResponse_Result_name, int32(x))
-}
-func (GetGymDetailsResponse_Result) EnumDescriptor() ([]byte, []int) {
-	return fileDescriptor15, []int{23, 0}
-}
-
-type GetIncensePokemonResponse_Result int32
-
-const (
-	GetIncensePokemonResponse_INCENSE_ENCOUNTER_UNKNOWN       GetIncensePokemonResponse_Result = 0
-	GetIncensePokemonResponse_INCENSE_ENCOUNTER_AVAILABLE     GetIncensePokemonResponse_Result = 1
-	GetIncensePokemonResponse_INCENSE_ENCOUNTER_NOT_AVAILABLE GetIncensePokemonResponse_Result = 2
-)
-
-var GetIncensePokemonResponse_Result_name = map[int32]string{
-	0: "INCENSE_ENCOUNTER_UNKNOWN",
-	1: "INCENSE_ENCOUNTER_AVAILABLE",
-	2: "INCENSE_ENCOUNTER_NOT_AVAILABLE",
-}
-var GetIncensePokemonResponse_Result_value = map[string]int32{
-	"INCENSE_ENCOUNTER_UNKNOWN":       0,
-	"INCENSE_ENCOUNTER_AVAILABLE":     1,
-	"INCENSE_ENCOUNTER_NOT_AVAILABLE": 2,
-}
-
-func (x GetIncensePokemonResponse_Result) String() string {
-	return proto.EnumName(GetIncensePokemonResponse_Result_name, int32(x))
-}
-func (GetIncensePokemonResponse_Result) EnumDescriptor() ([]byte, []int) {
-	return fileDescriptor15, []int{25, 0}
-}
-
-type GetPlayerProfileResponse_Result int32
-
-const (
-	GetPlayerProfileResponse_UNSET   GetPlayerProfileResponse_Result = 0
-	GetPlayerProfileResponse_SUCCESS GetPlayerProfileResponse_Result = 1
-)
-
-var GetPlayerProfileResponse_Result_name = map[int32]string{
-	0: "UNSET",
-	1: "SUCCESS",
-}
-var GetPlayerProfileResponse_Result_value = map[string]int32{
-	"UNSET":   0,
-	"SUCCESS": 1,
-}
-
-func (x GetPlayerProfileResponse_Result) String() string {
-	return proto.EnumName(GetPlayerProfileResponse_Result_name, int32(x))
-}
-func (GetPlayerProfileResponse_Result) EnumDescriptor() ([]byte, []int) {
-	return fileDescriptor15, []int{28, 0}
-}
-
-type IncenseEncounterResponse_Result int32
-
-const (
-	IncenseEncounterResponse_INCENSE_ENCOUNTER_UNKNOWN       IncenseEncounterResponse_Result = 0
-	IncenseEncounterResponse_INCENSE_ENCOUNTER_SUCCESS       IncenseEncounterResponse_Result = 1
-	IncenseEncounterResponse_INCENSE_ENCOUNTER_NOT_AVAILABLE IncenseEncounterResponse_Result = 2
-	IncenseEncounterResponse_POKEMON_INVENTORY_FULL          IncenseEncounterResponse_Result = 3
-)
-
-var IncenseEncounterResponse_Result_name = map[int32]string{
-	0: "INCENSE_ENCOUNTER_UNKNOWN",
-	1: "INCENSE_ENCOUNTER_SUCCESS",
-	2: "INCENSE_ENCOUNTER_NOT_AVAILABLE",
-	3: "POKEMON_INVENTORY_FULL",
-}
-var IncenseEncounterResponse_Result_value = map[string]int32{
-	"INCENSE_ENCOUNTER_UNKNOWN":       0,
-	"INCENSE_ENCOUNTER_SUCCESS":       1,
-	"INCENSE_ENCOUNTER_NOT_AVAILABLE": 2,
-	"POKEMON_INVENTORY_FULL":          3,
-}
-
-func (x IncenseEncounterResponse_Result) String() string {
-	return proto.EnumName(IncenseEncounterResponse_Result_name, int32(x))
-}
-func (IncenseEncounterResponse_Result) EnumDescriptor() ([]byte, []int) {
-	return fileDescriptor15, []int{31, 0}
-}
-
-type LevelUpRewardsResponse_Result int32
-
-const (
-	LevelUpRewardsResponse_UNSET           LevelUpRewardsResponse_Result = 0
-	LevelUpRewardsResponse_SUCCESS         LevelUpRewardsResponse_Result = 1
-	LevelUpRewardsResponse_AWARDED_ALREADY LevelUpRewardsResponse_Result = 2
-)
-
-var LevelUpRewardsResponse_Result_name = map[int32]string{
-	0: "UNSET",
-	1: "SUCCESS",
-	2: "AWARDED_ALREADY",
-}
-var LevelUpRewardsResponse_Result_value = map[string]int32{
-	"UNSET":           0,
-	"SUCCESS":         1,
-	"AWARDED_ALREADY": 2,
-}
-
-func (x LevelUpRewardsResponse_Result) String() string {
-	return proto.EnumName(LevelUpRewardsResponse_Result_name, int32(x))
-}
-func (LevelUpRewardsResponse_Result) EnumDescriptor() ([]byte, []int) {
-	return fileDescriptor15, []int{32, 0}
-}
-
-type NicknamePokemonResponse_Result int32
-
-const (
-	NicknamePokemonResponse_UNSET                   NicknamePokemonResponse_Result = 0
-	NicknamePokemonResponse_SUCCESS                 NicknamePokemonResponse_Result = 1
-	NicknamePokemonResponse_ERROR_INVALID_NICKNAME  NicknamePokemonResponse_Result = 2
-	NicknamePokemonResponse_ERROR_POKEMON_NOT_FOUND NicknamePokemonResponse_Result = 3
-	NicknamePokemonResponse_ERROR_POKEMON_IS_EGG    NicknamePokemonResponse_Result = 4
-)
-
-var NicknamePokemonResponse_Result_name = map[int32]string{
-	0: "UNSET",
-	1: "SUCCESS",
-	2: "ERROR_INVALID_NICKNAME",
-	3: "ERROR_POKEMON_NOT_FOUND",
-	4: "ERROR_POKEMON_IS_EGG",
-}
-var NicknamePokemonResponse_Result_value = map[string]int32{
-	"UNSET":                   0,
-	"SUCCESS":                 1,
-	"ERROR_INVALID_NICKNAME":  2,
-	"ERROR_POKEMON_NOT_FOUND": 3,
-	"ERROR_POKEMON_IS_EGG":    4,
-}
-
-func (x NicknamePokemonResponse_Result) String() string {
-	return proto.EnumName(NicknamePokemonResponse_Result_name, int32(x))
-}
-func (NicknamePokemonResponse_Result) EnumDescriptor() ([]byte, []int) {
-	return fileDescriptor15, []int{34, 0}
-}
-
-type RecycleInventoryItemResponse_Result int32
-
-const (
-	RecycleInventoryItemResponse_UNSET                           RecycleInventoryItemResponse_Result = 0
-	RecycleInventoryItemResponse_SUCCESS                         RecycleInventoryItemResponse_Result = 1
-	RecycleInventoryItemResponse_ERROR_NOT_ENOUGH_COPIES         RecycleInventoryItemResponse_Result = 2
-	RecycleInventoryItemResponse_ERROR_CANNOT_RECYCLE_INCUBATORS RecycleInventoryItemResponse_Result = 3
-)
-
-var RecycleInventoryItemResponse_Result_name = map[int32]string{
-	0: "UNSET",
-	1: "SUCCESS",
-	2: "ERROR_NOT_ENOUGH_COPIES",
-	3: "ERROR_CANNOT_RECYCLE_INCUBATORS",
-}
-var RecycleInventoryItemResponse_Result_value = map[string]int32{
-	"UNSET":                           0,
-	"SUCCESS":                         1,
-	"ERROR_NOT_ENOUGH_COPIES":         2,
-	"ERROR_CANNOT_RECYCLE_INCUBATORS": 3,
-}
-
-func (x RecycleInventoryItemResponse_Result) String() string {
-	return proto.EnumName(RecycleInventoryItemResponse_Result_name, int32(x))
-}
-func (RecycleInventoryItemResponse_Result) EnumDescriptor() ([]byte, []int) {
-	return fileDescriptor15, []int{36, 0}
-}
-
-type ReleasePokemonResponse_Result int32
-
-const (
-	ReleasePokemonResponse_UNSET                ReleasePokemonResponse_Result = 0
-	ReleasePokemonResponse_SUCCESS              ReleasePokemonResponse_Result = 1
-	ReleasePokemonResponse_POKEMON_DEPLOYED     ReleasePokemonResponse_Result = 2
-	ReleasePokemonResponse_FAILED               ReleasePokemonResponse_Result = 3
-	ReleasePokemonResponse_ERROR_POKEMON_IS_EGG ReleasePokemonResponse_Result = 4
-)
-
-var ReleasePokemonResponse_Result_name = map[int32]string{
-	0: "UNSET",
-	1: "SUCCESS",
-	2: "POKEMON_DEPLOYED",
-	3: "FAILED",
-	4: "ERROR_POKEMON_IS_EGG",
-}
-var ReleasePokemonResponse_Result_value = map[string]int32{
-	"UNSET":                0,
-	"SUCCESS":              1,
-	"POKEMON_DEPLOYED":     2,
-	"FAILED":               3,
-	"ERROR_POKEMON_IS_EGG": 4,
-}
-
-func (x ReleasePokemonResponse_Result) String() string {
-	return proto.EnumName(ReleasePokemonResponse_Result_name, int32(x))
-}
-func (ReleasePokemonResponse_Result) EnumDescriptor() ([]byte, []int) {
-	return fileDescriptor15, []int{37, 0}
-}
-
-type SetAvatarResponse_Status int32
-
-const (
-	SetAvatarResponse_UNSET              SetAvatarResponse_Status = 0
-	SetAvatarResponse_SUCCESS            SetAvatarResponse_Status = 1
-	SetAvatarResponse_AVATAR_ALREADY_SET SetAvatarResponse_Status = 2
-	SetAvatarResponse_FAILURE            SetAvatarResponse_Status = 3
-)
-
-var SetAvatarResponse_Status_name = map[int32]string{
-	0: "UNSET",
-	1: "SUCCESS",
-	2: "AVATAR_ALREADY_SET",
-	3: "FAILURE",
-}
-var SetAvatarResponse_Status_value = map[string]int32{
-	"UNSET":              0,
-	"SUCCESS":            1,
-	"AVATAR_ALREADY_SET": 2,
-	"FAILURE":            3,
-}
-
-func (x SetAvatarResponse_Status) String() string {
-	return proto.EnumName(SetAvatarResponse_Status_name, int32(x))
-}
-func (SetAvatarResponse_Status) EnumDescriptor() ([]byte, []int) {
-	return fileDescriptor15, []int{38, 0}
-}
-
-type SetContactSettingsResponse_Status int32
-
-const (
-	SetContactSettingsResponse_UNSET   SetContactSettingsResponse_Status = 0
-	SetContactSettingsResponse_SUCCESS SetContactSettingsResponse_Status = 1
-	SetContactSettingsResponse_FAILURE SetContactSettingsResponse_Status = 2
-)
-
-var SetContactSettingsResponse_Status_name = map[int32]string{
-	0: "UNSET",
-	1: "SUCCESS",
-	2: "FAILURE",
-}
-var SetContactSettingsResponse_Status_value = map[string]int32{
-	"UNSET":   0,
-	"SUCCESS": 1,
-	"FAILURE": 2,
-}
-
-func (x SetContactSettingsResponse_Status) String() string {
-	return proto.EnumName(SetContactSettingsResponse_Status_name, int32(x))
-}
-func (SetContactSettingsResponse_Status) EnumDescriptor() ([]byte, []int) {
-	return fileDescriptor15, []int{39, 0}
-}
-
-type SetFavoritePokemonResponse_Result int32
-
-const (
-	SetFavoritePokemonResponse_UNSET                   SetFavoritePokemonResponse_Result = 0
-	SetFavoritePokemonResponse_SUCCESS                 SetFavoritePokemonResponse_Result = 1
-	SetFavoritePokemonResponse_ERROR_POKEMON_NOT_FOUND SetFavoritePokemonResponse_Result = 2
-	SetFavoritePokemonResponse_ERROR_POKEMON_IS_EGG    SetFavoritePokemonResponse_Result = 3
-)
-
-var SetFavoritePokemonResponse_Result_name = map[int32]string{
-	0: "UNSET",
-	1: "SUCCESS",
-	2: "ERROR_POKEMON_NOT_FOUND",
-	3: "ERROR_POKEMON_IS_EGG",
-}
-var SetFavoritePokemonResponse_Result_value = map[string]int32{
-	"UNSET":                   0,
-	"SUCCESS":                 1,
-	"ERROR_POKEMON_NOT_FOUND": 2,
-	"ERROR_POKEMON_IS_EGG":    3,
-}
-
-func (x SetFavoritePokemonResponse_Result) String() string {
-	return proto.EnumName(SetFavoritePokemonResponse_Result_name, int32(x))
-}
-func (SetFavoritePokemonResponse_Result) EnumDescriptor() ([]byte, []int) {
-	return fileDescriptor15, []int{40, 0}
-}
-
-type SetPlayerTeamResponse_Status int32
-
-const (
-	SetPlayerTeamResponse_UNSET            SetPlayerTeamResponse_Status = 0
-	SetPlayerTeamResponse_SUCCESS          SetPlayerTeamResponse_Status = 1
-	SetPlayerTeamResponse_TEAM_ALREADY_SET SetPlayerTeamResponse_Status = 2
-	SetPlayerTeamResponse_FAILURE          SetPlayerTeamResponse_Status = 3
-)
-
-var SetPlayerTeamResponse_Status_name = map[int32]string{
-	0: "UNSET",
-	1: "SUCCESS",
-	2: "TEAM_ALREADY_SET",
-	3: "FAILURE",
-}
-var SetPlayerTeamResponse_Status_value = map[string]int32{
-	"UNSET":            0,
-	"SUCCESS":          1,
-	"TEAM_ALREADY_SET": 2,
-	"FAILURE":          3,
-}
-
-func (x SetPlayerTeamResponse_Status) String() string {
-	return proto.EnumName(SetPlayerTeamResponse_Status_name, int32(x))
-}
-func (SetPlayerTeamResponse_Status) EnumDescriptor() ([]byte, []int) {
-	return fileDescriptor15, []int{41, 0}
-}
-
-type SfidaActionLogResponse_Result int32
-
-const (
-	SfidaActionLogResponse_UNSET   SfidaActionLogResponse_Result = 0
-	SfidaActionLogResponse_SUCCESS SfidaActionLogResponse_Result = 1
-)
-
-var SfidaActionLogResponse_Result_name = map[int32]string{
-	0: "UNSET",
-	1: "SUCCESS",
-}
-var SfidaActionLogResponse_Result_value = map[string]int32{
-	"UNSET":   0,
-	"SUCCESS": 1,
-}
-
-func (x SfidaActionLogResponse_Result) String() string {
-	return proto.EnumName(SfidaActionLogResponse_Result_name, int32(x))
-}
-func (SfidaActionLogResponse_Result) EnumDescriptor() ([]byte, []int) {
-	return fileDescriptor15, []int{42, 0}
+	return fileDescriptor2, []int{35, 0}
 }
 
 type StartGymBattleResponse_Result int32
@@ -1136,74 +1078,68 @@ func (x StartGymBattleResponse_Result) String() string {
 	return proto.EnumName(StartGymBattleResponse_Result_name, int32(x))
 }
 func (StartGymBattleResponse_Result) EnumDescriptor() ([]byte, []int) {
-	return fileDescriptor15, []int{43, 0}
+	return fileDescriptor2, []int{36, 0}
 }
 
-type UpgradePokemonResponse_Result int32
+type UseItemPotionResponse_Result int32
 
 const (
-	UpgradePokemonResponse_UNSET                        UpgradePokemonResponse_Result = 0
-	UpgradePokemonResponse_SUCCESS                      UpgradePokemonResponse_Result = 1
-	UpgradePokemonResponse_ERROR_POKEMON_NOT_FOUND      UpgradePokemonResponse_Result = 2
-	UpgradePokemonResponse_ERROR_INSUFFICIENT_RESOURCES UpgradePokemonResponse_Result = 3
-	UpgradePokemonResponse_ERROR_UPGRADE_NOT_AVAILABLE  UpgradePokemonResponse_Result = 4
-	UpgradePokemonResponse_ERROR_POKEMON_IS_DEPLOYED    UpgradePokemonResponse_Result = 5
+	UseItemPotionResponse_UNSET                  UseItemPotionResponse_Result = 0
+	UseItemPotionResponse_SUCCESS                UseItemPotionResponse_Result = 1
+	UseItemPotionResponse_ERROR_NO_POKEMON       UseItemPotionResponse_Result = 2
+	UseItemPotionResponse_ERROR_CANNOT_USE       UseItemPotionResponse_Result = 3
+	UseItemPotionResponse_ERROR_DEPLOYED_TO_FORT UseItemPotionResponse_Result = 4
 )
 
-var UpgradePokemonResponse_Result_name = map[int32]string{
+var UseItemPotionResponse_Result_name = map[int32]string{
 	0: "UNSET",
 	1: "SUCCESS",
-	2: "ERROR_POKEMON_NOT_FOUND",
-	3: "ERROR_INSUFFICIENT_RESOURCES",
-	4: "ERROR_UPGRADE_NOT_AVAILABLE",
-	5: "ERROR_POKEMON_IS_DEPLOYED",
+	2: "ERROR_NO_POKEMON",
+	3: "ERROR_CANNOT_USE",
+	4: "ERROR_DEPLOYED_TO_FORT",
 }
-var UpgradePokemonResponse_Result_value = map[string]int32{
-	"UNSET":                        0,
-	"SUCCESS":                      1,
-	"ERROR_POKEMON_NOT_FOUND":      2,
-	"ERROR_INSUFFICIENT_RESOURCES": 3,
-	"ERROR_UPGRADE_NOT_AVAILABLE":  4,
-	"ERROR_POKEMON_IS_DEPLOYED":    5,
+var UseItemPotionResponse_Result_value = map[string]int32{
+	"UNSET":                  0,
+	"SUCCESS":                1,
+	"ERROR_NO_POKEMON":       2,
+	"ERROR_CANNOT_USE":       3,
+	"ERROR_DEPLOYED_TO_FORT": 4,
 }
 
-func (x UpgradePokemonResponse_Result) String() string {
-	return proto.EnumName(UpgradePokemonResponse_Result_name, int32(x))
+func (x UseItemPotionResponse_Result) String() string {
+	return proto.EnumName(UseItemPotionResponse_Result_name, int32(x))
 }
-func (UpgradePokemonResponse_Result) EnumDescriptor() ([]byte, []int) {
-	return fileDescriptor15, []int{44, 0}
+func (UseItemPotionResponse_Result) EnumDescriptor() ([]byte, []int) {
+	return fileDescriptor2, []int{38, 0}
 }
 
-type UseIncenseResponse_Result int32
+type EquipBadgeResponse_Result int32
 
 const (
-	UseIncenseResponse_UNKNOWN                UseIncenseResponse_Result = 0
-	UseIncenseResponse_SUCCESS                UseIncenseResponse_Result = 1
-	UseIncenseResponse_INCENSE_ALREADY_ACTIVE UseIncenseResponse_Result = 2
-	UseIncenseResponse_NONE_IN_INVENTORY      UseIncenseResponse_Result = 3
-	UseIncenseResponse_LOCATION_UNSET         UseIncenseResponse_Result = 4
+	EquipBadgeResponse_UNSET           EquipBadgeResponse_Result = 0
+	EquipBadgeResponse_SUCCESS         EquipBadgeResponse_Result = 1
+	EquipBadgeResponse_COOLDOWN_ACTIVE EquipBadgeResponse_Result = 2
+	EquipBadgeResponse_NOT_QUALIFIED   EquipBadgeResponse_Result = 3
 )
 
-var UseIncenseResponse_Result_name = map[int32]string{
-	0: "UNKNOWN",
+var EquipBadgeResponse_Result_name = map[int32]string{
+	0: "UNSET",
 	1: "SUCCESS",
-	2: "INCENSE_ALREADY_ACTIVE",
-	3: "NONE_IN_INVENTORY",
-	4: "LOCATION_UNSET",
+	2: "COOLDOWN_ACTIVE",
+	3: "NOT_QUALIFIED",
 }
-var UseIncenseResponse_Result_value = map[string]int32{
-	"UNKNOWN":                0,
-	"SUCCESS":                1,
-	"INCENSE_ALREADY_ACTIVE": 2,
-	"NONE_IN_INVENTORY":      3,
-	"LOCATION_UNSET":         4,
+var EquipBadgeResponse_Result_value = map[string]int32{
+	"UNSET":           0,
+	"SUCCESS":         1,
+	"COOLDOWN_ACTIVE": 2,
+	"NOT_QUALIFIED":   3,
 }
 
-func (x UseIncenseResponse_Result) String() string {
-	return proto.EnumName(UseIncenseResponse_Result_name, int32(x))
+func (x EquipBadgeResponse_Result) String() string {
+	return proto.EnumName(EquipBadgeResponse_Result_name, int32(x))
 }
-func (UseIncenseResponse_Result) EnumDescriptor() ([]byte, []int) {
-	return fileDescriptor15, []int{45, 0}
+func (EquipBadgeResponse_Result) EnumDescriptor() ([]byte, []int) {
+	return fileDescriptor2, []int{41, 0}
 }
 
 type UseItemEggIncubatorResponse_Result int32
@@ -1244,136 +1180,196 @@ func (x UseItemEggIncubatorResponse_Result) String() string {
 	return proto.EnumName(UseItemEggIncubatorResponse_Result_name, int32(x))
 }
 func (UseItemEggIncubatorResponse_Result) EnumDescriptor() ([]byte, []int) {
-	return fileDescriptor15, []int{47, 0}
+	return fileDescriptor2, []int{42, 0}
 }
 
-type UseItemGymResponse_Result int32
+type EvolvePokemonResponse_Result int32
 
 const (
-	UseItemGymResponse_UNSET              UseItemGymResponse_Result = 0
-	UseItemGymResponse_SUCCESS            UseItemGymResponse_Result = 1
-	UseItemGymResponse_ERROR_CANNOT_USE   UseItemGymResponse_Result = 2
-	UseItemGymResponse_ERROR_NOT_IN_RANGE UseItemGymResponse_Result = 3
+	EvolvePokemonResponse_UNSET                         EvolvePokemonResponse_Result = 0
+	EvolvePokemonResponse_SUCCESS                       EvolvePokemonResponse_Result = 1
+	EvolvePokemonResponse_FAILED_POKEMON_MISSING        EvolvePokemonResponse_Result = 2
+	EvolvePokemonResponse_FAILED_INSUFFICIENT_RESOURCES EvolvePokemonResponse_Result = 3
+	EvolvePokemonResponse_FAILED_POKEMON_CANNOT_EVOLVE  EvolvePokemonResponse_Result = 4
+	EvolvePokemonResponse_FAILED_POKEMON_IS_DEPLOYED    EvolvePokemonResponse_Result = 5
 )
 
-var UseItemGymResponse_Result_name = map[int32]string{
+var EvolvePokemonResponse_Result_name = map[int32]string{
 	0: "UNSET",
 	1: "SUCCESS",
-	2: "ERROR_CANNOT_USE",
-	3: "ERROR_NOT_IN_RANGE",
+	2: "FAILED_POKEMON_MISSING",
+	3: "FAILED_INSUFFICIENT_RESOURCES",
+	4: "FAILED_POKEMON_CANNOT_EVOLVE",
+	5: "FAILED_POKEMON_IS_DEPLOYED",
 }
-var UseItemGymResponse_Result_value = map[string]int32{
-	"UNSET":              0,
-	"SUCCESS":            1,
-	"ERROR_CANNOT_USE":   2,
-	"ERROR_NOT_IN_RANGE": 3,
-}
-
-func (x UseItemGymResponse_Result) String() string {
-	return proto.EnumName(UseItemGymResponse_Result_name, int32(x))
-}
-func (UseItemGymResponse_Result) EnumDescriptor() ([]byte, []int) {
-	return fileDescriptor15, []int{48, 0}
-}
-
-type UseItemPotionResponse_Result int32
-
-const (
-	UseItemPotionResponse_UNSET                  UseItemPotionResponse_Result = 0
-	UseItemPotionResponse_SUCCESS                UseItemPotionResponse_Result = 1
-	UseItemPotionResponse_ERROR_NO_POKEMON       UseItemPotionResponse_Result = 2
-	UseItemPotionResponse_ERROR_CANNOT_USE       UseItemPotionResponse_Result = 3
-	UseItemPotionResponse_ERROR_DEPLOYED_TO_FORT UseItemPotionResponse_Result = 4
-)
-
-var UseItemPotionResponse_Result_name = map[int32]string{
-	0: "UNSET",
-	1: "SUCCESS",
-	2: "ERROR_NO_POKEMON",
-	3: "ERROR_CANNOT_USE",
-	4: "ERROR_DEPLOYED_TO_FORT",
-}
-var UseItemPotionResponse_Result_value = map[string]int32{
-	"UNSET":                  0,
-	"SUCCESS":                1,
-	"ERROR_NO_POKEMON":       2,
-	"ERROR_CANNOT_USE":       3,
-	"ERROR_DEPLOYED_TO_FORT": 4,
-}
-
-func (x UseItemPotionResponse_Result) String() string {
-	return proto.EnumName(UseItemPotionResponse_Result_name, int32(x))
-}
-func (UseItemPotionResponse_Result) EnumDescriptor() ([]byte, []int) {
-	return fileDescriptor15, []int{49, 0}
-}
-
-type UseItemReviveResponse_Result int32
-
-const (
-	UseItemReviveResponse_UNSET                  UseItemReviveResponse_Result = 0
-	UseItemReviveResponse_SUCCESS                UseItemReviveResponse_Result = 1
-	UseItemReviveResponse_ERROR_NO_POKEMON       UseItemReviveResponse_Result = 2
-	UseItemReviveResponse_ERROR_CANNOT_USE       UseItemReviveResponse_Result = 3
-	UseItemReviveResponse_ERROR_DEPLOYED_TO_FORT UseItemReviveResponse_Result = 4
-)
-
-var UseItemReviveResponse_Result_name = map[int32]string{
-	0: "UNSET",
-	1: "SUCCESS",
-	2: "ERROR_NO_POKEMON",
-	3: "ERROR_CANNOT_USE",
-	4: "ERROR_DEPLOYED_TO_FORT",
-}
-var UseItemReviveResponse_Result_value = map[string]int32{
-	"UNSET":                  0,
-	"SUCCESS":                1,
-	"ERROR_NO_POKEMON":       2,
-	"ERROR_CANNOT_USE":       3,
-	"ERROR_DEPLOYED_TO_FORT": 4,
-}
-
-func (x UseItemReviveResponse_Result) String() string {
-	return proto.EnumName(UseItemReviveResponse_Result_name, int32(x))
-}
-func (UseItemReviveResponse_Result) EnumDescriptor() ([]byte, []int) {
-	return fileDescriptor15, []int{50, 0}
-}
-
-type UseItemXpBoostResponse_Result int32
-
-const (
-	UseItemXpBoostResponse_UNSET                         UseItemXpBoostResponse_Result = 0
-	UseItemXpBoostResponse_SUCCESS                       UseItemXpBoostResponse_Result = 1
-	UseItemXpBoostResponse_ERROR_INVALID_ITEM_TYPE       UseItemXpBoostResponse_Result = 2
-	UseItemXpBoostResponse_ERROR_XP_BOOST_ALREADY_ACTIVE UseItemXpBoostResponse_Result = 3
-	UseItemXpBoostResponse_ERROR_NO_ITEMS_REMAINING      UseItemXpBoostResponse_Result = 4
-	UseItemXpBoostResponse_ERROR_LOCATION_UNSET          UseItemXpBoostResponse_Result = 5
-)
-
-var UseItemXpBoostResponse_Result_name = map[int32]string{
-	0: "UNSET",
-	1: "SUCCESS",
-	2: "ERROR_INVALID_ITEM_TYPE",
-	3: "ERROR_XP_BOOST_ALREADY_ACTIVE",
-	4: "ERROR_NO_ITEMS_REMAINING",
-	5: "ERROR_LOCATION_UNSET",
-}
-var UseItemXpBoostResponse_Result_value = map[string]int32{
+var EvolvePokemonResponse_Result_value = map[string]int32{
 	"UNSET":                         0,
 	"SUCCESS":                       1,
-	"ERROR_INVALID_ITEM_TYPE":       2,
-	"ERROR_XP_BOOST_ALREADY_ACTIVE": 3,
-	"ERROR_NO_ITEMS_REMAINING":      4,
-	"ERROR_LOCATION_UNSET":          5,
+	"FAILED_POKEMON_MISSING":        2,
+	"FAILED_INSUFFICIENT_RESOURCES": 3,
+	"FAILED_POKEMON_CANNOT_EVOLVE":  4,
+	"FAILED_POKEMON_IS_DEPLOYED":    5,
 }
 
-func (x UseItemXpBoostResponse_Result) String() string {
-	return proto.EnumName(UseItemXpBoostResponse_Result_name, int32(x))
+func (x EvolvePokemonResponse_Result) String() string {
+	return proto.EnumName(EvolvePokemonResponse_Result_name, int32(x))
 }
-func (UseItemXpBoostResponse_Result) EnumDescriptor() ([]byte, []int) {
-	return fileDescriptor15, []int{51, 0}
+func (EvolvePokemonResponse_Result) EnumDescriptor() ([]byte, []int) {
+	return fileDescriptor2, []int{44, 0}
 }
+
+type IncenseEncounterResponse_Result int32
+
+const (
+	IncenseEncounterResponse_INCENSE_ENCOUNTER_UNKNOWN       IncenseEncounterResponse_Result = 0
+	IncenseEncounterResponse_INCENSE_ENCOUNTER_SUCCESS       IncenseEncounterResponse_Result = 1
+	IncenseEncounterResponse_INCENSE_ENCOUNTER_NOT_AVAILABLE IncenseEncounterResponse_Result = 2
+	IncenseEncounterResponse_POKEMON_INVENTORY_FULL          IncenseEncounterResponse_Result = 3
+)
+
+var IncenseEncounterResponse_Result_name = map[int32]string{
+	0: "INCENSE_ENCOUNTER_UNKNOWN",
+	1: "INCENSE_ENCOUNTER_SUCCESS",
+	2: "INCENSE_ENCOUNTER_NOT_AVAILABLE",
+	3: "POKEMON_INVENTORY_FULL",
+}
+var IncenseEncounterResponse_Result_value = map[string]int32{
+	"INCENSE_ENCOUNTER_UNKNOWN":       0,
+	"INCENSE_ENCOUNTER_SUCCESS":       1,
+	"INCENSE_ENCOUNTER_NOT_AVAILABLE": 2,
+	"POKEMON_INVENTORY_FULL":          3,
+}
+
+func (x IncenseEncounterResponse_Result) String() string {
+	return proto.EnumName(IncenseEncounterResponse_Result_name, int32(x))
+}
+func (IncenseEncounterResponse_Result) EnumDescriptor() ([]byte, []int) {
+	return fileDescriptor2, []int{46, 0}
+}
+
+type FortDeployPokemonResponse_Result int32
+
+const (
+	FortDeployPokemonResponse_NO_RESULT_SET                     FortDeployPokemonResponse_Result = 0
+	FortDeployPokemonResponse_SUCCESS                           FortDeployPokemonResponse_Result = 1
+	FortDeployPokemonResponse_ERROR_ALREADY_HAS_POKEMON_ON_FORT FortDeployPokemonResponse_Result = 2
+	FortDeployPokemonResponse_ERROR_OPPOSING_TEAM_OWNS_FORT     FortDeployPokemonResponse_Result = 3
+	FortDeployPokemonResponse_ERROR_FORT_IS_FULL                FortDeployPokemonResponse_Result = 4
+	FortDeployPokemonResponse_ERROR_NOT_IN_RANGE                FortDeployPokemonResponse_Result = 5
+	FortDeployPokemonResponse_ERROR_PLAYER_HAS_NO_TEAM          FortDeployPokemonResponse_Result = 6
+	FortDeployPokemonResponse_ERROR_POKEMON_NOT_FULL_HP         FortDeployPokemonResponse_Result = 7
+	FortDeployPokemonResponse_ERROR_PLAYER_BELOW_MINIMUM_LEVEL  FortDeployPokemonResponse_Result = 8
+)
+
+var FortDeployPokemonResponse_Result_name = map[int32]string{
+	0: "NO_RESULT_SET",
+	1: "SUCCESS",
+	2: "ERROR_ALREADY_HAS_POKEMON_ON_FORT",
+	3: "ERROR_OPPOSING_TEAM_OWNS_FORT",
+	4: "ERROR_FORT_IS_FULL",
+	5: "ERROR_NOT_IN_RANGE",
+	6: "ERROR_PLAYER_HAS_NO_TEAM",
+	7: "ERROR_POKEMON_NOT_FULL_HP",
+	8: "ERROR_PLAYER_BELOW_MINIMUM_LEVEL",
+}
+var FortDeployPokemonResponse_Result_value = map[string]int32{
+	"NO_RESULT_SET":                     0,
+	"SUCCESS":                           1,
+	"ERROR_ALREADY_HAS_POKEMON_ON_FORT": 2,
+	"ERROR_OPPOSING_TEAM_OWNS_FORT":     3,
+	"ERROR_FORT_IS_FULL":                4,
+	"ERROR_NOT_IN_RANGE":                5,
+	"ERROR_PLAYER_HAS_NO_TEAM":          6,
+	"ERROR_POKEMON_NOT_FULL_HP":         7,
+	"ERROR_PLAYER_BELOW_MINIMUM_LEVEL":  8,
+}
+
+func (x FortDeployPokemonResponse_Result) String() string {
+	return proto.EnumName(FortDeployPokemonResponse_Result_name, int32(x))
+}
+func (FortDeployPokemonResponse_Result) EnumDescriptor() ([]byte, []int) {
+	return fileDescriptor2, []int{47, 0}
+}
+
+type SetAvatarResponse_Status int32
+
+const (
+	SetAvatarResponse_UNSET              SetAvatarResponse_Status = 0
+	SetAvatarResponse_SUCCESS            SetAvatarResponse_Status = 1
+	SetAvatarResponse_AVATAR_ALREADY_SET SetAvatarResponse_Status = 2
+	SetAvatarResponse_FAILURE            SetAvatarResponse_Status = 3
+)
+
+var SetAvatarResponse_Status_name = map[int32]string{
+	0: "UNSET",
+	1: "SUCCESS",
+	2: "AVATAR_ALREADY_SET",
+	3: "FAILURE",
+}
+var SetAvatarResponse_Status_value = map[string]int32{
+	"UNSET":              0,
+	"SUCCESS":            1,
+	"AVATAR_ALREADY_SET": 2,
+	"FAILURE":            3,
+}
+
+func (x SetAvatarResponse_Status) String() string {
+	return proto.EnumName(SetAvatarResponse_Status_name, int32(x))
+}
+func (SetAvatarResponse_Status) EnumDescriptor() ([]byte, []int) { return fileDescriptor2, []int{48, 0} }
+
+type LevelUpRewardsResponse_Result int32
+
+const (
+	LevelUpRewardsResponse_UNSET           LevelUpRewardsResponse_Result = 0
+	LevelUpRewardsResponse_SUCCESS         LevelUpRewardsResponse_Result = 1
+	LevelUpRewardsResponse_AWARDED_ALREADY LevelUpRewardsResponse_Result = 2
+)
+
+var LevelUpRewardsResponse_Result_name = map[int32]string{
+	0: "UNSET",
+	1: "SUCCESS",
+	2: "AWARDED_ALREADY",
+}
+var LevelUpRewardsResponse_Result_value = map[string]int32{
+	"UNSET":           0,
+	"SUCCESS":         1,
+	"AWARDED_ALREADY": 2,
+}
+
+func (x LevelUpRewardsResponse_Result) String() string {
+	return proto.EnumName(LevelUpRewardsResponse_Result_name, int32(x))
+}
+func (LevelUpRewardsResponse_Result) EnumDescriptor() ([]byte, []int) {
+	return fileDescriptor2, []int{50, 0}
+}
+
+type AttackGymResponse_Result int32
+
+const (
+	AttackGymResponse_UNSET                        AttackGymResponse_Result = 0
+	AttackGymResponse_SUCCESS                      AttackGymResponse_Result = 1
+	AttackGymResponse_ERROR_INVALID_ATTACK_ACTIONS AttackGymResponse_Result = 2
+	AttackGymResponse_ERROR_NOT_IN_RANGE           AttackGymResponse_Result = 3
+)
+
+var AttackGymResponse_Result_name = map[int32]string{
+	0: "UNSET",
+	1: "SUCCESS",
+	2: "ERROR_INVALID_ATTACK_ACTIONS",
+	3: "ERROR_NOT_IN_RANGE",
+}
+var AttackGymResponse_Result_value = map[string]int32{
+	"UNSET":                        0,
+	"SUCCESS":                      1,
+	"ERROR_INVALID_ATTACK_ACTIONS": 2,
+	"ERROR_NOT_IN_RANGE":           3,
+}
+
+func (x AttackGymResponse_Result) String() string {
+	return proto.EnumName(AttackGymResponse_Result_name, int32(x))
+}
+func (AttackGymResponse_Result) EnumDescriptor() ([]byte, []int) { return fileDescriptor2, []int{51, 0} }
 
 type AddFortModifierResponse struct {
 }
@@ -1381,71 +1377,7 @@ type AddFortModifierResponse struct {
 func (m *AddFortModifierResponse) Reset()                    { *m = AddFortModifierResponse{} }
 func (m *AddFortModifierResponse) String() string            { return proto.CompactTextString(m) }
 func (*AddFortModifierResponse) ProtoMessage()               {}
-func (*AddFortModifierResponse) Descriptor() ([]byte, []int) { return fileDescriptor15, []int{0} }
-
-type AttackGymResponse struct {
-	Result         AttackGymResponse_Result `protobuf:"varint,1,opt,name=result,enum=POGOProtos.Networking.Responses.AttackGymResponse_Result" json:"result,omitempty"`
-	BattleLog      *BattleLog               `protobuf:"bytes,2,opt,name=battle_log,json=battleLog" json:"battle_log,omitempty"`
-	BattleId       string                   `protobuf:"bytes,3,opt,name=battle_id,json=battleId" json:"battle_id,omitempty"`
-	ActiveDefender *BattlePokemonInfo       `protobuf:"bytes,4,opt,name=active_defender,json=activeDefender" json:"active_defender,omitempty"`
-	ActiveAttacker *BattlePokemonInfo       `protobuf:"bytes,5,opt,name=active_attacker,json=activeAttacker" json:"active_attacker,omitempty"`
-}
-
-func (m *AttackGymResponse) Reset()                    { *m = AttackGymResponse{} }
-func (m *AttackGymResponse) String() string            { return proto.CompactTextString(m) }
-func (*AttackGymResponse) ProtoMessage()               {}
-func (*AttackGymResponse) Descriptor() ([]byte, []int) { return fileDescriptor15, []int{1} }
-
-func (m *AttackGymResponse) GetBattleLog() *BattleLog {
-	if m != nil {
-		return m.BattleLog
-	}
-	return nil
-}
-
-func (m *AttackGymResponse) GetActiveDefender() *BattlePokemonInfo {
-	if m != nil {
-		return m.ActiveDefender
-	}
-	return nil
-}
-
-func (m *AttackGymResponse) GetActiveAttacker() *BattlePokemonInfo {
-	if m != nil {
-		return m.ActiveAttacker
-	}
-	return nil
-}
-
-type CatchPokemonResponse struct {
-	Status            CatchPokemonResponse_CatchStatus `protobuf:"varint,1,opt,name=status,enum=POGOProtos.Networking.Responses.CatchPokemonResponse_CatchStatus" json:"status,omitempty"`
-	MissPercent       float64                          `protobuf:"fixed64,2,opt,name=miss_percent,json=missPercent" json:"miss_percent,omitempty"`
-	CapturedPokemonId uint64                           `protobuf:"fixed64,3,opt,name=captured_pokemon_id,json=capturedPokemonId" json:"captured_pokemon_id,omitempty"`
-	CaptureAward      *CaptureAward                    `protobuf:"bytes,4,opt,name=capture_award,json=captureAward" json:"capture_award,omitempty"`
-}
-
-func (m *CatchPokemonResponse) Reset()                    { *m = CatchPokemonResponse{} }
-func (m *CatchPokemonResponse) String() string            { return proto.CompactTextString(m) }
-func (*CatchPokemonResponse) ProtoMessage()               {}
-func (*CatchPokemonResponse) Descriptor() ([]byte, []int) { return fileDescriptor15, []int{2} }
-
-func (m *CatchPokemonResponse) GetCaptureAward() *CaptureAward {
-	if m != nil {
-		return m.CaptureAward
-	}
-	return nil
-}
-
-type CheckAwardedBadgesResponse struct {
-	Success            bool        `protobuf:"varint,1,opt,name=success" json:"success,omitempty"`
-	AwardedBadges      []BadgeType `protobuf:"varint,2,rep,name=awarded_badges,json=awardedBadges,enum=POGOProtos.Enums.BadgeType" json:"awarded_badges,omitempty"`
-	AwardedBadgeLevels []int32     `protobuf:"varint,3,rep,name=awarded_badge_levels,json=awardedBadgeLevels" json:"awarded_badge_levels,omitempty"`
-}
-
-func (m *CheckAwardedBadgesResponse) Reset()                    { *m = CheckAwardedBadgesResponse{} }
-func (m *CheckAwardedBadgesResponse) String() string            { return proto.CompactTextString(m) }
-func (*CheckAwardedBadgesResponse) ProtoMessage()               {}
-func (*CheckAwardedBadgesResponse) Descriptor() ([]byte, []int) { return fileDescriptor15, []int{3} }
+func (*AddFortModifierResponse) Descriptor() ([]byte, []int) { return fileDescriptor2, []int{0} }
 
 type CheckCodenameAvailableResponse struct {
 	Codename     string                                `protobuf:"bytes,1,opt,name=codename" json:"codename,omitempty"`
@@ -1457,19 +1389,126 @@ type CheckCodenameAvailableResponse struct {
 func (m *CheckCodenameAvailableResponse) Reset()                    { *m = CheckCodenameAvailableResponse{} }
 func (m *CheckCodenameAvailableResponse) String() string            { return proto.CompactTextString(m) }
 func (*CheckCodenameAvailableResponse) ProtoMessage()               {}
-func (*CheckCodenameAvailableResponse) Descriptor() ([]byte, []int) { return fileDescriptor15, []int{4} }
+func (*CheckCodenameAvailableResponse) Descriptor() ([]byte, []int) { return fileDescriptor2, []int{1} }
 
-type ClaimCodenameResponse struct {
-	Codename     string                       `protobuf:"bytes,1,opt,name=codename" json:"codename,omitempty"`
-	UserMessage  string                       `protobuf:"bytes,2,opt,name=user_message,json=userMessage" json:"user_message,omitempty"`
-	IsAssignable bool                         `protobuf:"varint,3,opt,name=is_assignable,json=isAssignable" json:"is_assignable,omitempty"`
-	Status       ClaimCodenameResponse_Status `protobuf:"varint,4,opt,name=status,enum=POGOProtos.Networking.Responses.ClaimCodenameResponse_Status" json:"status,omitempty"`
+type UseItemReviveResponse struct {
+	Result  UseItemReviveResponse_Result `protobuf:"varint,1,opt,name=result,enum=POGOProtos.Networking.Responses.UseItemReviveResponse_Result" json:"result,omitempty"`
+	Stamina int32                        `protobuf:"varint,2,opt,name=stamina" json:"stamina,omitempty"`
 }
 
-func (m *ClaimCodenameResponse) Reset()                    { *m = ClaimCodenameResponse{} }
-func (m *ClaimCodenameResponse) String() string            { return proto.CompactTextString(m) }
-func (*ClaimCodenameResponse) ProtoMessage()               {}
-func (*ClaimCodenameResponse) Descriptor() ([]byte, []int) { return fileDescriptor15, []int{5} }
+func (m *UseItemReviveResponse) Reset()                    { *m = UseItemReviveResponse{} }
+func (m *UseItemReviveResponse) String() string            { return proto.CompactTextString(m) }
+func (*UseItemReviveResponse) ProtoMessage()               {}
+func (*UseItemReviveResponse) Descriptor() ([]byte, []int) { return fileDescriptor2, []int{2} }
+
+type RecycleInventoryItemResponse struct {
+	Result   RecycleInventoryItemResponse_Result `protobuf:"varint,1,opt,name=result,enum=POGOProtos.Networking.Responses.RecycleInventoryItemResponse_Result" json:"result,omitempty"`
+	NewCount int32                               `protobuf:"varint,2,opt,name=new_count,json=newCount" json:"new_count,omitempty"`
+}
+
+func (m *RecycleInventoryItemResponse) Reset()                    { *m = RecycleInventoryItemResponse{} }
+func (m *RecycleInventoryItemResponse) String() string            { return proto.CompactTextString(m) }
+func (*RecycleInventoryItemResponse) ProtoMessage()               {}
+func (*RecycleInventoryItemResponse) Descriptor() ([]byte, []int) { return fileDescriptor2, []int{3} }
+
+type GetSuggestedCodenamesResponse struct {
+	Codenames []string `protobuf:"bytes,1,rep,name=codenames" json:"codenames,omitempty"`
+	Success   bool     `protobuf:"varint,2,opt,name=success" json:"success,omitempty"`
+}
+
+func (m *GetSuggestedCodenamesResponse) Reset()                    { *m = GetSuggestedCodenamesResponse{} }
+func (m *GetSuggestedCodenamesResponse) String() string            { return proto.CompactTextString(m) }
+func (*GetSuggestedCodenamesResponse) ProtoMessage()               {}
+func (*GetSuggestedCodenamesResponse) Descriptor() ([]byte, []int) { return fileDescriptor2, []int{4} }
+
+type SfidaActionLogResponse struct {
+	Result     SfidaActionLogResponse_Result `protobuf:"varint,1,opt,name=result,enum=POGOProtos.Networking.Responses.SfidaActionLogResponse_Result" json:"result,omitempty"`
+	LogEntries []*ActionLogEntry             `protobuf:"bytes,2,rep,name=log_entries,json=logEntries" json:"log_entries,omitempty"`
+}
+
+func (m *SfidaActionLogResponse) Reset()                    { *m = SfidaActionLogResponse{} }
+func (m *SfidaActionLogResponse) String() string            { return proto.CompactTextString(m) }
+func (*SfidaActionLogResponse) ProtoMessage()               {}
+func (*SfidaActionLogResponse) Descriptor() ([]byte, []int) { return fileDescriptor2, []int{5} }
+
+func (m *SfidaActionLogResponse) GetLogEntries() []*ActionLogEntry {
+	if m != nil {
+		return m.LogEntries
+	}
+	return nil
+}
+
+type GetIncensePokemonResponse struct {
+	Result               GetIncensePokemonResponse_Result `protobuf:"varint,1,opt,name=result,enum=POGOProtos.Networking.Responses.GetIncensePokemonResponse_Result" json:"result,omitempty"`
+	PokemonId            PokemonId                        `protobuf:"varint,2,opt,name=pokemon_id,json=pokemonId,enum=POGOProtos.Enums.PokemonId" json:"pokemon_id,omitempty"`
+	Latitude             float64                          `protobuf:"fixed64,3,opt,name=latitude" json:"latitude,omitempty"`
+	Longitude            float64                          `protobuf:"fixed64,4,opt,name=longitude" json:"longitude,omitempty"`
+	EncounterLocation    string                           `protobuf:"bytes,5,opt,name=encounter_location,json=encounterLocation" json:"encounter_location,omitempty"`
+	EncounterId          uint64                           `protobuf:"fixed64,6,opt,name=encounter_id,json=encounterId" json:"encounter_id,omitempty"`
+	DisappearTimestampMs int64                            `protobuf:"varint,7,opt,name=disappear_timestamp_ms,json=disappearTimestampMs" json:"disappear_timestamp_ms,omitempty"`
+}
+
+func (m *GetIncensePokemonResponse) Reset()                    { *m = GetIncensePokemonResponse{} }
+func (m *GetIncensePokemonResponse) String() string            { return proto.CompactTextString(m) }
+func (*GetIncensePokemonResponse) ProtoMessage()               {}
+func (*GetIncensePokemonResponse) Descriptor() ([]byte, []int) { return fileDescriptor2, []int{6} }
+
+type GetAssetDigestResponse struct {
+	Digest      []*AssetDigestEntry `protobuf:"bytes,1,rep,name=digest" json:"digest,omitempty"`
+	TimestampMs uint64              `protobuf:"varint,2,opt,name=timestamp_ms,json=timestampMs" json:"timestamp_ms,omitempty"`
+}
+
+func (m *GetAssetDigestResponse) Reset()                    { *m = GetAssetDigestResponse{} }
+func (m *GetAssetDigestResponse) String() string            { return proto.CompactTextString(m) }
+func (*GetAssetDigestResponse) ProtoMessage()               {}
+func (*GetAssetDigestResponse) Descriptor() ([]byte, []int) { return fileDescriptor2, []int{7} }
+
+func (m *GetAssetDigestResponse) GetDigest() []*AssetDigestEntry {
+	if m != nil {
+		return m.Digest
+	}
+	return nil
+}
+
+type GetHatchedEggsResponse struct {
+	Success           bool     `protobuf:"varint,1,opt,name=success" json:"success,omitempty"`
+	PokemonId         []uint64 `protobuf:"fixed64,2,rep,packed,name=pokemon_id,json=pokemonId" json:"pokemon_id,omitempty"`
+	ExperienceAwarded []int32  `protobuf:"varint,3,rep,name=experience_awarded,json=experienceAwarded" json:"experience_awarded,omitempty"`
+	CandyAwarded      []int32  `protobuf:"varint,4,rep,name=candy_awarded,json=candyAwarded" json:"candy_awarded,omitempty"`
+	StardustAwarded   []int32  `protobuf:"varint,5,rep,name=stardust_awarded,json=stardustAwarded" json:"stardust_awarded,omitempty"`
+}
+
+func (m *GetHatchedEggsResponse) Reset()                    { *m = GetHatchedEggsResponse{} }
+func (m *GetHatchedEggsResponse) String() string            { return proto.CompactTextString(m) }
+func (*GetHatchedEggsResponse) ProtoMessage()               {}
+func (*GetHatchedEggsResponse) Descriptor() ([]byte, []int) { return fileDescriptor2, []int{8} }
+
+type ReleasePokemonResponse struct {
+	Result       ReleasePokemonResponse_Result `protobuf:"varint,1,opt,name=result,enum=POGOProtos.Networking.Responses.ReleasePokemonResponse_Result" json:"result,omitempty"`
+	CandyAwarded int32                         `protobuf:"varint,2,opt,name=candy_awarded,json=candyAwarded" json:"candy_awarded,omitempty"`
+}
+
+func (m *ReleasePokemonResponse) Reset()                    { *m = ReleasePokemonResponse{} }
+func (m *ReleasePokemonResponse) String() string            { return proto.CompactTextString(m) }
+func (*ReleasePokemonResponse) ProtoMessage()               {}
+func (*ReleasePokemonResponse) Descriptor() ([]byte, []int) { return fileDescriptor2, []int{9} }
+
+type UseIncenseResponse struct {
+	Result         UseIncenseResponse_Result `protobuf:"varint,1,opt,name=result,enum=POGOProtos.Networking.Responses.UseIncenseResponse_Result" json:"result,omitempty"`
+	AppliedIncense *AppliedItem              `protobuf:"bytes,2,opt,name=applied_incense,json=appliedIncense" json:"applied_incense,omitempty"`
+}
+
+func (m *UseIncenseResponse) Reset()                    { *m = UseIncenseResponse{} }
+func (m *UseIncenseResponse) String() string            { return proto.CompactTextString(m) }
+func (*UseIncenseResponse) ProtoMessage()               {}
+func (*UseIncenseResponse) Descriptor() ([]byte, []int) { return fileDescriptor2, []int{10} }
+
+func (m *UseIncenseResponse) GetAppliedIncense() *AppliedItem {
+	if m != nil {
+		return m.AppliedIncense
+	}
+	return nil
+}
 
 type CollectDailyBonusResponse struct {
 	Result CollectDailyBonusResponse_Result `protobuf:"varint,1,opt,name=result,enum=POGOProtos.Networking.Responses.CollectDailyBonusResponse_Result" json:"result,omitempty"`
@@ -1478,7 +1517,162 @@ type CollectDailyBonusResponse struct {
 func (m *CollectDailyBonusResponse) Reset()                    { *m = CollectDailyBonusResponse{} }
 func (m *CollectDailyBonusResponse) String() string            { return proto.CompactTextString(m) }
 func (*CollectDailyBonusResponse) ProtoMessage()               {}
-func (*CollectDailyBonusResponse) Descriptor() ([]byte, []int) { return fileDescriptor15, []int{6} }
+func (*CollectDailyBonusResponse) Descriptor() ([]byte, []int) { return fileDescriptor2, []int{11} }
+
+type GetDownloadUrlsResponse struct {
+	DownloadUrls []*DownloadUrlEntry `protobuf:"bytes,1,rep,name=download_urls,json=downloadUrls" json:"download_urls,omitempty"`
+}
+
+func (m *GetDownloadUrlsResponse) Reset()                    { *m = GetDownloadUrlsResponse{} }
+func (m *GetDownloadUrlsResponse) String() string            { return proto.CompactTextString(m) }
+func (*GetDownloadUrlsResponse) ProtoMessage()               {}
+func (*GetDownloadUrlsResponse) Descriptor() ([]byte, []int) { return fileDescriptor2, []int{12} }
+
+func (m *GetDownloadUrlsResponse) GetDownloadUrls() []*DownloadUrlEntry {
+	if m != nil {
+		return m.DownloadUrls
+	}
+	return nil
+}
+
+type DownloadRemoteConfigVersionResponse struct {
+	Result                   DownloadRemoteConfigVersionResponse_Result `protobuf:"varint,1,opt,name=result,enum=POGOProtos.Networking.Responses.DownloadRemoteConfigVersionResponse_Result" json:"result,omitempty"`
+	ItemTemplatesTimestampMs uint64                                     `protobuf:"varint,2,opt,name=item_templates_timestamp_ms,json=itemTemplatesTimestampMs" json:"item_templates_timestamp_ms,omitempty"`
+	AssetDigestTimestampMs   uint64                                     `protobuf:"varint,3,opt,name=asset_digest_timestamp_ms,json=assetDigestTimestampMs" json:"asset_digest_timestamp_ms,omitempty"`
+}
+
+func (m *DownloadRemoteConfigVersionResponse) Reset()         { *m = DownloadRemoteConfigVersionResponse{} }
+func (m *DownloadRemoteConfigVersionResponse) String() string { return proto.CompactTextString(m) }
+func (*DownloadRemoteConfigVersionResponse) ProtoMessage()    {}
+func (*DownloadRemoteConfigVersionResponse) Descriptor() ([]byte, []int) {
+	return fileDescriptor2, []int{13}
+}
+
+type EncounterTutorialCompleteResponse struct {
+	Result       EncounterTutorialCompleteResponse_Result `protobuf:"varint,1,opt,name=result,enum=POGOProtos.Networking.Responses.EncounterTutorialCompleteResponse_Result" json:"result,omitempty"`
+	PokemonData  *PokemonData                             `protobuf:"bytes,2,opt,name=pokemon_data,json=pokemonData" json:"pokemon_data,omitempty"`
+	CaptureAward *CaptureAward                            `protobuf:"bytes,3,opt,name=capture_award,json=captureAward" json:"capture_award,omitempty"`
+}
+
+func (m *EncounterTutorialCompleteResponse) Reset()         { *m = EncounterTutorialCompleteResponse{} }
+func (m *EncounterTutorialCompleteResponse) String() string { return proto.CompactTextString(m) }
+func (*EncounterTutorialCompleteResponse) ProtoMessage()    {}
+func (*EncounterTutorialCompleteResponse) Descriptor() ([]byte, []int) {
+	return fileDescriptor2, []int{14}
+}
+
+func (m *EncounterTutorialCompleteResponse) GetPokemonData() *PokemonData {
+	if m != nil {
+		return m.PokemonData
+	}
+	return nil
+}
+
+func (m *EncounterTutorialCompleteResponse) GetCaptureAward() *CaptureAward {
+	if m != nil {
+		return m.CaptureAward
+	}
+	return nil
+}
+
+type SetFavoritePokemonResponse struct {
+	Result SetFavoritePokemonResponse_Result `protobuf:"varint,1,opt,name=result,enum=POGOProtos.Networking.Responses.SetFavoritePokemonResponse_Result" json:"result,omitempty"`
+}
+
+func (m *SetFavoritePokemonResponse) Reset()                    { *m = SetFavoritePokemonResponse{} }
+func (m *SetFavoritePokemonResponse) String() string            { return proto.CompactTextString(m) }
+func (*SetFavoritePokemonResponse) ProtoMessage()               {}
+func (*SetFavoritePokemonResponse) Descriptor() ([]byte, []int) { return fileDescriptor2, []int{15} }
+
+type NicknamePokemonResponse struct {
+	Result NicknamePokemonResponse_Result `protobuf:"varint,1,opt,name=result,enum=POGOProtos.Networking.Responses.NicknamePokemonResponse_Result" json:"result,omitempty"`
+}
+
+func (m *NicknamePokemonResponse) Reset()                    { *m = NicknamePokemonResponse{} }
+func (m *NicknamePokemonResponse) String() string            { return proto.CompactTextString(m) }
+func (*NicknamePokemonResponse) ProtoMessage()               {}
+func (*NicknamePokemonResponse) Descriptor() ([]byte, []int) { return fileDescriptor2, []int{16} }
+
+type EchoResponse struct {
+	Context string `protobuf:"bytes,1,opt,name=context" json:"context,omitempty"`
+}
+
+func (m *EchoResponse) Reset()                    { *m = EchoResponse{} }
+func (m *EchoResponse) String() string            { return proto.CompactTextString(m) }
+func (*EchoResponse) ProtoMessage()               {}
+func (*EchoResponse) Descriptor() ([]byte, []int) { return fileDescriptor2, []int{17} }
+
+type UseItemXpBoostResponse struct {
+	Result       UseItemXpBoostResponse_Result `protobuf:"varint,1,opt,name=result,enum=POGOProtos.Networking.Responses.UseItemXpBoostResponse_Result" json:"result,omitempty"`
+	AppliedItems *AppliedItems                 `protobuf:"bytes,2,opt,name=applied_items,json=appliedItems" json:"applied_items,omitempty"`
+}
+
+func (m *UseItemXpBoostResponse) Reset()                    { *m = UseItemXpBoostResponse{} }
+func (m *UseItemXpBoostResponse) String() string            { return proto.CompactTextString(m) }
+func (*UseItemXpBoostResponse) ProtoMessage()               {}
+func (*UseItemXpBoostResponse) Descriptor() ([]byte, []int) { return fileDescriptor2, []int{18} }
+
+func (m *UseItemXpBoostResponse) GetAppliedItems() *AppliedItems {
+	if m != nil {
+		return m.AppliedItems
+	}
+	return nil
+}
+
+type FortRecallPokemonResponse struct {
+	Result      FortRecallPokemonResponse_Result `protobuf:"varint,1,opt,name=result,enum=POGOProtos.Networking.Responses.FortRecallPokemonResponse_Result" json:"result,omitempty"`
+	FortDetails *FortDetailsResponse             `protobuf:"bytes,2,opt,name=fort_details,json=fortDetails" json:"fort_details,omitempty"`
+}
+
+func (m *FortRecallPokemonResponse) Reset()                    { *m = FortRecallPokemonResponse{} }
+func (m *FortRecallPokemonResponse) String() string            { return proto.CompactTextString(m) }
+func (*FortRecallPokemonResponse) ProtoMessage()               {}
+func (*FortRecallPokemonResponse) Descriptor() ([]byte, []int) { return fileDescriptor2, []int{19} }
+
+func (m *FortRecallPokemonResponse) GetFortDetails() *FortDetailsResponse {
+	if m != nil {
+		return m.FortDetails
+	}
+	return nil
+}
+
+type GetPlayerProfileResponse struct {
+	Result    GetPlayerProfileResponse_Result `protobuf:"varint,1,opt,name=result,enum=POGOProtos.Networking.Responses.GetPlayerProfileResponse_Result" json:"result,omitempty"`
+	StartTime int64                           `protobuf:"varint,2,opt,name=start_time,json=startTime" json:"start_time,omitempty"`
+	Badges    []*PlayerBadge                  `protobuf:"bytes,3,rep,name=badges" json:"badges,omitempty"`
+}
+
+func (m *GetPlayerProfileResponse) Reset()                    { *m = GetPlayerProfileResponse{} }
+func (m *GetPlayerProfileResponse) String() string            { return proto.CompactTextString(m) }
+func (*GetPlayerProfileResponse) ProtoMessage()               {}
+func (*GetPlayerProfileResponse) Descriptor() ([]byte, []int) { return fileDescriptor2, []int{20} }
+
+func (m *GetPlayerProfileResponse) GetBadges() []*PlayerBadge {
+	if m != nil {
+		return m.Badges
+	}
+	return nil
+}
+
+type GetGymDetailsResponse struct {
+	GymState    *GymState                    `protobuf:"bytes,1,opt,name=gym_state,json=gymState" json:"gym_state,omitempty"`
+	Name        string                       `protobuf:"bytes,2,opt,name=name" json:"name,omitempty"`
+	Urls        []string                     `protobuf:"bytes,3,rep,name=urls" json:"urls,omitempty"`
+	Result      GetGymDetailsResponse_Result `protobuf:"varint,4,opt,name=result,enum=POGOProtos.Networking.Responses.GetGymDetailsResponse_Result" json:"result,omitempty"`
+	Description string                       `protobuf:"bytes,5,opt,name=description" json:"description,omitempty"`
+}
+
+func (m *GetGymDetailsResponse) Reset()                    { *m = GetGymDetailsResponse{} }
+func (m *GetGymDetailsResponse) String() string            { return proto.CompactTextString(m) }
+func (*GetGymDetailsResponse) ProtoMessage()               {}
+func (*GetGymDetailsResponse) Descriptor() ([]byte, []int) { return fileDescriptor2, []int{21} }
+
+func (m *GetGymDetailsResponse) GetGymState() *GymState {
+	if m != nil {
+		return m.GymState
+	}
+	return nil
+}
 
 type CollectDailyDefenderBonusResponse struct {
 	Result          CollectDailyDefenderBonusResponse_Result `protobuf:"varint,1,opt,name=result,enum=POGOProtos.Networking.Responses.CollectDailyDefenderBonusResponse_Result" json:"result,omitempty"`
@@ -1491,30 +1685,24 @@ func (m *CollectDailyDefenderBonusResponse) Reset()         { *m = CollectDailyD
 func (m *CollectDailyDefenderBonusResponse) String() string { return proto.CompactTextString(m) }
 func (*CollectDailyDefenderBonusResponse) ProtoMessage()    {}
 func (*CollectDailyDefenderBonusResponse) Descriptor() ([]byte, []int) {
-	return fileDescriptor15, []int{7}
+	return fileDescriptor2, []int{22}
 }
 
-type DiskEncounterResponse struct {
-	Result             DiskEncounterResponse_Result `protobuf:"varint,1,opt,name=result,enum=POGOProtos.Networking.Responses.DiskEncounterResponse_Result" json:"result,omitempty"`
-	PokemonData        *PokemonData                 `protobuf:"bytes,2,opt,name=pokemon_data,json=pokemonData" json:"pokemon_data,omitempty"`
-	CaptureProbability *CaptureProbability          `protobuf:"bytes,3,opt,name=capture_probability,json=captureProbability" json:"capture_probability,omitempty"`
+type CatchPokemonResponse struct {
+	Status            CatchPokemonResponse_CatchStatus `protobuf:"varint,1,opt,name=status,enum=POGOProtos.Networking.Responses.CatchPokemonResponse_CatchStatus" json:"status,omitempty"`
+	MissPercent       float64                          `protobuf:"fixed64,2,opt,name=miss_percent,json=missPercent" json:"miss_percent,omitempty"`
+	CapturedPokemonId uint64                           `protobuf:"fixed64,3,opt,name=captured_pokemon_id,json=capturedPokemonId" json:"captured_pokemon_id,omitempty"`
+	CaptureAward      *CaptureAward                    `protobuf:"bytes,4,opt,name=capture_award,json=captureAward" json:"capture_award,omitempty"`
 }
 
-func (m *DiskEncounterResponse) Reset()                    { *m = DiskEncounterResponse{} }
-func (m *DiskEncounterResponse) String() string            { return proto.CompactTextString(m) }
-func (*DiskEncounterResponse) ProtoMessage()               {}
-func (*DiskEncounterResponse) Descriptor() ([]byte, []int) { return fileDescriptor15, []int{8} }
+func (m *CatchPokemonResponse) Reset()                    { *m = CatchPokemonResponse{} }
+func (m *CatchPokemonResponse) String() string            { return proto.CompactTextString(m) }
+func (*CatchPokemonResponse) ProtoMessage()               {}
+func (*CatchPokemonResponse) Descriptor() ([]byte, []int) { return fileDescriptor2, []int{23} }
 
-func (m *DiskEncounterResponse) GetPokemonData() *PokemonData {
+func (m *CatchPokemonResponse) GetCaptureAward() *CaptureAward {
 	if m != nil {
-		return m.PokemonData
-	}
-	return nil
-}
-
-func (m *DiskEncounterResponse) GetCaptureProbability() *CaptureProbability {
-	if m != nil {
-		return m.CaptureProbability
+		return m.CaptureAward
 	}
 	return nil
 }
@@ -1528,7 +1716,7 @@ type DownloadItemTemplatesResponse struct {
 func (m *DownloadItemTemplatesResponse) Reset()                    { *m = DownloadItemTemplatesResponse{} }
 func (m *DownloadItemTemplatesResponse) String() string            { return proto.CompactTextString(m) }
 func (*DownloadItemTemplatesResponse) ProtoMessage()               {}
-func (*DownloadItemTemplatesResponse) Descriptor() ([]byte, []int) { return fileDescriptor15, []int{9} }
+func (*DownloadItemTemplatesResponse) Descriptor() ([]byte, []int) { return fileDescriptor2, []int{24} }
 
 func (m *DownloadItemTemplatesResponse) GetItemTemplates() []*DownloadItemTemplatesResponse_ItemTemplate {
 	if m != nil {
@@ -1564,7 +1752,7 @@ func (m *DownloadItemTemplatesResponse_ItemTemplate) String() string {
 }
 func (*DownloadItemTemplatesResponse_ItemTemplate) ProtoMessage() {}
 func (*DownloadItemTemplatesResponse_ItemTemplate) Descriptor() ([]byte, []int) {
-	return fileDescriptor15, []int{9, 0}
+	return fileDescriptor2, []int{24, 0}
 }
 
 func (m *DownloadItemTemplatesResponse_ItemTemplate) GetPokemonSettings() *PokemonSettings {
@@ -1672,164 +1860,19 @@ func (m *DownloadItemTemplatesResponse_ItemTemplate) GetEquippedBadges() *Equipp
 	return nil
 }
 
-type DownloadRemoteConfigVersionResponse struct {
-	Result                   DownloadRemoteConfigVersionResponse_Result `protobuf:"varint,1,opt,name=result,enum=POGOProtos.Networking.Responses.DownloadRemoteConfigVersionResponse_Result" json:"result,omitempty"`
-	ItemTemplatesTimestampMs uint64                                     `protobuf:"varint,2,opt,name=item_templates_timestamp_ms,json=itemTemplatesTimestampMs" json:"item_templates_timestamp_ms,omitempty"`
-	AssetDigestTimestampMs   uint64                                     `protobuf:"varint,3,opt,name=asset_digest_timestamp_ms,json=assetDigestTimestampMs" json:"asset_digest_timestamp_ms,omitempty"`
+type SetContactSettingsResponse struct {
+	Status     SetContactSettingsResponse_Status `protobuf:"varint,1,opt,name=status,enum=POGOProtos.Networking.Responses.SetContactSettingsResponse_Status" json:"status,omitempty"`
+	PlayerData *PlayerData                       `protobuf:"bytes,2,opt,name=player_data,json=playerData" json:"player_data,omitempty"`
 }
 
-func (m *DownloadRemoteConfigVersionResponse) Reset()         { *m = DownloadRemoteConfigVersionResponse{} }
-func (m *DownloadRemoteConfigVersionResponse) String() string { return proto.CompactTextString(m) }
-func (*DownloadRemoteConfigVersionResponse) ProtoMessage()    {}
-func (*DownloadRemoteConfigVersionResponse) Descriptor() ([]byte, []int) {
-	return fileDescriptor15, []int{10}
-}
+func (m *SetContactSettingsResponse) Reset()                    { *m = SetContactSettingsResponse{} }
+func (m *SetContactSettingsResponse) String() string            { return proto.CompactTextString(m) }
+func (*SetContactSettingsResponse) ProtoMessage()               {}
+func (*SetContactSettingsResponse) Descriptor() ([]byte, []int) { return fileDescriptor2, []int{25} }
 
-type DownloadSettingsResponse struct {
-	Error    string          `protobuf:"bytes,1,opt,name=error" json:"error,omitempty"`
-	Hash     string          `protobuf:"bytes,2,opt,name=hash" json:"hash,omitempty"`
-	Settings *GlobalSettings `protobuf:"bytes,3,opt,name=settings" json:"settings,omitempty"`
-}
-
-func (m *DownloadSettingsResponse) Reset()                    { *m = DownloadSettingsResponse{} }
-func (m *DownloadSettingsResponse) String() string            { return proto.CompactTextString(m) }
-func (*DownloadSettingsResponse) ProtoMessage()               {}
-func (*DownloadSettingsResponse) Descriptor() ([]byte, []int) { return fileDescriptor15, []int{11} }
-
-func (m *DownloadSettingsResponse) GetSettings() *GlobalSettings {
+func (m *SetContactSettingsResponse) GetPlayerData() *PlayerData {
 	if m != nil {
-		return m.Settings
-	}
-	return nil
-}
-
-type EchoResponse struct {
-	Context string `protobuf:"bytes,1,opt,name=context" json:"context,omitempty"`
-}
-
-func (m *EchoResponse) Reset()                    { *m = EchoResponse{} }
-func (m *EchoResponse) String() string            { return proto.CompactTextString(m) }
-func (*EchoResponse) ProtoMessage()               {}
-func (*EchoResponse) Descriptor() ([]byte, []int) { return fileDescriptor15, []int{12} }
-
-type EncounterResponse struct {
-	WildPokemon        *WildPokemon                 `protobuf:"bytes,1,opt,name=wild_pokemon,json=wildPokemon" json:"wild_pokemon,omitempty"`
-	Background         EncounterResponse_Background `protobuf:"varint,2,opt,name=background,enum=POGOProtos.Networking.Responses.EncounterResponse_Background" json:"background,omitempty"`
-	Status             EncounterResponse_Status     `protobuf:"varint,3,opt,name=status,enum=POGOProtos.Networking.Responses.EncounterResponse_Status" json:"status,omitempty"`
-	CaptureProbability *CaptureProbability          `protobuf:"bytes,4,opt,name=capture_probability,json=captureProbability" json:"capture_probability,omitempty"`
-}
-
-func (m *EncounterResponse) Reset()                    { *m = EncounterResponse{} }
-func (m *EncounterResponse) String() string            { return proto.CompactTextString(m) }
-func (*EncounterResponse) ProtoMessage()               {}
-func (*EncounterResponse) Descriptor() ([]byte, []int) { return fileDescriptor15, []int{13} }
-
-func (m *EncounterResponse) GetWildPokemon() *WildPokemon {
-	if m != nil {
-		return m.WildPokemon
-	}
-	return nil
-}
-
-func (m *EncounterResponse) GetCaptureProbability() *CaptureProbability {
-	if m != nil {
-		return m.CaptureProbability
-	}
-	return nil
-}
-
-type EncounterTutorialCompleteResponse struct {
-	Result       EncounterTutorialCompleteResponse_Result `protobuf:"varint,1,opt,name=result,enum=POGOProtos.Networking.Responses.EncounterTutorialCompleteResponse_Result" json:"result,omitempty"`
-	PokemonData  *PokemonData                             `protobuf:"bytes,2,opt,name=pokemon_data,json=pokemonData" json:"pokemon_data,omitempty"`
-	CaptureAward *CaptureAward                            `protobuf:"bytes,3,opt,name=capture_award,json=captureAward" json:"capture_award,omitempty"`
-}
-
-func (m *EncounterTutorialCompleteResponse) Reset()         { *m = EncounterTutorialCompleteResponse{} }
-func (m *EncounterTutorialCompleteResponse) String() string { return proto.CompactTextString(m) }
-func (*EncounterTutorialCompleteResponse) ProtoMessage()    {}
-func (*EncounterTutorialCompleteResponse) Descriptor() ([]byte, []int) {
-	return fileDescriptor15, []int{14}
-}
-
-func (m *EncounterTutorialCompleteResponse) GetPokemonData() *PokemonData {
-	if m != nil {
-		return m.PokemonData
-	}
-	return nil
-}
-
-func (m *EncounterTutorialCompleteResponse) GetCaptureAward() *CaptureAward {
-	if m != nil {
-		return m.CaptureAward
-	}
-	return nil
-}
-
-type EquipBadgeResponse struct {
-	Result   EquipBadgeResponse_Result `protobuf:"varint,1,opt,name=result,enum=POGOProtos.Networking.Responses.EquipBadgeResponse_Result" json:"result,omitempty"`
-	Equipped *EquippedBadge            `protobuf:"bytes,2,opt,name=equipped" json:"equipped,omitempty"`
-}
-
-func (m *EquipBadgeResponse) Reset()                    { *m = EquipBadgeResponse{} }
-func (m *EquipBadgeResponse) String() string            { return proto.CompactTextString(m) }
-func (*EquipBadgeResponse) ProtoMessage()               {}
-func (*EquipBadgeResponse) Descriptor() ([]byte, []int) { return fileDescriptor15, []int{15} }
-
-func (m *EquipBadgeResponse) GetEquipped() *EquippedBadge {
-	if m != nil {
-		return m.Equipped
-	}
-	return nil
-}
-
-type EvolvePokemonResponse struct {
-	Result             EvolvePokemonResponse_Result `protobuf:"varint,1,opt,name=result,enum=POGOProtos.Networking.Responses.EvolvePokemonResponse_Result" json:"result,omitempty"`
-	EvolvedPokemonData *PokemonData                 `protobuf:"bytes,2,opt,name=evolved_pokemon_data,json=evolvedPokemonData" json:"evolved_pokemon_data,omitempty"`
-	ExperienceAwarded  int32                        `protobuf:"varint,3,opt,name=experience_awarded,json=experienceAwarded" json:"experience_awarded,omitempty"`
-	CandyAwarded       int32                        `protobuf:"varint,4,opt,name=candy_awarded,json=candyAwarded" json:"candy_awarded,omitempty"`
-}
-
-func (m *EvolvePokemonResponse) Reset()                    { *m = EvolvePokemonResponse{} }
-func (m *EvolvePokemonResponse) String() string            { return proto.CompactTextString(m) }
-func (*EvolvePokemonResponse) ProtoMessage()               {}
-func (*EvolvePokemonResponse) Descriptor() ([]byte, []int) { return fileDescriptor15, []int{16} }
-
-func (m *EvolvePokemonResponse) GetEvolvedPokemonData() *PokemonData {
-	if m != nil {
-		return m.EvolvedPokemonData
-	}
-	return nil
-}
-
-type FortDeployPokemonResponse struct {
-	Result      FortDeployPokemonResponse_Result `protobuf:"varint,1,opt,name=result,enum=POGOProtos.Networking.Responses.FortDeployPokemonResponse_Result" json:"result,omitempty"`
-	FortDetails *FortDetailsResponse             `protobuf:"bytes,2,opt,name=fort_details,json=fortDetails" json:"fort_details,omitempty"`
-	PokemonData *PokemonData                     `protobuf:"bytes,3,opt,name=pokemon_data,json=pokemonData" json:"pokemon_data,omitempty"`
-	GymState    *GymState                        `protobuf:"bytes,4,opt,name=gym_state,json=gymState" json:"gym_state,omitempty"`
-}
-
-func (m *FortDeployPokemonResponse) Reset()                    { *m = FortDeployPokemonResponse{} }
-func (m *FortDeployPokemonResponse) String() string            { return proto.CompactTextString(m) }
-func (*FortDeployPokemonResponse) ProtoMessage()               {}
-func (*FortDeployPokemonResponse) Descriptor() ([]byte, []int) { return fileDescriptor15, []int{17} }
-
-func (m *FortDeployPokemonResponse) GetFortDetails() *FortDetailsResponse {
-	if m != nil {
-		return m.FortDetails
-	}
-	return nil
-}
-
-func (m *FortDeployPokemonResponse) GetPokemonData() *PokemonData {
-	if m != nil {
-		return m.PokemonData
-	}
-	return nil
-}
-
-func (m *FortDeployPokemonResponse) GetGymState() *GymState {
-	if m != nil {
-		return m.GymState
+		return m.PlayerData
 	}
 	return nil
 }
@@ -1853,7 +1896,7 @@ type FortDetailsResponse struct {
 func (m *FortDetailsResponse) Reset()                    { *m = FortDetailsResponse{} }
 func (m *FortDetailsResponse) String() string            { return proto.CompactTextString(m) }
 func (*FortDetailsResponse) ProtoMessage()               {}
-func (*FortDetailsResponse) Descriptor() ([]byte, []int) { return fileDescriptor15, []int{18} }
+func (*FortDetailsResponse) Descriptor() ([]byte, []int) { return fileDescriptor2, []int{26} }
 
 func (m *FortDetailsResponse) GetPokemonData() *PokemonData {
 	if m != nil {
@@ -1869,19 +1912,151 @@ func (m *FortDetailsResponse) GetModifiers() []*FortModifier {
 	return nil
 }
 
-type FortRecallPokemonResponse struct {
-	Result      FortRecallPokemonResponse_Result `protobuf:"varint,1,opt,name=result,enum=POGOProtos.Networking.Responses.FortRecallPokemonResponse_Result" json:"result,omitempty"`
-	FortDetails *FortDetailsResponse             `protobuf:"bytes,2,opt,name=fort_details,json=fortDetails" json:"fort_details,omitempty"`
+type SetPlayerTeamResponse struct {
+	Status     SetPlayerTeamResponse_Status `protobuf:"varint,1,opt,name=status,enum=POGOProtos.Networking.Responses.SetPlayerTeamResponse_Status" json:"status,omitempty"`
+	PlayerData *PlayerData                  `protobuf:"bytes,2,opt,name=player_data,json=playerData" json:"player_data,omitempty"`
 }
 
-func (m *FortRecallPokemonResponse) Reset()                    { *m = FortRecallPokemonResponse{} }
-func (m *FortRecallPokemonResponse) String() string            { return proto.CompactTextString(m) }
-func (*FortRecallPokemonResponse) ProtoMessage()               {}
-func (*FortRecallPokemonResponse) Descriptor() ([]byte, []int) { return fileDescriptor15, []int{19} }
+func (m *SetPlayerTeamResponse) Reset()                    { *m = SetPlayerTeamResponse{} }
+func (m *SetPlayerTeamResponse) String() string            { return proto.CompactTextString(m) }
+func (*SetPlayerTeamResponse) ProtoMessage()               {}
+func (*SetPlayerTeamResponse) Descriptor() ([]byte, []int) { return fileDescriptor2, []int{27} }
 
-func (m *FortRecallPokemonResponse) GetFortDetails() *FortDetailsResponse {
+func (m *SetPlayerTeamResponse) GetPlayerData() *PlayerData {
 	if m != nil {
-		return m.FortDetails
+		return m.PlayerData
+	}
+	return nil
+}
+
+type UseItemGymResponse struct {
+	Result    UseItemGymResponse_Result `protobuf:"varint,1,opt,name=result,enum=POGOProtos.Networking.Responses.UseItemGymResponse_Result" json:"result,omitempty"`
+	UpdatedGp int64                     `protobuf:"varint,2,opt,name=updated_gp,json=updatedGp" json:"updated_gp,omitempty"`
+}
+
+func (m *UseItemGymResponse) Reset()                    { *m = UseItemGymResponse{} }
+func (m *UseItemGymResponse) String() string            { return proto.CompactTextString(m) }
+func (*UseItemGymResponse) ProtoMessage()               {}
+func (*UseItemGymResponse) Descriptor() ([]byte, []int) { return fileDescriptor2, []int{28} }
+
+type EncounterResponse struct {
+	WildPokemon        *WildPokemon                 `protobuf:"bytes,1,opt,name=wild_pokemon,json=wildPokemon" json:"wild_pokemon,omitempty"`
+	Background         EncounterResponse_Background `protobuf:"varint,2,opt,name=background,enum=POGOProtos.Networking.Responses.EncounterResponse_Background" json:"background,omitempty"`
+	Status             EncounterResponse_Status     `protobuf:"varint,3,opt,name=status,enum=POGOProtos.Networking.Responses.EncounterResponse_Status" json:"status,omitempty"`
+	CaptureProbability *CaptureProbability          `protobuf:"bytes,4,opt,name=capture_probability,json=captureProbability" json:"capture_probability,omitempty"`
+}
+
+func (m *EncounterResponse) Reset()                    { *m = EncounterResponse{} }
+func (m *EncounterResponse) String() string            { return proto.CompactTextString(m) }
+func (*EncounterResponse) ProtoMessage()               {}
+func (*EncounterResponse) Descriptor() ([]byte, []int) { return fileDescriptor2, []int{29} }
+
+func (m *EncounterResponse) GetWildPokemon() *WildPokemon {
+	if m != nil {
+		return m.WildPokemon
+	}
+	return nil
+}
+
+func (m *EncounterResponse) GetCaptureProbability() *CaptureProbability {
+	if m != nil {
+		return m.CaptureProbability
+	}
+	return nil
+}
+
+type ClaimCodenameResponse struct {
+	Codename     string                       `protobuf:"bytes,1,opt,name=codename" json:"codename,omitempty"`
+	UserMessage  string                       `protobuf:"bytes,2,opt,name=user_message,json=userMessage" json:"user_message,omitempty"`
+	IsAssignable bool                         `protobuf:"varint,3,opt,name=is_assignable,json=isAssignable" json:"is_assignable,omitempty"`
+	Status       ClaimCodenameResponse_Status `protobuf:"varint,4,opt,name=status,enum=POGOProtos.Networking.Responses.ClaimCodenameResponse_Status" json:"status,omitempty"`
+}
+
+func (m *ClaimCodenameResponse) Reset()                    { *m = ClaimCodenameResponse{} }
+func (m *ClaimCodenameResponse) String() string            { return proto.CompactTextString(m) }
+func (*ClaimCodenameResponse) ProtoMessage()               {}
+func (*ClaimCodenameResponse) Descriptor() ([]byte, []int) { return fileDescriptor2, []int{30} }
+
+type GetPlayerResponse struct {
+	Success    bool        `protobuf:"varint,1,opt,name=success" json:"success,omitempty"`
+	PlayerData *PlayerData `protobuf:"bytes,2,opt,name=player_data,json=playerData" json:"player_data,omitempty"`
+}
+
+func (m *GetPlayerResponse) Reset()                    { *m = GetPlayerResponse{} }
+func (m *GetPlayerResponse) String() string            { return proto.CompactTextString(m) }
+func (*GetPlayerResponse) ProtoMessage()               {}
+func (*GetPlayerResponse) Descriptor() ([]byte, []int) { return fileDescriptor2, []int{31} }
+
+func (m *GetPlayerResponse) GetPlayerData() *PlayerData {
+	if m != nil {
+		return m.PlayerData
+	}
+	return nil
+}
+
+type DiskEncounterResponse struct {
+	Result             DiskEncounterResponse_Result `protobuf:"varint,1,opt,name=result,enum=POGOProtos.Networking.Responses.DiskEncounterResponse_Result" json:"result,omitempty"`
+	PokemonData        *PokemonData                 `protobuf:"bytes,2,opt,name=pokemon_data,json=pokemonData" json:"pokemon_data,omitempty"`
+	CaptureProbability *CaptureProbability          `protobuf:"bytes,3,opt,name=capture_probability,json=captureProbability" json:"capture_probability,omitempty"`
+}
+
+func (m *DiskEncounterResponse) Reset()                    { *m = DiskEncounterResponse{} }
+func (m *DiskEncounterResponse) String() string            { return proto.CompactTextString(m) }
+func (*DiskEncounterResponse) ProtoMessage()               {}
+func (*DiskEncounterResponse) Descriptor() ([]byte, []int) { return fileDescriptor2, []int{32} }
+
+func (m *DiskEncounterResponse) GetPokemonData() *PokemonData {
+	if m != nil {
+		return m.PokemonData
+	}
+	return nil
+}
+
+func (m *DiskEncounterResponse) GetCaptureProbability() *CaptureProbability {
+	if m != nil {
+		return m.CaptureProbability
+	}
+	return nil
+}
+
+type PlayerUpdateResponse struct {
+	WildPokemons []*WildPokemon `protobuf:"bytes,1,rep,name=wild_pokemons,json=wildPokemons" json:"wild_pokemons,omitempty"`
+	Forts        []*FortData    `protobuf:"bytes,2,rep,name=forts" json:"forts,omitempty"`
+	FortsNearby  int32          `protobuf:"varint,3,opt,name=forts_nearby,json=fortsNearby" json:"forts_nearby,omitempty"`
+}
+
+func (m *PlayerUpdateResponse) Reset()                    { *m = PlayerUpdateResponse{} }
+func (m *PlayerUpdateResponse) String() string            { return proto.CompactTextString(m) }
+func (*PlayerUpdateResponse) ProtoMessage()               {}
+func (*PlayerUpdateResponse) Descriptor() ([]byte, []int) { return fileDescriptor2, []int{33} }
+
+func (m *PlayerUpdateResponse) GetWildPokemons() []*WildPokemon {
+	if m != nil {
+		return m.WildPokemons
+	}
+	return nil
+}
+
+func (m *PlayerUpdateResponse) GetForts() []*FortData {
+	if m != nil {
+		return m.Forts
+	}
+	return nil
+}
+
+type UpgradePokemonResponse struct {
+	Result          UpgradePokemonResponse_Result `protobuf:"varint,1,opt,name=result,enum=POGOProtos.Networking.Responses.UpgradePokemonResponse_Result" json:"result,omitempty"`
+	UpgradedPokemon *PokemonData                  `protobuf:"bytes,2,opt,name=upgraded_pokemon,json=upgradedPokemon" json:"upgraded_pokemon,omitempty"`
+}
+
+func (m *UpgradePokemonResponse) Reset()                    { *m = UpgradePokemonResponse{} }
+func (m *UpgradePokemonResponse) String() string            { return proto.CompactTextString(m) }
+func (*UpgradePokemonResponse) ProtoMessage()               {}
+func (*UpgradePokemonResponse) Descriptor() ([]byte, []int) { return fileDescriptor2, []int{34} }
+
+func (m *UpgradePokemonResponse) GetUpgradedPokemon() *PokemonData {
+	if m != nil {
+		return m.UpgradedPokemon
 	}
 	return nil
 }
@@ -1899,7 +2074,7 @@ type FortSearchResponse struct {
 func (m *FortSearchResponse) Reset()                    { *m = FortSearchResponse{} }
 func (m *FortSearchResponse) String() string            { return proto.CompactTextString(m) }
 func (*FortSearchResponse) ProtoMessage()               {}
-func (*FortSearchResponse) Descriptor() ([]byte, []int) { return fileDescriptor15, []int{20} }
+func (*FortSearchResponse) Descriptor() ([]byte, []int) { return fileDescriptor2, []int{35} }
 
 func (m *FortSearchResponse) GetItemsAwarded() []*ItemAward {
 	if m != nil {
@@ -1911,357 +2086,6 @@ func (m *FortSearchResponse) GetItemsAwarded() []*ItemAward {
 func (m *FortSearchResponse) GetPokemonDataEgg() *PokemonData {
 	if m != nil {
 		return m.PokemonDataEgg
-	}
-	return nil
-}
-
-type GetAssetDigestResponse struct {
-	Digest      []*AssetDigestEntry `protobuf:"bytes,1,rep,name=digest" json:"digest,omitempty"`
-	TimestampMs uint64              `protobuf:"varint,2,opt,name=timestamp_ms,json=timestampMs" json:"timestamp_ms,omitempty"`
-}
-
-func (m *GetAssetDigestResponse) Reset()                    { *m = GetAssetDigestResponse{} }
-func (m *GetAssetDigestResponse) String() string            { return proto.CompactTextString(m) }
-func (*GetAssetDigestResponse) ProtoMessage()               {}
-func (*GetAssetDigestResponse) Descriptor() ([]byte, []int) { return fileDescriptor15, []int{21} }
-
-func (m *GetAssetDigestResponse) GetDigest() []*AssetDigestEntry {
-	if m != nil {
-		return m.Digest
-	}
-	return nil
-}
-
-type GetDownloadUrlsResponse struct {
-	DownloadUrls []*DownloadUrlEntry `protobuf:"bytes,1,rep,name=download_urls,json=downloadUrls" json:"download_urls,omitempty"`
-}
-
-func (m *GetDownloadUrlsResponse) Reset()                    { *m = GetDownloadUrlsResponse{} }
-func (m *GetDownloadUrlsResponse) String() string            { return proto.CompactTextString(m) }
-func (*GetDownloadUrlsResponse) ProtoMessage()               {}
-func (*GetDownloadUrlsResponse) Descriptor() ([]byte, []int) { return fileDescriptor15, []int{22} }
-
-func (m *GetDownloadUrlsResponse) GetDownloadUrls() []*DownloadUrlEntry {
-	if m != nil {
-		return m.DownloadUrls
-	}
-	return nil
-}
-
-type GetGymDetailsResponse struct {
-	GymState    *GymState                    `protobuf:"bytes,1,opt,name=gym_state,json=gymState" json:"gym_state,omitempty"`
-	Name        string                       `protobuf:"bytes,2,opt,name=name" json:"name,omitempty"`
-	Urls        []string                     `protobuf:"bytes,3,rep,name=urls" json:"urls,omitempty"`
-	Result      GetGymDetailsResponse_Result `protobuf:"varint,4,opt,name=result,enum=POGOProtos.Networking.Responses.GetGymDetailsResponse_Result" json:"result,omitempty"`
-	Description string                       `protobuf:"bytes,5,opt,name=description" json:"description,omitempty"`
-}
-
-func (m *GetGymDetailsResponse) Reset()                    { *m = GetGymDetailsResponse{} }
-func (m *GetGymDetailsResponse) String() string            { return proto.CompactTextString(m) }
-func (*GetGymDetailsResponse) ProtoMessage()               {}
-func (*GetGymDetailsResponse) Descriptor() ([]byte, []int) { return fileDescriptor15, []int{23} }
-
-func (m *GetGymDetailsResponse) GetGymState() *GymState {
-	if m != nil {
-		return m.GymState
-	}
-	return nil
-}
-
-type GetHatchedEggsResponse struct {
-	Success           bool     `protobuf:"varint,1,opt,name=success" json:"success,omitempty"`
-	PokemonId         []uint64 `protobuf:"fixed64,2,rep,packed,name=pokemon_id,json=pokemonId" json:"pokemon_id,omitempty"`
-	ExperienceAwarded []int32  `protobuf:"varint,3,rep,name=experience_awarded,json=experienceAwarded" json:"experience_awarded,omitempty"`
-	CandyAwarded      []int32  `protobuf:"varint,4,rep,name=candy_awarded,json=candyAwarded" json:"candy_awarded,omitempty"`
-	StardustAwarded   []int32  `protobuf:"varint,5,rep,name=stardust_awarded,json=stardustAwarded" json:"stardust_awarded,omitempty"`
-}
-
-func (m *GetHatchedEggsResponse) Reset()                    { *m = GetHatchedEggsResponse{} }
-func (m *GetHatchedEggsResponse) String() string            { return proto.CompactTextString(m) }
-func (*GetHatchedEggsResponse) ProtoMessage()               {}
-func (*GetHatchedEggsResponse) Descriptor() ([]byte, []int) { return fileDescriptor15, []int{24} }
-
-type GetIncensePokemonResponse struct {
-	Result               GetIncensePokemonResponse_Result `protobuf:"varint,1,opt,name=result,enum=POGOProtos.Networking.Responses.GetIncensePokemonResponse_Result" json:"result,omitempty"`
-	PokemonTypeId        int32                            `protobuf:"varint,2,opt,name=pokemon_type_id,json=pokemonTypeId" json:"pokemon_type_id,omitempty"`
-	Latitude             float64                          `protobuf:"fixed64,3,opt,name=latitude" json:"latitude,omitempty"`
-	Longitude            float64                          `protobuf:"fixed64,4,opt,name=longitude" json:"longitude,omitempty"`
-	EncounterLocation    string                           `protobuf:"bytes,5,opt,name=encounter_location,json=encounterLocation" json:"encounter_location,omitempty"`
-	EncounterId          uint64                           `protobuf:"fixed64,6,opt,name=encounter_id,json=encounterId" json:"encounter_id,omitempty"`
-	DisappearTimestampMs int64                            `protobuf:"varint,7,opt,name=disappear_timestamp_ms,json=disappearTimestampMs" json:"disappear_timestamp_ms,omitempty"`
-}
-
-func (m *GetIncensePokemonResponse) Reset()                    { *m = GetIncensePokemonResponse{} }
-func (m *GetIncensePokemonResponse) String() string            { return proto.CompactTextString(m) }
-func (*GetIncensePokemonResponse) ProtoMessage()               {}
-func (*GetIncensePokemonResponse) Descriptor() ([]byte, []int) { return fileDescriptor15, []int{25} }
-
-type GetInventoryResponse struct {
-	Success        bool            `protobuf:"varint,1,opt,name=success" json:"success,omitempty"`
-	InventoryDelta *InventoryDelta `protobuf:"bytes,2,opt,name=inventory_delta,json=inventoryDelta" json:"inventory_delta,omitempty"`
-}
-
-func (m *GetInventoryResponse) Reset()                    { *m = GetInventoryResponse{} }
-func (m *GetInventoryResponse) String() string            { return proto.CompactTextString(m) }
-func (*GetInventoryResponse) ProtoMessage()               {}
-func (*GetInventoryResponse) Descriptor() ([]byte, []int) { return fileDescriptor15, []int{26} }
-
-func (m *GetInventoryResponse) GetInventoryDelta() *InventoryDelta {
-	if m != nil {
-		return m.InventoryDelta
-	}
-	return nil
-}
-
-type GetMapObjectsResponse struct {
-	MapCells []*MapCell       `protobuf:"bytes,1,rep,name=map_cells,json=mapCells" json:"map_cells,omitempty"`
-	Status   MapObjectsStatus `protobuf:"varint,2,opt,name=status,enum=POGOProtos.Map.MapObjectsStatus" json:"status,omitempty"`
-}
-
-func (m *GetMapObjectsResponse) Reset()                    { *m = GetMapObjectsResponse{} }
-func (m *GetMapObjectsResponse) String() string            { return proto.CompactTextString(m) }
-func (*GetMapObjectsResponse) ProtoMessage()               {}
-func (*GetMapObjectsResponse) Descriptor() ([]byte, []int) { return fileDescriptor15, []int{27} }
-
-func (m *GetMapObjectsResponse) GetMapCells() []*MapCell {
-	if m != nil {
-		return m.MapCells
-	}
-	return nil
-}
-
-type GetPlayerProfileResponse struct {
-	Result    GetPlayerProfileResponse_Result `protobuf:"varint,1,opt,name=result,enum=POGOProtos.Networking.Responses.GetPlayerProfileResponse_Result" json:"result,omitempty"`
-	StartTime int64                           `protobuf:"varint,2,opt,name=start_time,json=startTime" json:"start_time,omitempty"`
-	Badges    []*PlayerBadge                  `protobuf:"bytes,3,rep,name=badges" json:"badges,omitempty"`
-}
-
-func (m *GetPlayerProfileResponse) Reset()                    { *m = GetPlayerProfileResponse{} }
-func (m *GetPlayerProfileResponse) String() string            { return proto.CompactTextString(m) }
-func (*GetPlayerProfileResponse) ProtoMessage()               {}
-func (*GetPlayerProfileResponse) Descriptor() ([]byte, []int) { return fileDescriptor15, []int{28} }
-
-func (m *GetPlayerProfileResponse) GetBadges() []*PlayerBadge {
-	if m != nil {
-		return m.Badges
-	}
-	return nil
-}
-
-type GetPlayerResponse struct {
-	Success    bool        `protobuf:"varint,1,opt,name=success" json:"success,omitempty"`
-	PlayerData *PlayerData `protobuf:"bytes,2,opt,name=player_data,json=playerData" json:"player_data,omitempty"`
-}
-
-func (m *GetPlayerResponse) Reset()                    { *m = GetPlayerResponse{} }
-func (m *GetPlayerResponse) String() string            { return proto.CompactTextString(m) }
-func (*GetPlayerResponse) ProtoMessage()               {}
-func (*GetPlayerResponse) Descriptor() ([]byte, []int) { return fileDescriptor15, []int{29} }
-
-func (m *GetPlayerResponse) GetPlayerData() *PlayerData {
-	if m != nil {
-		return m.PlayerData
-	}
-	return nil
-}
-
-type GetSuggestedCodenamesResponse struct {
-	Codenames []string `protobuf:"bytes,1,rep,name=codenames" json:"codenames,omitempty"`
-	Success   bool     `protobuf:"varint,2,opt,name=success" json:"success,omitempty"`
-}
-
-func (m *GetSuggestedCodenamesResponse) Reset()                    { *m = GetSuggestedCodenamesResponse{} }
-func (m *GetSuggestedCodenamesResponse) String() string            { return proto.CompactTextString(m) }
-func (*GetSuggestedCodenamesResponse) ProtoMessage()               {}
-func (*GetSuggestedCodenamesResponse) Descriptor() ([]byte, []int) { return fileDescriptor15, []int{30} }
-
-type IncenseEncounterResponse struct {
-	Result             IncenseEncounterResponse_Result `protobuf:"varint,1,opt,name=result,enum=POGOProtos.Networking.Responses.IncenseEncounterResponse_Result" json:"result,omitempty"`
-	PokemonData        *PokemonData                    `protobuf:"bytes,2,opt,name=pokemon_data,json=pokemonData" json:"pokemon_data,omitempty"`
-	CaptureProbability *CaptureProbability             `protobuf:"bytes,3,opt,name=capture_probability,json=captureProbability" json:"capture_probability,omitempty"`
-}
-
-func (m *IncenseEncounterResponse) Reset()                    { *m = IncenseEncounterResponse{} }
-func (m *IncenseEncounterResponse) String() string            { return proto.CompactTextString(m) }
-func (*IncenseEncounterResponse) ProtoMessage()               {}
-func (*IncenseEncounterResponse) Descriptor() ([]byte, []int) { return fileDescriptor15, []int{31} }
-
-func (m *IncenseEncounterResponse) GetPokemonData() *PokemonData {
-	if m != nil {
-		return m.PokemonData
-	}
-	return nil
-}
-
-func (m *IncenseEncounterResponse) GetCaptureProbability() *CaptureProbability {
-	if m != nil {
-		return m.CaptureProbability
-	}
-	return nil
-}
-
-type LevelUpRewardsResponse struct {
-	Result        LevelUpRewardsResponse_Result `protobuf:"varint,1,opt,name=result,enum=POGOProtos.Networking.Responses.LevelUpRewardsResponse_Result" json:"result,omitempty"`
-	ItemsAwarded  []*ItemAward                  `protobuf:"bytes,2,rep,name=items_awarded,json=itemsAwarded" json:"items_awarded,omitempty"`
-	ItemsUnlocked []ItemId                      `protobuf:"varint,4,rep,name=items_unlocked,json=itemsUnlocked,enum=POGOProtos.Inventory.Item.ItemId" json:"items_unlocked,omitempty"`
-}
-
-func (m *LevelUpRewardsResponse) Reset()                    { *m = LevelUpRewardsResponse{} }
-func (m *LevelUpRewardsResponse) String() string            { return proto.CompactTextString(m) }
-func (*LevelUpRewardsResponse) ProtoMessage()               {}
-func (*LevelUpRewardsResponse) Descriptor() ([]byte, []int) { return fileDescriptor15, []int{32} }
-
-func (m *LevelUpRewardsResponse) GetItemsAwarded() []*ItemAward {
-	if m != nil {
-		return m.ItemsAwarded
-	}
-	return nil
-}
-
-type MarkTutorialCompleteResponse struct {
-	Success    bool        `protobuf:"varint,1,opt,name=success" json:"success,omitempty"`
-	PlayerData *PlayerData `protobuf:"bytes,2,opt,name=player_data,json=playerData" json:"player_data,omitempty"`
-}
-
-func (m *MarkTutorialCompleteResponse) Reset()                    { *m = MarkTutorialCompleteResponse{} }
-func (m *MarkTutorialCompleteResponse) String() string            { return proto.CompactTextString(m) }
-func (*MarkTutorialCompleteResponse) ProtoMessage()               {}
-func (*MarkTutorialCompleteResponse) Descriptor() ([]byte, []int) { return fileDescriptor15, []int{33} }
-
-func (m *MarkTutorialCompleteResponse) GetPlayerData() *PlayerData {
-	if m != nil {
-		return m.PlayerData
-	}
-	return nil
-}
-
-type NicknamePokemonResponse struct {
-	Result NicknamePokemonResponse_Result `protobuf:"varint,1,opt,name=result,enum=POGOProtos.Networking.Responses.NicknamePokemonResponse_Result" json:"result,omitempty"`
-}
-
-func (m *NicknamePokemonResponse) Reset()                    { *m = NicknamePokemonResponse{} }
-func (m *NicknamePokemonResponse) String() string            { return proto.CompactTextString(m) }
-func (*NicknamePokemonResponse) ProtoMessage()               {}
-func (*NicknamePokemonResponse) Descriptor() ([]byte, []int) { return fileDescriptor15, []int{34} }
-
-type PlayerUpdateResponse struct {
-	WildPokemons []*WildPokemon `protobuf:"bytes,1,rep,name=wild_pokemons,json=wildPokemons" json:"wild_pokemons,omitempty"`
-	Forts        []*FortData    `protobuf:"bytes,2,rep,name=forts" json:"forts,omitempty"`
-	FortsNearby  int32          `protobuf:"varint,3,opt,name=forts_nearby,json=fortsNearby" json:"forts_nearby,omitempty"`
-}
-
-func (m *PlayerUpdateResponse) Reset()                    { *m = PlayerUpdateResponse{} }
-func (m *PlayerUpdateResponse) String() string            { return proto.CompactTextString(m) }
-func (*PlayerUpdateResponse) ProtoMessage()               {}
-func (*PlayerUpdateResponse) Descriptor() ([]byte, []int) { return fileDescriptor15, []int{35} }
-
-func (m *PlayerUpdateResponse) GetWildPokemons() []*WildPokemon {
-	if m != nil {
-		return m.WildPokemons
-	}
-	return nil
-}
-
-func (m *PlayerUpdateResponse) GetForts() []*FortData {
-	if m != nil {
-		return m.Forts
-	}
-	return nil
-}
-
-type RecycleInventoryItemResponse struct {
-	Result   RecycleInventoryItemResponse_Result `protobuf:"varint,1,opt,name=result,enum=POGOProtos.Networking.Responses.RecycleInventoryItemResponse_Result" json:"result,omitempty"`
-	NewCount int32                               `protobuf:"varint,2,opt,name=new_count,json=newCount" json:"new_count,omitempty"`
-}
-
-func (m *RecycleInventoryItemResponse) Reset()                    { *m = RecycleInventoryItemResponse{} }
-func (m *RecycleInventoryItemResponse) String() string            { return proto.CompactTextString(m) }
-func (*RecycleInventoryItemResponse) ProtoMessage()               {}
-func (*RecycleInventoryItemResponse) Descriptor() ([]byte, []int) { return fileDescriptor15, []int{36} }
-
-type ReleasePokemonResponse struct {
-	Result       ReleasePokemonResponse_Result `protobuf:"varint,1,opt,name=result,enum=POGOProtos.Networking.Responses.ReleasePokemonResponse_Result" json:"result,omitempty"`
-	CandyAwarded int32                         `protobuf:"varint,2,opt,name=candy_awarded,json=candyAwarded" json:"candy_awarded,omitempty"`
-}
-
-func (m *ReleasePokemonResponse) Reset()                    { *m = ReleasePokemonResponse{} }
-func (m *ReleasePokemonResponse) String() string            { return proto.CompactTextString(m) }
-func (*ReleasePokemonResponse) ProtoMessage()               {}
-func (*ReleasePokemonResponse) Descriptor() ([]byte, []int) { return fileDescriptor15, []int{37} }
-
-type SetAvatarResponse struct {
-	Status     SetAvatarResponse_Status `protobuf:"varint,1,opt,name=status,enum=POGOProtos.Networking.Responses.SetAvatarResponse_Status" json:"status,omitempty"`
-	PlayerData *PlayerData              `protobuf:"bytes,2,opt,name=player_data,json=playerData" json:"player_data,omitempty"`
-}
-
-func (m *SetAvatarResponse) Reset()                    { *m = SetAvatarResponse{} }
-func (m *SetAvatarResponse) String() string            { return proto.CompactTextString(m) }
-func (*SetAvatarResponse) ProtoMessage()               {}
-func (*SetAvatarResponse) Descriptor() ([]byte, []int) { return fileDescriptor15, []int{38} }
-
-func (m *SetAvatarResponse) GetPlayerData() *PlayerData {
-	if m != nil {
-		return m.PlayerData
-	}
-	return nil
-}
-
-type SetContactSettingsResponse struct {
-	Status     SetContactSettingsResponse_Status `protobuf:"varint,1,opt,name=status,enum=POGOProtos.Networking.Responses.SetContactSettingsResponse_Status" json:"status,omitempty"`
-	PlayerData *PlayerData                       `protobuf:"bytes,2,opt,name=player_data,json=playerData" json:"player_data,omitempty"`
-}
-
-func (m *SetContactSettingsResponse) Reset()                    { *m = SetContactSettingsResponse{} }
-func (m *SetContactSettingsResponse) String() string            { return proto.CompactTextString(m) }
-func (*SetContactSettingsResponse) ProtoMessage()               {}
-func (*SetContactSettingsResponse) Descriptor() ([]byte, []int) { return fileDescriptor15, []int{39} }
-
-func (m *SetContactSettingsResponse) GetPlayerData() *PlayerData {
-	if m != nil {
-		return m.PlayerData
-	}
-	return nil
-}
-
-type SetFavoritePokemonResponse struct {
-	Result SetFavoritePokemonResponse_Result `protobuf:"varint,1,opt,name=result,enum=POGOProtos.Networking.Responses.SetFavoritePokemonResponse_Result" json:"result,omitempty"`
-}
-
-func (m *SetFavoritePokemonResponse) Reset()                    { *m = SetFavoritePokemonResponse{} }
-func (m *SetFavoritePokemonResponse) String() string            { return proto.CompactTextString(m) }
-func (*SetFavoritePokemonResponse) ProtoMessage()               {}
-func (*SetFavoritePokemonResponse) Descriptor() ([]byte, []int) { return fileDescriptor15, []int{40} }
-
-type SetPlayerTeamResponse struct {
-	Status     SetPlayerTeamResponse_Status `protobuf:"varint,1,opt,name=status,enum=POGOProtos.Networking.Responses.SetPlayerTeamResponse_Status" json:"status,omitempty"`
-	PlayerData *PlayerData                  `protobuf:"bytes,2,opt,name=player_data,json=playerData" json:"player_data,omitempty"`
-}
-
-func (m *SetPlayerTeamResponse) Reset()                    { *m = SetPlayerTeamResponse{} }
-func (m *SetPlayerTeamResponse) String() string            { return proto.CompactTextString(m) }
-func (*SetPlayerTeamResponse) ProtoMessage()               {}
-func (*SetPlayerTeamResponse) Descriptor() ([]byte, []int) { return fileDescriptor15, []int{41} }
-
-func (m *SetPlayerTeamResponse) GetPlayerData() *PlayerData {
-	if m != nil {
-		return m.PlayerData
-	}
-	return nil
-}
-
-type SfidaActionLogResponse struct {
-	Result     SfidaActionLogResponse_Result `protobuf:"varint,1,opt,name=result,enum=POGOProtos.Networking.Responses.SfidaActionLogResponse_Result" json:"result,omitempty"`
-	LogEntries []*ActionLogEntry             `protobuf:"bytes,2,rep,name=log_entries,json=logEntries" json:"log_entries,omitempty"`
-}
-
-func (m *SfidaActionLogResponse) Reset()                    { *m = SfidaActionLogResponse{} }
-func (m *SfidaActionLogResponse) String() string            { return proto.CompactTextString(m) }
-func (*SfidaActionLogResponse) ProtoMessage()               {}
-func (*SfidaActionLogResponse) Descriptor() ([]byte, []int) { return fileDescriptor15, []int{42} }
-
-func (m *SfidaActionLogResponse) GetLogEntries() []*ActionLogEntry {
-	if m != nil {
-		return m.LogEntries
 	}
 	return nil
 }
@@ -2278,7 +2102,7 @@ type StartGymBattleResponse struct {
 func (m *StartGymBattleResponse) Reset()                    { *m = StartGymBattleResponse{} }
 func (m *StartGymBattleResponse) String() string            { return proto.CompactTextString(m) }
 func (*StartGymBattleResponse) ProtoMessage()               {}
-func (*StartGymBattleResponse) Descriptor() ([]byte, []int) { return fileDescriptor15, []int{43} }
+func (*StartGymBattleResponse) Descriptor() ([]byte, []int) { return fileDescriptor2, []int{36} }
 
 func (m *StartGymBattleResponse) GetDefender() *BattleParticipant {
 	if m != nil {
@@ -2294,36 +2118,92 @@ func (m *StartGymBattleResponse) GetBattleLog() *BattleLog {
 	return nil
 }
 
-type UpgradePokemonResponse struct {
-	Result          UpgradePokemonResponse_Result `protobuf:"varint,1,opt,name=result,enum=POGOProtos.Networking.Responses.UpgradePokemonResponse_Result" json:"result,omitempty"`
-	UpgradedPokemon *PokemonData                  `protobuf:"bytes,2,opt,name=upgraded_pokemon,json=upgradedPokemon" json:"upgraded_pokemon,omitempty"`
+type GetMapObjectsResponse struct {
+	MapCells []*MapCell       `protobuf:"bytes,1,rep,name=map_cells,json=mapCells" json:"map_cells,omitempty"`
+	Status   MapObjectsStatus `protobuf:"varint,2,opt,name=status,enum=POGOProtos.Map.MapObjectsStatus" json:"status,omitempty"`
 }
 
-func (m *UpgradePokemonResponse) Reset()                    { *m = UpgradePokemonResponse{} }
-func (m *UpgradePokemonResponse) String() string            { return proto.CompactTextString(m) }
-func (*UpgradePokemonResponse) ProtoMessage()               {}
-func (*UpgradePokemonResponse) Descriptor() ([]byte, []int) { return fileDescriptor15, []int{44} }
+func (m *GetMapObjectsResponse) Reset()                    { *m = GetMapObjectsResponse{} }
+func (m *GetMapObjectsResponse) String() string            { return proto.CompactTextString(m) }
+func (*GetMapObjectsResponse) ProtoMessage()               {}
+func (*GetMapObjectsResponse) Descriptor() ([]byte, []int) { return fileDescriptor2, []int{37} }
 
-func (m *UpgradePokemonResponse) GetUpgradedPokemon() *PokemonData {
+func (m *GetMapObjectsResponse) GetMapCells() []*MapCell {
 	if m != nil {
-		return m.UpgradedPokemon
+		return m.MapCells
 	}
 	return nil
 }
 
-type UseIncenseResponse struct {
-	Result         UseIncenseResponse_Result `protobuf:"varint,1,opt,name=result,enum=POGOProtos.Networking.Responses.UseIncenseResponse_Result" json:"result,omitempty"`
-	AppliedIncense *AppliedItem              `protobuf:"bytes,2,opt,name=applied_incense,json=appliedIncense" json:"applied_incense,omitempty"`
+type UseItemPotionResponse struct {
+	Result  UseItemPotionResponse_Result `protobuf:"varint,1,opt,name=result,enum=POGOProtos.Networking.Responses.UseItemPotionResponse_Result" json:"result,omitempty"`
+	Stamina int32                        `protobuf:"varint,2,opt,name=stamina" json:"stamina,omitempty"`
 }
 
-func (m *UseIncenseResponse) Reset()                    { *m = UseIncenseResponse{} }
-func (m *UseIncenseResponse) String() string            { return proto.CompactTextString(m) }
-func (*UseIncenseResponse) ProtoMessage()               {}
-func (*UseIncenseResponse) Descriptor() ([]byte, []int) { return fileDescriptor15, []int{45} }
+func (m *UseItemPotionResponse) Reset()                    { *m = UseItemPotionResponse{} }
+func (m *UseItemPotionResponse) String() string            { return proto.CompactTextString(m) }
+func (*UseItemPotionResponse) ProtoMessage()               {}
+func (*UseItemPotionResponse) Descriptor() ([]byte, []int) { return fileDescriptor2, []int{38} }
 
-func (m *UseIncenseResponse) GetAppliedIncense() *AppliedItem {
+type DownloadSettingsResponse struct {
+	Error    string          `protobuf:"bytes,1,opt,name=error" json:"error,omitempty"`
+	Hash     string          `protobuf:"bytes,2,opt,name=hash" json:"hash,omitempty"`
+	Settings *GlobalSettings `protobuf:"bytes,3,opt,name=settings" json:"settings,omitempty"`
+}
+
+func (m *DownloadSettingsResponse) Reset()                    { *m = DownloadSettingsResponse{} }
+func (m *DownloadSettingsResponse) String() string            { return proto.CompactTextString(m) }
+func (*DownloadSettingsResponse) ProtoMessage()               {}
+func (*DownloadSettingsResponse) Descriptor() ([]byte, []int) { return fileDescriptor2, []int{39} }
+
+func (m *DownloadSettingsResponse) GetSettings() *GlobalSettings {
 	if m != nil {
-		return m.AppliedIncense
+		return m.Settings
+	}
+	return nil
+}
+
+type CheckAwardedBadgesResponse struct {
+	Success            bool        `protobuf:"varint,1,opt,name=success" json:"success,omitempty"`
+	AwardedBadges      []BadgeType `protobuf:"varint,2,rep,name=awarded_badges,json=awardedBadges,enum=POGOProtos.Enums.BadgeType" json:"awarded_badges,omitempty"`
+	AwardedBadgeLevels []int32     `protobuf:"varint,3,rep,name=awarded_badge_levels,json=awardedBadgeLevels" json:"awarded_badge_levels,omitempty"`
+}
+
+func (m *CheckAwardedBadgesResponse) Reset()                    { *m = CheckAwardedBadgesResponse{} }
+func (m *CheckAwardedBadgesResponse) String() string            { return proto.CompactTextString(m) }
+func (*CheckAwardedBadgesResponse) ProtoMessage()               {}
+func (*CheckAwardedBadgesResponse) Descriptor() ([]byte, []int) { return fileDescriptor2, []int{40} }
+
+type EquipBadgeResponse struct {
+	Result   EquipBadgeResponse_Result `protobuf:"varint,1,opt,name=result,enum=POGOProtos.Networking.Responses.EquipBadgeResponse_Result" json:"result,omitempty"`
+	Equipped *EquippedBadge            `protobuf:"bytes,2,opt,name=equipped" json:"equipped,omitempty"`
+}
+
+func (m *EquipBadgeResponse) Reset()                    { *m = EquipBadgeResponse{} }
+func (m *EquipBadgeResponse) String() string            { return proto.CompactTextString(m) }
+func (*EquipBadgeResponse) ProtoMessage()               {}
+func (*EquipBadgeResponse) Descriptor() ([]byte, []int) { return fileDescriptor2, []int{41} }
+
+func (m *EquipBadgeResponse) GetEquipped() *EquippedBadge {
+	if m != nil {
+		return m.Equipped
+	}
+	return nil
+}
+
+type UseItemEggIncubatorResponse struct {
+	Result       UseItemEggIncubatorResponse_Result `protobuf:"varint,1,opt,name=result,enum=POGOProtos.Networking.Responses.UseItemEggIncubatorResponse_Result" json:"result,omitempty"`
+	EggIncubator *EggIncubator                      `protobuf:"bytes,2,opt,name=egg_incubator,json=eggIncubator" json:"egg_incubator,omitempty"`
+}
+
+func (m *UseItemEggIncubatorResponse) Reset()                    { *m = UseItemEggIncubatorResponse{} }
+func (m *UseItemEggIncubatorResponse) String() string            { return proto.CompactTextString(m) }
+func (*UseItemEggIncubatorResponse) ProtoMessage()               {}
+func (*UseItemEggIncubatorResponse) Descriptor() ([]byte, []int) { return fileDescriptor2, []int{42} }
+
+func (m *UseItemEggIncubatorResponse) GetEggIncubator() *EggIncubator {
+	if m != nil {
+		return m.EggIncubator
 	}
 	return nil
 }
@@ -2341,465 +2221,584 @@ type UseItemCaptureResponse struct {
 func (m *UseItemCaptureResponse) Reset()                    { *m = UseItemCaptureResponse{} }
 func (m *UseItemCaptureResponse) String() string            { return proto.CompactTextString(m) }
 func (*UseItemCaptureResponse) ProtoMessage()               {}
-func (*UseItemCaptureResponse) Descriptor() ([]byte, []int) { return fileDescriptor15, []int{46} }
+func (*UseItemCaptureResponse) Descriptor() ([]byte, []int) { return fileDescriptor2, []int{43} }
 
-type UseItemEggIncubatorResponse struct {
-	Result       UseItemEggIncubatorResponse_Result `protobuf:"varint,1,opt,name=result,enum=POGOProtos.Networking.Responses.UseItemEggIncubatorResponse_Result" json:"result,omitempty"`
-	EggIncubator *EggIncubator                      `protobuf:"bytes,2,opt,name=egg_incubator,json=eggIncubator" json:"egg_incubator,omitempty"`
+type EvolvePokemonResponse struct {
+	Result             EvolvePokemonResponse_Result `protobuf:"varint,1,opt,name=result,enum=POGOProtos.Networking.Responses.EvolvePokemonResponse_Result" json:"result,omitempty"`
+	EvolvedPokemonData *PokemonData                 `protobuf:"bytes,2,opt,name=evolved_pokemon_data,json=evolvedPokemonData" json:"evolved_pokemon_data,omitempty"`
+	ExperienceAwarded  int32                        `protobuf:"varint,3,opt,name=experience_awarded,json=experienceAwarded" json:"experience_awarded,omitempty"`
+	CandyAwarded       int32                        `protobuf:"varint,4,opt,name=candy_awarded,json=candyAwarded" json:"candy_awarded,omitempty"`
 }
 
-func (m *UseItemEggIncubatorResponse) Reset()                    { *m = UseItemEggIncubatorResponse{} }
-func (m *UseItemEggIncubatorResponse) String() string            { return proto.CompactTextString(m) }
-func (*UseItemEggIncubatorResponse) ProtoMessage()               {}
-func (*UseItemEggIncubatorResponse) Descriptor() ([]byte, []int) { return fileDescriptor15, []int{47} }
+func (m *EvolvePokemonResponse) Reset()                    { *m = EvolvePokemonResponse{} }
+func (m *EvolvePokemonResponse) String() string            { return proto.CompactTextString(m) }
+func (*EvolvePokemonResponse) ProtoMessage()               {}
+func (*EvolvePokemonResponse) Descriptor() ([]byte, []int) { return fileDescriptor2, []int{44} }
 
-func (m *UseItemEggIncubatorResponse) GetEggIncubator() *EggIncubator {
+func (m *EvolvePokemonResponse) GetEvolvedPokemonData() *PokemonData {
 	if m != nil {
-		return m.EggIncubator
+		return m.EvolvedPokemonData
 	}
 	return nil
 }
 
-type UseItemGymResponse struct {
-	Result    UseItemGymResponse_Result `protobuf:"varint,1,opt,name=result,enum=POGOProtos.Networking.Responses.UseItemGymResponse_Result" json:"result,omitempty"`
-	UpdatedGp int64                     `protobuf:"varint,2,opt,name=updated_gp,json=updatedGp" json:"updated_gp,omitempty"`
+type GetInventoryResponse struct {
+	Success        bool            `protobuf:"varint,1,opt,name=success" json:"success,omitempty"`
+	InventoryDelta *InventoryDelta `protobuf:"bytes,2,opt,name=inventory_delta,json=inventoryDelta" json:"inventory_delta,omitempty"`
 }
 
-func (m *UseItemGymResponse) Reset()                    { *m = UseItemGymResponse{} }
-func (m *UseItemGymResponse) String() string            { return proto.CompactTextString(m) }
-func (*UseItemGymResponse) ProtoMessage()               {}
-func (*UseItemGymResponse) Descriptor() ([]byte, []int) { return fileDescriptor15, []int{48} }
+func (m *GetInventoryResponse) Reset()                    { *m = GetInventoryResponse{} }
+func (m *GetInventoryResponse) String() string            { return proto.CompactTextString(m) }
+func (*GetInventoryResponse) ProtoMessage()               {}
+func (*GetInventoryResponse) Descriptor() ([]byte, []int) { return fileDescriptor2, []int{45} }
 
-type UseItemPotionResponse struct {
-	Result  UseItemPotionResponse_Result `protobuf:"varint,1,opt,name=result,enum=POGOProtos.Networking.Responses.UseItemPotionResponse_Result" json:"result,omitempty"`
-	Stamina int32                        `protobuf:"varint,2,opt,name=stamina" json:"stamina,omitempty"`
-}
-
-func (m *UseItemPotionResponse) Reset()                    { *m = UseItemPotionResponse{} }
-func (m *UseItemPotionResponse) String() string            { return proto.CompactTextString(m) }
-func (*UseItemPotionResponse) ProtoMessage()               {}
-func (*UseItemPotionResponse) Descriptor() ([]byte, []int) { return fileDescriptor15, []int{49} }
-
-type UseItemReviveResponse struct {
-	Result  UseItemReviveResponse_Result `protobuf:"varint,1,opt,name=result,enum=POGOProtos.Networking.Responses.UseItemReviveResponse_Result" json:"result,omitempty"`
-	Stamina int32                        `protobuf:"varint,2,opt,name=stamina" json:"stamina,omitempty"`
-}
-
-func (m *UseItemReviveResponse) Reset()                    { *m = UseItemReviveResponse{} }
-func (m *UseItemReviveResponse) String() string            { return proto.CompactTextString(m) }
-func (*UseItemReviveResponse) ProtoMessage()               {}
-func (*UseItemReviveResponse) Descriptor() ([]byte, []int) { return fileDescriptor15, []int{50} }
-
-type UseItemXpBoostResponse struct {
-	Result       UseItemXpBoostResponse_Result `protobuf:"varint,1,opt,name=result,enum=POGOProtos.Networking.Responses.UseItemXpBoostResponse_Result" json:"result,omitempty"`
-	AppliedItems *AppliedItems                 `protobuf:"bytes,2,opt,name=applied_items,json=appliedItems" json:"applied_items,omitempty"`
-}
-
-func (m *UseItemXpBoostResponse) Reset()                    { *m = UseItemXpBoostResponse{} }
-func (m *UseItemXpBoostResponse) String() string            { return proto.CompactTextString(m) }
-func (*UseItemXpBoostResponse) ProtoMessage()               {}
-func (*UseItemXpBoostResponse) Descriptor() ([]byte, []int) { return fileDescriptor15, []int{51} }
-
-func (m *UseItemXpBoostResponse) GetAppliedItems() *AppliedItems {
+func (m *GetInventoryResponse) GetInventoryDelta() *InventoryDelta {
 	if m != nil {
-		return m.AppliedItems
+		return m.InventoryDelta
+	}
+	return nil
+}
+
+type IncenseEncounterResponse struct {
+	Result             IncenseEncounterResponse_Result `protobuf:"varint,1,opt,name=result,enum=POGOProtos.Networking.Responses.IncenseEncounterResponse_Result" json:"result,omitempty"`
+	PokemonData        *PokemonData                    `protobuf:"bytes,2,opt,name=pokemon_data,json=pokemonData" json:"pokemon_data,omitempty"`
+	CaptureProbability *CaptureProbability             `protobuf:"bytes,3,opt,name=capture_probability,json=captureProbability" json:"capture_probability,omitempty"`
+}
+
+func (m *IncenseEncounterResponse) Reset()                    { *m = IncenseEncounterResponse{} }
+func (m *IncenseEncounterResponse) String() string            { return proto.CompactTextString(m) }
+func (*IncenseEncounterResponse) ProtoMessage()               {}
+func (*IncenseEncounterResponse) Descriptor() ([]byte, []int) { return fileDescriptor2, []int{46} }
+
+func (m *IncenseEncounterResponse) GetPokemonData() *PokemonData {
+	if m != nil {
+		return m.PokemonData
+	}
+	return nil
+}
+
+func (m *IncenseEncounterResponse) GetCaptureProbability() *CaptureProbability {
+	if m != nil {
+		return m.CaptureProbability
+	}
+	return nil
+}
+
+type FortDeployPokemonResponse struct {
+	Result      FortDeployPokemonResponse_Result `protobuf:"varint,1,opt,name=result,enum=POGOProtos.Networking.Responses.FortDeployPokemonResponse_Result" json:"result,omitempty"`
+	FortDetails *FortDetailsResponse             `protobuf:"bytes,2,opt,name=fort_details,json=fortDetails" json:"fort_details,omitempty"`
+	PokemonData *PokemonData                     `protobuf:"bytes,3,opt,name=pokemon_data,json=pokemonData" json:"pokemon_data,omitempty"`
+	GymState    *GymState                        `protobuf:"bytes,4,opt,name=gym_state,json=gymState" json:"gym_state,omitempty"`
+}
+
+func (m *FortDeployPokemonResponse) Reset()                    { *m = FortDeployPokemonResponse{} }
+func (m *FortDeployPokemonResponse) String() string            { return proto.CompactTextString(m) }
+func (*FortDeployPokemonResponse) ProtoMessage()               {}
+func (*FortDeployPokemonResponse) Descriptor() ([]byte, []int) { return fileDescriptor2, []int{47} }
+
+func (m *FortDeployPokemonResponse) GetFortDetails() *FortDetailsResponse {
+	if m != nil {
+		return m.FortDetails
+	}
+	return nil
+}
+
+func (m *FortDeployPokemonResponse) GetPokemonData() *PokemonData {
+	if m != nil {
+		return m.PokemonData
+	}
+	return nil
+}
+
+func (m *FortDeployPokemonResponse) GetGymState() *GymState {
+	if m != nil {
+		return m.GymState
+	}
+	return nil
+}
+
+type SetAvatarResponse struct {
+	Status     SetAvatarResponse_Status `protobuf:"varint,1,opt,name=status,enum=POGOProtos.Networking.Responses.SetAvatarResponse_Status" json:"status,omitempty"`
+	PlayerData *PlayerData              `protobuf:"bytes,2,opt,name=player_data,json=playerData" json:"player_data,omitempty"`
+}
+
+func (m *SetAvatarResponse) Reset()                    { *m = SetAvatarResponse{} }
+func (m *SetAvatarResponse) String() string            { return proto.CompactTextString(m) }
+func (*SetAvatarResponse) ProtoMessage()               {}
+func (*SetAvatarResponse) Descriptor() ([]byte, []int) { return fileDescriptor2, []int{48} }
+
+func (m *SetAvatarResponse) GetPlayerData() *PlayerData {
+	if m != nil {
+		return m.PlayerData
+	}
+	return nil
+}
+
+type MarkTutorialCompleteResponse struct {
+	Success    bool        `protobuf:"varint,1,opt,name=success" json:"success,omitempty"`
+	PlayerData *PlayerData `protobuf:"bytes,2,opt,name=player_data,json=playerData" json:"player_data,omitempty"`
+}
+
+func (m *MarkTutorialCompleteResponse) Reset()                    { *m = MarkTutorialCompleteResponse{} }
+func (m *MarkTutorialCompleteResponse) String() string            { return proto.CompactTextString(m) }
+func (*MarkTutorialCompleteResponse) ProtoMessage()               {}
+func (*MarkTutorialCompleteResponse) Descriptor() ([]byte, []int) { return fileDescriptor2, []int{49} }
+
+func (m *MarkTutorialCompleteResponse) GetPlayerData() *PlayerData {
+	if m != nil {
+		return m.PlayerData
+	}
+	return nil
+}
+
+type LevelUpRewardsResponse struct {
+	Result        LevelUpRewardsResponse_Result `protobuf:"varint,1,opt,name=result,enum=POGOProtos.Networking.Responses.LevelUpRewardsResponse_Result" json:"result,omitempty"`
+	ItemsAwarded  []*ItemAward                  `protobuf:"bytes,2,rep,name=items_awarded,json=itemsAwarded" json:"items_awarded,omitempty"`
+	ItemsUnlocked []ItemId                      `protobuf:"varint,4,rep,name=items_unlocked,json=itemsUnlocked,enum=POGOProtos.Inventory.Item.ItemId" json:"items_unlocked,omitempty"`
+}
+
+func (m *LevelUpRewardsResponse) Reset()                    { *m = LevelUpRewardsResponse{} }
+func (m *LevelUpRewardsResponse) String() string            { return proto.CompactTextString(m) }
+func (*LevelUpRewardsResponse) ProtoMessage()               {}
+func (*LevelUpRewardsResponse) Descriptor() ([]byte, []int) { return fileDescriptor2, []int{50} }
+
+func (m *LevelUpRewardsResponse) GetItemsAwarded() []*ItemAward {
+	if m != nil {
+		return m.ItemsAwarded
+	}
+	return nil
+}
+
+type AttackGymResponse struct {
+	Result         AttackGymResponse_Result `protobuf:"varint,1,opt,name=result,enum=POGOProtos.Networking.Responses.AttackGymResponse_Result" json:"result,omitempty"`
+	BattleLog      *BattleLog               `protobuf:"bytes,2,opt,name=battle_log,json=battleLog" json:"battle_log,omitempty"`
+	BattleId       string                   `protobuf:"bytes,3,opt,name=battle_id,json=battleId" json:"battle_id,omitempty"`
+	ActiveDefender *BattlePokemonInfo       `protobuf:"bytes,4,opt,name=active_defender,json=activeDefender" json:"active_defender,omitempty"`
+	ActiveAttacker *BattlePokemonInfo       `protobuf:"bytes,5,opt,name=active_attacker,json=activeAttacker" json:"active_attacker,omitempty"`
+}
+
+func (m *AttackGymResponse) Reset()                    { *m = AttackGymResponse{} }
+func (m *AttackGymResponse) String() string            { return proto.CompactTextString(m) }
+func (*AttackGymResponse) ProtoMessage()               {}
+func (*AttackGymResponse) Descriptor() ([]byte, []int) { return fileDescriptor2, []int{51} }
+
+func (m *AttackGymResponse) GetBattleLog() *BattleLog {
+	if m != nil {
+		return m.BattleLog
+	}
+	return nil
+}
+
+func (m *AttackGymResponse) GetActiveDefender() *BattlePokemonInfo {
+	if m != nil {
+		return m.ActiveDefender
+	}
+	return nil
+}
+
+func (m *AttackGymResponse) GetActiveAttacker() *BattlePokemonInfo {
+	if m != nil {
+		return m.ActiveAttacker
 	}
 	return nil
 }
 
 func init() {
 	proto.RegisterType((*AddFortModifierResponse)(nil), "POGOProtos.Networking.Responses.AddFortModifierResponse")
-	proto.RegisterType((*AttackGymResponse)(nil), "POGOProtos.Networking.Responses.AttackGymResponse")
-	proto.RegisterType((*CatchPokemonResponse)(nil), "POGOProtos.Networking.Responses.CatchPokemonResponse")
-	proto.RegisterType((*CheckAwardedBadgesResponse)(nil), "POGOProtos.Networking.Responses.CheckAwardedBadgesResponse")
 	proto.RegisterType((*CheckCodenameAvailableResponse)(nil), "POGOProtos.Networking.Responses.CheckCodenameAvailableResponse")
-	proto.RegisterType((*ClaimCodenameResponse)(nil), "POGOProtos.Networking.Responses.ClaimCodenameResponse")
+	proto.RegisterType((*UseItemReviveResponse)(nil), "POGOProtos.Networking.Responses.UseItemReviveResponse")
+	proto.RegisterType((*RecycleInventoryItemResponse)(nil), "POGOProtos.Networking.Responses.RecycleInventoryItemResponse")
+	proto.RegisterType((*GetSuggestedCodenamesResponse)(nil), "POGOProtos.Networking.Responses.GetSuggestedCodenamesResponse")
+	proto.RegisterType((*SfidaActionLogResponse)(nil), "POGOProtos.Networking.Responses.SfidaActionLogResponse")
+	proto.RegisterType((*GetIncensePokemonResponse)(nil), "POGOProtos.Networking.Responses.GetIncensePokemonResponse")
+	proto.RegisterType((*GetAssetDigestResponse)(nil), "POGOProtos.Networking.Responses.GetAssetDigestResponse")
+	proto.RegisterType((*GetHatchedEggsResponse)(nil), "POGOProtos.Networking.Responses.GetHatchedEggsResponse")
+	proto.RegisterType((*ReleasePokemonResponse)(nil), "POGOProtos.Networking.Responses.ReleasePokemonResponse")
+	proto.RegisterType((*UseIncenseResponse)(nil), "POGOProtos.Networking.Responses.UseIncenseResponse")
 	proto.RegisterType((*CollectDailyBonusResponse)(nil), "POGOProtos.Networking.Responses.CollectDailyBonusResponse")
+	proto.RegisterType((*GetDownloadUrlsResponse)(nil), "POGOProtos.Networking.Responses.GetDownloadUrlsResponse")
+	proto.RegisterType((*DownloadRemoteConfigVersionResponse)(nil), "POGOProtos.Networking.Responses.DownloadRemoteConfigVersionResponse")
+	proto.RegisterType((*EncounterTutorialCompleteResponse)(nil), "POGOProtos.Networking.Responses.EncounterTutorialCompleteResponse")
+	proto.RegisterType((*SetFavoritePokemonResponse)(nil), "POGOProtos.Networking.Responses.SetFavoritePokemonResponse")
+	proto.RegisterType((*NicknamePokemonResponse)(nil), "POGOProtos.Networking.Responses.NicknamePokemonResponse")
+	proto.RegisterType((*EchoResponse)(nil), "POGOProtos.Networking.Responses.EchoResponse")
+	proto.RegisterType((*UseItemXpBoostResponse)(nil), "POGOProtos.Networking.Responses.UseItemXpBoostResponse")
+	proto.RegisterType((*FortRecallPokemonResponse)(nil), "POGOProtos.Networking.Responses.FortRecallPokemonResponse")
+	proto.RegisterType((*GetPlayerProfileResponse)(nil), "POGOProtos.Networking.Responses.GetPlayerProfileResponse")
+	proto.RegisterType((*GetGymDetailsResponse)(nil), "POGOProtos.Networking.Responses.GetGymDetailsResponse")
 	proto.RegisterType((*CollectDailyDefenderBonusResponse)(nil), "POGOProtos.Networking.Responses.CollectDailyDefenderBonusResponse")
-	proto.RegisterType((*DiskEncounterResponse)(nil), "POGOProtos.Networking.Responses.DiskEncounterResponse")
+	proto.RegisterType((*CatchPokemonResponse)(nil), "POGOProtos.Networking.Responses.CatchPokemonResponse")
 	proto.RegisterType((*DownloadItemTemplatesResponse)(nil), "POGOProtos.Networking.Responses.DownloadItemTemplatesResponse")
 	proto.RegisterType((*DownloadItemTemplatesResponse_ItemTemplate)(nil), "POGOProtos.Networking.Responses.DownloadItemTemplatesResponse.ItemTemplate")
-	proto.RegisterType((*DownloadRemoteConfigVersionResponse)(nil), "POGOProtos.Networking.Responses.DownloadRemoteConfigVersionResponse")
-	proto.RegisterType((*DownloadSettingsResponse)(nil), "POGOProtos.Networking.Responses.DownloadSettingsResponse")
-	proto.RegisterType((*EchoResponse)(nil), "POGOProtos.Networking.Responses.EchoResponse")
-	proto.RegisterType((*EncounterResponse)(nil), "POGOProtos.Networking.Responses.EncounterResponse")
-	proto.RegisterType((*EncounterTutorialCompleteResponse)(nil), "POGOProtos.Networking.Responses.EncounterTutorialCompleteResponse")
-	proto.RegisterType((*EquipBadgeResponse)(nil), "POGOProtos.Networking.Responses.EquipBadgeResponse")
-	proto.RegisterType((*EvolvePokemonResponse)(nil), "POGOProtos.Networking.Responses.EvolvePokemonResponse")
-	proto.RegisterType((*FortDeployPokemonResponse)(nil), "POGOProtos.Networking.Responses.FortDeployPokemonResponse")
-	proto.RegisterType((*FortDetailsResponse)(nil), "POGOProtos.Networking.Responses.FortDetailsResponse")
-	proto.RegisterType((*FortRecallPokemonResponse)(nil), "POGOProtos.Networking.Responses.FortRecallPokemonResponse")
-	proto.RegisterType((*FortSearchResponse)(nil), "POGOProtos.Networking.Responses.FortSearchResponse")
-	proto.RegisterType((*GetAssetDigestResponse)(nil), "POGOProtos.Networking.Responses.GetAssetDigestResponse")
-	proto.RegisterType((*GetDownloadUrlsResponse)(nil), "POGOProtos.Networking.Responses.GetDownloadUrlsResponse")
-	proto.RegisterType((*GetGymDetailsResponse)(nil), "POGOProtos.Networking.Responses.GetGymDetailsResponse")
-	proto.RegisterType((*GetHatchedEggsResponse)(nil), "POGOProtos.Networking.Responses.GetHatchedEggsResponse")
-	proto.RegisterType((*GetIncensePokemonResponse)(nil), "POGOProtos.Networking.Responses.GetIncensePokemonResponse")
-	proto.RegisterType((*GetInventoryResponse)(nil), "POGOProtos.Networking.Responses.GetInventoryResponse")
-	proto.RegisterType((*GetMapObjectsResponse)(nil), "POGOProtos.Networking.Responses.GetMapObjectsResponse")
-	proto.RegisterType((*GetPlayerProfileResponse)(nil), "POGOProtos.Networking.Responses.GetPlayerProfileResponse")
-	proto.RegisterType((*GetPlayerResponse)(nil), "POGOProtos.Networking.Responses.GetPlayerResponse")
-	proto.RegisterType((*GetSuggestedCodenamesResponse)(nil), "POGOProtos.Networking.Responses.GetSuggestedCodenamesResponse")
-	proto.RegisterType((*IncenseEncounterResponse)(nil), "POGOProtos.Networking.Responses.IncenseEncounterResponse")
-	proto.RegisterType((*LevelUpRewardsResponse)(nil), "POGOProtos.Networking.Responses.LevelUpRewardsResponse")
-	proto.RegisterType((*MarkTutorialCompleteResponse)(nil), "POGOProtos.Networking.Responses.MarkTutorialCompleteResponse")
-	proto.RegisterType((*NicknamePokemonResponse)(nil), "POGOProtos.Networking.Responses.NicknamePokemonResponse")
-	proto.RegisterType((*PlayerUpdateResponse)(nil), "POGOProtos.Networking.Responses.PlayerUpdateResponse")
-	proto.RegisterType((*RecycleInventoryItemResponse)(nil), "POGOProtos.Networking.Responses.RecycleInventoryItemResponse")
-	proto.RegisterType((*ReleasePokemonResponse)(nil), "POGOProtos.Networking.Responses.ReleasePokemonResponse")
-	proto.RegisterType((*SetAvatarResponse)(nil), "POGOProtos.Networking.Responses.SetAvatarResponse")
 	proto.RegisterType((*SetContactSettingsResponse)(nil), "POGOProtos.Networking.Responses.SetContactSettingsResponse")
-	proto.RegisterType((*SetFavoritePokemonResponse)(nil), "POGOProtos.Networking.Responses.SetFavoritePokemonResponse")
+	proto.RegisterType((*FortDetailsResponse)(nil), "POGOProtos.Networking.Responses.FortDetailsResponse")
 	proto.RegisterType((*SetPlayerTeamResponse)(nil), "POGOProtos.Networking.Responses.SetPlayerTeamResponse")
-	proto.RegisterType((*SfidaActionLogResponse)(nil), "POGOProtos.Networking.Responses.SfidaActionLogResponse")
-	proto.RegisterType((*StartGymBattleResponse)(nil), "POGOProtos.Networking.Responses.StartGymBattleResponse")
-	proto.RegisterType((*UpgradePokemonResponse)(nil), "POGOProtos.Networking.Responses.UpgradePokemonResponse")
-	proto.RegisterType((*UseIncenseResponse)(nil), "POGOProtos.Networking.Responses.UseIncenseResponse")
-	proto.RegisterType((*UseItemCaptureResponse)(nil), "POGOProtos.Networking.Responses.UseItemCaptureResponse")
-	proto.RegisterType((*UseItemEggIncubatorResponse)(nil), "POGOProtos.Networking.Responses.UseItemEggIncubatorResponse")
 	proto.RegisterType((*UseItemGymResponse)(nil), "POGOProtos.Networking.Responses.UseItemGymResponse")
+	proto.RegisterType((*EncounterResponse)(nil), "POGOProtos.Networking.Responses.EncounterResponse")
+	proto.RegisterType((*ClaimCodenameResponse)(nil), "POGOProtos.Networking.Responses.ClaimCodenameResponse")
+	proto.RegisterType((*GetPlayerResponse)(nil), "POGOProtos.Networking.Responses.GetPlayerResponse")
+	proto.RegisterType((*DiskEncounterResponse)(nil), "POGOProtos.Networking.Responses.DiskEncounterResponse")
+	proto.RegisterType((*PlayerUpdateResponse)(nil), "POGOProtos.Networking.Responses.PlayerUpdateResponse")
+	proto.RegisterType((*UpgradePokemonResponse)(nil), "POGOProtos.Networking.Responses.UpgradePokemonResponse")
+	proto.RegisterType((*FortSearchResponse)(nil), "POGOProtos.Networking.Responses.FortSearchResponse")
+	proto.RegisterType((*StartGymBattleResponse)(nil), "POGOProtos.Networking.Responses.StartGymBattleResponse")
+	proto.RegisterType((*GetMapObjectsResponse)(nil), "POGOProtos.Networking.Responses.GetMapObjectsResponse")
 	proto.RegisterType((*UseItemPotionResponse)(nil), "POGOProtos.Networking.Responses.UseItemPotionResponse")
-	proto.RegisterType((*UseItemReviveResponse)(nil), "POGOProtos.Networking.Responses.UseItemReviveResponse")
-	proto.RegisterType((*UseItemXpBoostResponse)(nil), "POGOProtos.Networking.Responses.UseItemXpBoostResponse")
-	proto.RegisterEnum("POGOProtos.Networking.Responses.AttackGymResponse_Result", AttackGymResponse_Result_name, AttackGymResponse_Result_value)
-	proto.RegisterEnum("POGOProtos.Networking.Responses.CatchPokemonResponse_CatchStatus", CatchPokemonResponse_CatchStatus_name, CatchPokemonResponse_CatchStatus_value)
+	proto.RegisterType((*DownloadSettingsResponse)(nil), "POGOProtos.Networking.Responses.DownloadSettingsResponse")
+	proto.RegisterType((*CheckAwardedBadgesResponse)(nil), "POGOProtos.Networking.Responses.CheckAwardedBadgesResponse")
+	proto.RegisterType((*EquipBadgeResponse)(nil), "POGOProtos.Networking.Responses.EquipBadgeResponse")
+	proto.RegisterType((*UseItemEggIncubatorResponse)(nil), "POGOProtos.Networking.Responses.UseItemEggIncubatorResponse")
+	proto.RegisterType((*UseItemCaptureResponse)(nil), "POGOProtos.Networking.Responses.UseItemCaptureResponse")
+	proto.RegisterType((*EvolvePokemonResponse)(nil), "POGOProtos.Networking.Responses.EvolvePokemonResponse")
+	proto.RegisterType((*GetInventoryResponse)(nil), "POGOProtos.Networking.Responses.GetInventoryResponse")
+	proto.RegisterType((*IncenseEncounterResponse)(nil), "POGOProtos.Networking.Responses.IncenseEncounterResponse")
+	proto.RegisterType((*FortDeployPokemonResponse)(nil), "POGOProtos.Networking.Responses.FortDeployPokemonResponse")
+	proto.RegisterType((*SetAvatarResponse)(nil), "POGOProtos.Networking.Responses.SetAvatarResponse")
+	proto.RegisterType((*MarkTutorialCompleteResponse)(nil), "POGOProtos.Networking.Responses.MarkTutorialCompleteResponse")
+	proto.RegisterType((*LevelUpRewardsResponse)(nil), "POGOProtos.Networking.Responses.LevelUpRewardsResponse")
+	proto.RegisterType((*AttackGymResponse)(nil), "POGOProtos.Networking.Responses.AttackGymResponse")
 	proto.RegisterEnum("POGOProtos.Networking.Responses.CheckCodenameAvailableResponse_Status", CheckCodenameAvailableResponse_Status_name, CheckCodenameAvailableResponse_Status_value)
-	proto.RegisterEnum("POGOProtos.Networking.Responses.ClaimCodenameResponse_Status", ClaimCodenameResponse_Status_name, ClaimCodenameResponse_Status_value)
+	proto.RegisterEnum("POGOProtos.Networking.Responses.UseItemReviveResponse_Result", UseItemReviveResponse_Result_name, UseItemReviveResponse_Result_value)
+	proto.RegisterEnum("POGOProtos.Networking.Responses.RecycleInventoryItemResponse_Result", RecycleInventoryItemResponse_Result_name, RecycleInventoryItemResponse_Result_value)
+	proto.RegisterEnum("POGOProtos.Networking.Responses.SfidaActionLogResponse_Result", SfidaActionLogResponse_Result_name, SfidaActionLogResponse_Result_value)
+	proto.RegisterEnum("POGOProtos.Networking.Responses.GetIncensePokemonResponse_Result", GetIncensePokemonResponse_Result_name, GetIncensePokemonResponse_Result_value)
+	proto.RegisterEnum("POGOProtos.Networking.Responses.ReleasePokemonResponse_Result", ReleasePokemonResponse_Result_name, ReleasePokemonResponse_Result_value)
+	proto.RegisterEnum("POGOProtos.Networking.Responses.UseIncenseResponse_Result", UseIncenseResponse_Result_name, UseIncenseResponse_Result_value)
 	proto.RegisterEnum("POGOProtos.Networking.Responses.CollectDailyBonusResponse_Result", CollectDailyBonusResponse_Result_name, CollectDailyBonusResponse_Result_value)
-	proto.RegisterEnum("POGOProtos.Networking.Responses.CollectDailyDefenderBonusResponse_Result", CollectDailyDefenderBonusResponse_Result_name, CollectDailyDefenderBonusResponse_Result_value)
-	proto.RegisterEnum("POGOProtos.Networking.Responses.DiskEncounterResponse_Result", DiskEncounterResponse_Result_name, DiskEncounterResponse_Result_value)
 	proto.RegisterEnum("POGOProtos.Networking.Responses.DownloadRemoteConfigVersionResponse_Result", DownloadRemoteConfigVersionResponse_Result_name, DownloadRemoteConfigVersionResponse_Result_value)
+	proto.RegisterEnum("POGOProtos.Networking.Responses.EncounterTutorialCompleteResponse_Result", EncounterTutorialCompleteResponse_Result_name, EncounterTutorialCompleteResponse_Result_value)
+	proto.RegisterEnum("POGOProtos.Networking.Responses.SetFavoritePokemonResponse_Result", SetFavoritePokemonResponse_Result_name, SetFavoritePokemonResponse_Result_value)
+	proto.RegisterEnum("POGOProtos.Networking.Responses.NicknamePokemonResponse_Result", NicknamePokemonResponse_Result_name, NicknamePokemonResponse_Result_value)
+	proto.RegisterEnum("POGOProtos.Networking.Responses.UseItemXpBoostResponse_Result", UseItemXpBoostResponse_Result_name, UseItemXpBoostResponse_Result_value)
+	proto.RegisterEnum("POGOProtos.Networking.Responses.FortRecallPokemonResponse_Result", FortRecallPokemonResponse_Result_name, FortRecallPokemonResponse_Result_value)
+	proto.RegisterEnum("POGOProtos.Networking.Responses.GetPlayerProfileResponse_Result", GetPlayerProfileResponse_Result_name, GetPlayerProfileResponse_Result_value)
+	proto.RegisterEnum("POGOProtos.Networking.Responses.GetGymDetailsResponse_Result", GetGymDetailsResponse_Result_name, GetGymDetailsResponse_Result_value)
+	proto.RegisterEnum("POGOProtos.Networking.Responses.CollectDailyDefenderBonusResponse_Result", CollectDailyDefenderBonusResponse_Result_name, CollectDailyDefenderBonusResponse_Result_value)
+	proto.RegisterEnum("POGOProtos.Networking.Responses.CatchPokemonResponse_CatchStatus", CatchPokemonResponse_CatchStatus_name, CatchPokemonResponse_CatchStatus_value)
+	proto.RegisterEnum("POGOProtos.Networking.Responses.SetContactSettingsResponse_Status", SetContactSettingsResponse_Status_name, SetContactSettingsResponse_Status_value)
+	proto.RegisterEnum("POGOProtos.Networking.Responses.SetPlayerTeamResponse_Status", SetPlayerTeamResponse_Status_name, SetPlayerTeamResponse_Status_value)
+	proto.RegisterEnum("POGOProtos.Networking.Responses.UseItemGymResponse_Result", UseItemGymResponse_Result_name, UseItemGymResponse_Result_value)
 	proto.RegisterEnum("POGOProtos.Networking.Responses.EncounterResponse_Background", EncounterResponse_Background_name, EncounterResponse_Background_value)
 	proto.RegisterEnum("POGOProtos.Networking.Responses.EncounterResponse_Status", EncounterResponse_Status_name, EncounterResponse_Status_value)
-	proto.RegisterEnum("POGOProtos.Networking.Responses.EncounterTutorialCompleteResponse_Result", EncounterTutorialCompleteResponse_Result_name, EncounterTutorialCompleteResponse_Result_value)
-	proto.RegisterEnum("POGOProtos.Networking.Responses.EquipBadgeResponse_Result", EquipBadgeResponse_Result_name, EquipBadgeResponse_Result_value)
-	proto.RegisterEnum("POGOProtos.Networking.Responses.EvolvePokemonResponse_Result", EvolvePokemonResponse_Result_name, EvolvePokemonResponse_Result_value)
-	proto.RegisterEnum("POGOProtos.Networking.Responses.FortDeployPokemonResponse_Result", FortDeployPokemonResponse_Result_name, FortDeployPokemonResponse_Result_value)
-	proto.RegisterEnum("POGOProtos.Networking.Responses.FortRecallPokemonResponse_Result", FortRecallPokemonResponse_Result_name, FortRecallPokemonResponse_Result_value)
-	proto.RegisterEnum("POGOProtos.Networking.Responses.FortSearchResponse_Result", FortSearchResponse_Result_name, FortSearchResponse_Result_value)
-	proto.RegisterEnum("POGOProtos.Networking.Responses.GetGymDetailsResponse_Result", GetGymDetailsResponse_Result_name, GetGymDetailsResponse_Result_value)
-	proto.RegisterEnum("POGOProtos.Networking.Responses.GetIncensePokemonResponse_Result", GetIncensePokemonResponse_Result_name, GetIncensePokemonResponse_Result_value)
-	proto.RegisterEnum("POGOProtos.Networking.Responses.GetPlayerProfileResponse_Result", GetPlayerProfileResponse_Result_name, GetPlayerProfileResponse_Result_value)
-	proto.RegisterEnum("POGOProtos.Networking.Responses.IncenseEncounterResponse_Result", IncenseEncounterResponse_Result_name, IncenseEncounterResponse_Result_value)
-	proto.RegisterEnum("POGOProtos.Networking.Responses.LevelUpRewardsResponse_Result", LevelUpRewardsResponse_Result_name, LevelUpRewardsResponse_Result_value)
-	proto.RegisterEnum("POGOProtos.Networking.Responses.NicknamePokemonResponse_Result", NicknamePokemonResponse_Result_name, NicknamePokemonResponse_Result_value)
-	proto.RegisterEnum("POGOProtos.Networking.Responses.RecycleInventoryItemResponse_Result", RecycleInventoryItemResponse_Result_name, RecycleInventoryItemResponse_Result_value)
-	proto.RegisterEnum("POGOProtos.Networking.Responses.ReleasePokemonResponse_Result", ReleasePokemonResponse_Result_name, ReleasePokemonResponse_Result_value)
-	proto.RegisterEnum("POGOProtos.Networking.Responses.SetAvatarResponse_Status", SetAvatarResponse_Status_name, SetAvatarResponse_Status_value)
-	proto.RegisterEnum("POGOProtos.Networking.Responses.SetContactSettingsResponse_Status", SetContactSettingsResponse_Status_name, SetContactSettingsResponse_Status_value)
-	proto.RegisterEnum("POGOProtos.Networking.Responses.SetFavoritePokemonResponse_Result", SetFavoritePokemonResponse_Result_name, SetFavoritePokemonResponse_Result_value)
-	proto.RegisterEnum("POGOProtos.Networking.Responses.SetPlayerTeamResponse_Status", SetPlayerTeamResponse_Status_name, SetPlayerTeamResponse_Status_value)
-	proto.RegisterEnum("POGOProtos.Networking.Responses.SfidaActionLogResponse_Result", SfidaActionLogResponse_Result_name, SfidaActionLogResponse_Result_value)
-	proto.RegisterEnum("POGOProtos.Networking.Responses.StartGymBattleResponse_Result", StartGymBattleResponse_Result_name, StartGymBattleResponse_Result_value)
+	proto.RegisterEnum("POGOProtos.Networking.Responses.ClaimCodenameResponse_Status", ClaimCodenameResponse_Status_name, ClaimCodenameResponse_Status_value)
+	proto.RegisterEnum("POGOProtos.Networking.Responses.DiskEncounterResponse_Result", DiskEncounterResponse_Result_name, DiskEncounterResponse_Result_value)
 	proto.RegisterEnum("POGOProtos.Networking.Responses.UpgradePokemonResponse_Result", UpgradePokemonResponse_Result_name, UpgradePokemonResponse_Result_value)
-	proto.RegisterEnum("POGOProtos.Networking.Responses.UseIncenseResponse_Result", UseIncenseResponse_Result_name, UseIncenseResponse_Result_value)
-	proto.RegisterEnum("POGOProtos.Networking.Responses.UseItemEggIncubatorResponse_Result", UseItemEggIncubatorResponse_Result_name, UseItemEggIncubatorResponse_Result_value)
-	proto.RegisterEnum("POGOProtos.Networking.Responses.UseItemGymResponse_Result", UseItemGymResponse_Result_name, UseItemGymResponse_Result_value)
+	proto.RegisterEnum("POGOProtos.Networking.Responses.FortSearchResponse_Result", FortSearchResponse_Result_name, FortSearchResponse_Result_value)
+	proto.RegisterEnum("POGOProtos.Networking.Responses.StartGymBattleResponse_Result", StartGymBattleResponse_Result_name, StartGymBattleResponse_Result_value)
 	proto.RegisterEnum("POGOProtos.Networking.Responses.UseItemPotionResponse_Result", UseItemPotionResponse_Result_name, UseItemPotionResponse_Result_value)
-	proto.RegisterEnum("POGOProtos.Networking.Responses.UseItemReviveResponse_Result", UseItemReviveResponse_Result_name, UseItemReviveResponse_Result_value)
-	proto.RegisterEnum("POGOProtos.Networking.Responses.UseItemXpBoostResponse_Result", UseItemXpBoostResponse_Result_name, UseItemXpBoostResponse_Result_value)
+	proto.RegisterEnum("POGOProtos.Networking.Responses.EquipBadgeResponse_Result", EquipBadgeResponse_Result_name, EquipBadgeResponse_Result_value)
+	proto.RegisterEnum("POGOProtos.Networking.Responses.UseItemEggIncubatorResponse_Result", UseItemEggIncubatorResponse_Result_name, UseItemEggIncubatorResponse_Result_value)
+	proto.RegisterEnum("POGOProtos.Networking.Responses.EvolvePokemonResponse_Result", EvolvePokemonResponse_Result_name, EvolvePokemonResponse_Result_value)
+	proto.RegisterEnum("POGOProtos.Networking.Responses.IncenseEncounterResponse_Result", IncenseEncounterResponse_Result_name, IncenseEncounterResponse_Result_value)
+	proto.RegisterEnum("POGOProtos.Networking.Responses.FortDeployPokemonResponse_Result", FortDeployPokemonResponse_Result_name, FortDeployPokemonResponse_Result_value)
+	proto.RegisterEnum("POGOProtos.Networking.Responses.SetAvatarResponse_Status", SetAvatarResponse_Status_name, SetAvatarResponse_Status_value)
+	proto.RegisterEnum("POGOProtos.Networking.Responses.LevelUpRewardsResponse_Result", LevelUpRewardsResponse_Result_name, LevelUpRewardsResponse_Result_value)
+	proto.RegisterEnum("POGOProtos.Networking.Responses.AttackGymResponse_Result", AttackGymResponse_Result_name, AttackGymResponse_Result_value)
 }
 
-func init() { proto.RegisterFile("networking_responses.proto", fileDescriptor15) }
+func init() { proto.RegisterFile("networking_responses.proto", fileDescriptor2) }
 
-var fileDescriptor15 = []byte{
-	// 4756 bytes of a gzipped FileDescriptorProto
-	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x09, 0x6e, 0x88, 0x02, 0xff, 0xd4, 0x5b, 0x4d, 0x6c, 0x23, 0x59,
-	0x5e, 0x5f, 0x7f, 0xc4, 0x71, 0x9e, 0x1d, 0xc7, 0xa9, 0x4e, 0x77, 0xa7, 0x93, 0xee, 0xe9, 0xee,
-	0x9a, 0x19, 0x76, 0x66, 0x61, 0x9a, 0xdd, 0xde, 0x59, 0x69, 0x67, 0x96, 0x61, 0xb7, 0x62, 0x57,
-	0x12, 0x6f, 0xdb, 0xae, 0xda, 0xb2, 0xdd, 0x99, 0x34, 0x03, 0xa5, 0x8a, 0xfd, 0xe2, 0x14, 0xb1,
-	0x5d, 0xc6, 0x55, 0x4e, 0x77, 0x4e, 0x48, 0xc0, 0x6a, 0x11, 0x57, 0x2e, 0x5c, 0xd0, 0x8a, 0x0b,
-	0x27, 0x04, 0x07, 0xc4, 0xc7, 0x81, 0x2b, 0x07, 0x2e, 0x7c, 0x48, 0x23, 0x21, 0x84, 0x38, 0x22,
-	0x84, 0x38, 0xac, 0x00, 0x21, 0xb4, 0x07, 0x24, 0xfe, 0xef, 0xab, 0xbe, 0x5c, 0x8e, 0x9d, 0x4e,
-	0xef, 0x6a, 0xf7, 0xd0, 0x1d, 0xd7, 0xff, 0xbd, 0xf7, 0xab, 0xf7, 0xde, 0xff, 0xfb, 0xff, 0x5e,
-	0xa1, 0x9d, 0x11, 0xf6, 0x5e, 0x3a, 0x93, 0x73, 0x7b, 0xd4, 0x37, 0x27, 0xd8, 0x1d, 0x3b, 0x23,
-	0x17, 0xbb, 0x4f, 0xc6, 0x13, 0xc7, 0x73, 0xa4, 0x87, 0xba, 0x76, 0xa0, 0xe9, 0xe4, 0xa7, 0xfb,
-	0xa4, 0xe9, 0x77, 0x7b, 0x62, 0x88, 0x6e, 0x3b, 0x9b, 0x3d, 0xcb, 0xb3, 0xcc, 0x13, 0xcb, 0xf3,
-	0x06, 0x98, 0x8d, 0xd9, 0x91, 0x28, 0xa9, 0x6b, 0x8d, 0xbd, 0xe9, 0x44, 0xd0, 0x0a, 0x78, 0x34,
-	0x1d, 0x72, 0xd0, 0x1d, 0x44, 0x3a, 0xf0, 0xdf, 0xb7, 0x5d, 0xec, 0x79, 0x00, 0xe9, 0x9a, 0x43,
-	0xcb, 0xf5, 0xf0, 0x84, 0x93, 0x4b, 0x82, 0xcc, 0x9f, 0x37, 0x87, 0xd6, 0xd8, 0x1c, 0x3b, 0xe7,
-	0x78, 0xe8, 0x8c, 0x04, 0x89, 0xbe, 0x66, 0x3c, 0xb0, 0x2e, 0x83, 0x51, 0x94, 0xd4, 0xbf, 0x1c,
-	0x8a, 0x67, 0x32, 0xea, 0xd4, 0x99, 0x78, 0xfc, 0x79, 0xcb, 0x1e, 0x5d, 0xe0, 0x91, 0xe7, 0x4c,
-	0x2e, 0x4d, 0xdb, 0xc3, 0xa2, 0xd7, 0x86, 0x4f, 0x15, 0xf3, 0x83, 0x61, 0xe2, 0xc5, 0x1b, 0x14,
-	0x72, 0xe0, 0x88, 0x99, 0xc8, 0xf7, 0xd0, 0x5d, 0xa5, 0xd7, 0xdb, 0x07, 0xd0, 0x86, 0xd3, 0xb3,
-	0x4f, 0x6d, 0x3c, 0x11, 0x9b, 0x21, 0xff, 0x4d, 0x06, 0x6d, 0x2a, 0x9e, 0x67, 0x75, 0xcf, 0x0f,
-	0x2e, 0x87, 0x82, 0x2a, 0x7d, 0x07, 0xe5, 0x60, 0x57, 0xa7, 0x03, 0x6f, 0x3b, 0xf5, 0x28, 0xf5,
-	0x5e, 0xe9, 0xe9, 0x47, 0x4f, 0x16, 0xec, 0xe9, 0x93, 0x19, 0x0c, 0xd2, 0x06, 0x00, 0x06, 0x07,
-	0x92, 0xbe, 0x85, 0x10, 0xdb, 0x71, 0x32, 0xb1, 0xed, 0x34, 0xc0, 0x16, 0x9e, 0x3e, 0x0e, 0xc3,
-	0x56, 0xc9, 0x06, 0xef, 0x31, 0xa6, 0xb0, 0x3f, 0x75, 0xa7, 0x6f, 0xac, 0x9d, 0x88, 0x9f, 0xd2,
-	0x2e, 0xe2, 0x0f, 0xa6, 0xdd, 0xdb, 0xce, 0x00, 0xc0, 0x9a, 0x91, 0x67, 0x84, 0x5a, 0x4f, 0x32,
-	0xd0, 0x86, 0xd5, 0xf5, 0xec, 0x0b, 0x6c, 0xf6, 0xf0, 0x29, 0x1e, 0xf5, 0xf0, 0x64, 0x3b, 0x4b,
-	0xdf, 0xf1, 0xfe, 0xd5, 0xef, 0xd0, 0x19, 0x7f, 0x6a, 0xa3, 0x53, 0xc7, 0x28, 0x31, 0x84, 0x2a,
-	0x07, 0x08, 0x61, 0x5a, 0x74, 0x75, 0x80, 0xb9, 0xf2, 0x9a, 0x98, 0x0a, 0x07, 0x90, 0x5f, 0xa0,
-	0x1c, 0xdb, 0x18, 0x69, 0x0d, 0xad, 0x74, 0x9a, 0x2d, 0xb5, 0x5d, 0xfe, 0x82, 0x54, 0x40, 0xab,
-	0xad, 0x4e, 0xa5, 0xa2, 0xb6, 0x5a, 0xe5, 0x94, 0xf4, 0x08, 0xdd, 0x57, 0x0d, 0x43, 0x33, 0xcc,
-	0x5a, 0xf3, 0xb9, 0x52, 0xaf, 0x55, 0x4d, 0xa5, 0xdd, 0x56, 0x2a, 0xcf, 0x4c, 0xa5, 0xd2, 0xae,
-	0x69, 0xcd, 0x56, 0x39, 0x2d, 0xdd, 0x41, 0x12, 0xeb, 0xd1, 0xd4, 0xda, 0xd0, 0xcb, 0x34, 0x94,
-	0xe6, 0x81, 0x5a, 0xce, 0xc8, 0xff, 0x9b, 0x46, 0x5b, 0x15, 0xcb, 0xeb, 0x9e, 0xf1, 0x09, 0xf8,
-	0xec, 0x3c, 0x46, 0x39, 0xd7, 0xb3, 0xbc, 0xa9, 0xcb, 0xd9, 0xa9, 0x2c, 0x64, 0x67, 0x12, 0x0c,
-	0x23, 0xb6, 0x28, 0x90, 0xc1, 0x01, 0xa5, 0xc7, 0xa8, 0x38, 0xb4, 0x5d, 0xd7, 0x1c, 0xe3, 0x49,
-	0x17, 0x04, 0x92, 0x32, 0x36, 0x65, 0x14, 0x08, 0x4d, 0x67, 0x24, 0xe9, 0x09, 0xba, 0xc5, 0x15,
-	0xab, 0x27, 0xd4, 0x41, 0x70, 0x30, 0x67, 0x6c, 0x8a, 0x26, 0xb1, 0x69, 0x3d, 0xe9, 0xdb, 0x68,
-	0x9d, 0x13, 0x4d, 0xeb, 0xa5, 0x35, 0xe9, 0x71, 0x46, 0xbe, 0x3b, 0xb3, 0xe9, 0x15, 0xae, 0xae,
-	0xfc, 0xaf, 0x42, 0x3a, 0x1b, 0xc5, 0x6e, 0xe8, 0x49, 0xc6, 0xa8, 0x10, 0x9a, 0xb5, 0xb4, 0x01,
-	0x8f, 0x4a, 0xbb, 0x72, 0x68, 0xd2, 0xfd, 0x83, 0x9d, 0xdf, 0x44, 0xeb, 0x8c, 0x10, 0xec, 0x7f,
-	0x19, 0x15, 0x79, 0x9f, 0x56, 0x45, 0xd1, 0x55, 0xd8, 0xef, 0x12, 0x42, 0x8c, 0xb2, 0x5f, 0x57,
-	0x61, 0x9f, 0x83, 0x1e, 0x8d, 0x5a, 0xab, 0xa5, 0x56, 0xcb, 0x59, 0xf9, 0x8f, 0x52, 0x68, 0xa7,
-	0x72, 0x86, 0xbb, 0xe7, 0xf4, 0xad, 0xb8, 0xb7, 0x67, 0xf5, 0xfa, 0xd8, 0xf5, 0xf7, 0x7f, 0x1b,
-	0xad, 0xba, 0xd3, 0x6e, 0x17, 0xbb, 0x8c, 0x01, 0x79, 0x43, 0x3c, 0x4a, 0x7b, 0xa8, 0x64, 0xb1,
-	0x21, 0x60, 0x8f, 0xc8, 0x18, 0xd8, 0xc0, 0x0c, 0x70, 0x68, 0x37, 0xbc, 0x58, 0x95, 0xda, 0x21,
-	0x8a, 0xd9, 0xbe, 0x1c, 0x63, 0x63, 0xdd, 0x0a, 0xbf, 0x45, 0xfa, 0x32, 0xda, 0x8a, 0x60, 0x98,
-	0x03, 0x7c, 0x81, 0x07, 0x2e, 0x6c, 0x70, 0xe6, 0xbd, 0x15, 0x43, 0x0a, 0x77, 0xae, 0xd3, 0x16,
-	0xf9, 0x07, 0x69, 0xf4, 0x16, 0x9d, 0x6e, 0xc5, 0xe9, 0xe1, 0x91, 0x35, 0xc4, 0xca, 0x85, 0x65,
-	0x0f, 0xac, 0x93, 0x01, 0xf6, 0xa7, 0xbc, 0x83, 0xf2, 0x5d, 0xde, 0x48, 0xe7, 0x0c, 0xba, 0x26,
-	0x9e, 0x09, 0xcf, 0xa7, 0x2e, 0x9e, 0x98, 0x43, 0x58, 0x81, 0xd5, 0xc7, 0x94, 0xe7, 0x6b, 0x46,
-	0x81, 0xd0, 0x1a, 0x8c, 0x24, 0xbd, 0x8d, 0xd6, 0x6d, 0xd7, 0xb4, 0x5c, 0xd7, 0xee, 0x8f, 0x08,
-	0x2e, 0xe5, 0x76, 0xde, 0x28, 0xda, 0xae, 0xe2, 0xd3, 0xa4, 0x5f, 0xf1, 0xc5, 0x32, 0x4b, 0xc5,
-	0x72, 0x7f, 0xb1, 0x58, 0x5e, 0x39, 0xe9, 0x27, 0x51, 0xd9, 0x94, 0x7f, 0x3b, 0x85, 0x72, 0x9c,
-	0xf1, 0xf3, 0x94, 0x6d, 0x07, 0xdd, 0xa9, 0x68, 0x55, 0xb5, 0xa9, 0x34, 0x54, 0xaa, 0x4d, 0xca,
-	0x73, 0xa5, 0x56, 0x57, 0xf6, 0xea, 0x2a, 0x53, 0xb3, 0x48, 0x1b, 0xd5, 0x46, 0x60, 0x3f, 0x91,
-	0x99, 0x8e, 0x61, 0xa8, 0xcd, 0xb6, 0xa9, 0x1d, 0x35, 0x55, 0xa3, 0x9c, 0x95, 0x1e, 0xa2, 0x5d,
-	0xbf, 0x6b, 0xe5, 0x90, 0xa8, 0x23, 0x43, 0xab, 0xd7, 0xb5, 0x23, 0x10, 0x90, 0x15, 0xf9, 0x5f,
-	0xd2, 0xe8, 0x76, 0x65, 0x60, 0xd9, 0x43, 0x31, 0xf9, 0x1f, 0xeb, 0x46, 0x77, 0x62, 0x1b, 0xfd,
-	0xc9, 0xe2, 0x8d, 0x4e, 0x9a, 0xeb, 0x4f, 0xf0, 0xfe, 0xfe, 0x69, 0x0a, 0xdd, 0xab, 0x38, 0x83,
-	0x01, 0xee, 0x7a, 0x55, 0x90, 0x8a, 0xcb, 0x3d, 0x67, 0x34, 0x75, 0xc3, 0xf6, 0x2f, 0xe2, 0xce,
-	0x96, 0xb0, 0x7f, 0xf3, 0xb0, 0x62, 0x6e, 0x4d, 0xfe, 0xc6, 0x42, 0x7b, 0x0e, 0x0f, 0xfb, 0xb0,
-	0xe8, 0x8e, 0x41, 0xd6, 0x5c, 0x44, 0xf9, 0xb6, 0xa6, 0x99, 0x2d, 0x4d, 0x6b, 0x82, 0xc1, 0xfe,
-	0xdb, 0x34, 0x7a, 0x1c, 0x7e, 0x93, 0xf0, 0x3c, 0xd1, 0xd9, 0x5b, 0xb1, 0xd9, 0xd7, 0xae, 0x35,
-	0xfb, 0x44, 0xcc, 0xb8, 0x73, 0x06, 0x29, 0xea, 0x4e, 0x27, 0x13, 0x3c, 0xea, 0x5e, 0x9a, 0x1e,
-	0x98, 0x18, 0x6a, 0x85, 0xd6, 0xc0, 0x96, 0x72, 0x22, 0x31, 0x3b, 0xd2, 0xfb, 0xa8, 0xec, 0x77,
-	0xe2, 0x46, 0x85, 0xdb, 0x98, 0x0d, 0x41, 0xe7, 0xe6, 0x4f, 0xfa, 0x22, 0xda, 0x10, 0x6e, 0xd8,
-	0x35, 0xbb, 0xce, 0x14, 0x1c, 0x03, 0x91, 0xbc, 0x15, 0xa3, 0xe4, 0x93, 0x2b, 0x84, 0x2a, 0x37,
-	0x6e, 0xb0, 0x7d, 0xc4, 0x0e, 0x37, 0x35, 0xb3, 0xaa, 0xee, 0xab, 0xcd, 0xaa, 0x6a, 0xb4, 0xc0,
-	0x0e, 0xff, 0x6e, 0x06, 0xdd, 0xae, 0xda, 0xee, 0xb9, 0x3a, 0xa2, 0x2f, 0x0d, 0xe2, 0x1c, 0xa2,
-	0x02, 0x91, 0x4d, 0x5c, 0xac, 0x02, 0x89, 0x38, 0xf1, 0x8d, 0xfb, 0x26, 0x2a, 0x0a, 0x97, 0x46,
-	0x82, 0x2e, 0x1e, 0xd7, 0xdc, 0x9f, 0x71, 0x55, 0xdc, 0xbb, 0x91, 0xdf, 0x46, 0x61, 0x1c, 0x3c,
-	0x48, 0x9f, 0xf9, 0xce, 0xd1, 0x84, 0x58, 0xed, 0xc4, 0x3a, 0xb1, 0x07, 0xb6, 0x77, 0x49, 0xb5,
-	0xb8, 0xf0, 0xf4, 0x67, 0x17, 0xb9, 0x3c, 0x3d, 0x18, 0x62, 0x48, 0xdd, 0x19, 0x9a, 0xfc, 0x9b,
-	0x29, 0x7f, 0x7f, 0x61, 0x1f, 0x3b, 0xcd, 0x67, 0x4d, 0xd0, 0xa8, 0xf8, 0x0e, 0x83, 0xbe, 0xc5,
-	0x55, 0x93, 0xee, 0x6c, 0x38, 0xb6, 0x90, 0xde, 0x42, 0x3b, 0x6a, 0xb3, 0xa2, 0x75, 0x9a, 0x6d,
-	0xd5, 0x00, 0xbd, 0x33, 0x54, 0xa5, 0x7a, 0x6c, 0xee, 0xd7, 0x9a, 0xb5, 0xd6, 0x21, 0xf1, 0x80,
-	0x44, 0xd1, 0x75, 0xed, 0x99, 0xda, 0xd0, 0x9a, 0x24, 0x6e, 0x01, 0xdd, 0xd5, 0x0c, 0x68, 0xef,
-	0xd4, 0xeb, 0xa0, 0x9c, 0xbf, 0x51, 0x44, 0x0f, 0xaa, 0xce, 0xcb, 0xd1, 0xc0, 0xb1, 0x7a, 0x35,
-	0x88, 0x61, 0xdb, 0x78, 0x08, 0x21, 0xb0, 0xb7, 0x94, 0x83, 0x9c, 0xa0, 0x12, 0x09, 0x7b, 0x4d,
-	0x4f, 0x8c, 0xa1, 0xa2, 0x59, 0x78, 0xfa, 0x6c, 0x31, 0xff, 0xae, 0x7a, 0xe3, 0x93, 0x30, 0xd5,
-	0x58, 0xb7, 0xc3, 0x7d, 0x88, 0xd9, 0xf5, 0x6c, 0xb0, 0xb9, 0x9e, 0x35, 0x1c, 0x9b, 0x43, 0x97,
-	0x32, 0x23, 0x6b, 0x14, 0x7c, 0x5a, 0xc3, 0xdd, 0xf9, 0x13, 0x84, 0x8a, 0x61, 0x08, 0xb0, 0x50,
-	0x05, 0x31, 0x45, 0x12, 0xdc, 0x30, 0x4b, 0x8e, 0x04, 0x09, 0xa2, 0x9a, 0xe7, 0xa8, 0x2c, 0x24,
-	0x45, 0xe4, 0x09, 0x5c, 0x5a, 0x22, 0x5c, 0x6e, 0x89, 0x1c, 0xa2, 0xc1, 0x52, 0x0b, 0x2e, 0x38,
-	0x82, 0x6c, 0x6c, 0x8c, 0xa3, 0x04, 0xa9, 0x81, 0xe8, 0xec, 0x03, 0x50, 0x26, 0x3a, 0xef, 0x5d,
-	0x05, 0x4a, 0x66, 0xee, 0x23, 0x16, 0xed, 0xd0, 0x13, 0x81, 0x1b, 0x3a, 0x10, 0xf1, 0xfa, 0x70,
-	0xd9, 0xc5, 0x70, 0x0d, 0x18, 0x10, 0xc0, 0x0d, 0x43, 0x4f, 0xd2, 0x29, 0xba, 0xc3, 0xe1, 0x7e,
-	0x6d, 0x0a, 0x06, 0x22, 0x84, 0xcb, 0x22, 0xe9, 0x2f, 0x2f, 0xc6, 0x65, 0x03, 0x7d, 0xfc, 0xad,
-	0x61, 0x02, 0x55, 0xfa, 0x14, 0x95, 0x88, 0xdd, 0x32, 0xf1, 0xe9, 0x29, 0xa6, 0x01, 0xf7, 0x76,
-	0x9e, 0xe2, 0x7f, 0xe5, 0x2a, 0x7c, 0x62, 0xd5, 0x54, 0x31, 0xc0, 0x7f, 0xc1, 0xba, 0x17, 0x26,
-	0x4b, 0x3a, 0x2a, 0xb1, 0xa8, 0xca, 0x9f, 0x39, 0x9a, 0xcd, 0x01, 0xe2, 0xc8, 0x34, 0xd8, 0x0a,
-	0x10, 0x4f, 0xc2, 0x8f, 0x10, 0xf3, 0xe5, 0xba, 0xe0, 0x55, 0x27, 0xd6, 0x76, 0x81, 0x22, 0x7d,
-	0xe9, 0x2a, 0xa4, 0x0a, 0xed, 0xe9, 0x43, 0xf1, 0x91, 0x90, 0x9a, 0x14, 0x59, 0x16, 0xc9, 0x82,
-	0xbd, 0xed, 0x22, 0x45, 0xfa, 0xf9, 0x2b, 0x25, 0x89, 0xf6, 0xa7, 0x11, 0xa0, 0x0f, 0x57, 0x18,
-	0x07, 0x44, 0xa9, 0x86, 0xd6, 0x20, 0x0d, 0xe5, 0x80, 0xeb, 0x14, 0xf0, 0xe7, 0xae, 0x02, 0x84,
-	0x64, 0x2f, 0x8a, 0x96, 0xef, 0x73, 0x0a, 0x08, 0xfb, 0x06, 0x4f, 0xd5, 0xfc, 0x5d, 0x2b, 0x51,
-	0xc0, 0x0f, 0x16, 0x00, 0xb2, 0x04, 0xca, 0x47, 0x2c, 0x9d, 0x44, 0x9e, 0xc1, 0x5a, 0x4a, 0x58,
-	0x98, 0xe4, 0x00, 0x7a, 0x63, 0x31, 0xb4, 0x6f, 0xc8, 0x7d, 0xe8, 0x4d, 0x1c, 0x27, 0x49, 0x6d,
-	0x54, 0xb6, 0x21, 0xf9, 0xa6, 0xea, 0xd4, 0xb3, 0x5d, 0xb2, 0x37, 0xdb, 0xe5, 0xc5, 0x2c, 0xaa,
-	0x59, 0x63, 0xa2, 0x50, 0x55, 0x36, 0xc2, 0x28, 0xd9, 0x91, 0x67, 0x48, 0x67, 0x8a, 0x04, 0xd5,
-	0x9f, 0xed, 0x26, 0x45, 0xfc, 0xe2, 0x02, 0xc4, 0x80, 0x45, 0x76, 0xf0, 0x20, 0xfd, 0x72, 0x60,
-	0x44, 0xa6, 0xe3, 0xfe, 0xc4, 0xea, 0x81, 0x3d, 0x94, 0x28, 0xde, 0xd3, 0x25, 0x8c, 0x48, 0x87,
-	0x0d, 0x99, 0xb1, 0x25, 0x9c, 0xee, 0x4a, 0x2f, 0xd0, 0x06, 0x28, 0x96, 0x3d, 0x1e, 0x07, 0xe9,
-	0xc8, 0xad, 0xc5, 0x6a, 0xa4, 0xf2, 0x21, 0x51, 0xa1, 0x2f, 0xe1, 0x30, 0xd9, 0x95, 0xff, 0x30,
-	0x8d, 0xde, 0x16, 0x26, 0xd9, 0x80, 0xb7, 0x7a, 0xb8, 0xe2, 0x8c, 0x4e, 0xed, 0xfe, 0x73, 0x88,
-	0x05, 0xec, 0x50, 0xae, 0xda, 0x8d, 0x39, 0xea, 0xe5, 0x0d, 0xfd, 0x15, 0xa8, 0x71, 0xb7, 0xfd,
-	0x09, 0xda, 0x8d, 0x7a, 0x15, 0x33, 0x62, 0xf0, 0xd3, 0xd4, 0xe0, 0x6f, 0x47, 0xbc, 0x42, 0x3b,
-	0xb0, 0xfe, 0xd2, 0x47, 0xe8, 0x1e, 0x44, 0xdc, 0xd8, 0x03, 0x29, 0x81, 0xa5, 0x79, 0x66, 0x82,
-	0xb7, 0xb8, 0x43, 0x3b, 0x54, 0x69, 0x7b, 0x68, 0xa8, 0xfc, 0x68, 0x51, 0xc0, 0x23, 0x7f, 0x37,
-	0x85, 0xb6, 0xc5, 0x92, 0xfc, 0xdd, 0x14, 0xbb, 0xb3, 0x85, 0x56, 0xf0, 0x64, 0xe2, 0x4c, 0xb8,
-	0x83, 0x61, 0x0f, 0x92, 0x84, 0xb2, 0x67, 0x96, 0x7b, 0xc6, 0xf3, 0x03, 0xfa, 0x1b, 0x22, 0x93,
-	0x7c, 0xcc, 0x25, 0xbc, 0x9d, 0xc8, 0xc4, 0x83, 0x01, 0x84, 0x0b, 0x21, 0x1d, 0x16, 0x83, 0xe4,
-	0xf7, 0x50, 0x51, 0xed, 0x9e, 0x39, 0x61, 0x1f, 0xdd, 0x75, 0x40, 0x5f, 0x5e, 0x79, 0xfc, 0xe5,
-	0xe2, 0x51, 0xfe, 0xf7, 0x2c, 0xda, 0x9c, 0x8d, 0xb8, 0xf6, 0x51, 0xf1, 0xa5, 0x3d, 0xf0, 0x53,
-	0x7e, 0x3a, 0x28, 0x36, 0x89, 0x86, 0x35, 0x16, 0xb2, 0xf9, 0xe4, 0x08, 0xfa, 0x8a, 0x82, 0x43,
-	0xe1, 0x65, 0xf0, 0x00, 0x32, 0x8f, 0x4e, 0xac, 0xee, 0x79, 0x7f, 0x02, 0xf8, 0x3d, 0xba, 0xc4,
-	0x65, 0xa2, 0xb7, 0xd9, 0xc8, 0x6d, 0xcf, 0x07, 0x31, 0x42, 0x80, 0xa4, 0xd4, 0xc5, 0x73, 0xa3,
-	0xcc, 0x92, 0xa5, 0xae, 0x59, 0xe8, 0x58, 0x4d, 0x64, 0x4e, 0x4c, 0x97, 0x7d, 0x33, 0x31, 0x9d,
-	0x8c, 0x50, 0xb0, 0x14, 0x29, 0x8f, 0xb2, 0xba, 0x62, 0x3c, 0x03, 0x21, 0x42, 0x28, 0x57, 0x55,
-	0x5b, 0xaa, 0xd1, 0x06, 0x19, 0xfa, 0xc7, 0x20, 0x33, 0xbb, 0x85, 0x36, 0x82, 0xc0, 0x4d, 0x94,
-	0x3d, 0x6e, 0x03, 0xc3, 0x7c, 0x62, 0x10, 0x09, 0xde, 0x45, 0xb7, 0x02, 0x32, 0x09, 0x00, 0xf7,
-	0xe1, 0x77, 0x15, 0xe2, 0xc1, 0x2d, 0x54, 0x0e, 0x1a, 0x2a, 0x75, 0x8d, 0x54, 0x3d, 0x32, 0x24,
-	0xe6, 0x0b, 0xa8, 0x22, 0xfa, 0xdb, 0xaf, 0x8b, 0x78, 0x30, 0x0a, 0xe5, 0xc7, 0x92, 0x2b, 0xc9,
-	0xb1, 0xe4, 0xa1, 0xa2, 0xeb, 0x6a, 0x13, 0xc6, 0xe6, 0xae, 0x88, 0x25, 0x57, 0xe5, 0xbf, 0x87,
-	0x94, 0xc9, 0x67, 0x40, 0x7b, 0xea, 0x39, 0x13, 0xdb, 0x1a, 0x54, 0x1c, 0x50, 0x52, 0xec, 0xe1,
-	0x1b, 0xa4, 0x4c, 0x0b, 0x31, 0xdf, 0x78, 0xe4, 0x3f, 0x53, 0xe6, 0xca, 0xbc, 0x7e, 0x99, 0x6b,
-	0x71, 0x16, 0x7a, 0x0f, 0xdd, 0x8e, 0x56, 0x15, 0xf9, 0x0e, 0x97, 0xd3, 0xf2, 0xff, 0xa4, 0x90,
-	0x44, 0x6d, 0x38, 0xb5, 0xd4, 0xfe, 0x1e, 0x1a, 0xb1, 0x3d, 0xfc, 0x78, 0xf1, 0x1e, 0xce, 0x80,
-	0xc4, 0x37, 0x4d, 0x41, 0x79, 0xe1, 0x16, 0xf8, 0x86, 0xcd, 0x2e, 0x97, 0xc5, 0x29, 0x51, 0xaf,
-	0x62, 0xf8, 0xc3, 0xe4, 0xc3, 0x85, 0x4b, 0x05, 0x89, 0xaf, 0x68, 0x5a, 0xbd, 0x0a, 0xa9, 0x0e,
-	0x2d, 0x9a, 0x3e, 0x27, 0x19, 0x0d, 0x4f, 0x72, 0xbe, 0xd3, 0x81, 0xc5, 0xef, 0xd7, 0x88, 0xf8,
-	0xca, 0x7f, 0x0e, 0xc9, 0xa2, 0x7a, 0xe1, 0x0c, 0x2e, 0x70, 0xbc, 0x5e, 0x7a, 0xfd, 0x64, 0x31,
-	0x11, 0x27, 0xbe, 0xfa, 0x26, 0xda, 0xc2, 0xb4, 0x5f, 0x50, 0x07, 0x5d, 0x5a, 0x74, 0x24, 0x3e,
-	0x32, 0x44, 0x93, 0x3e, 0x80, 0x68, 0xe8, 0xd5, 0x18, 0x4f, 0x6c, 0x1a, 0x59, 0x07, 0x29, 0x39,
-	0x49, 0xb4, 0x37, 0x83, 0x16, 0x91, 0x94, 0x93, 0x24, 0xdf, 0x1a, 0xf5, 0x82, 0xe4, 0x9d, 0xa5,
-	0xe4, 0x45, 0x4a, 0xe4, 0x9d, 0xe4, 0x3f, 0x48, 0x2d, 0xdc, 0x5f, 0x50, 0x4f, 0x92, 0x91, 0xab,
-	0xbe, 0x0c, 0xd1, 0x3a, 0x68, 0xad, 0x79, 0x00, 0xdb, 0xfc, 0x18, 0x3d, 0xe0, 0x6d, 0xb5, 0x66,
-	0xab, 0xb3, 0xbf, 0x5f, 0xab, 0xd4, 0x48, 0x1d, 0xc7, 0x50, 0x5b, 0x5a, 0xc7, 0x80, 0xf1, 0x60,
-	0x35, 0x1e, 0xa1, 0xfb, 0xb1, 0xe1, 0x15, 0xa5, 0x49, 0x78, 0xa3, 0x3e, 0xd7, 0xea, 0xc0, 0xab,
-	0x2c, 0xb1, 0x0f, 0xb1, 0x1e, 0xb5, 0x16, 0xa4, 0xf9, 0x7a, 0x5d, 0x3b, 0xa6, 0xc5, 0x9e, 0xcf,
-	0xb3, 0xe8, 0x1e, 0x39, 0xcc, 0xa8, 0xe2, 0xf1, 0xc0, 0xb9, 0x4c, 0x28, 0x76, 0x5f, 0xb3, 0xd8,
-	0x33, 0x17, 0x2b, 0xce, 0xc0, 0x23, 0x54, 0x24, 0x27, 0x33, 0x66, 0x0f, 0x7b, 0x96, 0x3d, 0x10,
-	0xf9, 0xdb, 0x87, 0x4b, 0xbe, 0x80, 0x8e, 0x11, 0x44, 0xa3, 0x70, 0x1a, 0x10, 0x67, 0x8c, 0x49,
-	0xe6, 0xba, 0xc6, 0xe4, 0x63, 0x16, 0xbb, 0x13, 0x07, 0x84, 0xb9, 0xa3, 0x79, 0x30, 0x33, 0x1a,
-	0xe2, 0x6b, 0xf2, 0x8f, 0x38, 0x06, 0x4c, 0x83, 0x75, 0xfa, 0x4b, 0xfe, 0x6e, 0xda, 0x67, 0x39,
-	0xd5, 0x12, 0xc2, 0xad, 0x4e, 0xbd, 0x6d, 0x26, 0xb0, 0xfe, 0x5d, 0x30, 0xbe, 0xd4, 0x8a, 0x04,
-	0x56, 0xbb, 0xe5, 0x33, 0x89, 0x18, 0x7f, 0x0d, 0xdc, 0x0f, 0x95, 0x02, 0xd6, 0x4d, 0xd3, 0x75,
-	0x8d, 0x48, 0x86, 0xd9, 0x56, 0x95, 0x06, 0xa9, 0xe6, 0xb5, 0x58, 0x97, 0x4c, 0x70, 0x86, 0x41,
-	0x9e, 0x09, 0x7f, 0xa9, 0x7d, 0xcf, 0xce, 0x39, 0xdb, 0x58, 0x91, 0xee, 0xa3, 0x6d, 0x46, 0xd7,
-	0xeb, 0xca, 0x31, 0xb8, 0x0d, 0xf2, 0x62, 0x98, 0x2a, 0xc1, 0x05, 0x8f, 0xf1, 0x00, 0xdd, 0xe3,
-	0xad, 0x7c, 0x2e, 0xd4, 0x79, 0x01, 0xa2, 0x79, 0xa8, 0x97, 0x57, 0xa5, 0x77, 0xd0, 0xa3, 0xc8,
-	0xe0, 0x3d, 0xb5, 0xae, 0x1d, 0x81, 0xd4, 0x36, 0x6b, 0x8d, 0x4e, 0xc3, 0xac, 0xab, 0xcf, 0xd5,
-	0x7a, 0x39, 0x2f, 0xff, 0x30, 0x83, 0x6e, 0x25, 0x70, 0x0a, 0xbc, 0xe2, 0x2a, 0xe5, 0xba, 0x9f,
-	0xd6, 0xe7, 0xc8, 0x23, 0xa4, 0xf4, 0x1f, 0x23, 0x48, 0xf0, 0xad, 0xa1, 0xd9, 0x75, 0x06, 0x10,
-	0x91, 0xb1, 0xc8, 0x24, 0xa1, 0x70, 0xdf, 0x86, 0x3e, 0x15, 0xd2, 0xc5, 0x58, 0xf3, 0xc4, 0xcf,
-	0x9b, 0x73, 0x1c, 0x62, 0x3e, 0x5a, 0x33, 0xce, 0xb2, 0x98, 0x8f, 0xd6, 0x8b, 0x1f, 0x20, 0x64,
-	0x0f, 0x2d, 0xc8, 0x55, 0xa7, 0x93, 0x01, 0xc9, 0xb0, 0x49, 0x0d, 0x6f, 0x8d, 0x52, 0x3a, 0x40,
-	0x90, 0x4a, 0x28, 0x7d, 0x3a, 0xde, 0xce, 0x51, 0xad, 0x87, 0x5f, 0xb4, 0xea, 0x02, 0x61, 0xa9,
-	0x3d, 0xb2, 0xb6, 0x57, 0x29, 0x51, 0x3c, 0x92, 0x6a, 0xc6, 0xd0, 0x7a, 0x65, 0x8a, 0xd6, 0x3c,
-	0x6d, 0x45, 0x40, 0x6a, 0xf1, 0x0e, 0x5f, 0x41, 0x59, 0x5a, 0x27, 0x5c, 0xa3, 0x8b, 0x7e, 0x10,
-	0x0f, 0xea, 0xc8, 0x36, 0xd2, 0xff, 0xe8, 0x79, 0x05, 0xed, 0x4a, 0x0a, 0xdd, 0x10, 0x48, 0xdb,
-	0xde, 0xb4, 0x87, 0x69, 0x0a, 0x9d, 0x32, 0xfc, 0x67, 0xe0, 0xee, 0xda, 0xc0, 0x19, 0xf5, 0x59,
-	0x63, 0x81, 0x36, 0x06, 0x04, 0xb0, 0x18, 0x05, 0xc8, 0x4e, 0xba, 0x13, 0x7b, 0xec, 0x41, 0x4c,
-	0x4f, 0x73, 0xdd, 0x35, 0x23, 0x4c, 0x82, 0xdd, 0x5c, 0x1b, 0xf2, 0x93, 0x4d, 0x17, 0x52, 0xd7,
-	0x4c, 0xfc, 0x6c, 0x31, 0x32, 0x27, 0xff, 0x0c, 0x34, 0x18, 0x23, 0xff, 0x75, 0x9a, 0x99, 0x14,
-	0x03, 0x77, 0xad, 0xc1, 0xe0, 0xcd, 0x98, 0x94, 0x44, 0xac, 0x1f, 0x97, 0x49, 0x91, 0xbd, 0xa5,
-	0x95, 0x3a, 0x59, 0xe5, 0xd2, 0xc9, 0x4a, 0x25, 0x94, 0x3c, 0x43, 0x03, 0x4b, 0x3e, 0x8c, 0xeb,
-	0x55, 0x39, 0x2b, 0xff, 0x45, 0x16, 0x49, 0x64, 0x6a, 0x2d, 0x6c, 0x4d, 0xba, 0x67, 0x37, 0x88,
-	0x25, 0x66, 0x41, 0xe2, 0x3b, 0x57, 0x63, 0x85, 0x2f, 0xd7, 0x77, 0x67, 0xac, 0x30, 0xf8, 0x4e,
-	0x18, 0xba, 0xe6, 0x9f, 0x92, 0x93, 0x8c, 0x9c, 0xfe, 0xc7, 0xc3, 0x27, 0x3a, 0x54, 0x78, 0xc6,
-	0xc7, 0xa8, 0xd8, 0x0f, 0x23, 0x31, 0x17, 0x5a, 0xe8, 0x87, 0xba, 0xec, 0x07, 0x99, 0x37, 0x3d,
-	0x5d, 0xc7, 0xfd, 0x3e, 0xb7, 0xb3, 0x57, 0xeb, 0x6c, 0x29, 0xa4, 0xb3, 0x6a, 0xbf, 0x3f, 0xc7,
-	0x67, 0xaf, 0xcc, 0xf3, 0xd9, 0x15, 0xf4, 0x56, 0xd7, 0x71, 0x06, 0x3d, 0xc8, 0x07, 0xc1, 0xcc,
-	0xb0, 0x88, 0x34, 0x9a, 0x6e, 0x12, 0x75, 0xce, 0x18, 0xbb, 0xa2, 0x97, 0x08, 0x5b, 0xc3, 0xe9,
-	0xea, 0x37, 0xd0, 0x4e, 0xf7, 0xcc, 0xb2, 0x47, 0xe6, 0x19, 0xe4, 0x0d, 0x41, 0x29, 0x0e, 0x8c,
-	0xd3, 0x09, 0x9e, 0x70, 0xd5, 0xbf, 0x4b, 0x7b, 0x1c, 0x42, 0x07, 0x51, 0x5b, 0x6b, 0xd2, 0x66,
-	0xf9, 0x74, 0x69, 0x39, 0x2a, 0xa3, 0xa2, 0xd6, 0x01, 0x09, 0xd9, 0xf7, 0x25, 0x08, 0x24, 0x0b,
-	0xe4, 0xc9, 0x0f, 0xc6, 0x74, 0xd5, 0xa8, 0x69, 0x24, 0x71, 0x90, 0x50, 0x29, 0x16, 0xd8, 0x67,
-	0xe5, 0x0b, 0x74, 0xe7, 0x00, 0x7b, 0x4a, 0x90, 0x35, 0xfb, 0xc2, 0xf3, 0x11, 0xca, 0xb1, 0x3c,
-	0x1b, 0x84, 0x27, 0x93, 0x78, 0x6b, 0x20, 0x34, 0x4a, 0x1d, 0x79, 0x93, 0x4b, 0x83, 0x0f, 0x98,
-	0xa9, 0xe4, 0xa6, 0x67, 0x2a, 0xb9, 0xb2, 0x85, 0xee, 0xc2, 0x7b, 0x45, 0xc2, 0x4d, 0xec, 0x64,
-	0x28, 0x83, 0x5d, 0xef, 0x71, 0x3a, 0xb3, 0xa8, 0xf3, 0xde, 0x1f, 0x1a, 0xcd, 0xde, 0x5f, 0xec,
-	0x85, 0xf0, 0xe4, 0x3f, 0x4e, 0xa3, 0xdb, 0xf0, 0x0e, 0x70, 0xbd, 0x71, 0xd7, 0x12, 0x71, 0xdb,
-	0xa9, 0x6b, 0xb9, 0x6d, 0xdf, 0x01, 0xa4, 0x43, 0x0e, 0x00, 0x68, 0x74, 0xa2, 0x19, 0x6a, 0xfa,
-	0xe9, 0xef, 0x50, 0x30, 0xbb, 0xec, 0xe1, 0x5f, 0xe2, 0x5c, 0xe3, 0xea, 0x17, 0x33, 0xca, 0x2b,
-	0x33, 0x46, 0x59, 0xfe, 0xfa, 0xc2, 0x48, 0x72, 0x8e, 0xe5, 0x91, 0x3f, 0x4f, 0x51, 0x61, 0x38,
-	0x24, 0x27, 0xf7, 0xb8, 0x07, 0x6a, 0xb3, 0xcc, 0x49, 0xc1, 0x63, 0x84, 0x42, 0xb7, 0x0b, 0x88,
-	0x31, 0xc8, 0xed, 0xa5, 0xcb, 0xe0, 0x48, 0xc6, 0xfe, 0xcd, 0x82, 0x79, 0x01, 0x73, 0x66, 0xe9,
-	0x80, 0x39, 0x13, 0x0f, 0x98, 0xc9, 0xa9, 0x18, 0xb0, 0x6f, 0xd2, 0x9b, 0xba, 0x5e, 0x48, 0x9d,
-	0xe9, 0xa9, 0x98, 0xa0, 0x8b, 0xd8, 0xfa, 0xef, 0x32, 0xe8, 0x1e, 0x2c, 0xab, 0x06, 0xaf, 0x80,
-	0xa5, 0xdc, 0xdc, 0xc9, 0xcc, 0xc5, 0x8a, 0xf3, 0xea, 0x67, 0x90, 0x28, 0xf5, 0xd1, 0xd3, 0x3d,
-	0xb6, 0x3f, 0x44, 0xeb, 0xd7, 0x39, 0x99, 0xb8, 0x69, 0xd8, 0x9f, 0xb0, 0x8b, 0xce, 0x5c, 0xe5,
-	0xa2, 0xb3, 0x71, 0x17, 0xfd, 0x41, 0xb8, 0x30, 0x3b, 0x70, 0xba, 0x56, 0x48, 0x28, 0x82, 0x4a,
-	0x6b, 0x9d, 0x37, 0x10, 0xbd, 0x0c, 0xba, 0xc3, 0x6c, 0x72, 0xf4, 0x2e, 0x48, 0xc1, 0xa7, 0xc1,
-	0x5c, 0x3e, 0x44, 0x77, 0x7a, 0xb6, 0x6b, 0x41, 0xce, 0x67, 0x4d, 0xa2, 0x16, 0x6f, 0x95, 0x5a,
-	0xbc, 0x2d, 0xbf, 0x35, 0x5c, 0x5e, 0x1b, 0xfa, 0x32, 0x07, 0xde, 0xab, 0xd6, 0xac, 0xa8, 0x20,
-	0x76, 0x66, 0x50, 0x6c, 0x08, 0x4e, 0xc0, 0x1e, 0xa2, 0xdd, 0xd9, 0xe6, 0xe0, 0x08, 0x2c, 0x05,
-	0xcc, 0x7f, 0x38, 0xdb, 0x21, 0x76, 0x4e, 0x26, 0xff, 0x3a, 0xda, 0xa2, 0x4c, 0xe0, 0x5e, 0x66,
-	0x09, 0x29, 0x6d, 0xa0, 0xe0, 0xea, 0x16, 0x38, 0xfd, 0x81, 0x9f, 0xfe, 0xcd, 0xf3, 0x5b, 0xe2,
-	0x57, 0x95, 0xf4, 0x35, 0x4a, 0x76, 0xe4, 0x59, 0xfe, 0x5e, 0x8a, 0x9a, 0x16, 0x88, 0x6f, 0xb4,
-	0x93, 0x5f, 0xc5, 0x5d, 0x2f, 0x50, 0x94, 0x0f, 0x21, 0x24, 0xb2, 0xc6, 0x66, 0x17, 0x0f, 0x7c,
-	0xc3, 0x75, 0x37, 0x1e, 0x12, 0xc1, 0xbf, 0x0a, 0xb4, 0x1b, 0xf9, 0x21, 0xfb, 0xe1, 0x4a, 0x5f,
-	0xf7, 0xab, 0x61, 0x2c, 0x9c, 0x7d, 0x94, 0x30, 0x84, 0xbf, 0x29, 0x76, 0x19, 0xe0, 0x3f, 0x52,
-	0x68, 0x1b, 0x66, 0xc2, 0xb2, 0x77, 0x18, 0x70, 0x6a, 0x87, 0x6e, 0x93, 0x7c, 0x1a, 0x93, 0xed,
-	0x6f, 0x2d, 0x23, 0xdb, 0x89, 0x50, 0x71, 0xd1, 0x86, 0x90, 0x97, 0xa8, 0x19, 0xab, 0xc1, 0xd2,
-	0x49, 0x67, 0x8c, 0x35, 0x4a, 0x21, 0x62, 0x01, 0xbb, 0x90, 0xe3, 0x85, 0xec, 0x0c, 0xdd, 0x82,
-	0xfb, 0x73, 0xca, 0x0d, 0xac, 0xca, 0xc0, 0xfb, 0x2e, 0x51, 0xa4, 0x3d, 0x47, 0x9b, 0xfe, 0x0c,
-	0x97, 0xe0, 0xfa, 0x2f, 0x20, 0x7e, 0xd2, 0x12, 0x4e, 0xf8, 0x77, 0xe7, 0xcc, 0x85, 0xc6, 0x0d,
-	0x68, 0xec, 0xff, 0x96, 0x8f, 0xd0, 0x03, 0x78, 0x59, 0x6b, 0xda, 0x27, 0x3e, 0x0d, 0xf7, 0xc4,
-	0xb5, 0x8c, 0x80, 0xd7, 0xa0, 0x9b, 0xe2, 0xce, 0x08, 0xe3, 0x35, 0x84, 0xfd, 0x3e, 0x21, 0x3c,
-	0xad, 0x74, 0x64, 0x5a, 0xf2, 0xef, 0x67, 0xd0, 0x36, 0xb7, 0x20, 0xb3, 0xf5, 0xdb, 0xeb, 0xf3,
-	0x6c, 0x1e, 0xd4, 0x4f, 0xd9, 0xa1, 0xf9, 0xf7, 0x52, 0xcb, 0x1a, 0x91, 0xc4, 0xe6, 0xc0, 0xbd,
-	0x2d, 0x63, 0x42, 0xae, 0x28, 0x76, 0x66, 0xe4, 0xbf, 0x4a, 0xa3, 0x3b, 0xf4, 0x40, 0xad, 0x33,
-	0x36, 0x30, 0x71, 0x22, 0x01, 0xcb, 0x9f, 0xc7, 0xb8, 0xf3, 0x8b, 0x0b, 0xb9, 0x93, 0x0c, 0xf4,
-	0x23, 0x8c, 0xaa, 0x0f, 0xd9, 0xd1, 0xbd, 0x6b, 0x4e, 0x21, 0x14, 0xea, 0x9e, 0x73, 0xff, 0x59,
-	0x8a, 0xc6, 0x4f, 0x09, 0x58, 0xb5, 0x1e, 0x3b, 0x90, 0x77, 0x3b, 0x7c, 0x9c, 0xfc, 0xb5, 0x65,
-	0x6a, 0x7e, 0xca, 0x91, 0x62, 0x54, 0xd5, 0xaa, 0x28, 0x4d, 0x80, 0x75, 0xbe, 0x40, 0xf7, 0x1b,
-	0xd6, 0xe4, 0x7c, 0x6e, 0x95, 0xf8, 0x47, 0xa5, 0xaf, 0xff, 0x96, 0x42, 0x77, 0x9b, 0x76, 0xf7,
-	0x9c, 0xa8, 0x5f, 0xdc, 0xcb, 0x1f, 0xc5, 0xf8, 0xf6, 0xcd, 0x85, 0x7c, 0x9b, 0x83, 0x14, 0xbf,
-	0x88, 0xe4, 0x2e, 0x53, 0xb7, 0x8b, 0x96, 0x80, 0x9b, 0xb5, 0xca, 0x33, 0x72, 0xa5, 0x0a, 0xa4,
-	0x70, 0x17, 0xdd, 0x4d, 0x28, 0xa0, 0xd0, 0xea, 0x7f, 0x06, 0xf6, 0x69, 0x2b, 0xda, 0x58, 0x6b,
-	0x99, 0xea, 0xc1, 0x01, 0x04, 0xed, 0x7f, 0x99, 0x42, 0x5b, 0x6c, 0x13, 0x3a, 0xe3, 0x9e, 0x15,
-	0xda, 0xda, 0x43, 0xb4, 0x1e, 0x3e, 0xfc, 0x11, 0x1e, 0x68, 0xa9, 0xd3, 0x9f, 0x62, 0xe8, 0xf4,
-	0xc7, 0x95, 0xbe, 0x8a, 0x56, 0x48, 0x5a, 0x2b, 0xee, 0x7d, 0xcc, 0x2f, 0x35, 0x50, 0x36, 0xb0,
-	0xbe, 0x24, 0xbe, 0xa0, 0x3f, 0xcc, 0x11, 0xc4, 0x07, 0x27, 0x97, 0x22, 0xa1, 0xa3, 0xb4, 0x26,
-	0x25, 0xc9, 0xff, 0x97, 0x42, 0xf7, 0x21, 0x43, 0xbf, 0xec, 0x0e, 0xb0, 0x2f, 0x83, 0x44, 0xfa,
-	0xfc, 0x25, 0x7c, 0x16, 0xe3, 0x54, 0x75, 0x21, 0xa7, 0xae, 0x82, 0x8b, 0xeb, 0xd9, 0x2e, 0x5a,
-	0x1b, 0xe1, 0x97, 0xfc, 0x6e, 0x14, 0x0b, 0xc6, 0xf2, 0x40, 0x60, 0xb7, 0xa2, 0x4e, 0x16, 0xf2,
-	0xd2, 0xe7, 0x17, 0x2d, 0x9c, 0x36, 0xb5, 0xce, 0xc1, 0x21, 0xe4, 0x59, 0x7a, 0x4d, 0x25, 0xf7,
-	0x83, 0xc1, 0xee, 0xb0, 0x46, 0x5e, 0x58, 0x35, 0xd4, 0xca, 0x71, 0xa5, 0xae, 0x02, 0xdf, 0x2b,
-	0x9d, 0x3d, 0x05, 0x0c, 0x4c, 0x0b, 0x6c, 0xcb, 0x7f, 0x43, 0x8c, 0x6d, 0xe0, 0x01, 0xb6, 0x66,
-	0x23, 0xd1, 0xeb, 0xdb, 0x96, 0x64, 0xa0, 0xa4, 0x5b, 0x66, 0x91, 0x78, 0x3a, 0x9d, 0x50, 0x80,
-	0xfe, 0x6c, 0xe1, 0xda, 0xb7, 0x50, 0x59, 0x08, 0xa2, 0x5f, 0x14, 0x4e, 0x93, 0xe3, 0x2f, 0x56,
-	0x34, 0xbe, 0x52, 0x60, 0x21, 0x4a, 0xd9, 0x6c, 0x41, 0x9a, 0x79, 0x01, 0xc2, 0x32, 0x09, 0x5f,
-	0x77, 0x8f, 0xdc, 0x8f, 0x5e, 0x7c, 0x06, 0x38, 0x83, 0x11, 0x3f, 0x03, 0xbc, 0x99, 0x05, 0x51,
-	0x17, 0x5e, 0xac, 0x84, 0xd4, 0x09, 0xbc, 0x48, 0x5b, 0x09, 0x4a, 0xb1, 0xa4, 0x53, 0x3a, 0x7c,
-	0x5d, 0x2e, 0x23, 0xff, 0x6b, 0x0a, 0xed, 0xc0, 0x4c, 0x2b, 0xce, 0xc8, 0xb3, 0xba, 0xde, 0xcc,
-	0x61, 0xf2, 0x8b, 0xd8, 0xb2, 0xf7, 0x96, 0x59, 0xf6, 0x1c, 0xb0, 0x37, 0xbb, 0xfe, 0x0f, 0x16,
-	0xae, 0x3f, 0x7c, 0x2d, 0x50, 0xfe, 0x07, 0xb6, 0xce, 0x7d, 0xeb, 0x02, 0x0c, 0xbd, 0x37, 0x23,
-	0xcf, 0x2f, 0x62, 0xf2, 0xbc, 0xd4, 0x3a, 0xe7, 0x80, 0xc5, 0xcd, 0xee, 0xd1, 0xf2, 0xaa, 0x3a,
-	0x6b, 0x5a, 0xd3, 0x73, 0x25, 0x35, 0x23, 0xff, 0x27, 0x44, 0xf6, 0x2d, 0x11, 0x62, 0x92, 0x12,
-	0x72, 0xf8, 0x74, 0x2a, 0xc2, 0xb6, 0x4f, 0x96, 0x59, 0xce, 0x2c, 0xce, 0x9b, 0xe5, 0x58, 0x65,
-	0x21, 0xc7, 0x40, 0x6d, 0xe9, 0x29, 0xc0, 0x15, 0xf2, 0xfa, 0x4f, 0x60, 0x93, 0x5a, 0xa7, 0x76,
-	0xcf, 0x52, 0xba, 0x24, 0x4d, 0x24, 0xdf, 0x7f, 0xbc, 0xbe, 0x4d, 0x4a, 0x06, 0x8a, 0xdb, 0x24,
-	0x15, 0x15, 0x06, 0x4e, 0xdf, 0x04, 0x83, 0x0d, 0xb9, 0xbf, 0x9b, 0x14, 0xed, 0xd0, 0x55, 0xd7,
-	0xc9, 0xc7, 0x34, 0x3e, 0x18, 0x2b, 0xf2, 0xa0, 0x01, 0xfb, 0x65, 0x2f, 0x95, 0x31, 0xfc, 0x56,
-	0x0e, 0xd6, 0x46, 0xf2, 0x12, 0xff, 0x96, 0xd3, 0x4d, 0xd6, 0x96, 0x08, 0x14, 0x5f, 0xdb, 0x47,
-	0xe8, 0x9e, 0xb8, 0x85, 0xe5, 0xa7, 0x48, 0x91, 0x52, 0x58, 0xc6, 0xb8, 0xc3, 0x2f, 0x58, 0x89,
-	0x84, 0x49, 0x94, 0x0c, 0xbf, 0x86, 0xee, 0xf2, 0xa1, 0x78, 0xd4, 0x9b, 0xbd, 0xdf, 0x02, 0xe9,
-	0x37, 0x6b, 0x56, 0x47, 0xbd, 0xf0, 0xb0, 0xc8, 0x27, 0x3a, 0xd9, 0xd8, 0x27, 0x3a, 0x2a, 0xca,
-	0xfb, 0xdf, 0xe6, 0x2c, 0xf7, 0x1d, 0x0d, 0x4c, 0xca, 0xee, 0xda, 0x63, 0x6b, 0xe4, 0x19, 0xfe,
-	0xd0, 0xd8, 0x87, 0x44, 0xb9, 0xeb, 0x7f, 0x48, 0x24, 0xff, 0x30, 0xbd, 0x50, 0x69, 0xc9, 0x4d,
-	0x08, 0xaa, 0x97, 0x07, 0xc7, 0x8d, 0x88, 0xc2, 0x92, 0x9b, 0x13, 0x41, 0x83, 0xda, 0x69, 0x1b,
-	0x4a, 0x3d, 0xec, 0x71, 0x08, 0xf9, 0xc8, 0xd0, 0xf8, 0x91, 0x57, 0x39, 0x1b, 0x94, 0xc9, 0x49,
-	0x8b, 0xda, 0xd0, 0xdb, 0xc7, 0xe5, 0x95, 0xd9, 0x50, 0x4c, 0x5c, 0x62, 0x2e, 0xe7, 0xa4, 0xf7,
-	0xd1, 0xbb, 0xac, 0x0d, 0xa0, 0x6b, 0x4d, 0x72, 0x78, 0x16, 0xfd, 0x10, 0x88, 0xdc, 0xc0, 0x20,
-	0xb9, 0x44, 0x79, 0x35, 0xa8, 0xd0, 0x2b, 0xf5, 0x7a, 0x70, 0x01, 0x03, 0x46, 0xb5, 0xc1, 0x0d,
-	0xe6, 0x83, 0xb7, 0x90, 0x3b, 0xd3, 0x0d, 0xa5, 0x79, 0x6c, 0x82, 0xf7, 0x6f, 0xd7, 0x21, 0x46,
-	0x58, 0x4b, 0x68, 0x63, 0x35, 0xfc, 0x56, 0x19, 0x05, 0x67, 0x6d, 0x64, 0xca, 0x6c, 0x88, 0x59,
-	0xd7, 0x2a, 0xcf, 0xb4, 0x4e, 0xbb, 0x5c, 0x58, 0xea, 0x30, 0xad, 0x38, 0xa7, 0xb4, 0xb7, 0x2e,
-	0xff, 0x33, 0xa4, 0x34, 0xfc, 0xbe, 0xd9, 0xcd, 0xc3, 0x8e, 0x64, 0xa0, 0xb8, 0x1a, 0x1c, 0xa0,
-	0x32, 0xbf, 0x2c, 0x17, 0x5c, 0x46, 0x5a, 0x26, 0xe5, 0xdc, 0x10, 0xa3, 0x38, 0x51, 0xfe, 0x7e,
-	0xea, 0x66, 0xc6, 0x3e, 0xf4, 0x65, 0xd7, 0x9c, 0xb3, 0xf1, 0x87, 0x68, 0x97, 0xf5, 0xe8, 0xe8,
-	0x07, 0x86, 0x52, 0x8d, 0x7f, 0x33, 0x91, 0x9d, 0x3d, 0x93, 0x89, 0x9e, 0x8c, 0x7f, 0x3f, 0x8d,
-	0xa4, 0x8e, 0x8b, 0x79, 0x22, 0x7e, 0x83, 0xe3, 0x97, 0x59, 0x90, 0xf8, 0xae, 0x7e, 0x1b, 0x6d,
-	0x58, 0xe3, 0xf1, 0xc0, 0x86, 0x4d, 0xb5, 0x59, 0xcf, 0xa4, 0x8f, 0xfa, 0x82, 0xf4, 0x4e, 0x61,
-	0x9d, 0x69, 0x4c, 0x5c, 0xe2, 0x23, 0xf9, 0x2b, 0x64, 0x7b, 0x89, 0x5b, 0xea, 0x20, 0xb0, 0x22,
-	0x99, 0x16, 0x1e, 0xc4, 0xbf, 0xdc, 0x01, 0x4a, 0xd9, 0xd4, 0x9a, 0x24, 0xc0, 0x0d, 0x72, 0x68,
-	0x76, 0xcc, 0x00, 0x62, 0xab, 0x90, 0xcf, 0xe6, 0x4c, 0xc6, 0xad, 0xac, 0xfc, 0x3b, 0x44, 0xfe,
-	0x60, 0x71, 0x30, 0x0d, 0x5e, 0x0e, 0x58, 0x22, 0x1d, 0xfc, 0x12, 0xda, 0xa4, 0xd7, 0x05, 0x45,
-	0xd1, 0x61, 0x48, 0xb6, 0x92, 0x7d, 0xe9, 0xb6, 0x61, 0x07, 0x48, 0x0d, 0xb2, 0x82, 0x77, 0xf8,
-	0x85, 0xf5, 0xd3, 0x01, 0xe6, 0x1d, 0x59, 0x25, 0x95, 0xe6, 0xc6, 0xfb, 0x40, 0x6c, 0xf0, 0x50,
-	0xd8, 0xf5, 0x1c, 0xb0, 0xa7, 0xce, 0x05, 0x1e, 0x62, 0xfe, 0x79, 0x44, 0xde, 0x28, 0x12, 0x62,
-	0x83, 0xd3, 0xc8, 0x29, 0x2c, 0xed, 0xc4, 0xbe, 0x3e, 0xa4, 0x36, 0x33, 0x6f, 0x20, 0x42, 0x62,
-	0x9f, 0x13, 0x92, 0xe2, 0x17, 0x18, 0xee, 0x3e, 0xf6, 0xcc, 0xa1, 0xf5, 0x8a, 0x9a, 0xc2, 0xbc,
-	0xb1, 0xc6, 0x28, 0x0d, 0xeb, 0x15, 0xbd, 0x93, 0xce, 0x9a, 0xdd, 0x81, 0xf3, 0x92, 0xd6, 0x4d,
-	0x61, 0x3c, 0x23, 0xb5, 0x80, 0x22, 0xff, 0x59, 0x06, 0xed, 0xf2, 0xcd, 0x50, 0xfb, 0x7d, 0xe0,
-	0xc6, 0x14, 0x8c, 0xa4, 0x13, 0xc4, 0xc5, 0xbf, 0x14, 0x93, 0x9b, 0xca, 0x52, 0x72, 0x33, 0x07,
-	0x6d, 0x56, 0x2d, 0xd7, 0x71, 0xbf, 0x4f, 0x84, 0x87, 0xf5, 0xe3, 0xe2, 0x23, 0x27, 0x8b, 0x4f,
-	0x04, 0xb1, 0x88, 0x43, 0x4f, 0xf2, 0x0f, 0x16, 0xab, 0xa5, 0xaf, 0x36, 0x7e, 0x0a, 0x14, 0x51,
-	0x4c, 0x5f, 0xed, 0x84, 0x56, 0x41, 0x08, 0x16, 0xc9, 0x80, 0x83, 0xdb, 0x07, 0x42, 0xed, 0xaa,
-	0x2c, 0xf3, 0x22, 0x49, 0x85, 0x24, 0xa3, 0xb7, 0xe2, 0xe8, 0x42, 0x44, 0x41, 0x22, 0x3b, 0x2d,
-	0x72, 0x7f, 0x21, 0xb0, 0x9a, 0x1c, 0x21, 0xe8, 0x41, 0xc7, 0x90, 0xeb, 0x33, 0xb9, 0xe0, 0x7e,
-	0x45, 0x78, 0x9e, 0x04, 0xa1, 0x05, 0x66, 0xa2, 0xc1, 0xdc, 0x41, 0x79, 0x95, 0x5c, 0xef, 0x93,
-	0xf8, 0x4e, 0x87, 0xbf, 0xda, 0x7d, 0x3d, 0x35, 0x8f, 0x82, 0x24, 0xd4, 0x57, 0xa7, 0x34, 0xb5,
-	0xef, 0x99, 0xfd, 0xb1, 0xa8, 0xaf, 0x72, 0xca, 0xc1, 0x58, 0x6e, 0x2e, 0x93, 0xad, 0x45, 0x92,
-	0x51, 0xb2, 0x1d, 0xf3, 0x3f, 0x61, 0xfd, 0x2f, 0x88, 0x7a, 0xf9, 0xa4, 0x74, 0xc7, 0xb3, 0x6f,
-	0x74, 0x27, 0x2b, 0x11, 0x27, 0xbe, 0xbe, 0xd0, 0x1d, 0x88, 0x74, 0xe4, 0x0e, 0x84, 0x7c, 0xb6,
-	0xfc, 0xd2, 0xc8, 0x09, 0xb8, 0xb8, 0x4e, 0x97, 0xb8, 0xe0, 0x4c, 0xe0, 0x6f, 0x85, 0xb5, 0x06,
-	0xc7, 0xcb, 0x4e, 0xd2, 0xb3, 0xe1, 0x45, 0x1b, 0xf8, 0xc2, 0xbe, 0xc0, 0x37, 0x5f, 0x74, 0x14,
-	0xe7, 0x27, 0x71, 0xd1, 0x9f, 0x07, 0x86, 0xf8, 0xd3, 0xf1, 0x9e, 0xe3, 0x84, 0x0e, 0x7c, 0x5f,
-	0x23, 0x10, 0x48, 0x04, 0x4a, 0xb0, 0x38, 0xbe, 0xcb, 0x22, 0xf5, 0xc5, 0xab, 0x2d, 0x4e, 0xc8,
-	0x61, 0xb9, 0x46, 0xd1, 0x0a, 0x3d, 0xc9, 0xbf, 0x77, 0x8d, 0x40, 0x40, 0x04, 0x6f, 0xb5, 0xb6,
-	0xda, 0x30, 0xdb, 0xc7, 0xf4, 0x83, 0x62, 0xff, 0x7e, 0xd4, 0xa7, 0xba, 0xb9, 0xa7, 0x69, 0xad,
-	0x76, 0xdc, 0xa5, 0x85, 0x2c, 0x0e, 0x6c, 0x33, 0x19, 0x1a, 0x36, 0x00, 0xd9, 0x20, 0xdc, 0x8c,
-	0xf9, 0xb7, 0x95, 0xbd, 0xfc, 0x8b, 0x1c, 0xfd, 0xe6, 0xdf, 0xd5, 0xbf, 0xa0, 0xa7, 0xf4, 0xb4,
-	0x9e, 0xd1, 0xb3, 0xfa, 0x8a, 0x9e, 0xd3, 0x57, 0xf5, 0xbc, 0xbe, 0xa6, 0x23, 0xbd, 0xa0, 0x17,
-	0xf5, 0xf5, 0x13, 0xd6, 0xe7, 0xab, 0xff, 0x1f, 0x00, 0x00, 0xff, 0xff, 0xfa, 0x87, 0xa9, 0xb8,
-	0x47, 0x41, 0x00, 0x00,
+var fileDescriptor2 = []byte{
+	// 4807 bytes of a gzipped FileDescriptorProto
+	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x09, 0x6e, 0x88, 0x02, 0xff, 0xd4, 0x3c, 0x4d, 0x6c, 0x23, 0x59,
+	0x5a, 0xeb, 0xdf, 0x76, 0x9e, 0x1d, 0xc7, 0xa9, 0x49, 0xa7, 0xd3, 0xbf, 0xd3, 0x5d, 0x3d, 0xa3,
+	0xed, 0xd9, 0x65, 0x32, 0xbb, 0xbd, 0xb3, 0xd2, 0xce, 0x2c, 0xc3, 0x6e, 0xc5, 0xae, 0x24, 0xa6,
+	0xfd, 0x53, 0x53, 0x65, 0xa7, 0x27, 0xc3, 0x40, 0xa9, 0x62, 0x57, 0x9c, 0x22, 0xb6, 0xcb, 0xb8,
+	0xca, 0xe9, 0xce, 0x09, 0x09, 0x58, 0x2d, 0xe2, 0xca, 0x85, 0x0b, 0x5a, 0x71, 0xe1, 0x84, 0xe0,
+	0x80, 0xf8, 0x39, 0x70, 0xe5, 0xc0, 0x05, 0x81, 0x34, 0x12, 0x42, 0x88, 0x13, 0x42, 0x08, 0x71,
+	0x58, 0x01, 0x42, 0x68, 0x0f, 0x48, 0x7c, 0xef, 0xb7, 0x7e, 0x6c, 0xc7, 0xd5, 0x93, 0xde, 0xd5,
+	0xae, 0x34, 0xdd, 0x5d, 0xf5, 0xbd, 0xef, 0x7d, 0xf5, 0xde, 0xf7, 0xbe, 0xf7, 0xfd, 0x7b, 0xd0,
+	0x9d, 0xb1, 0xed, 0xbf, 0x70, 0xa7, 0xe7, 0xce, 0x78, 0x60, 0x4e, 0x6d, 0x6f, 0xe2, 0x8e, 0x3d,
+	0xdb, 0xdb, 0x9d, 0x4c, 0x5d, 0xdf, 0x95, 0xde, 0xd4, 0xda, 0x07, 0x6d, 0x0d, 0x3f, 0x7a, 0xbb,
+	0x2d, 0x81, 0xb6, 0xab, 0x73, 0xb4, 0x3b, 0x1b, 0x7d, 0xcb, 0xb7, 0xcc, 0xa1, 0x3b, 0x60, 0x33,
+	0xee, 0x14, 0xed, 0xf1, 0x6c, 0xc4, 0x5f, 0x10, 0x1e, 0x65, 0xcf, 0x1b, 0xce, 0xf8, 0xc2, 0x1e,
+	0xfb, 0xee, 0xf4, 0x92, 0x01, 0x24, 0x32, 0xb5, 0x67, 0x4d, 0xfc, 0xd9, 0xd4, 0x66, 0xb0, 0x32,
+	0x81, 0x0d, 0x2e, 0x47, 0xec, 0xfd, 0xa6, 0x67, 0xfb, 0x3e, 0x7c, 0xd1, 0x33, 0x47, 0x96, 0xe7,
+	0xdb, 0x53, 0x8e, 0x36, 0xb2, 0x26, 0xe6, 0xa9, 0x3b, 0xf5, 0xd9, 0xfb, 0x26, 0x7e, 0x9f, 0xb8,
+	0xe7, 0xf6, 0xc8, 0x1d, 0x33, 0xd0, 0x96, 0xf8, 0x9c, 0xe9, 0xf8, 0x36, 0xa7, 0xb7, 0x49, 0xe8,
+	0x9f, 0x58, 0xbe, 0x3f, 0xe4, 0x9f, 0x44, 0x30, 0x97, 0xaf, 0xb7, 0xcc, 0x3f, 0x17, 0x41, 0x9f,
+	0x0c, 0xad, 0x4b, 0xfe, 0x69, 0xf9, 0x36, 0xba, 0xa5, 0xf4, 0xfb, 0xfb, 0xf0, 0xed, 0xa6, 0xdb,
+	0x77, 0x4e, 0x1d, 0x7b, 0xca, 0x99, 0x21, 0xff, 0x30, 0x8d, 0x1e, 0x54, 0xcf, 0xec, 0xde, 0x79,
+	0xd5, 0xed, 0xdb, 0x63, 0x6b, 0x64, 0x2b, 0x17, 0x96, 0x33, 0xb4, 0x4e, 0x86, 0x36, 0x47, 0x91,
+	0xee, 0xa0, 0x42, 0x8f, 0x0d, 0xee, 0xa4, 0x1e, 0xa6, 0x9e, 0xac, 0xe9, 0xe2, 0x5d, 0x7a, 0x84,
+	0x4a, 0x33, 0xcf, 0x9e, 0x9a, 0x23, 0xdb, 0xf3, 0xac, 0x81, 0xbd, 0x93, 0x26, 0xe3, 0x45, 0x0c,
+	0x6b, 0x52, 0x90, 0xf4, 0x18, 0xad, 0x3b, 0x9e, 0x69, 0x79, 0x9e, 0x33, 0x18, 0x63, 0xba, 0x3b,
+	0x19, 0xc0, 0x29, 0xe8, 0x25, 0xc7, 0x53, 0x04, 0x4c, 0xfa, 0x15, 0x94, 0xf7, 0x7c, 0xcb, 0x9f,
+	0x79, 0x3b, 0x59, 0x18, 0x2d, 0x3f, 0xdd, 0xdf, 0x5d, 0x71, 0x88, 0xbb, 0x57, 0x2f, 0x7a, 0xd7,
+	0x20, 0xd4, 0x74, 0x46, 0x55, 0xfe, 0xed, 0x14, 0xca, 0x53, 0x90, 0xb4, 0x86, 0x72, 0xdd, 0x96,
+	0xa1, 0x76, 0x2a, 0x5f, 0x92, 0x8a, 0xe8, 0x86, 0xd1, 0xad, 0x56, 0x55, 0xc3, 0xa8, 0xa4, 0x60,
+	0x9b, 0xdb, 0xd5, 0x76, 0x4d, 0x6d, 0x29, 0x4d, 0xd5, 0x6c, 0xb5, 0x3b, 0xa6, 0x72, 0xa4, 0xd4,
+	0x1b, 0xca, 0x5e, 0x43, 0xad, 0xa4, 0xa5, 0x6d, 0x24, 0x45, 0xc6, 0x8e, 0x94, 0x46, 0xbd, 0x56,
+	0xc9, 0x48, 0x9b, 0x68, 0xbd, 0xda, 0xd5, 0x75, 0xb5, 0xd5, 0x31, 0xdb, 0xcf, 0x5b, 0xaa, 0x5e,
+	0xc9, 0x4a, 0x6f, 0xa2, 0xbb, 0x02, 0xb5, 0x7a, 0xa8, 0xb4, 0x0e, 0x18, 0xb5, 0x46, 0xa3, 0xfd,
+	0x5c, 0xad, 0x55, 0x72, 0xf2, 0x7f, 0xa5, 0xd0, 0xcd, 0xae, 0x67, 0xd7, 0xe1, 0x80, 0x75, 0xfb,
+	0xc2, 0xb9, 0x08, 0x18, 0xdd, 0x45, 0x79, 0x90, 0xe5, 0xd9, 0xd0, 0x27, 0x6c, 0x2e, 0x3f, 0xfd,
+	0x68, 0x25, 0x13, 0x16, 0xd2, 0xc1, 0xe3, 0x40, 0x44, 0x67, 0xc4, 0xa4, 0x1d, 0x74, 0x03, 0xb8,
+	0x30, 0x72, 0xc6, 0x16, 0x39, 0x9e, 0x9c, 0xce, 0x5f, 0xe5, 0x33, 0x94, 0xa7, 0xb8, 0x4b, 0x99,
+	0xb2, 0x85, 0x2a, 0xaa, 0xae, 0xb7, 0x75, 0xd8, 0x83, 0xa9, 0xb5, 0x9f, 0xa9, 0xcd, 0x76, 0x0b,
+	0xd8, 0x21, 0xa0, 0x55, 0xa5, 0x85, 0x37, 0xd7, 0x35, 0x54, 0x60, 0x06, 0x30, 0x90, 0x42, 0x6b,
+	0xaa, 0xd6, 0x68, 0x1f, 0xab, 0x35, 0xb3, 0xd3, 0x36, 0xf7, 0xdb, 0x7a, 0xa7, 0x92, 0x95, 0xff,
+	0x2f, 0x85, 0xee, 0xe9, 0x76, 0xef, 0xb2, 0x37, 0xb4, 0xeb, 0x5c, 0xc6, 0xe9, 0xca, 0xd9, 0xde,
+	0x3f, 0x8b, 0xed, 0xbd, 0xb6, 0x72, 0xef, 0x57, 0x91, 0x8b, 0xb3, 0xe0, 0x2e, 0x5a, 0x1b, 0xdb,
+	0x2f, 0xcc, 0x9e, 0x3b, 0x1b, 0xfb, 0x8c, 0x09, 0x05, 0x00, 0x54, 0xf1, 0xbb, 0x7c, 0xb2, 0x92,
+	0x0b, 0x77, 0xd1, 0x2d, 0xce, 0x85, 0x8e, 0xa9, 0xb6, 0xda, 0xdd, 0x83, 0x43, 0xb3, 0xda, 0xd6,
+	0xea, 0xaa, 0x01, 0xcc, 0x78, 0x8c, 0xde, 0x8c, 0x30, 0x43, 0x57, 0xab, 0xc7, 0xd5, 0x86, 0x6a,
+	0xd6, 0x5b, 0xd5, 0xee, 0x9e, 0xd2, 0x69, 0xeb, 0x46, 0x25, 0x23, 0x3f, 0x47, 0xf7, 0x0f, 0x6c,
+	0xdf, 0x98, 0x0d, 0x06, 0x36, 0xa8, 0x84, 0x3e, 0x97, 0x5b, 0x4f, 0xec, 0xff, 0x1e, 0x5a, 0xe3,
+	0x97, 0xca, 0x03, 0x16, 0x64, 0xe0, 0x16, 0x05, 0x00, 0x72, 0x84, 0xb3, 0x5e, 0x0f, 0x6e, 0x14,
+	0x59, 0x7d, 0x41, 0xe7, 0xaf, 0xf2, 0x3f, 0xa6, 0xd0, 0xb6, 0x71, 0xea, 0xf4, 0x2d, 0xa5, 0xe7,
+	0x3b, 0xee, 0xb8, 0xe1, 0x0e, 0x04, 0xc9, 0xa3, 0x18, 0x4b, 0x7f, 0x61, 0x25, 0x4b, 0x17, 0x13,
+	0x8a, 0x33, 0x53, 0x45, 0x45, 0xd0, 0x9d, 0x26, 0x70, 0x7d, 0xea, 0xd8, 0x78, 0x41, 0x99, 0x27,
+	0xc5, 0xa7, 0x6f, 0x85, 0x89, 0xd7, 0xb0, 0x06, 0x6d, 0x60, 0xfd, 0x2a, 0x88, 0xa9, 0x80, 0x7d,
+	0xa9, 0xa3, 0x21, 0x7d, 0x82, 0x79, 0xf2, 0xc3, 0x55, 0x6c, 0x97, 0xff, 0x25, 0x83, 0x6e, 0x03,
+	0xd7, 0xea, 0xe3, 0x9e, 0x0d, 0xcb, 0xd0, 0xa8, 0xaa, 0x14, 0xdb, 0x3b, 0x8e, 0x6d, 0x4f, 0x59,
+	0xb9, 0xbd, 0xa5, 0xb4, 0xe2, 0x3b, 0xfc, 0x10, 0x21, 0xa6, 0x98, 0x4d, 0xa7, 0x4f, 0x38, 0x5e,
+	0x7e, 0x7a, 0x37, 0x4c, 0x5e, 0x25, 0xf6, 0x82, 0x51, 0xa9, 0xf7, 0xf5, 0xb5, 0x09, 0x7f, 0xc4,
+	0xda, 0x72, 0x68, 0xf9, 0x8e, 0x3f, 0xeb, 0x53, 0x4d, 0x97, 0xd2, 0xc5, 0x3b, 0x3e, 0xe4, 0xa1,
+	0x3b, 0x1e, 0xd0, 0xc1, 0x2c, 0x19, 0x0c, 0x00, 0xd2, 0xbb, 0x48, 0xb2, 0xc7, 0x44, 0x44, 0x41,
+	0xa1, 0x0e, 0xdd, 0x9e, 0x85, 0x59, 0xb7, 0x93, 0x23, 0x1a, 0x75, 0x53, 0x8c, 0x34, 0xd8, 0x00,
+	0x56, 0xbd, 0x01, 0x3a, 0x2c, 0x33, 0x0f, 0x88, 0x79, 0xbd, 0x28, 0x60, 0xb0, 0x96, 0xf7, 0xd1,
+	0x76, 0xdf, 0xf1, 0xac, 0xc9, 0xc4, 0xb6, 0xa6, 0xa6, 0xef, 0x80, 0x24, 0xc1, 0xc5, 0x9f, 0x98,
+	0x23, 0x6f, 0xe7, 0x06, 0x20, 0x67, 0xf4, 0x2d, 0x31, 0xda, 0xe1, 0x83, 0x4d, 0x4f, 0x1e, 0x89,
+	0x83, 0xb9, 0x8f, 0x6e, 0x83, 0x14, 0xab, 0x70, 0x36, 0x20, 0xf5, 0xd5, 0x76, 0xb7, 0xd5, 0x51,
+	0x75, 0xb3, 0xdb, 0x7a, 0xd6, 0x02, 0x65, 0x07, 0x87, 0x05, 0xaa, 0x6e, 0x7e, 0x38, 0x50, 0x9b,
+	0x29, 0x7c, 0x35, 0xe6, 0x11, 0x62, 0xba, 0x55, 0xbe, 0x40, 0xdb, 0x70, 0x30, 0x60, 0x0b, 0x6c,
+	0xbf, 0xe6, 0xe0, 0xeb, 0x21, 0x4e, 0xf8, 0x03, 0x94, 0xef, 0x13, 0x08, 0xb9, 0x10, 0xc5, 0xa7,
+	0x8f, 0xe6, 0x64, 0x2c, 0x34, 0x8b, 0x0a, 0x18, 0x9b, 0x80, 0x99, 0x13, 0xd9, 0x2f, 0x3e, 0xc3,
+	0xac, 0x5e, 0xf4, 0x43, 0xdb, 0xfc, 0x3c, 0x45, 0x3e, 0x7c, 0x68, 0xf9, 0xbd, 0x33, 0xbb, 0xaf,
+	0x0e, 0x06, 0xc1, 0x65, 0x0c, 0x5d, 0xb7, 0x54, 0xe4, 0xba, 0x01, 0xdd, 0xa8, 0x64, 0x64, 0x9e,
+	0xe4, 0xf7, 0xd2, 0x95, 0x54, 0x58, 0x00, 0xf0, 0x31, 0xbe, 0x9c, 0xd8, 0x20, 0xe3, 0x20, 0x6b,
+	0xa6, 0xf5, 0xc2, 0x9a, 0xf6, 0xed, 0x3e, 0x88, 0x42, 0x06, 0x94, 0xce, 0x66, 0x30, 0xa2, 0xd0,
+	0x01, 0x6c, 0x1e, 0x7b, 0xd6, 0xb8, 0x7f, 0x29, 0x30, 0xb3, 0x04, 0xb3, 0x44, 0x80, 0x1c, 0xe9,
+	0x1d, 0x54, 0x81, 0x65, 0x4f, 0xfb, 0x33, 0xcf, 0x17, 0x78, 0x39, 0x82, 0xb7, 0xc1, 0xe1, 0x0c,
+	0x55, 0xfe, 0x6f, 0xd8, 0x96, 0x6e, 0x0f, 0x6d, 0x6b, 0xfe, 0xc6, 0xbc, 0xba, 0x42, 0x58, 0x4c,
+	0x28, 0x7e, 0x5d, 0xe6, 0xb6, 0x40, 0x35, 0x6c, 0x64, 0x0b, 0xf2, 0x67, 0x49, 0x6c, 0x0d, 0x33,
+	0x31, 0xc2, 0x82, 0x80, 0x7a, 0x45, 0x28, 0xbf, 0x0f, 0xc2, 0xa2, 0x62, 0x73, 0xbb, 0x83, 0xb6,
+	0xa8, 0xaa, 0xe5, 0x78, 0x75, 0xc3, 0x54, 0x0f, 0x0e, 0xc0, 0xbe, 0xfc, 0x20, 0x8d, 0x24, 0x6c,
+	0x0c, 0xe9, 0xf5, 0x16, 0x3b, 0xd6, 0x63, 0x3b, 0xfe, 0x30, 0x91, 0x45, 0x8d, 0x12, 0x89, 0xef,
+	0xf6, 0x17, 0xd1, 0x06, 0xdc, 0x99, 0xa1, 0x63, 0xf7, 0x4d, 0x87, 0x62, 0x92, 0xfd, 0xc6, 0xc4,
+	0x53, 0x98, 0xa5, 0x5d, 0x85, 0x22, 0x13, 0xf3, 0x54, 0x66, 0x33, 0xd9, 0x27, 0x64, 0x47, 0x30,
+	0x05, 0x38, 0x11, 0x5c, 0xac, 0xb8, 0x5f, 0xc2, 0x2f, 0x91, 0xd2, 0xd0, 0x55, 0xa5, 0x76, 0x6c,
+	0x2a, 0xd5, 0x4e, 0xfd, 0x08, 0xfb, 0x25, 0x37, 0xd1, 0x66, 0xab, 0xdd, 0xc2, 0xb6, 0x06, 0xfe,
+	0x3b, 0x02, 0x37, 0xa4, 0xad, 0x1f, 0x03, 0x9f, 0x24, 0x54, 0x6e, 0xb4, 0xab, 0x4a, 0xa7, 0x0e,
+	0x2c, 0xa2, 0xac, 0xce, 0xca, 0x7f, 0x9a, 0x42, 0xb7, 0xab, 0xee, 0x70, 0x68, 0xf7, 0xfc, 0x1a,
+	0x38, 0x4b, 0x97, 0x7b, 0xee, 0x78, 0xe6, 0x5d, 0x43, 0x99, 0x2e, 0xa5, 0x15, 0xe3, 0x97, 0xfc,
+	0xed, 0x95, 0x07, 0x0f, 0x2f, 0xf8, 0x88, 0xbb, 0x3a, 0xde, 0x52, 0x09, 0x15, 0x3a, 0xed, 0xb6,
+	0x69, 0xb4, 0xc1, 0xd3, 0xc8, 0xc8, 0x16, 0xba, 0x05, 0x77, 0xb4, 0xe6, 0xbe, 0x18, 0x0f, 0x5d,
+	0xab, 0xdf, 0x9d, 0x0e, 0x83, 0x25, 0xef, 0xa3, 0xf5, 0x3e, 0x83, 0x9b, 0x33, 0x18, 0x58, 0xaa,
+	0x24, 0x42, 0xb3, 0xa9, 0x92, 0x28, 0xf5, 0x43, 0xf4, 0xe4, 0x3f, 0x4c, 0xa3, 0xc7, 0x1c, 0x45,
+	0x07, 0x31, 0xf7, 0xed, 0xaa, 0x3b, 0x3e, 0x75, 0x06, 0x47, 0xf6, 0xd4, 0x73, 0x42, 0xb7, 0xa7,
+	0x17, 0x63, 0xd1, 0xb3, 0x95, 0x2c, 0x4a, 0x40, 0x35, 0x2e, 0x5c, 0x1f, 0xa1, 0xbb, 0xd8, 0xf3,
+	0x37, 0xe1, 0x0f, 0x78, 0xf0, 0xbe, 0xed, 0x99, 0x0b, 0xd4, 0xd8, 0x0e, 0x46, 0xe9, 0x70, 0x8c,
+	0x90, 0xea, 0x06, 0x8d, 0x79, 0xdb, 0xc2, 0x2a, 0xd1, 0xa4, 0x6a, 0x30, 0x3a, 0x39, 0x43, 0x26,
+	0x6f, 0x5b, 0x81, 0xce, 0x0c, 0x6b, 0xfd, 0xd5, 0xe6, 0xf8, 0xef, 0xd2, 0xe8, 0x91, 0xca, 0xad,
+	0x4b, 0x67, 0x06, 0xc2, 0xed, 0x58, 0xc3, 0xaa, 0x0b, 0xcb, 0xb0, 0xfd, 0xe0, 0xca, 0x59, 0x31,
+	0x36, 0xd5, 0x57, 0xb2, 0x69, 0x25, 0xcd, 0x38, 0x93, 0xbe, 0x83, 0x4a, 0x5c, 0x09, 0xe3, 0x58,
+	0x87, 0x5d, 0xbf, 0x7b, 0x73, 0x07, 0xcf, 0xd4, 0x16, 0x7e, 0xd6, 0x8b, 0x93, 0xe0, 0x05, 0xae,
+	0xf0, 0x3a, 0x0b, 0xe1, 0xa8, 0xca, 0x22, 0xac, 0x29, 0x3e, 0x7d, 0x7b, 0x8e, 0x42, 0x95, 0x05,
+	0x7a, 0xec, 0x5f, 0xa2, 0xcb, 0xb0, 0x5e, 0x0b, 0xde, 0x12, 0x88, 0xf7, 0x6d, 0x74, 0x93, 0x6a,
+	0x2d, 0xb8, 0xa2, 0x38, 0x6e, 0x08, 0x1c, 0x69, 0xf9, 0xef, 0x53, 0xe8, 0x8e, 0x61, 0xfb, 0xfb,
+	0xd6, 0x05, 0x6c, 0xdc, 0x9f, 0x53, 0xd8, 0x9f, 0xc6, 0x78, 0xb9, 0xb7, 0xda, 0x83, 0x5b, 0x4a,
+	0x2c, 0x7e, 0x2d, 0x9f, 0x27, 0xf7, 0x7a, 0xb9, 0xb6, 0xc5, 0x96, 0x7b, 0x1f, 0xac, 0x38, 0x56,
+	0xcb, 0xcb, 0x54, 0x71, 0x46, 0xfe, 0xb7, 0x14, 0xba, 0xd5, 0x72, 0x7a, 0xe7, 0xd8, 0x73, 0x8d,
+	0x6f, 0xe8, 0x79, 0x6c, 0x43, 0xdf, 0x59, 0xb9, 0xa1, 0x25, 0x94, 0xe2, 0xbb, 0xf1, 0x56, 0xee,
+	0x46, 0x44, 0x27, 0xfc, 0x14, 0x5a, 0xf5, 0xea, 0x33, 0x1c, 0xa5, 0xc1, 0x66, 0xae, 0xd8, 0xe9,
+	0x55, 0x46, 0xe7, 0x09, 0x2a, 0xa9, 0xbd, 0x33, 0x37, 0xec, 0x36, 0xf4, 0x5c, 0x10, 0xe4, 0x97,
+	0x3e, 0x8b, 0x93, 0xf9, 0xab, 0xfc, 0x79, 0x1a, 0x6d, 0xb3, 0x58, 0xed, 0x93, 0xc9, 0x9e, 0xeb,
+	0x86, 0x9c, 0x9c, 0x57, 0x37, 0xca, 0x8b, 0x09, 0xc5, 0x2f, 0xc9, 0x01, 0x5a, 0x17, 0x66, 0x0a,
+	0xb0, 0x3d, 0x76, 0x4b, 0xe4, 0x95, 0x46, 0xca, 0xd3, 0x4b, 0x56, 0xe8, 0x4d, 0xfe, 0xbd, 0x54,
+	0x72, 0x49, 0xe1, 0xbc, 0xad, 0x77, 0xd4, 0xa6, 0xd9, 0x39, 0xd6, 0x30, 0x73, 0x1f, 0xa1, 0xfb,
+	0x74, 0xf0, 0x13, 0xcd, 0xdc, 0x6b, 0xb7, 0x8d, 0x4e, 0xdc, 0x8c, 0x65, 0xc0, 0x2f, 0xde, 0x11,
+	0x51, 0x26, 0x9e, 0x6a, 0x40, 0x10, 0xd5, 0x54, 0xea, 0xad, 0x7a, 0x0b, 0xd8, 0x1c, 0x1c, 0x40,
+	0xcc, 0xa6, 0xe5, 0xe4, 0xbf, 0x4e, 0xa3, 0xdb, 0x38, 0xab, 0x01, 0xa1, 0xa0, 0x35, 0x1c, 0x5e,
+	0x3f, 0x40, 0x58, 0x4a, 0x2b, 0xce, 0xdc, 0xe7, 0xa8, 0x84, 0x33, 0x39, 0x66, 0xdf, 0xf6, 0xc1,
+	0xfe, 0x71, 0xde, 0xbe, 0x9f, 0xe8, 0x03, 0x35, 0x3a, 0x87, 0x03, 0xf5, 0xe2, 0x69, 0x00, 0x94,
+	0x7d, 0xc1, 0xeb, 0x4d, 0xb4, 0x0e, 0xdc, 0xd0, 0x55, 0xa3, 0xdb, 0xe8, 0x98, 0x0b, 0x78, 0xbe,
+	0x8d, 0xa4, 0x20, 0x26, 0x05, 0xfb, 0xaf, 0xe3, 0x54, 0x03, 0xb0, 0x1b, 0x7c, 0xf6, 0x79, 0x59,
+	0x86, 0x7f, 0x48, 0x20, 0x9e, 0x91, 0xde, 0x40, 0x1b, 0x41, 0x40, 0xdf, 0x50, 0x8e, 0x71, 0xce,
+	0x42, 0xfe, 0x8f, 0x14, 0xda, 0x01, 0x33, 0xab, 0x91, 0x9c, 0x11, 0xac, 0xff, 0xd4, 0x09, 0xa5,
+	0x7f, 0x3e, 0x89, 0xb1, 0xf1, 0xbb, 0x49, 0xe2, 0xac, 0x85, 0xa4, 0xe2, 0x5c, 0xbc, 0x8f, 0x10,
+	0xf6, 0x5e, 0xa9, 0x99, 0x22, 0x3c, 0xcc, 0xe8, 0x6b, 0x04, 0x82, 0x0d, 0x13, 0x44, 0x2f, 0xf9,
+	0x13, 0xab, 0x0f, 0x76, 0x8a, 0x38, 0xcf, 0x0b, 0x15, 0x3c, 0xf9, 0xca, 0x1e, 0x46, 0xd2, 0x19,
+	0x6e, 0x02, 0x3b, 0xf6, 0xc7, 0x69, 0x74, 0x13, 0x96, 0x78, 0x70, 0x39, 0x8a, 0x1d, 0x05, 0xc4,
+	0x7d, 0x6b, 0x83, 0xcb, 0x91, 0x89, 0x73, 0x46, 0x34, 0xd5, 0x55, 0x7c, 0x7a, 0x7f, 0xee, 0xa3,
+	0x30, 0x0f, 0xff, 0xc1, 0xd9, 0x24, 0x5b, 0x2f, 0x0c, 0xd8, 0x13, 0xf8, 0x5c, 0x59, 0x92, 0x21,
+	0xa3, 0x19, 0x30, 0xf2, 0x8c, 0x61, 0xc4, 0x33, 0xc9, 0x90, 0x78, 0x9e, 0x3c, 0x87, 0x92, 0x3c,
+	0xd9, 0x84, 0x49, 0x9e, 0x85, 0x6b, 0x8d, 0xf3, 0xf2, 0x21, 0x2a, 0xf6, 0x6d, 0xaf, 0x37, 0x75,
+	0x26, 0xa1, 0xa8, 0x31, 0x0c, 0x92, 0xbf, 0xb5, 0xf2, 0x1a, 0x2f, 0x11, 0x29, 0xf9, 0x6f, 0xc1,
+	0xf0, 0x87, 0xdd, 0xbd, 0x9a, 0x7d, 0x6a, 0x8f, 0xfb, 0xc0, 0xf8, 0x88, 0x0b, 0xf9, 0xea, 0x86,
+	0x7f, 0x25, 0xcd, 0x45, 0x81, 0xc6, 0x6c, 0x3a, 0x85, 0xf0, 0xe9, 0xd2, 0xf4, 0x2f, 0x27, 0x36,
+	0x09, 0xc0, 0xd6, 0xc0, 0x20, 0x33, 0x60, 0x07, 0x60, 0x38, 0x56, 0x12, 0x48, 0xd1, 0xe8, 0x6b,
+	0x83, 0xc3, 0x79, 0x58, 0xf5, 0x65, 0xb4, 0xd1, 0x67, 0xdf, 0xf5, 0x58, 0x72, 0x28, 0x4b, 0x42,
+	0x97, 0xb2, 0x00, 0xd3, 0x14, 0x51, 0xf3, 0x1a, 0x3e, 0xac, 0x54, 0x41, 0x25, 0xb8, 0x6c, 0x35,
+	0x75, 0x5f, 0x6d, 0xd5, 0x54, 0xdd, 0x80, 0xfb, 0xf6, 0xbf, 0x69, 0xb4, 0x55, 0xc5, 0x71, 0xe7,
+	0x02, 0x95, 0xc5, 0xd2, 0xa0, 0x89, 0xdd, 0xf0, 0x05, 0x64, 0x28, 0x30, 0x9a, 0x01, 0xc5, 0x11,
+	0xf1, 0xc8, 0xf1, 0x3c, 0x13, 0xe2, 0x4f, 0x88, 0x3d, 0x68, 0x16, 0x2c, 0xa5, 0x17, 0x31, 0x4c,
+	0xa3, 0x20, 0x69, 0x17, 0xbd, 0xc1, 0x5c, 0x9b, 0xbe, 0x19, 0x8a, 0x72, 0x33, 0x24, 0xb1, 0xb0,
+	0xc9, 0x87, 0x44, 0xd6, 0x63, 0xde, 0x8d, 0xca, 0x7e, 0x71, 0x37, 0xca, 0x46, 0xc5, 0xd0, 0xaa,
+	0xa5, 0x0d, 0x78, 0x55, 0x3a, 0xd5, 0x43, 0x93, 0x08, 0x24, 0x30, 0x1b, 0x67, 0x5a, 0x09, 0x20,
+	0x60, 0x39, 0xf0, 0x95, 0xe1, 0x18, 0x55, 0x85, 0x98, 0x9a, 0x32, 0x42, 0x14, 0xb2, 0xdf, 0x50,
+	0x55, 0xca, 0x79, 0xfa, 0xde, 0xac, 0x1b, 0x06, 0x44, 0x90, 0x59, 0xf9, 0x37, 0x4a, 0xe8, 0x3e,
+	0x77, 0xcb, 0xeb, 0x61, 0x2f, 0x3a, 0x41, 0xec, 0x3f, 0x45, 0xe5, 0xa8, 0x6f, 0xce, 0x52, 0x5f,
+	0xc9, 0x03, 0x81, 0x85, 0x5f, 0xdc, 0x0d, 0x43, 0xf5, 0xf5, 0x88, 0x6f, 0x3f, 0x97, 0xc7, 0xc8,
+	0xcc, 0xe5, 0x31, 0xee, 0xfc, 0x09, 0x42, 0xa5, 0x30, 0x09, 0xe9, 0x4d, 0x54, 0xe4, 0x4b, 0xc4,
+	0xc7, 0x47, 0x5d, 0x11, 0xc4, 0x41, 0x70, 0x6e, 0x47, 0xa8, 0xc2, 0x8f, 0x97, 0xd7, 0x0e, 0x98,
+	0x05, 0xfb, 0x6a, 0x78, 0x2b, 0x06, 0xaf, 0x2b, 0x34, 0x69, 0x19, 0x83, 0x1d, 0x3c, 0x07, 0xeb,
+	0x1b, 0x93, 0x28, 0x40, 0x6a, 0x22, 0xb2, 0xfa, 0x80, 0x28, 0x75, 0xab, 0x9f, 0x5c, 0x45, 0x14,
+	0xaf, 0x5c, 0x50, 0x2c, 0x39, 0xa1, 0x37, 0x4c, 0x6e, 0xe4, 0x5e, 0xd8, 0x01, 0xb9, 0xec, 0x6a,
+	0x72, 0x4d, 0x98, 0x10, 0x90, 0x1b, 0x85, 0xde, 0xa4, 0x53, 0xb4, 0xcd, 0xc8, 0xfd, 0xda, 0x8c,
+	0xa4, 0x66, 0x04, 0xdd, 0x1c, 0xa1, 0xfb, 0xb5, 0xd5, 0x74, 0xe9, 0x44, 0x41, 0x7f, 0x6b, 0xb4,
+	0x00, 0x0a, 0xf6, 0xb2, 0x8c, 0x75, 0x93, 0x69, 0x9f, 0x9e, 0x82, 0x72, 0x73, 0x2e, 0xec, 0x9d,
+	0x02, 0xa1, 0xff, 0xf5, 0xab, 0xe8, 0x63, 0xcd, 0xa5, 0xf2, 0x09, 0xe2, 0x03, 0xeb, 0x7e, 0x18,
+	0x2c, 0x69, 0xa8, 0x4c, 0x8c, 0x5c, 0xb0, 0x72, 0x44, 0x28, 0xbf, 0x73, 0x15, 0x65, 0x62, 0x1d,
+	0x03, 0x8a, 0x27, 0xe1, 0x57, 0x69, 0x0f, 0xe5, 0x7b, 0x60, 0xa8, 0xa6, 0xd6, 0x4e, 0x91, 0x50,
+	0xfa, 0xca, 0x55, 0x94, 0xaa, 0x04, 0x53, 0x90, 0x62, 0x33, 0x25, 0x1d, 0xa2, 0x31, 0x62, 0x87,
+	0xcd, 0xa1, 0x7d, 0x61, 0x0f, 0x77, 0x4a, 0x84, 0xd2, 0x7b, 0x57, 0x4a, 0x12, 0xc1, 0x6f, 0x60,
+	0x74, 0x41, 0xae, 0x38, 0x09, 0x80, 0x52, 0x9d, 0x1a, 0x62, 0x4a, 0x70, 0x9d, 0x10, 0xfc, 0xb9,
+	0xab, 0x08, 0x82, 0x7d, 0x8c, 0x52, 0xc3, 0x76, 0x99, 0x92, 0x3a, 0x42, 0x1b, 0xb4, 0x74, 0x16,
+	0x70, 0xad, 0x4c, 0x08, 0xbe, 0xbb, 0x82, 0xe0, 0x1e, 0x99, 0x25, 0x28, 0x96, 0x4f, 0x22, 0xef,
+	0xd2, 0x67, 0xe1, 0x6c, 0xad, 0x20, 0xbd, 0xb1, 0x9a, 0xb4, 0x08, 0x77, 0x05, 0xe9, 0x20, 0xb9,
+	0x2b, 0xa8, 0x77, 0x50, 0xc5, 0xb1, 0x26, 0xc4, 0x73, 0x87, 0x58, 0xde, 0xc3, 0xbc, 0xd9, 0xa9,
+	0xac, 0x3e, 0xa2, 0xba, 0x35, 0xc1, 0x17, 0xaa, 0x46, 0x67, 0xe8, 0x65, 0x27, 0xf2, 0x0e, 0x0a,
+	0xbb, 0x84, 0xa9, 0x8a, 0xd5, 0x6e, 0x12, 0x8a, 0x5f, 0x5e, 0x41, 0x31, 0x38, 0x22, 0x27, 0x78,
+	0x91, 0x7e, 0x39, 0x50, 0x22, 0xb3, 0xc9, 0x60, 0x6a, 0x81, 0xab, 0xb1, 0x23, 0x11, 0x7a, 0x4f,
+	0x13, 0x28, 0x91, 0x2e, 0x9d, 0x32, 0xa7, 0x4b, 0x18, 0xdc, 0x83, 0xd0, 0x77, 0x03, 0x2e, 0x96,
+	0x33, 0x99, 0x80, 0x2d, 0x62, 0x5e, 0xe0, 0x1b, 0xab, 0xaf, 0x91, 0xca, 0xa6, 0x44, 0x85, 0xbe,
+	0x6c, 0x87, 0xc1, 0x9e, 0xfc, 0xaf, 0x34, 0xea, 0xae, 0x42, 0x70, 0x66, 0xf5, 0x7c, 0x81, 0x16,
+	0x8a, 0xba, 0x23, 0x46, 0x38, 0x51, 0xd4, 0xbd, 0x84, 0x58, 0xac, 0x0e, 0x29, 0xfd, 0x3c, 0x62,
+	0x72, 0x1e, 0xce, 0x5c, 0xdc, 0x5d, 0xe2, 0xd8, 0x92, 0xc4, 0x05, 0x9a, 0x88, 0x67, 0xf9, 0xdd,
+	0x95, 0x45, 0xcc, 0xb0, 0x1b, 0x22, 0xff, 0x28, 0x83, 0xde, 0x58, 0x10, 0x71, 0x48, 0xb7, 0xd0,
+	0x0d, 0x12, 0xbd, 0x08, 0xe3, 0x90, 0xc7, 0xaf, 0x60, 0x18, 0x3e, 0x44, 0x60, 0x26, 0xac, 0x11,
+	0xb8, 0x42, 0x43, 0x77, 0xba, 0xbc, 0xee, 0xd1, 0x01, 0x9c, 0x2a, 0x46, 0xd1, 0xd7, 0x7c, 0xfe,
+	0x38, 0x97, 0x94, 0xc9, 0xbc, 0x6a, 0x52, 0x86, 0x3b, 0xd0, 0xd9, 0x90, 0x03, 0x0d, 0x11, 0x82,
+	0x33, 0xb2, 0x40, 0xe3, 0x11, 0x37, 0x3a, 0x47, 0xcb, 0x62, 0x04, 0x82, 0x53, 0x77, 0x60, 0xef,
+	0xd3, 0xa7, 0x13, 0x52, 0xf8, 0xc8, 0xe9, 0xf0, 0x14, 0xae, 0x74, 0xde, 0x88, 0x54, 0x3a, 0xb1,
+	0x4d, 0x1c, 0x59, 0x2f, 0x4d, 0x3e, 0x5a, 0x20, 0xa3, 0x08, 0x40, 0x06, 0x43, 0xf8, 0x3a, 0xca,
+	0x12, 0x8f, 0x72, 0x8d, 0x6c, 0x3a, 0xe2, 0xf5, 0x37, 0xad, 0x09, 0x09, 0xdc, 0xc8, 0x5f, 0x58,
+	0x51, 0xeb, 0x04, 0x35, 0x52, 0xe9, 0x41, 0x57, 0x55, 0x7a, 0x8a, 0xf1, 0x4a, 0x4f, 0xcc, 0x59,
+	0x2f, 0xcd, 0x39, 0xeb, 0xc0, 0xcd, 0xb5, 0x11, 0x2b, 0xd5, 0x7b, 0xa0, 0x00, 0xe7, 0x12, 0x9b,
+	0x91, 0x35, 0x89, 0xa2, 0x7e, 0x30, 0x47, 0xfe, 0xcf, 0x14, 0xba, 0x69, 0xf0, 0x38, 0x0c, 0x1f,
+	0x58, 0xb8, 0xca, 0x1c, 0x11, 0xef, 0x8f, 0x92, 0x88, 0xf7, 0x3c, 0x9d, 0xd7, 0x2b, 0xd9, 0xd5,
+	0x95, 0x92, 0xbd, 0x85, 0x2a, 0x1d, 0x55, 0x69, 0x8a, 0xe4, 0x01, 0x46, 0x49, 0x87, 0xe5, 0x3d,
+	0x23, 0xff, 0x43, 0x8a, 0x16, 0x01, 0x40, 0xe3, 0x81, 0xfe, 0xbe, 0x66, 0x11, 0x20, 0x4a, 0x64,
+	0x41, 0xe8, 0x3a, 0x9b, 0xc0, 0x46, 0x41, 0x3b, 0x0d, 0x26, 0x3c, 0x74, 0x65, 0x90, 0x83, 0x89,
+	0xdc, 0x4a, 0x5e, 0x58, 0x0f, 0x95, 0xd0, 0xd3, 0x4b, 0x22, 0xb0, 0x8c, 0xfc, 0xef, 0x59, 0xb4,
+	0x29, 0xec, 0x46, 0x28, 0x03, 0x5e, 0x7a, 0xe1, 0x0c, 0x85, 0xaf, 0xce, 0x22, 0xd6, 0xc7, 0x71,
+	0x39, 0x61, 0x37, 0x6e, 0xf7, 0x39, 0xe0, 0xf2, 0x48, 0xa1, 0xf8, 0x22, 0x78, 0x01, 0x55, 0x8e,
+	0x4e, 0xac, 0xde, 0xf9, 0x60, 0x0a, 0xf4, 0x79, 0xb9, 0xf3, 0xa3, 0xe4, 0x69, 0x5b, 0xc1, 0xa3,
+	0x3d, 0x41, 0x44, 0x0f, 0x11, 0x94, 0x3e, 0x16, 0x02, 0x97, 0x21, 0xa4, 0x3f, 0xf8, 0x02, 0xa4,
+	0x63, 0xc2, 0xf6, 0x99, 0x88, 0x54, 0xcc, 0xc9, 0xd4, 0x3d, 0xb1, 0x4e, 0x9c, 0xa1, 0xe3, 0x5f,
+	0x32, 0x07, 0xf1, 0xab, 0xab, 0xe2, 0x0f, 0x2d, 0x98, 0xa2, 0x4b, 0xbd, 0x39, 0x98, 0x2c, 0x23,
+	0x14, 0x6c, 0x45, 0x2a, 0xa0, 0xac, 0xa6, 0xe8, 0xcf, 0xe0, 0x00, 0x11, 0xca, 0xd7, 0x54, 0x43,
+	0xd5, 0x3b, 0x95, 0x14, 0x96, 0x35, 0x2e, 0xb1, 0x38, 0xa5, 0x22, 0xaa, 0x9b, 0x3c, 0x5e, 0xb9,
+	0x09, 0x07, 0x26, 0x80, 0xc1, 0xb1, 0xdf, 0x42, 0x6f, 0x44, 0x2b, 0xa1, 0x3c, 0x9f, 0x8a, 0xe5,
+	0x41, 0x0c, 0x54, 0x1b, 0x6d, 0x83, 0x14, 0xbc, 0x70, 0xd2, 0x52, 0x40, 0x79, 0x42, 0x67, 0x1f,
+	0x17, 0xc3, 0xb2, 0xd1, 0xb1, 0x88, 0xbc, 0xe4, 0xa4, 0x07, 0xe8, 0x4e, 0xa8, 0x22, 0xcb, 0x6e,
+	0xcc, 0xa1, 0xa2, 0x69, 0x6a, 0x0b, 0xe6, 0xe6, 0xf1, 0x5c, 0x91, 0xcd, 0xe4, 0x75, 0x23, 0x73,
+	0xbf, 0xdb, 0x68, 0x54, 0x6e, 0xc8, 0xff, 0x9c, 0x46, 0x37, 0xab, 0x43, 0xcb, 0x19, 0xf1, 0x26,
+	0x85, 0x9f, 0x68, 0x23, 0x50, 0x37, 0xd6, 0x08, 0xb4, 0x5a, 0x0e, 0x17, 0xae, 0xf5, 0xa7, 0xb8,
+	0xff, 0xe7, 0x1c, 0x6d, 0x8a, 0x04, 0x59, 0x82, 0xa8, 0xf3, 0x7a, 0x7a, 0xf5, 0x77, 0x33, 0xe8,
+	0x26, 0x78, 0x7f, 0xe7, 0xf3, 0xca, 0xe3, 0xd5, 0x9b, 0x8d, 0x16, 0xd2, 0x79, 0xed, 0xb5, 0x99,
+	0x25, 0x57, 0x3b, 0xf3, 0x7a, 0xae, 0xf6, 0x6f, 0xa6, 0x12, 0x54, 0x5c, 0x49, 0xea, 0x35, 0x2a,
+	0x00, 0x24, 0x87, 0x13, 0x56, 0xc9, 0x8b, 0xaf, 0xd8, 0x7e, 0xbd, 0x55, 0x37, 0x0e, 0xf9, 0xf5,
+	0x5c, 0x72, 0xc5, 0x72, 0xf2, 0x5f, 0xa6, 0xd0, 0x16, 0x3d, 0xb0, 0x2e, 0x31, 0x19, 0xe2, 0x50,
+	0x0e, 0xd1, 0x7a, 0x58, 0xa3, 0xf3, 0x9a, 0x66, 0x22, 0x95, 0x5e, 0x0a, 0xa9, 0x74, 0x4f, 0xfa,
+	0x06, 0xca, 0x61, 0xa7, 0x8e, 0xe7, 0x28, 0x96, 0x3b, 0x34, 0xe4, 0x04, 0x28, 0x2e, 0xbe, 0xc4,
+	0xe4, 0xc1, 0x1c, 0xdb, 0xd6, 0xf4, 0x84, 0x32, 0x3d, 0x47, 0x13, 0xd4, 0x5e, 0x8b, 0x80, 0xe4,
+	0x7f, 0xc2, 0x95, 0x0c, 0xea, 0xa4, 0x5f, 0xbf, 0xbd, 0x60, 0x31, 0xa1, 0xf9, 0x4a, 0x46, 0x85,
+	0x45, 0x18, 0x81, 0xa9, 0x4b, 0x22, 0x56, 0x1b, 0x7c, 0x16, 0x03, 0xca, 0x3f, 0x48, 0x5d, 0xaf,
+	0xe6, 0xf5, 0x10, 0xdd, 0xe3, 0x65, 0x0e, 0xa3, 0xbb, 0xbf, 0x5f, 0xaf, 0xd6, 0xf1, 0xc5, 0xd7,
+	0x55, 0xa3, 0xdd, 0xd5, 0x61, 0x3e, 0x08, 0x05, 0x5c, 0x7e, 0x8a, 0xd1, 0xd5, 0x0e, 0x74, 0xa5,
+	0x16, 0x57, 0x24, 0xd9, 0xf9, 0xec, 0x7c, 0xdd, 0x08, 0x9a, 0x1d, 0x72, 0xf2, 0x5f, 0x64, 0x91,
+	0x84, 0x0f, 0xc5, 0x00, 0x66, 0xf7, 0xce, 0xae, 0xe1, 0xc1, 0xcc, 0x13, 0x89, 0x73, 0xb5, 0x4e,
+	0x93, 0x35, 0x5e, 0xa8, 0x69, 0x63, 0xae, 0x8f, 0x2b, 0xa8, 0x0f, 0x61, 0x77, 0x88, 0xfc, 0xc5,
+	0x72, 0x77, 0x64, 0x2a, 0x4f, 0xa3, 0x82, 0xd8, 0x0c, 0xc2, 0x94, 0x98, 0xd8, 0x0c, 0x42, 0x28,
+	0xfb, 0x41, 0xb4, 0x48, 0xda, 0x53, 0xed, 0xc1, 0x80, 0x59, 0xeb, 0xab, 0xcf, 0xb0, 0x1c, 0x52,
+	0x0d, 0xea, 0x60, 0xb0, 0xa4, 0xb9, 0x26, 0x47, 0x3e, 0xb8, 0xa0, 0xb9, 0xa6, 0x8a, 0x1e, 0xf4,
+	0x5c, 0x77, 0x88, 0xeb, 0xfd, 0x10, 0xd4, 0xd0, 0xaa, 0x72, 0xb4, 0x28, 0x9e, 0x27, 0xae, 0xdb,
+	0x5d, 0x8e, 0xc5, 0x4b, 0xcf, 0xe1, 0xa2, 0xfa, 0xb7, 0xd1, 0x9d, 0xde, 0x99, 0xe5, 0x8c, 0xcd,
+	0x33, 0x70, 0x0a, 0x82, 0xf4, 0x11, 0x84, 0x42, 0x27, 0xf6, 0x94, 0x05, 0x1a, 0xb7, 0x08, 0xc6,
+	0x21, 0x20, 0xf0, 0x7c, 0x50, 0x8b, 0x0c, 0xcb, 0xa7, 0x89, 0x0b, 0x3a, 0xa0, 0x62, 0xda, 0x5d,
+	0xb0, 0x23, 0xfb, 0xa2, 0x94, 0x03, 0x56, 0x07, 0x14, 0x4e, 0xb5, 0xdd, 0x6e, 0xd4, 0x40, 0x4b,
+	0x99, 0x9a, 0xaa, 0xd7, 0xdb, 0x35, 0xda, 0xde, 0x11, 0x53, 0x29, 0x59, 0xf9, 0xb7, 0xf2, 0x68,
+	0xdb, 0xc0, 0xa5, 0x13, 0x91, 0xb9, 0xb8, 0x4e, 0x1f, 0xe0, 0x42, 0x42, 0x71, 0x09, 0xfa, 0x00,
+	0xdd, 0xe6, 0x99, 0x15, 0x51, 0xc5, 0x89, 0x74, 0x2a, 0x64, 0xf4, 0x6d, 0x96, 0x34, 0xe1, 0x35,
+	0x1d, 0xce, 0xd2, 0x6f, 0xa2, 0x5b, 0x6c, 0xaa, 0x3d, 0xee, 0xcf, 0x77, 0x29, 0x64, 0xf4, 0x2d,
+	0x3a, 0xac, 0x8e, 0xfb, 0xe1, 0x69, 0x77, 0xd1, 0x1a, 0x9b, 0xe6, 0xf4, 0x59, 0x9c, 0x58, 0xa0,
+	0x00, 0x08, 0x5e, 0x55, 0x54, 0xe0, 0x59, 0x7b, 0x96, 0xd1, 0x7b, 0x67, 0x4e, 0xb4, 0xe8, 0x86,
+	0xd8, 0x3f, 0x1a, 0x2c, 0xca, 0xe9, 0x39, 0x13, 0x6b, 0xec, 0xeb, 0x62, 0xaa, 0xf4, 0x5d, 0xec,
+	0x0c, 0x93, 0x6f, 0x0c, 0xdd, 0x01, 0x11, 0x8f, 0x45, 0x3d, 0x25, 0x11, 0x42, 0xb8, 0x57, 0x92,
+	0x2d, 0x0c, 0x1e, 0xe5, 0x1f, 0xa5, 0x57, 0xaa, 0x19, 0xec, 0x06, 0x12, 0x35, 0x70, 0x70, 0xdc,
+	0x8c, 0xa8, 0x18, 0xec, 0x36, 0x06, 0x03, 0x6a, 0xb7, 0xa3, 0x2b, 0x8d, 0x70, 0x0d, 0x1a, 0x83,
+	0x9f, 0xeb, 0xed, 0xd6, 0x81, 0x89, 0x83, 0x21, 0x50, 0x28, 0xa2, 0x9e, 0x87, 0x47, 0xd4, 0xa6,
+	0xd6, 0x39, 0x06, 0xf7, 0x6f, 0xae, 0xd6, 0xcd, 0x8b, 0x0f, 0xe0, 0xfa, 0xbd, 0x83, 0xde, 0xa6,
+	0x63, 0x40, 0x9a, 0x54, 0x58, 0x05, 0x92, 0xd2, 0xe9, 0x28, 0xd5, 0x67, 0xd8, 0xfd, 0xc4, 0x56,
+	0xad, 0x72, 0x23, 0x50, 0x56, 0xe0, 0xbc, 0x04, 0xde, 0x27, 0xcc, 0xea, 0x80, 0xb2, 0x2a, 0x04,
+	0x5f, 0xc1, 0xb5, 0x8e, 0xa6, 0xd2, 0x3a, 0x36, 0xf7, 0x80, 0x44, 0x03, 0x14, 0xe1, 0xda, 0x82,
+	0x31, 0x5a, 0x6c, 0x34, 0x2a, 0x28, 0xa8, 0xf6, 0xe2, 0x25, 0xd3, 0x29, 0xb8, 0xb4, 0xfb, 0x0c,
+	0xa4, 0xbf, 0x52, 0x94, 0xde, 0x42, 0x0f, 0x99, 0x86, 0x24, 0x13, 0xcc, 0x3d, 0x15, 0x1c, 0x27,
+	0xb3, 0x09, 0x4b, 0x6d, 0x76, 0x9b, 0x66, 0x43, 0x3d, 0x52, 0x1b, 0x95, 0xd2, 0x92, 0x40, 0x69,
+	0x5d, 0xfe, 0x7e, 0x8a, 0xd4, 0xf6, 0xc0, 0xc2, 0xb5, 0x4f, 0x7e, 0xd5, 0xee, 0xf9, 0x41, 0xd2,
+	0xe3, 0x7d, 0x88, 0xa8, 0xad, 0x89, 0xd9, 0xb3, 0x87, 0xa2, 0x55, 0xe8, 0x56, 0xdc, 0x28, 0xc2,
+	0x9f, 0x2a, 0x8c, 0xeb, 0x85, 0x11, 0x7d, 0xf0, 0xa4, 0x6f, 0x09, 0x77, 0x94, 0x86, 0x45, 0x0f,
+	0x17, 0x4c, 0x61, 0x5f, 0x8a, 0x79, 0x9c, 0xa1, 0x36, 0x6f, 0xcd, 0xf5, 0xc3, 0x8d, 0x44, 0x5f,
+	0xb8, 0xcd, 0x3b, 0x4a, 0xe7, 0xa7, 0xb1, 0xcd, 0xfb, 0x7b, 0x29, 0xb4, 0xc3, 0x8b, 0x1d, 0x73,
+	0x79, 0xb5, 0x2d, 0x94, 0xb3, 0xa7, 0x53, 0x77, 0xca, 0x62, 0x07, 0xfa, 0x82, 0xd3, 0x3e, 0x67,
+	0x96, 0x77, 0xc6, 0xeb, 0xa6, 0xf8, 0x19, 0x9c, 0xc8, 0x42, 0xac, 0x86, 0xf0, 0x78, 0x61, 0xd6,
+	0xef, 0x60, 0x08, 0x9e, 0x5d, 0x28, 0xe9, 0xcb, 0x27, 0xc9, 0x7f, 0x94, 0x42, 0x77, 0xc8, 0x0f,
+	0x04, 0x98, 0x21, 0xa0, 0x89, 0xbf, 0x04, 0xde, 0xf6, 0x1e, 0x2a, 0x33, 0xa3, 0xc2, 0xb3, 0x8e,
+	0xd8, 0x2c, 0x2e, 0xcc, 0x82, 0x11, 0x9a, 0x24, 0x1d, 0xb4, 0x6e, 0x85, 0xbf, 0x22, 0x7d, 0x0d,
+	0x6d, 0x45, 0x68, 0xd0, 0x34, 0xb6, 0xc7, 0x8a, 0x90, 0x52, 0x18, 0x99, 0xa4, 0xa8, 0x3d, 0xf9,
+	0x7f, 0x52, 0x20, 0xce, 0x38, 0x47, 0x49, 0x4b, 0xd9, 0x5f, 0xdc, 0xec, 0xcf, 0x13, 0x89, 0x4b,
+	0x89, 0x82, 0x0a, 0x3c, 0x1b, 0xca, 0x9c, 0xa8, 0xb7, 0x97, 0xc4, 0x12, 0xd1, 0x64, 0xaa, 0x2e,
+	0xa6, 0xc9, 0x87, 0x2b, 0xc5, 0x09, 0x94, 0x92, 0xb0, 0x5a, 0xa2, 0x57, 0x91, 0x79, 0xd5, 0x1f,
+	0x77, 0x41, 0xd9, 0xec, 0xd7, 0x71, 0x78, 0x2b, 0xff, 0x59, 0x06, 0xdd, 0x65, 0xb2, 0x0d, 0xc6,
+	0xbd, 0x3e, 0xee, 0xcd, 0x40, 0x8b, 0xba, 0x41, 0x8c, 0xf2, 0x4b, 0x31, 0x06, 0x54, 0x93, 0xde,
+	0x94, 0x45, 0xd4, 0x16, 0x34, 0xc8, 0x80, 0x17, 0x82, 0x7b, 0x38, 0x29, 0xde, 0xd5, 0x0d, 0x32,
+	0x11, 0x8a, 0x25, 0x3b, 0xf4, 0x26, 0xff, 0x70, 0xb5, 0x5b, 0x29, 0x34, 0xa9, 0xf8, 0x51, 0x40,
+	0x44, 0xeb, 0x0b, 0xb7, 0x91, 0x2b, 0x59, 0xf5, 0xe0, 0x20, 0xd2, 0x83, 0x24, 0x54, 0xa6, 0x70,
+	0x1b, 0x6b, 0xf4, 0xb7, 0x08, 0xb8, 0x0f, 0x49, 0x92, 0xd1, 0x83, 0x38, 0x75, 0x1e, 0x90, 0x80,
+	0x6a, 0xc4, 0xb7, 0x36, 0x17, 0x52, 0xab, 0x8c, 0x42, 0x80, 0x41, 0xe6, 0xe0, 0x56, 0x9b, 0xbc,
+	0xf4, 0x36, 0x7a, 0x34, 0xbf, 0x4e, 0x4c, 0x21, 0xdc, 0x91, 0x73, 0x43, 0xfe, 0x9d, 0xa0, 0x9d,
+	0x89, 0xc5, 0x5d, 0x09, 0xae, 0xd6, 0x57, 0xd0, 0x26, 0x29, 0x67, 0xf0, 0xe8, 0x6e, 0x84, 0xcf,
+	0x95, 0x56, 0xa1, 0x37, 0x9c, 0x80, 0x52, 0x13, 0xf3, 0xf1, 0x2d, 0x56, 0x6a, 0x3d, 0x1d, 0xda,
+	0x0c, 0x91, 0xb6, 0xd2, 0x13, 0xbf, 0x73, 0x1f, 0x80, 0x4d, 0xd6, 0x0e, 0xe0, 0xf9, 0x2e, 0x78,
+	0x0d, 0xee, 0x85, 0x3d, 0xb2, 0x59, 0xf1, 0xbe, 0xa0, 0x97, 0x30, 0xb0, 0xc9, 0x60, 0x38, 0xf3,
+	0x4b, 0x90, 0xc0, 0x3c, 0x83, 0x77, 0x46, 0x3c, 0x83, 0x82, 0x8e, 0x30, 0x48, 0x21, 0x10, 0x9c,
+	0xca, 0x03, 0xf7, 0x64, 0x60, 0xfb, 0xe6, 0xc8, 0x7a, 0x49, 0x0c, 0x7e, 0x41, 0x5f, 0xa3, 0x90,
+	0xa6, 0xf5, 0x92, 0x54, 0x53, 0xe9, 0xb0, 0x37, 0x74, 0x5f, 0x10, 0x77, 0x0f, 0xe6, 0x53, 0x90,
+	0x01, 0x10, 0xf9, 0xcf, 0x21, 0xc4, 0x56, 0x2f, 0xdc, 0xe1, 0xc5, 0x5c, 0x40, 0xf4, 0xea, 0x8a,
+	0x7e, 0x21, 0x9d, 0xb8, 0xe0, 0xb6, 0xd0, 0x96, 0x4d, 0xf0, 0x82, 0x2a, 0x7d, 0xe2, 0x50, 0x5b,
+	0x62, 0x33, 0x43, 0xb0, 0xa5, 0x0d, 0xeb, 0xa9, 0xc4, 0x0d, 0xeb, 0xf3, 0xdd, 0xde, 0x7f, 0x90,
+	0x4a, 0xd2, 0x90, 0x47, 0x1b, 0xbb, 0x85, 0x48, 0xe2, 0x2a, 0x3d, 0x16, 0x30, 0xd2, 0x33, 0xc6,
+	0xc6, 0x96, 0x86, 0x5a, 0x10, 0x8c, 0xc5, 0xa6, 0x33, 0x2b, 0xa5, 0x1e, 0xb5, 0x1b, 0x47, 0x38,
+	0xd6, 0x82, 0x08, 0x3d, 0x86, 0x11, 0x0d, 0xb6, 0x7e, 0x1d, 0x6d, 0x91, 0x5f, 0x84, 0xb0, 0x2b,
+	0x9e, 0x40, 0x84, 0x9b, 0x28, 0xf8, 0x41, 0xa0, 0xd9, 0xb7, 0x87, 0x82, 0xe9, 0xcb, 0xa2, 0x26,
+	0xfe, 0x54, 0xc3, 0xb8, 0x7a, 0xd9, 0x89, 0xbc, 0xcb, 0xbf, 0x9f, 0x41, 0x3b, 0xac, 0x13, 0x7c,
+	0x3e, 0x3f, 0xf3, 0xea, 0x6d, 0x57, 0xcb, 0x48, 0xfd, 0x8c, 0xa5, 0x68, 0xbe, 0x9f, 0x4a, 0xfa,
+	0xfb, 0x93, 0x85, 0xc3, 0x81, 0x80, 0x25, 0xf9, 0xf5, 0xc9, 0x15, 0x69, 0x9a, 0x8c, 0xfc, 0x79,
+	0x96, 0xb6, 0x17, 0xd6, 0xec, 0xc9, 0xd0, 0xbd, 0x7c, 0x3d, 0xed, 0x85, 0x0b, 0x69, 0xfd, 0xa4,
+	0xda, 0x0b, 0xaf, 0x5f, 0xa4, 0x8b, 0x74, 0xc8, 0x65, 0x5f, 0xa9, 0x43, 0x4e, 0xfe, 0x5e, 0x3a,
+	0x71, 0x2c, 0x2c, 0xec, 0x50, 0x90, 0xbb, 0x36, 0xc4, 0x2d, 0xe6, 0xcd, 0x8c, 0xa1, 0xd6, 0xd2,
+	0xb6, 0xa6, 0xb5, 0xb1, 0xea, 0x20, 0x51, 0x11, 0x4e, 0xc5, 0x1a, 0xbc, 0xdf, 0x51, 0x04, 0x0a,
+	0xf8, 0x1d, 0x2b, 0x00, 0x1a, 0x2f, 0x2f, 0x09, 0x20, 0x72, 0x21, 0x4b, 0x4b, 0xc3, 0x0f, 0xfc,
+	0x61, 0x58, 0x2a, 0x89, 0xb6, 0xf2, 0x8b, 0x9b, 0x2b, 0x31, 0x45, 0xf3, 0x50, 0x83, 0x80, 0x29,
+	0x49, 0xec, 0x52, 0xc0, 0xdd, 0x96, 0x9b, 0xe0, 0xb3, 0x2a, 0x17, 0xc0, 0xab, 0xe0, 0xbe, 0x7f,
+	0x1c, 0x2b, 0xcb, 0x7d, 0x90, 0xa4, 0x2c, 0x17, 0xa5, 0xf1, 0x7a, 0x4b, 0x72, 0xea, 0xca, 0x8c,
+	0x39, 0xf0, 0x10, 0xae, 0x52, 0x47, 0xd1, 0xaf, 0x2a, 0xca, 0x5d, 0xa0, 0x7b, 0x4d, 0x6b, 0x7a,
+	0xbe, 0xf4, 0xf7, 0x02, 0x3f, 0xae, 0xcc, 0xf7, 0x5f, 0x81, 0x8f, 0x42, 0xdc, 0xeb, 0xee, 0x44,
+	0xb7, 0xb1, 0x55, 0xf2, 0xae, 0x91, 0x10, 0x59, 0x4c, 0xe8, 0xc7, 0x98, 0x52, 0x3b, 0xa4, 0x0e,
+	0x90, 0x67, 0xce, 0x20, 0x96, 0xea, 0x9d, 0xb3, 0x9f, 0x85, 0x95, 0x97, 0xfd, 0xc6, 0x48, 0xd0,
+	0xaa, 0xf7, 0x69, 0x07, 0x99, 0xd7, 0x65, 0xf3, 0xe4, 0x6f, 0x26, 0xf1, 0xd6, 0x95, 0xe7, 0x8a,
+	0x5e, 0x03, 0x43, 0xc9, 0xce, 0xb1, 0x92, 0x96, 0xff, 0x26, 0x83, 0x36, 0xa9, 0x83, 0x14, 0x2e,
+	0xa5, 0x7e, 0x1c, 0xe3, 0xdc, 0x6a, 0x21, 0x9d, 0xa3, 0x11, 0x67, 0x5a, 0x34, 0xdf, 0x92, 0x7e,
+	0xf5, 0x7c, 0x4b, 0x34, 0x2b, 0x94, 0x89, 0x65, 0x85, 0x74, 0xb4, 0x61, 0x91, 0xee, 0x29, 0x53,
+	0x24, 0x87, 0xb2, 0x89, 0x92, 0x43, 0xac, 0xcb, 0x71, 0x7c, 0xea, 0xea, 0x65, 0x4a, 0x81, 0xb7,
+	0xa8, 0x86, 0x68, 0x52, 0xa7, 0x32, 0x71, 0xc2, 0x69, 0x9e, 0xa6, 0xc2, 0x08, 0xc8, 0x9f, 0xae,
+	0x3c, 0xa6, 0x50, 0xf6, 0x39, 0x9c, 0xaf, 0x21, 0x01, 0x56, 0xbb, 0x65, 0x2c, 0xaf, 0x1e, 0xef,
+	0x3d, 0xf8, 0xf4, 0xde, 0xc0, 0xf1, 0xcf, 0x66, 0x27, 0xbb, 0x3d, 0x77, 0xf4, 0xde, 0xe4, 0x7c,
+	0x34, 0x1e, 0xb8, 0xef, 0xba, 0x7d, 0xe7, 0x3d, 0xf2, 0x7f, 0x07, 0xf0, 0xb4, 0x2f, 0x69, 0x29,
+	0x2d, 0xad, 0x65, 0xb4, 0xac, 0x96, 0xd3, 0xf2, 0xda, 0x0d, 0xad, 0xa0, 0xad, 0x69, 0x48, 0x2b,
+	0x6a, 0x25, 0x6d, 0xfd, 0x24, 0x4f, 0x70, 0xbe, 0xf1, 0xff, 0x01, 0x00, 0x00, 0xff, 0xff, 0x70,
+	0x2b, 0x73, 0x49, 0x71, 0x41, 0x00, 0x00,
 }
