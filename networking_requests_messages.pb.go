@@ -13,360 +13,93 @@ var _ = proto.Marshal
 var _ = fmt.Errorf
 var _ = math.Inf
 
-// Ignoring public import of ContactSettings from data_player.proto
-
-// Ignoring public import of DailyBonus from data_player.proto
-
-// Ignoring public import of PlayerCurrency from data_player.proto
-
-// Ignoring public import of Currency from data_player.proto
-
-// Ignoring public import of PlayerAvatar from data_player.proto
-
-// Ignoring public import of PlayerCamera from data_player.proto
-
-// Ignoring public import of EquippedBadge from data_player.proto
-
-// Ignoring public import of PlayerStats from data_player.proto
-
-// Ignoring public import of PlayerPublicProfile from data_player.proto
+// Ignoring public import of ItemAward from inventory_item.proto
 
 // Ignoring public import of ItemData from inventory_item.proto
 
-// Ignoring public import of ItemAward from inventory_item.proto
+// Ignoring public import of ItemId from inventory_item.proto
 
 // Ignoring public import of ItemType from inventory_item.proto
 
-// Ignoring public import of ItemId from inventory_item.proto
-
-// Ignoring public import of CameraTarget from enums.proto
-
-// Ignoring public import of PokemonRarity from enums.proto
-
-// Ignoring public import of ItemCategory from enums.proto
-
-// Ignoring public import of Gender from enums.proto
-
-// Ignoring public import of PokemonId from enums.proto
-
-// Ignoring public import of BadgeType from enums.proto
-
-// Ignoring public import of TutorialState from enums.proto
-
-// Ignoring public import of CameraInterpolation from enums.proto
-
-// Ignoring public import of PokemonMovementType from enums.proto
-
-// Ignoring public import of PokemonMove from enums.proto
-
-// Ignoring public import of Platform from enums.proto
-
-// Ignoring public import of TeamColor from enums.proto
-
-// Ignoring public import of HoloIapItemCategory from enums.proto
-
-// Ignoring public import of ActivityType from enums.proto
-
-// Ignoring public import of PokemonFamilyId from enums.proto
-
-// Ignoring public import of ItemEffect from enums.proto
-
-// Ignoring public import of PokemonType from enums.proto
+// Ignoring public import of BattleAction from data_battle.proto
 
 // Ignoring public import of BattleLog from data_battle.proto
+
+// Ignoring public import of BattleParticipant from data_battle.proto
 
 // Ignoring public import of BattlePokemonInfo from data_battle.proto
 
 // Ignoring public import of BattleResults from data_battle.proto
 
-// Ignoring public import of BattleAction from data_battle.proto
-
-// Ignoring public import of BattleParticipant from data_battle.proto
+// Ignoring public import of BattleActionType from data_battle.proto
 
 // Ignoring public import of BattleState from data_battle.proto
 
-// Ignoring public import of BattleActionType from data_battle.proto
-
 // Ignoring public import of BattleType from data_battle.proto
 
-type FortSearchMessage struct {
-	FortId          string  `protobuf:"bytes,1,opt,name=fort_id,json=fortId" json:"fort_id,omitempty"`
-	PlayerLatitude  float64 `protobuf:"fixed64,2,opt,name=player_latitude,json=playerLatitude" json:"player_latitude,omitempty"`
-	PlayerLongitude float64 `protobuf:"fixed64,3,opt,name=player_longitude,json=playerLongitude" json:"player_longitude,omitempty"`
-	FortLatitude    float64 `protobuf:"fixed64,4,opt,name=fort_latitude,json=fortLatitude" json:"fort_latitude,omitempty"`
-	FortLongitude   float64 `protobuf:"fixed64,5,opt,name=fort_longitude,json=fortLongitude" json:"fort_longitude,omitempty"`
-}
+// Ignoring public import of ActivityType from enums.proto
 
-func (m *FortSearchMessage) Reset()                    { *m = FortSearchMessage{} }
-func (m *FortSearchMessage) String() string            { return proto.CompactTextString(m) }
-func (*FortSearchMessage) ProtoMessage()               {}
-func (*FortSearchMessage) Descriptor() ([]byte, []int) { return fileDescriptor5, []int{0} }
+// Ignoring public import of BadgeType from enums.proto
 
-type SetFavoritePokemonMessage struct {
-	PokemonId  uint64 `protobuf:"fixed64,1,opt,name=pokemon_id,json=pokemonId" json:"pokemon_id,omitempty"`
-	IsFavorite bool   `protobuf:"varint,2,opt,name=is_favorite,json=isFavorite" json:"is_favorite,omitempty"`
-}
+// Ignoring public import of CameraInterpolation from enums.proto
 
-func (m *SetFavoritePokemonMessage) Reset()                    { *m = SetFavoritePokemonMessage{} }
-func (m *SetFavoritePokemonMessage) String() string            { return proto.CompactTextString(m) }
-func (*SetFavoritePokemonMessage) ProtoMessage()               {}
-func (*SetFavoritePokemonMessage) Descriptor() ([]byte, []int) { return fileDescriptor5, []int{1} }
+// Ignoring public import of CameraTarget from enums.proto
 
-type CollectDailyBonusMessage struct {
-}
+// Ignoring public import of Gender from enums.proto
 
-func (m *CollectDailyBonusMessage) Reset()                    { *m = CollectDailyBonusMessage{} }
-func (m *CollectDailyBonusMessage) String() string            { return proto.CompactTextString(m) }
-func (*CollectDailyBonusMessage) ProtoMessage()               {}
-func (*CollectDailyBonusMessage) Descriptor() ([]byte, []int) { return fileDescriptor5, []int{2} }
+// Ignoring public import of HoloIapItemCategory from enums.proto
 
-type GetIncensePokemonMessage struct {
-	PlayerLatitude  float64 `protobuf:"fixed64,1,opt,name=player_latitude,json=playerLatitude" json:"player_latitude,omitempty"`
-	PlayerLongitude float64 `protobuf:"fixed64,2,opt,name=player_longitude,json=playerLongitude" json:"player_longitude,omitempty"`
-}
+// Ignoring public import of ItemCategory from enums.proto
 
-func (m *GetIncensePokemonMessage) Reset()                    { *m = GetIncensePokemonMessage{} }
-func (m *GetIncensePokemonMessage) String() string            { return proto.CompactTextString(m) }
-func (*GetIncensePokemonMessage) ProtoMessage()               {}
-func (*GetIncensePokemonMessage) Descriptor() ([]byte, []int) { return fileDescriptor5, []int{3} }
+// Ignoring public import of ItemEffect from enums.proto
 
-type DiskEncounterMessage struct {
-	EncounterId     uint64  `protobuf:"varint,1,opt,name=encounter_id,json=encounterId" json:"encounter_id,omitempty"`
+// Ignoring public import of Platform from enums.proto
+
+// Ignoring public import of PokemonFamilyId from enums.proto
+
+// Ignoring public import of PokemonId from enums.proto
+
+// Ignoring public import of PokemonMove from enums.proto
+
+// Ignoring public import of PokemonMovementType from enums.proto
+
+// Ignoring public import of PokemonRarity from enums.proto
+
+// Ignoring public import of PokemonType from enums.proto
+
+// Ignoring public import of TeamColor from enums.proto
+
+// Ignoring public import of TutorialState from enums.proto
+
+// Ignoring public import of ContactSettings from data_player.proto
+
+// Ignoring public import of Currency from data_player.proto
+
+// Ignoring public import of DailyBonus from data_player.proto
+
+// Ignoring public import of EquippedBadge from data_player.proto
+
+// Ignoring public import of PlayerAvatar from data_player.proto
+
+// Ignoring public import of PlayerCamera from data_player.proto
+
+// Ignoring public import of PlayerCurrency from data_player.proto
+
+// Ignoring public import of PlayerPublicProfile from data_player.proto
+
+// Ignoring public import of PlayerStats from data_player.proto
+
+type AddFortModifierMessage struct {
+	ModifierType    ItemId  `protobuf:"varint,1,opt,name=modifier_type,json=modifierType,enum=POGOProtos.Inventory.Item.ItemId" json:"modifier_type,omitempty"`
 	FortId          string  `protobuf:"bytes,2,opt,name=fort_id,json=fortId" json:"fort_id,omitempty"`
 	PlayerLatitude  float64 `protobuf:"fixed64,3,opt,name=player_latitude,json=playerLatitude" json:"player_latitude,omitempty"`
 	PlayerLongitude float64 `protobuf:"fixed64,4,opt,name=player_longitude,json=playerLongitude" json:"player_longitude,omitempty"`
 }
 
-func (m *DiskEncounterMessage) Reset()                    { *m = DiskEncounterMessage{} }
-func (m *DiskEncounterMessage) String() string            { return proto.CompactTextString(m) }
-func (*DiskEncounterMessage) ProtoMessage()               {}
-func (*DiskEncounterMessage) Descriptor() ([]byte, []int) { return fileDescriptor5, []int{4} }
-
-type SetContactSettingsMessage struct {
-	ContactSettings *ContactSettings `protobuf:"bytes,1,opt,name=contact_settings,json=contactSettings" json:"contact_settings,omitempty"`
-}
-
-func (m *SetContactSettingsMessage) Reset()                    { *m = SetContactSettingsMessage{} }
-func (m *SetContactSettingsMessage) String() string            { return proto.CompactTextString(m) }
-func (*SetContactSettingsMessage) ProtoMessage()               {}
-func (*SetContactSettingsMessage) Descriptor() ([]byte, []int) { return fileDescriptor5, []int{5} }
-
-func (m *SetContactSettingsMessage) GetContactSettings() *ContactSettings {
-	if m != nil {
-		return m.ContactSettings
-	}
-	return nil
-}
-
-type GetGymDetailsMessage struct {
-	GymId           string  `protobuf:"bytes,1,opt,name=gym_id,json=gymId" json:"gym_id,omitempty"`
-	PlayerLatitude  float64 `protobuf:"fixed64,2,opt,name=player_latitude,json=playerLatitude" json:"player_latitude,omitempty"`
-	PlayerLongitude float64 `protobuf:"fixed64,3,opt,name=player_longitude,json=playerLongitude" json:"player_longitude,omitempty"`
-	GymLatitude     float64 `protobuf:"fixed64,4,opt,name=gym_latitude,json=gymLatitude" json:"gym_latitude,omitempty"`
-	GymLongitude    float64 `protobuf:"fixed64,5,opt,name=gym_longitude,json=gymLongitude" json:"gym_longitude,omitempty"`
-}
-
-func (m *GetGymDetailsMessage) Reset()                    { *m = GetGymDetailsMessage{} }
-func (m *GetGymDetailsMessage) String() string            { return proto.CompactTextString(m) }
-func (*GetGymDetailsMessage) ProtoMessage()               {}
-func (*GetGymDetailsMessage) Descriptor() ([]byte, []int) { return fileDescriptor5, []int{6} }
-
-type CollectDailyDefenderBonusMessage struct {
-}
-
-func (m *CollectDailyDefenderBonusMessage) Reset()         { *m = CollectDailyDefenderBonusMessage{} }
-func (m *CollectDailyDefenderBonusMessage) String() string { return proto.CompactTextString(m) }
-func (*CollectDailyDefenderBonusMessage) ProtoMessage()    {}
-func (*CollectDailyDefenderBonusMessage) Descriptor() ([]byte, []int) {
-	return fileDescriptor5, []int{7}
-}
-
-type UseIncenseMessage struct {
-	IncenseType ItemId `protobuf:"varint,1,opt,name=incense_type,json=incenseType,enum=POGOProtos.Inventory.Item.ItemId" json:"incense_type,omitempty"`
-}
-
-func (m *UseIncenseMessage) Reset()                    { *m = UseIncenseMessage{} }
-func (m *UseIncenseMessage) String() string            { return proto.CompactTextString(m) }
-func (*UseIncenseMessage) ProtoMessage()               {}
-func (*UseIncenseMessage) Descriptor() ([]byte, []int) { return fileDescriptor5, []int{8} }
-
-type FortDeployPokemonMessage struct {
-	FortId          string  `protobuf:"bytes,1,opt,name=fort_id,json=fortId" json:"fort_id,omitempty"`
-	PokemonId       uint64  `protobuf:"fixed64,2,opt,name=pokemon_id,json=pokemonId" json:"pokemon_id,omitempty"`
-	PlayerLatitude  float64 `protobuf:"fixed64,3,opt,name=player_latitude,json=playerLatitude" json:"player_latitude,omitempty"`
-	PlayerLongitude float64 `protobuf:"fixed64,4,opt,name=player_longitude,json=playerLongitude" json:"player_longitude,omitempty"`
-}
-
-func (m *FortDeployPokemonMessage) Reset()                    { *m = FortDeployPokemonMessage{} }
-func (m *FortDeployPokemonMessage) String() string            { return proto.CompactTextString(m) }
-func (*FortDeployPokemonMessage) ProtoMessage()               {}
-func (*FortDeployPokemonMessage) Descriptor() ([]byte, []int) { return fileDescriptor5, []int{9} }
-
-type UseItemPotionMessage struct {
-	ItemId    ItemId `protobuf:"varint,1,opt,name=item_id,json=itemId,enum=POGOProtos.Inventory.Item.ItemId" json:"item_id,omitempty"`
-	PokemonId uint64 `protobuf:"fixed64,2,opt,name=pokemon_id,json=pokemonId" json:"pokemon_id,omitempty"`
-}
-
-func (m *UseItemPotionMessage) Reset()                    { *m = UseItemPotionMessage{} }
-func (m *UseItemPotionMessage) String() string            { return proto.CompactTextString(m) }
-func (*UseItemPotionMessage) ProtoMessage()               {}
-func (*UseItemPotionMessage) Descriptor() ([]byte, []int) { return fileDescriptor5, []int{10} }
-
-type GetInventoryMessage struct {
-	LastTimestampMs int64 `protobuf:"varint,1,opt,name=last_timestamp_ms,json=lastTimestampMs" json:"last_timestamp_ms,omitempty"`
-	ItemBeenSeen    int32 `protobuf:"varint,2,opt,name=item_been_seen,json=itemBeenSeen" json:"item_been_seen,omitempty"`
-}
-
-func (m *GetInventoryMessage) Reset()                    { *m = GetInventoryMessage{} }
-func (m *GetInventoryMessage) String() string            { return proto.CompactTextString(m) }
-func (*GetInventoryMessage) ProtoMessage()               {}
-func (*GetInventoryMessage) Descriptor() ([]byte, []int) { return fileDescriptor5, []int{11} }
-
-type GetDownloadUrlsMessage struct {
-	AssetId []string `protobuf:"bytes,1,rep,name=asset_id,json=assetId" json:"asset_id,omitempty"`
-}
-
-func (m *GetDownloadUrlsMessage) Reset()                    { *m = GetDownloadUrlsMessage{} }
-func (m *GetDownloadUrlsMessage) String() string            { return proto.CompactTextString(m) }
-func (*GetDownloadUrlsMessage) ProtoMessage()               {}
-func (*GetDownloadUrlsMessage) Descriptor() ([]byte, []int) { return fileDescriptor5, []int{12} }
-
-type GetMapObjectsMessage struct {
-	CellId           []uint64 `protobuf:"varint,1,rep,packed,name=cell_id,json=cellId" json:"cell_id,omitempty"`
-	SinceTimestampMs []int64  `protobuf:"varint,2,rep,packed,name=since_timestamp_ms,json=sinceTimestampMs" json:"since_timestamp_ms,omitempty"`
-	Latitude         float64  `protobuf:"fixed64,3,opt,name=latitude" json:"latitude,omitempty"`
-	Longitude        float64  `protobuf:"fixed64,4,opt,name=longitude" json:"longitude,omitempty"`
-}
-
-func (m *GetMapObjectsMessage) Reset()                    { *m = GetMapObjectsMessage{} }
-func (m *GetMapObjectsMessage) String() string            { return proto.CompactTextString(m) }
-func (*GetMapObjectsMessage) ProtoMessage()               {}
-func (*GetMapObjectsMessage) Descriptor() ([]byte, []int) { return fileDescriptor5, []int{13} }
-
-type CatchPokemonMessage struct {
-	EncounterId           uint64  `protobuf:"fixed64,1,opt,name=encounter_id,json=encounterId" json:"encounter_id,omitempty"`
-	Pokeball              ItemId  `protobuf:"varint,2,opt,name=pokeball,enum=POGOProtos.Inventory.Item.ItemId" json:"pokeball,omitempty"`
-	NormalizedReticleSize float64 `protobuf:"fixed64,3,opt,name=normalized_reticle_size,json=normalizedReticleSize" json:"normalized_reticle_size,omitempty"`
-	SpawnPointId          string  `protobuf:"bytes,4,opt,name=spawn_point_id,json=spawnPointId" json:"spawn_point_id,omitempty"`
-	HitPokemon            bool    `protobuf:"varint,5,opt,name=hit_pokemon,json=hitPokemon" json:"hit_pokemon,omitempty"`
-	SpinModifier          float64 `protobuf:"fixed64,6,opt,name=spin_modifier,json=spinModifier" json:"spin_modifier,omitempty"`
-	NormalizedHitPosition float64 `protobuf:"fixed64,7,opt,name=normalized_hit_position,json=normalizedHitPosition" json:"normalized_hit_position,omitempty"`
-}
-
-func (m *CatchPokemonMessage) Reset()                    { *m = CatchPokemonMessage{} }
-func (m *CatchPokemonMessage) String() string            { return proto.CompactTextString(m) }
-func (*CatchPokemonMessage) ProtoMessage()               {}
-func (*CatchPokemonMessage) Descriptor() ([]byte, []int) { return fileDescriptor5, []int{14} }
-
-type EchoMessage struct {
-}
-
-func (m *EchoMessage) Reset()                    { *m = EchoMessage{} }
-func (m *EchoMessage) String() string            { return proto.CompactTextString(m) }
-func (*EchoMessage) ProtoMessage()               {}
-func (*EchoMessage) Descriptor() ([]byte, []int) { return fileDescriptor5, []int{15} }
-
-type GetHatchedEggsMessage struct {
-}
-
-func (m *GetHatchedEggsMessage) Reset()                    { *m = GetHatchedEggsMessage{} }
-func (m *GetHatchedEggsMessage) String() string            { return proto.CompactTextString(m) }
-func (*GetHatchedEggsMessage) ProtoMessage()               {}
-func (*GetHatchedEggsMessage) Descriptor() ([]byte, []int) { return fileDescriptor5, []int{16} }
-
-type UseItemCaptureMessage struct {
-	ItemId       ItemId `protobuf:"varint,1,opt,name=item_id,json=itemId,enum=POGOProtos.Inventory.Item.ItemId" json:"item_id,omitempty"`
-	EncounterId  uint64 `protobuf:"fixed64,2,opt,name=encounter_id,json=encounterId" json:"encounter_id,omitempty"`
-	SpawnPointId string `protobuf:"bytes,3,opt,name=spawn_point_id,json=spawnPointId" json:"spawn_point_id,omitempty"`
-}
-
-func (m *UseItemCaptureMessage) Reset()                    { *m = UseItemCaptureMessage{} }
-func (m *UseItemCaptureMessage) String() string            { return proto.CompactTextString(m) }
-func (*UseItemCaptureMessage) ProtoMessage()               {}
-func (*UseItemCaptureMessage) Descriptor() ([]byte, []int) { return fileDescriptor5, []int{17} }
-
-type IncenseEncounterMessage struct {
-	EncounterId       int64  `protobuf:"varint,1,opt,name=encounter_id,json=encounterId" json:"encounter_id,omitempty"`
-	EncounterLocation string `protobuf:"bytes,2,opt,name=encounter_location,json=encounterLocation" json:"encounter_location,omitempty"`
-}
-
-func (m *IncenseEncounterMessage) Reset()                    { *m = IncenseEncounterMessage{} }
-func (m *IncenseEncounterMessage) String() string            { return proto.CompactTextString(m) }
-func (*IncenseEncounterMessage) ProtoMessage()               {}
-func (*IncenseEncounterMessage) Descriptor() ([]byte, []int) { return fileDescriptor5, []int{18} }
-
-type UseItemEggIncubatorMessage struct {
-	ItemId    string `protobuf:"bytes,1,opt,name=item_id,json=itemId" json:"item_id,omitempty"`
-	PokemonId uint64 `protobuf:"varint,2,opt,name=pokemon_id,json=pokemonId" json:"pokemon_id,omitempty"`
-}
-
-func (m *UseItemEggIncubatorMessage) Reset()                    { *m = UseItemEggIncubatorMessage{} }
-func (m *UseItemEggIncubatorMessage) String() string            { return proto.CompactTextString(m) }
-func (*UseItemEggIncubatorMessage) ProtoMessage()               {}
-func (*UseItemEggIncubatorMessage) Descriptor() ([]byte, []int) { return fileDescriptor5, []int{19} }
-
-type DownloadSettingsMessage struct {
-	Hash string `protobuf:"bytes,1,opt,name=hash" json:"hash,omitempty"`
-}
-
-func (m *DownloadSettingsMessage) Reset()                    { *m = DownloadSettingsMessage{} }
-func (m *DownloadSettingsMessage) String() string            { return proto.CompactTextString(m) }
-func (*DownloadSettingsMessage) ProtoMessage()               {}
-func (*DownloadSettingsMessage) Descriptor() ([]byte, []int) { return fileDescriptor5, []int{20} }
-
-type MarkTutorialCompleteMessage struct {
-	TutorialsCompleted    []TutorialState `protobuf:"varint,1,rep,name=tutorials_completed,json=tutorialsCompleted,enum=POGOProtos.Enums.TutorialState" json:"tutorials_completed,omitempty"`
-	SendMarketingEmails   bool            `protobuf:"varint,2,opt,name=send_marketing_emails,json=sendMarketingEmails" json:"send_marketing_emails,omitempty"`
-	SendPushNotifications bool            `protobuf:"varint,3,opt,name=send_push_notifications,json=sendPushNotifications" json:"send_push_notifications,omitempty"`
-}
-
-func (m *MarkTutorialCompleteMessage) Reset()                    { *m = MarkTutorialCompleteMessage{} }
-func (m *MarkTutorialCompleteMessage) String() string            { return proto.CompactTextString(m) }
-func (*MarkTutorialCompleteMessage) ProtoMessage()               {}
-func (*MarkTutorialCompleteMessage) Descriptor() ([]byte, []int) { return fileDescriptor5, []int{21} }
-
-type NicknamePokemonMessage struct {
-	PokemonId uint64 `protobuf:"fixed64,1,opt,name=pokemon_id,json=pokemonId" json:"pokemon_id,omitempty"`
-	Nickname  string `protobuf:"bytes,2,opt,name=nickname" json:"nickname,omitempty"`
-}
-
-func (m *NicknamePokemonMessage) Reset()                    { *m = NicknamePokemonMessage{} }
-func (m *NicknamePokemonMessage) String() string            { return proto.CompactTextString(m) }
-func (*NicknamePokemonMessage) ProtoMessage()               {}
-func (*NicknamePokemonMessage) Descriptor() ([]byte, []int) { return fileDescriptor5, []int{22} }
-
-type DownloadRemoteConfigVersionMessage struct {
-	Platform           Platform `protobuf:"varint,1,opt,name=platform,enum=POGOProtos.Enums.Platform" json:"platform,omitempty"`
-	DeviceManufacturer string   `protobuf:"bytes,2,opt,name=device_manufacturer,json=deviceManufacturer" json:"device_manufacturer,omitempty"`
-	DeviceModel        string   `protobuf:"bytes,3,opt,name=device_model,json=deviceModel" json:"device_model,omitempty"`
-	Locale             string   `protobuf:"bytes,4,opt,name=locale" json:"locale,omitempty"`
-	AppVersion         uint32   `protobuf:"varint,5,opt,name=app_version,json=appVersion" json:"app_version,omitempty"`
-}
-
-func (m *DownloadRemoteConfigVersionMessage) Reset()         { *m = DownloadRemoteConfigVersionMessage{} }
-func (m *DownloadRemoteConfigVersionMessage) String() string { return proto.CompactTextString(m) }
-func (*DownloadRemoteConfigVersionMessage) ProtoMessage()    {}
-func (*DownloadRemoteConfigVersionMessage) Descriptor() ([]byte, []int) {
-	return fileDescriptor5, []int{23}
-}
-
-type GetSuggestedCodenamesMessage struct {
-}
-
-func (m *GetSuggestedCodenamesMessage) Reset()                    { *m = GetSuggestedCodenamesMessage{} }
-func (m *GetSuggestedCodenamesMessage) String() string            { return proto.CompactTextString(m) }
-func (*GetSuggestedCodenamesMessage) ProtoMessage()               {}
-func (*GetSuggestedCodenamesMessage) Descriptor() ([]byte, []int) { return fileDescriptor5, []int{24} }
-
-type PlayerUpdateMessage struct {
-	Latitude  float64 `protobuf:"fixed64,1,opt,name=latitude" json:"latitude,omitempty"`
-	Longitude float64 `protobuf:"fixed64,2,opt,name=longitude" json:"longitude,omitempty"`
-}
-
-func (m *PlayerUpdateMessage) Reset()                    { *m = PlayerUpdateMessage{} }
-func (m *PlayerUpdateMessage) String() string            { return proto.CompactTextString(m) }
-func (*PlayerUpdateMessage) ProtoMessage()               {}
-func (*PlayerUpdateMessage) Descriptor() ([]byte, []int) { return fileDescriptor5, []int{25} }
+func (m *AddFortModifierMessage) Reset()                    { *m = AddFortModifierMessage{} }
+func (m *AddFortModifierMessage) String() string            { return proto.CompactTextString(m) }
+func (*AddFortModifierMessage) ProtoMessage()               {}
+func (*AddFortModifierMessage) Descriptor() ([]byte, []int) { return fileDescriptor14, []int{0} }
 
 type AttackGymMessage struct {
 	GymId                string          `protobuf:"bytes,1,opt,name=gym_id,json=gymId" json:"gym_id,omitempty"`
@@ -380,7 +113,7 @@ type AttackGymMessage struct {
 func (m *AttackGymMessage) Reset()                    { *m = AttackGymMessage{} }
 func (m *AttackGymMessage) String() string            { return proto.CompactTextString(m) }
 func (*AttackGymMessage) ProtoMessage()               {}
-func (*AttackGymMessage) Descriptor() ([]byte, []int) { return fileDescriptor5, []int{26} }
+func (*AttackGymMessage) Descriptor() ([]byte, []int) { return fileDescriptor14, []int{1} }
 
 func (m *AttackGymMessage) GetAttackActions() []*BattleAction {
 	if m != nil {
@@ -396,6 +129,38 @@ func (m *AttackGymMessage) GetLastRetrievedActions() *BattleAction {
 	return nil
 }
 
+type CatchPokemonMessage struct {
+	EncounterId           uint64  `protobuf:"fixed64,1,opt,name=encounter_id,json=encounterId" json:"encounter_id,omitempty"`
+	Pokeball              ItemId  `protobuf:"varint,2,opt,name=pokeball,enum=POGOProtos.Inventory.Item.ItemId" json:"pokeball,omitempty"`
+	NormalizedReticleSize float64 `protobuf:"fixed64,3,opt,name=normalized_reticle_size,json=normalizedReticleSize" json:"normalized_reticle_size,omitempty"`
+	SpawnPointId          string  `protobuf:"bytes,4,opt,name=spawn_point_id,json=spawnPointId" json:"spawn_point_id,omitempty"`
+	HitPokemon            bool    `protobuf:"varint,5,opt,name=hit_pokemon,json=hitPokemon" json:"hit_pokemon,omitempty"`
+	SpinModifier          float64 `protobuf:"fixed64,6,opt,name=spin_modifier,json=spinModifier" json:"spin_modifier,omitempty"`
+	NormalizedHitPosition float64 `protobuf:"fixed64,7,opt,name=normalized_hit_position,json=normalizedHitPosition" json:"normalized_hit_position,omitempty"`
+}
+
+func (m *CatchPokemonMessage) Reset()                    { *m = CatchPokemonMessage{} }
+func (m *CatchPokemonMessage) String() string            { return proto.CompactTextString(m) }
+func (*CatchPokemonMessage) ProtoMessage()               {}
+func (*CatchPokemonMessage) Descriptor() ([]byte, []int) { return fileDescriptor14, []int{2} }
+
+type CheckAwardedBadgesMessage struct {
+}
+
+func (m *CheckAwardedBadgesMessage) Reset()                    { *m = CheckAwardedBadgesMessage{} }
+func (m *CheckAwardedBadgesMessage) String() string            { return proto.CompactTextString(m) }
+func (*CheckAwardedBadgesMessage) ProtoMessage()               {}
+func (*CheckAwardedBadgesMessage) Descriptor() ([]byte, []int) { return fileDescriptor14, []int{3} }
+
+type CheckCodenameAvailableMessage struct {
+	Codename string `protobuf:"bytes,1,opt,name=codename" json:"codename,omitempty"`
+}
+
+func (m *CheckCodenameAvailableMessage) Reset()                    { *m = CheckCodenameAvailableMessage{} }
+func (m *CheckCodenameAvailableMessage) String() string            { return proto.CompactTextString(m) }
+func (*CheckCodenameAvailableMessage) ProtoMessage()               {}
+func (*CheckCodenameAvailableMessage) Descriptor() ([]byte, []int) { return fileDescriptor14, []int{4} }
+
 type ClaimCodenameMessage struct {
 	Codename string `protobuf:"bytes,1,opt,name=codename" json:"codename,omitempty"`
 }
@@ -403,25 +168,100 @@ type ClaimCodenameMessage struct {
 func (m *ClaimCodenameMessage) Reset()                    { *m = ClaimCodenameMessage{} }
 func (m *ClaimCodenameMessage) String() string            { return proto.CompactTextString(m) }
 func (*ClaimCodenameMessage) ProtoMessage()               {}
-func (*ClaimCodenameMessage) Descriptor() ([]byte, []int) { return fileDescriptor5, []int{27} }
+func (*ClaimCodenameMessage) Descriptor() ([]byte, []int) { return fileDescriptor14, []int{5} }
 
-type RecycleInventoryItemMessage struct {
-	ItemId ItemId `protobuf:"varint,1,opt,name=item_id,json=itemId,enum=POGOProtos.Inventory.Item.ItemId" json:"item_id,omitempty"`
-	Count  int32  `protobuf:"varint,2,opt,name=count" json:"count,omitempty"`
+type CollectDailyBonusMessage struct {
 }
 
-func (m *RecycleInventoryItemMessage) Reset()                    { *m = RecycleInventoryItemMessage{} }
-func (m *RecycleInventoryItemMessage) String() string            { return proto.CompactTextString(m) }
-func (*RecycleInventoryItemMessage) ProtoMessage()               {}
-func (*RecycleInventoryItemMessage) Descriptor() ([]byte, []int) { return fileDescriptor5, []int{28} }
+func (m *CollectDailyBonusMessage) Reset()                    { *m = CollectDailyBonusMessage{} }
+func (m *CollectDailyBonusMessage) String() string            { return proto.CompactTextString(m) }
+func (*CollectDailyBonusMessage) ProtoMessage()               {}
+func (*CollectDailyBonusMessage) Descriptor() ([]byte, []int) { return fileDescriptor14, []int{6} }
 
-type SfidaActionLogMessage struct {
+type CollectDailyDefenderBonusMessage struct {
 }
 
-func (m *SfidaActionLogMessage) Reset()                    { *m = SfidaActionLogMessage{} }
-func (m *SfidaActionLogMessage) String() string            { return proto.CompactTextString(m) }
-func (*SfidaActionLogMessage) ProtoMessage()               {}
-func (*SfidaActionLogMessage) Descriptor() ([]byte, []int) { return fileDescriptor5, []int{29} }
+func (m *CollectDailyDefenderBonusMessage) Reset()         { *m = CollectDailyDefenderBonusMessage{} }
+func (m *CollectDailyDefenderBonusMessage) String() string { return proto.CompactTextString(m) }
+func (*CollectDailyDefenderBonusMessage) ProtoMessage()    {}
+func (*CollectDailyDefenderBonusMessage) Descriptor() ([]byte, []int) {
+	return fileDescriptor14, []int{7}
+}
+
+type DiskEncounterMessage struct {
+	EncounterId     uint64  `protobuf:"varint,1,opt,name=encounter_id,json=encounterId" json:"encounter_id,omitempty"`
+	FortId          string  `protobuf:"bytes,2,opt,name=fort_id,json=fortId" json:"fort_id,omitempty"`
+	PlayerLatitude  float64 `protobuf:"fixed64,3,opt,name=player_latitude,json=playerLatitude" json:"player_latitude,omitempty"`
+	PlayerLongitude float64 `protobuf:"fixed64,4,opt,name=player_longitude,json=playerLongitude" json:"player_longitude,omitempty"`
+}
+
+func (m *DiskEncounterMessage) Reset()                    { *m = DiskEncounterMessage{} }
+func (m *DiskEncounterMessage) String() string            { return proto.CompactTextString(m) }
+func (*DiskEncounterMessage) ProtoMessage()               {}
+func (*DiskEncounterMessage) Descriptor() ([]byte, []int) { return fileDescriptor14, []int{8} }
+
+type DownloadItemTemplatesMessage struct {
+}
+
+func (m *DownloadItemTemplatesMessage) Reset()                    { *m = DownloadItemTemplatesMessage{} }
+func (m *DownloadItemTemplatesMessage) String() string            { return proto.CompactTextString(m) }
+func (*DownloadItemTemplatesMessage) ProtoMessage()               {}
+func (*DownloadItemTemplatesMessage) Descriptor() ([]byte, []int) { return fileDescriptor14, []int{9} }
+
+type DownloadRemoteConfigVersionMessage struct {
+	Platform           Platform `protobuf:"varint,1,opt,name=platform,enum=POGOProtos.Enums.Platform" json:"platform,omitempty"`
+	DeviceManufacturer string   `protobuf:"bytes,2,opt,name=device_manufacturer,json=deviceManufacturer" json:"device_manufacturer,omitempty"`
+	DeviceModel        string   `protobuf:"bytes,3,opt,name=device_model,json=deviceModel" json:"device_model,omitempty"`
+	Locale             string   `protobuf:"bytes,4,opt,name=locale" json:"locale,omitempty"`
+	AppVersion         uint32   `protobuf:"varint,5,opt,name=app_version,json=appVersion" json:"app_version,omitempty"`
+}
+
+func (m *DownloadRemoteConfigVersionMessage) Reset()         { *m = DownloadRemoteConfigVersionMessage{} }
+func (m *DownloadRemoteConfigVersionMessage) String() string { return proto.CompactTextString(m) }
+func (*DownloadRemoteConfigVersionMessage) ProtoMessage()    {}
+func (*DownloadRemoteConfigVersionMessage) Descriptor() ([]byte, []int) {
+	return fileDescriptor14, []int{10}
+}
+
+type DownloadSettingsMessage struct {
+	Hash string `protobuf:"bytes,1,opt,name=hash" json:"hash,omitempty"`
+}
+
+func (m *DownloadSettingsMessage) Reset()                    { *m = DownloadSettingsMessage{} }
+func (m *DownloadSettingsMessage) String() string            { return proto.CompactTextString(m) }
+func (*DownloadSettingsMessage) ProtoMessage()               {}
+func (*DownloadSettingsMessage) Descriptor() ([]byte, []int) { return fileDescriptor14, []int{11} }
+
+type EchoMessage struct {
+}
+
+func (m *EchoMessage) Reset()                    { *m = EchoMessage{} }
+func (m *EchoMessage) String() string            { return proto.CompactTextString(m) }
+func (*EchoMessage) ProtoMessage()               {}
+func (*EchoMessage) Descriptor() ([]byte, []int) { return fileDescriptor14, []int{12} }
+
+type EncounterMessage struct {
+	EncounterId     uint64  `protobuf:"fixed64,1,opt,name=encounter_id,json=encounterId" json:"encounter_id,omitempty"`
+	SpawnPointId    string  `protobuf:"bytes,2,opt,name=spawn_point_id,json=spawnPointId" json:"spawn_point_id,omitempty"`
+	PlayerLatitude  float64 `protobuf:"fixed64,3,opt,name=player_latitude,json=playerLatitude" json:"player_latitude,omitempty"`
+	PlayerLongitude float64 `protobuf:"fixed64,4,opt,name=player_longitude,json=playerLongitude" json:"player_longitude,omitempty"`
+}
+
+func (m *EncounterMessage) Reset()                    { *m = EncounterMessage{} }
+func (m *EncounterMessage) String() string            { return proto.CompactTextString(m) }
+func (*EncounterMessage) ProtoMessage()               {}
+func (*EncounterMessage) Descriptor() ([]byte, []int) { return fileDescriptor14, []int{13} }
+
+type EncounterTutorialCompleteMessage struct {
+	PokemonId PokemonId `protobuf:"varint,1,opt,name=pokemon_id,json=pokemonId,enum=POGOProtos.Enums.PokemonId" json:"pokemon_id,omitempty"`
+}
+
+func (m *EncounterTutorialCompleteMessage) Reset()         { *m = EncounterTutorialCompleteMessage{} }
+func (m *EncounterTutorialCompleteMessage) String() string { return proto.CompactTextString(m) }
+func (*EncounterTutorialCompleteMessage) ProtoMessage()    {}
+func (*EncounterTutorialCompleteMessage) Descriptor() ([]byte, []int) {
+	return fileDescriptor14, []int{14}
+}
 
 type EquipBadgeMessage struct {
 	BadgeType BadgeType `protobuf:"varint,1,opt,name=badge_type,json=badgeType,enum=POGOProtos.Enums.BadgeType" json:"badge_type,omitempty"`
@@ -430,7 +270,64 @@ type EquipBadgeMessage struct {
 func (m *EquipBadgeMessage) Reset()                    { *m = EquipBadgeMessage{} }
 func (m *EquipBadgeMessage) String() string            { return proto.CompactTextString(m) }
 func (*EquipBadgeMessage) ProtoMessage()               {}
-func (*EquipBadgeMessage) Descriptor() ([]byte, []int) { return fileDescriptor5, []int{30} }
+func (*EquipBadgeMessage) Descriptor() ([]byte, []int) { return fileDescriptor14, []int{15} }
+
+type EvolvePokemonMessage struct {
+	PokemonId uint64 `protobuf:"fixed64,1,opt,name=pokemon_id,json=pokemonId" json:"pokemon_id,omitempty"`
+}
+
+func (m *EvolvePokemonMessage) Reset()                    { *m = EvolvePokemonMessage{} }
+func (m *EvolvePokemonMessage) String() string            { return proto.CompactTextString(m) }
+func (*EvolvePokemonMessage) ProtoMessage()               {}
+func (*EvolvePokemonMessage) Descriptor() ([]byte, []int) { return fileDescriptor14, []int{16} }
+
+type FortDeployPokemonMessage struct {
+	FortId          string  `protobuf:"bytes,1,opt,name=fort_id,json=fortId" json:"fort_id,omitempty"`
+	PokemonId       uint64  `protobuf:"fixed64,2,opt,name=pokemon_id,json=pokemonId" json:"pokemon_id,omitempty"`
+	PlayerLatitude  float64 `protobuf:"fixed64,3,opt,name=player_latitude,json=playerLatitude" json:"player_latitude,omitempty"`
+	PlayerLongitude float64 `protobuf:"fixed64,4,opt,name=player_longitude,json=playerLongitude" json:"player_longitude,omitempty"`
+}
+
+func (m *FortDeployPokemonMessage) Reset()                    { *m = FortDeployPokemonMessage{} }
+func (m *FortDeployPokemonMessage) String() string            { return proto.CompactTextString(m) }
+func (*FortDeployPokemonMessage) ProtoMessage()               {}
+func (*FortDeployPokemonMessage) Descriptor() ([]byte, []int) { return fileDescriptor14, []int{17} }
+
+type FortDetailsMessage struct {
+	FortId    string  `protobuf:"bytes,1,opt,name=fort_id,json=fortId" json:"fort_id,omitempty"`
+	Latitude  float64 `protobuf:"fixed64,2,opt,name=latitude" json:"latitude,omitempty"`
+	Longitude float64 `protobuf:"fixed64,3,opt,name=longitude" json:"longitude,omitempty"`
+}
+
+func (m *FortDetailsMessage) Reset()                    { *m = FortDetailsMessage{} }
+func (m *FortDetailsMessage) String() string            { return proto.CompactTextString(m) }
+func (*FortDetailsMessage) ProtoMessage()               {}
+func (*FortDetailsMessage) Descriptor() ([]byte, []int) { return fileDescriptor14, []int{18} }
+
+type FortRecallPokemonMessage struct {
+	FortId          string  `protobuf:"bytes,1,opt,name=fort_id,json=fortId" json:"fort_id,omitempty"`
+	PokemonId       uint64  `protobuf:"fixed64,2,opt,name=pokemon_id,json=pokemonId" json:"pokemon_id,omitempty"`
+	PlayerLatitude  float64 `protobuf:"fixed64,3,opt,name=player_latitude,json=playerLatitude" json:"player_latitude,omitempty"`
+	PlayerLongitude float64 `protobuf:"fixed64,4,opt,name=player_longitude,json=playerLongitude" json:"player_longitude,omitempty"`
+}
+
+func (m *FortRecallPokemonMessage) Reset()                    { *m = FortRecallPokemonMessage{} }
+func (m *FortRecallPokemonMessage) String() string            { return proto.CompactTextString(m) }
+func (*FortRecallPokemonMessage) ProtoMessage()               {}
+func (*FortRecallPokemonMessage) Descriptor() ([]byte, []int) { return fileDescriptor14, []int{19} }
+
+type FortSearchMessage struct {
+	FortId          string  `protobuf:"bytes,1,opt,name=fort_id,json=fortId" json:"fort_id,omitempty"`
+	PlayerLatitude  float64 `protobuf:"fixed64,2,opt,name=player_latitude,json=playerLatitude" json:"player_latitude,omitempty"`
+	PlayerLongitude float64 `protobuf:"fixed64,3,opt,name=player_longitude,json=playerLongitude" json:"player_longitude,omitempty"`
+	FortLatitude    float64 `protobuf:"fixed64,4,opt,name=fort_latitude,json=fortLatitude" json:"fort_latitude,omitempty"`
+	FortLongitude   float64 `protobuf:"fixed64,5,opt,name=fort_longitude,json=fortLongitude" json:"fort_longitude,omitempty"`
+}
+
+func (m *FortSearchMessage) Reset()                    { *m = FortSearchMessage{} }
+func (m *FortSearchMessage) String() string            { return proto.CompactTextString(m) }
+func (*FortSearchMessage) ProtoMessage()               {}
+func (*FortSearchMessage) Descriptor() ([]byte, []int) { return fileDescriptor14, []int{20} }
 
 type GetAssetDigestMessage struct {
 	Platform           Platform `protobuf:"varint,1,opt,name=platform,enum=POGOProtos.Enums.Platform" json:"platform,omitempty"`
@@ -443,19 +340,77 @@ type GetAssetDigestMessage struct {
 func (m *GetAssetDigestMessage) Reset()                    { *m = GetAssetDigestMessage{} }
 func (m *GetAssetDigestMessage) String() string            { return proto.CompactTextString(m) }
 func (*GetAssetDigestMessage) ProtoMessage()               {}
-func (*GetAssetDigestMessage) Descriptor() ([]byte, []int) { return fileDescriptor5, []int{31} }
+func (*GetAssetDigestMessage) Descriptor() ([]byte, []int) { return fileDescriptor14, []int{21} }
 
-type FortRecallPokemonMessage struct {
-	FortId          string  `protobuf:"bytes,1,opt,name=fort_id,json=fortId" json:"fort_id,omitempty"`
-	PokemonId       uint64  `protobuf:"fixed64,2,opt,name=pokemon_id,json=pokemonId" json:"pokemon_id,omitempty"`
-	PlayerLatitude  float64 `protobuf:"fixed64,3,opt,name=player_latitude,json=playerLatitude" json:"player_latitude,omitempty"`
-	PlayerLongitude float64 `protobuf:"fixed64,4,opt,name=player_longitude,json=playerLongitude" json:"player_longitude,omitempty"`
+type GetDownloadUrlsMessage struct {
+	AssetId []string `protobuf:"bytes,1,rep,name=asset_id,json=assetId" json:"asset_id,omitempty"`
 }
 
-func (m *FortRecallPokemonMessage) Reset()                    { *m = FortRecallPokemonMessage{} }
-func (m *FortRecallPokemonMessage) String() string            { return proto.CompactTextString(m) }
-func (*FortRecallPokemonMessage) ProtoMessage()               {}
-func (*FortRecallPokemonMessage) Descriptor() ([]byte, []int) { return fileDescriptor5, []int{32} }
+func (m *GetDownloadUrlsMessage) Reset()                    { *m = GetDownloadUrlsMessage{} }
+func (m *GetDownloadUrlsMessage) String() string            { return proto.CompactTextString(m) }
+func (*GetDownloadUrlsMessage) ProtoMessage()               {}
+func (*GetDownloadUrlsMessage) Descriptor() ([]byte, []int) { return fileDescriptor14, []int{22} }
+
+type GetGymDetailsMessage struct {
+	GymId           string  `protobuf:"bytes,1,opt,name=gym_id,json=gymId" json:"gym_id,omitempty"`
+	PlayerLatitude  float64 `protobuf:"fixed64,2,opt,name=player_latitude,json=playerLatitude" json:"player_latitude,omitempty"`
+	PlayerLongitude float64 `protobuf:"fixed64,3,opt,name=player_longitude,json=playerLongitude" json:"player_longitude,omitempty"`
+	GymLatitude     float64 `protobuf:"fixed64,4,opt,name=gym_latitude,json=gymLatitude" json:"gym_latitude,omitempty"`
+	GymLongitude    float64 `protobuf:"fixed64,5,opt,name=gym_longitude,json=gymLongitude" json:"gym_longitude,omitempty"`
+}
+
+func (m *GetGymDetailsMessage) Reset()                    { *m = GetGymDetailsMessage{} }
+func (m *GetGymDetailsMessage) String() string            { return proto.CompactTextString(m) }
+func (*GetGymDetailsMessage) ProtoMessage()               {}
+func (*GetGymDetailsMessage) Descriptor() ([]byte, []int) { return fileDescriptor14, []int{23} }
+
+type GetHatchedEggsMessage struct {
+}
+
+func (m *GetHatchedEggsMessage) Reset()                    { *m = GetHatchedEggsMessage{} }
+func (m *GetHatchedEggsMessage) String() string            { return proto.CompactTextString(m) }
+func (*GetHatchedEggsMessage) ProtoMessage()               {}
+func (*GetHatchedEggsMessage) Descriptor() ([]byte, []int) { return fileDescriptor14, []int{24} }
+
+type GetIncensePokemonMessage struct {
+	PlayerLatitude  float64 `protobuf:"fixed64,1,opt,name=player_latitude,json=playerLatitude" json:"player_latitude,omitempty"`
+	PlayerLongitude float64 `protobuf:"fixed64,2,opt,name=player_longitude,json=playerLongitude" json:"player_longitude,omitempty"`
+}
+
+func (m *GetIncensePokemonMessage) Reset()                    { *m = GetIncensePokemonMessage{} }
+func (m *GetIncensePokemonMessage) String() string            { return proto.CompactTextString(m) }
+func (*GetIncensePokemonMessage) ProtoMessage()               {}
+func (*GetIncensePokemonMessage) Descriptor() ([]byte, []int) { return fileDescriptor14, []int{25} }
+
+type GetInventoryMessage struct {
+	LastTimestampMs int64 `protobuf:"varint,1,opt,name=last_timestamp_ms,json=lastTimestampMs" json:"last_timestamp_ms,omitempty"`
+	ItemBeenSeen    int32 `protobuf:"varint,2,opt,name=item_been_seen,json=itemBeenSeen" json:"item_been_seen,omitempty"`
+}
+
+func (m *GetInventoryMessage) Reset()                    { *m = GetInventoryMessage{} }
+func (m *GetInventoryMessage) String() string            { return proto.CompactTextString(m) }
+func (*GetInventoryMessage) ProtoMessage()               {}
+func (*GetInventoryMessage) Descriptor() ([]byte, []int) { return fileDescriptor14, []int{26} }
+
+type GetMapObjectsMessage struct {
+	CellId           []uint64 `protobuf:"varint,1,rep,packed,name=cell_id,json=cellId" json:"cell_id,omitempty"`
+	SinceTimestampMs []int64  `protobuf:"varint,2,rep,packed,name=since_timestamp_ms,json=sinceTimestampMs" json:"since_timestamp_ms,omitempty"`
+	Latitude         float64  `protobuf:"fixed64,3,opt,name=latitude" json:"latitude,omitempty"`
+	Longitude        float64  `protobuf:"fixed64,4,opt,name=longitude" json:"longitude,omitempty"`
+}
+
+func (m *GetMapObjectsMessage) Reset()                    { *m = GetMapObjectsMessage{} }
+func (m *GetMapObjectsMessage) String() string            { return proto.CompactTextString(m) }
+func (*GetMapObjectsMessage) ProtoMessage()               {}
+func (*GetMapObjectsMessage) Descriptor() ([]byte, []int) { return fileDescriptor14, []int{27} }
+
+type GetPlayerMessage struct {
+}
+
+func (m *GetPlayerMessage) Reset()                    { *m = GetPlayerMessage{} }
+func (m *GetPlayerMessage) String() string            { return proto.CompactTextString(m) }
+func (*GetPlayerMessage) ProtoMessage()               {}
+func (*GetPlayerMessage) Descriptor() ([]byte, []int) { return fileDescriptor14, []int{28} }
 
 type GetPlayerProfileMessage struct {
 	PlayerName string `protobuf:"bytes,1,opt,name=player_name,json=playerName" json:"player_name,omitempty"`
@@ -464,73 +419,25 @@ type GetPlayerProfileMessage struct {
 func (m *GetPlayerProfileMessage) Reset()                    { *m = GetPlayerProfileMessage{} }
 func (m *GetPlayerProfileMessage) String() string            { return proto.CompactTextString(m) }
 func (*GetPlayerProfileMessage) ProtoMessage()               {}
-func (*GetPlayerProfileMessage) Descriptor() ([]byte, []int) { return fileDescriptor5, []int{33} }
+func (*GetPlayerProfileMessage) Descriptor() ([]byte, []int) { return fileDescriptor14, []int{29} }
 
-type DownloadItemTemplatesMessage struct {
+type GetSuggestedCodenamesMessage struct {
 }
 
-func (m *DownloadItemTemplatesMessage) Reset()                    { *m = DownloadItemTemplatesMessage{} }
-func (m *DownloadItemTemplatesMessage) String() string            { return proto.CompactTextString(m) }
-func (*DownloadItemTemplatesMessage) ProtoMessage()               {}
-func (*DownloadItemTemplatesMessage) Descriptor() ([]byte, []int) { return fileDescriptor5, []int{34} }
+func (m *GetSuggestedCodenamesMessage) Reset()                    { *m = GetSuggestedCodenamesMessage{} }
+func (m *GetSuggestedCodenamesMessage) String() string            { return proto.CompactTextString(m) }
+func (*GetSuggestedCodenamesMessage) ProtoMessage()               {}
+func (*GetSuggestedCodenamesMessage) Descriptor() ([]byte, []int) { return fileDescriptor14, []int{30} }
 
-type ReleasePokemonMessage struct {
-	PokemonId uint64 `protobuf:"fixed64,1,opt,name=pokemon_id,json=pokemonId" json:"pokemon_id,omitempty"`
+type IncenseEncounterMessage struct {
+	EncounterId       int64  `protobuf:"varint,1,opt,name=encounter_id,json=encounterId" json:"encounter_id,omitempty"`
+	EncounterLocation string `protobuf:"bytes,2,opt,name=encounter_location,json=encounterLocation" json:"encounter_location,omitempty"`
 }
 
-func (m *ReleasePokemonMessage) Reset()                    { *m = ReleasePokemonMessage{} }
-func (m *ReleasePokemonMessage) String() string            { return proto.CompactTextString(m) }
-func (*ReleasePokemonMessage) ProtoMessage()               {}
-func (*ReleasePokemonMessage) Descriptor() ([]byte, []int) { return fileDescriptor5, []int{35} }
-
-type UseItemXpBoostMessage struct {
-	ItemId ItemId `protobuf:"varint,1,opt,name=item_id,json=itemId,enum=POGOProtos.Inventory.Item.ItemId" json:"item_id,omitempty"`
-}
-
-func (m *UseItemXpBoostMessage) Reset()                    { *m = UseItemXpBoostMessage{} }
-func (m *UseItemXpBoostMessage) String() string            { return proto.CompactTextString(m) }
-func (*UseItemXpBoostMessage) ProtoMessage()               {}
-func (*UseItemXpBoostMessage) Descriptor() ([]byte, []int) { return fileDescriptor5, []int{36} }
-
-type FortDetailsMessage struct {
-	FortId    string  `protobuf:"bytes,1,opt,name=fort_id,json=fortId" json:"fort_id,omitempty"`
-	Latitude  float64 `protobuf:"fixed64,2,opt,name=latitude" json:"latitude,omitempty"`
-	Longitude float64 `protobuf:"fixed64,3,opt,name=longitude" json:"longitude,omitempty"`
-}
-
-func (m *FortDetailsMessage) Reset()                    { *m = FortDetailsMessage{} }
-func (m *FortDetailsMessage) String() string            { return proto.CompactTextString(m) }
-func (*FortDetailsMessage) ProtoMessage()               {}
-func (*FortDetailsMessage) Descriptor() ([]byte, []int) { return fileDescriptor5, []int{37} }
-
-type CheckCodenameAvailableMessage struct {
-	Codename string `protobuf:"bytes,1,opt,name=codename" json:"codename,omitempty"`
-}
-
-func (m *CheckCodenameAvailableMessage) Reset()                    { *m = CheckCodenameAvailableMessage{} }
-func (m *CheckCodenameAvailableMessage) String() string            { return proto.CompactTextString(m) }
-func (*CheckCodenameAvailableMessage) ProtoMessage()               {}
-func (*CheckCodenameAvailableMessage) Descriptor() ([]byte, []int) { return fileDescriptor5, []int{38} }
-
-type GetPlayerMessage struct {
-}
-
-func (m *GetPlayerMessage) Reset()                    { *m = GetPlayerMessage{} }
-func (m *GetPlayerMessage) String() string            { return proto.CompactTextString(m) }
-func (*GetPlayerMessage) ProtoMessage()               {}
-func (*GetPlayerMessage) Descriptor() ([]byte, []int) { return fileDescriptor5, []int{39} }
-
-type AddFortModifierMessage struct {
-	ModifierType    ItemId  `protobuf:"varint,1,opt,name=modifier_type,json=modifierType,enum=POGOProtos.Inventory.Item.ItemId" json:"modifier_type,omitempty"`
-	FortId          string  `protobuf:"bytes,2,opt,name=fort_id,json=fortId" json:"fort_id,omitempty"`
-	PlayerLatitude  float64 `protobuf:"fixed64,3,opt,name=player_latitude,json=playerLatitude" json:"player_latitude,omitempty"`
-	PlayerLongitude float64 `protobuf:"fixed64,4,opt,name=player_longitude,json=playerLongitude" json:"player_longitude,omitempty"`
-}
-
-func (m *AddFortModifierMessage) Reset()                    { *m = AddFortModifierMessage{} }
-func (m *AddFortModifierMessage) String() string            { return proto.CompactTextString(m) }
-func (*AddFortModifierMessage) ProtoMessage()               {}
-func (*AddFortModifierMessage) Descriptor() ([]byte, []int) { return fileDescriptor5, []int{40} }
+func (m *IncenseEncounterMessage) Reset()                    { *m = IncenseEncounterMessage{} }
+func (m *IncenseEncounterMessage) String() string            { return proto.CompactTextString(m) }
+func (*IncenseEncounterMessage) ProtoMessage()               {}
+func (*IncenseEncounterMessage) Descriptor() ([]byte, []int) { return fileDescriptor14, []int{31} }
 
 type LevelUpRewardsMessage struct {
 	Level int32 `protobuf:"varint,1,opt,name=level" json:"level,omitempty"`
@@ -539,18 +446,168 @@ type LevelUpRewardsMessage struct {
 func (m *LevelUpRewardsMessage) Reset()                    { *m = LevelUpRewardsMessage{} }
 func (m *LevelUpRewardsMessage) String() string            { return proto.CompactTextString(m) }
 func (*LevelUpRewardsMessage) ProtoMessage()               {}
-func (*LevelUpRewardsMessage) Descriptor() ([]byte, []int) { return fileDescriptor5, []int{41} }
+func (*LevelUpRewardsMessage) Descriptor() ([]byte, []int) { return fileDescriptor14, []int{32} }
 
-type EncounterTutorialCompleteMessage struct {
-	PokemonId PokemonId `protobuf:"varint,1,opt,name=pokemon_id,json=pokemonId,enum=POGOProtos.Enums.PokemonId" json:"pokemon_id,omitempty"`
+type MarkTutorialCompleteMessage struct {
+	TutorialsCompleted    []TutorialState `protobuf:"varint,1,rep,name=tutorials_completed,json=tutorialsCompleted,enum=POGOProtos.Enums.TutorialState" json:"tutorials_completed,omitempty"`
+	SendMarketingEmails   bool            `protobuf:"varint,2,opt,name=send_marketing_emails,json=sendMarketingEmails" json:"send_marketing_emails,omitempty"`
+	SendPushNotifications bool            `protobuf:"varint,3,opt,name=send_push_notifications,json=sendPushNotifications" json:"send_push_notifications,omitempty"`
 }
 
-func (m *EncounterTutorialCompleteMessage) Reset()         { *m = EncounterTutorialCompleteMessage{} }
-func (m *EncounterTutorialCompleteMessage) String() string { return proto.CompactTextString(m) }
-func (*EncounterTutorialCompleteMessage) ProtoMessage()    {}
-func (*EncounterTutorialCompleteMessage) Descriptor() ([]byte, []int) {
-	return fileDescriptor5, []int{42}
+func (m *MarkTutorialCompleteMessage) Reset()                    { *m = MarkTutorialCompleteMessage{} }
+func (m *MarkTutorialCompleteMessage) String() string            { return proto.CompactTextString(m) }
+func (*MarkTutorialCompleteMessage) ProtoMessage()               {}
+func (*MarkTutorialCompleteMessage) Descriptor() ([]byte, []int) { return fileDescriptor14, []int{33} }
+
+type NicknamePokemonMessage struct {
+	PokemonId uint64 `protobuf:"fixed64,1,opt,name=pokemon_id,json=pokemonId" json:"pokemon_id,omitempty"`
+	Nickname  string `protobuf:"bytes,2,opt,name=nickname" json:"nickname,omitempty"`
 }
+
+func (m *NicknamePokemonMessage) Reset()                    { *m = NicknamePokemonMessage{} }
+func (m *NicknamePokemonMessage) String() string            { return proto.CompactTextString(m) }
+func (*NicknamePokemonMessage) ProtoMessage()               {}
+func (*NicknamePokemonMessage) Descriptor() ([]byte, []int) { return fileDescriptor14, []int{34} }
+
+type PlayerUpdateMessage struct {
+	Latitude  float64 `protobuf:"fixed64,1,opt,name=latitude" json:"latitude,omitempty"`
+	Longitude float64 `protobuf:"fixed64,2,opt,name=longitude" json:"longitude,omitempty"`
+}
+
+func (m *PlayerUpdateMessage) Reset()                    { *m = PlayerUpdateMessage{} }
+func (m *PlayerUpdateMessage) String() string            { return proto.CompactTextString(m) }
+func (*PlayerUpdateMessage) ProtoMessage()               {}
+func (*PlayerUpdateMessage) Descriptor() ([]byte, []int) { return fileDescriptor14, []int{35} }
+
+type RecycleInventoryItemMessage struct {
+	ItemId ItemId `protobuf:"varint,1,opt,name=item_id,json=itemId,enum=POGOProtos.Inventory.Item.ItemId" json:"item_id,omitempty"`
+	Count  int32  `protobuf:"varint,2,opt,name=count" json:"count,omitempty"`
+}
+
+func (m *RecycleInventoryItemMessage) Reset()                    { *m = RecycleInventoryItemMessage{} }
+func (m *RecycleInventoryItemMessage) String() string            { return proto.CompactTextString(m) }
+func (*RecycleInventoryItemMessage) ProtoMessage()               {}
+func (*RecycleInventoryItemMessage) Descriptor() ([]byte, []int) { return fileDescriptor14, []int{36} }
+
+type ReleasePokemonMessage struct {
+	PokemonId uint64 `protobuf:"fixed64,1,opt,name=pokemon_id,json=pokemonId" json:"pokemon_id,omitempty"`
+}
+
+func (m *ReleasePokemonMessage) Reset()                    { *m = ReleasePokemonMessage{} }
+func (m *ReleasePokemonMessage) String() string            { return proto.CompactTextString(m) }
+func (*ReleasePokemonMessage) ProtoMessage()               {}
+func (*ReleasePokemonMessage) Descriptor() ([]byte, []int) { return fileDescriptor14, []int{37} }
+
+type SetAvatarMessage struct {
+	PlayerAvatar *PlayerAvatar `protobuf:"bytes,2,opt,name=player_avatar,json=playerAvatar" json:"player_avatar,omitempty"`
+}
+
+func (m *SetAvatarMessage) Reset()                    { *m = SetAvatarMessage{} }
+func (m *SetAvatarMessage) String() string            { return proto.CompactTextString(m) }
+func (*SetAvatarMessage) ProtoMessage()               {}
+func (*SetAvatarMessage) Descriptor() ([]byte, []int) { return fileDescriptor14, []int{38} }
+
+func (m *SetAvatarMessage) GetPlayerAvatar() *PlayerAvatar {
+	if m != nil {
+		return m.PlayerAvatar
+	}
+	return nil
+}
+
+type SetContactSettingsMessage struct {
+	ContactSettings *ContactSettings `protobuf:"bytes,1,opt,name=contact_settings,json=contactSettings" json:"contact_settings,omitempty"`
+}
+
+func (m *SetContactSettingsMessage) Reset()                    { *m = SetContactSettingsMessage{} }
+func (m *SetContactSettingsMessage) String() string            { return proto.CompactTextString(m) }
+func (*SetContactSettingsMessage) ProtoMessage()               {}
+func (*SetContactSettingsMessage) Descriptor() ([]byte, []int) { return fileDescriptor14, []int{39} }
+
+func (m *SetContactSettingsMessage) GetContactSettings() *ContactSettings {
+	if m != nil {
+		return m.ContactSettings
+	}
+	return nil
+}
+
+type SetFavoritePokemonMessage struct {
+	PokemonId  uint64 `protobuf:"varint,1,opt,name=pokemon_id,json=pokemonId" json:"pokemon_id,omitempty"`
+	IsFavorite bool   `protobuf:"varint,2,opt,name=is_favorite,json=isFavorite" json:"is_favorite,omitempty"`
+}
+
+func (m *SetFavoritePokemonMessage) Reset()                    { *m = SetFavoritePokemonMessage{} }
+func (m *SetFavoritePokemonMessage) String() string            { return proto.CompactTextString(m) }
+func (*SetFavoritePokemonMessage) ProtoMessage()               {}
+func (*SetFavoritePokemonMessage) Descriptor() ([]byte, []int) { return fileDescriptor14, []int{40} }
+
+type SetPlayerTeamMessage struct {
+	Team TeamColor `protobuf:"varint,1,opt,name=team,enum=POGOProtos.Enums.TeamColor" json:"team,omitempty"`
+}
+
+func (m *SetPlayerTeamMessage) Reset()                    { *m = SetPlayerTeamMessage{} }
+func (m *SetPlayerTeamMessage) String() string            { return proto.CompactTextString(m) }
+func (*SetPlayerTeamMessage) ProtoMessage()               {}
+func (*SetPlayerTeamMessage) Descriptor() ([]byte, []int) { return fileDescriptor14, []int{41} }
+
+type SfidaActionLogMessage struct {
+}
+
+func (m *SfidaActionLogMessage) Reset()                    { *m = SfidaActionLogMessage{} }
+func (m *SfidaActionLogMessage) String() string            { return proto.CompactTextString(m) }
+func (*SfidaActionLogMessage) ProtoMessage()               {}
+func (*SfidaActionLogMessage) Descriptor() ([]byte, []int) { return fileDescriptor14, []int{42} }
+
+type StartGymBattleMessage struct {
+	GymId               string   `protobuf:"bytes,1,opt,name=gym_id,json=gymId" json:"gym_id,omitempty"`
+	AttackingPokemonIds []uint64 `protobuf:"fixed64,2,rep,name=attacking_pokemon_ids,json=attackingPokemonIds" json:"attacking_pokemon_ids,omitempty"`
+	DefendingPokemonId  uint64   `protobuf:"fixed64,3,opt,name=defending_pokemon_id,json=defendingPokemonId" json:"defending_pokemon_id,omitempty"`
+	PlayerLatitude      float64  `protobuf:"fixed64,4,opt,name=player_latitude,json=playerLatitude" json:"player_latitude,omitempty"`
+	PlayerLongitude     float64  `protobuf:"fixed64,5,opt,name=player_longitude,json=playerLongitude" json:"player_longitude,omitempty"`
+}
+
+func (m *StartGymBattleMessage) Reset()                    { *m = StartGymBattleMessage{} }
+func (m *StartGymBattleMessage) String() string            { return proto.CompactTextString(m) }
+func (*StartGymBattleMessage) ProtoMessage()               {}
+func (*StartGymBattleMessage) Descriptor() ([]byte, []int) { return fileDescriptor14, []int{43} }
+
+type UpgradePokemonMessage struct {
+	PokemonId uint64 `protobuf:"fixed64,1,opt,name=pokemon_id,json=pokemonId" json:"pokemon_id,omitempty"`
+}
+
+func (m *UpgradePokemonMessage) Reset()                    { *m = UpgradePokemonMessage{} }
+func (m *UpgradePokemonMessage) String() string            { return proto.CompactTextString(m) }
+func (*UpgradePokemonMessage) ProtoMessage()               {}
+func (*UpgradePokemonMessage) Descriptor() ([]byte, []int) { return fileDescriptor14, []int{44} }
+
+type UseIncenseMessage struct {
+	IncenseType ItemId `protobuf:"varint,1,opt,name=incense_type,json=incenseType,enum=POGOProtos.Inventory.Item.ItemId" json:"incense_type,omitempty"`
+}
+
+func (m *UseIncenseMessage) Reset()                    { *m = UseIncenseMessage{} }
+func (m *UseIncenseMessage) String() string            { return proto.CompactTextString(m) }
+func (*UseIncenseMessage) ProtoMessage()               {}
+func (*UseIncenseMessage) Descriptor() ([]byte, []int) { return fileDescriptor14, []int{45} }
+
+type UseItemCaptureMessage struct {
+	ItemId       ItemId `protobuf:"varint,1,opt,name=item_id,json=itemId,enum=POGOProtos.Inventory.Item.ItemId" json:"item_id,omitempty"`
+	EncounterId  uint64 `protobuf:"fixed64,2,opt,name=encounter_id,json=encounterId" json:"encounter_id,omitempty"`
+	SpawnPointId string `protobuf:"bytes,3,opt,name=spawn_point_id,json=spawnPointId" json:"spawn_point_id,omitempty"`
+}
+
+func (m *UseItemCaptureMessage) Reset()                    { *m = UseItemCaptureMessage{} }
+func (m *UseItemCaptureMessage) String() string            { return proto.CompactTextString(m) }
+func (*UseItemCaptureMessage) ProtoMessage()               {}
+func (*UseItemCaptureMessage) Descriptor() ([]byte, []int) { return fileDescriptor14, []int{46} }
+
+type UseItemEggIncubatorMessage struct {
+	ItemId    string `protobuf:"bytes,1,opt,name=item_id,json=itemId" json:"item_id,omitempty"`
+	PokemonId uint64 `protobuf:"varint,2,opt,name=pokemon_id,json=pokemonId" json:"pokemon_id,omitempty"`
+}
+
+func (m *UseItemEggIncubatorMessage) Reset()                    { *m = UseItemEggIncubatorMessage{} }
+func (m *UseItemEggIncubatorMessage) String() string            { return proto.CompactTextString(m) }
+func (*UseItemEggIncubatorMessage) ProtoMessage()               {}
+func (*UseItemEggIncubatorMessage) Descriptor() ([]byte, []int) { return fileDescriptor14, []int{47} }
 
 type UseItemGymMessage struct {
 	ItemId          ItemId  `protobuf:"varint,1,opt,name=item_id,json=itemId,enum=POGOProtos.Inventory.Item.ItemId" json:"item_id,omitempty"`
@@ -562,83 +619,17 @@ type UseItemGymMessage struct {
 func (m *UseItemGymMessage) Reset()                    { *m = UseItemGymMessage{} }
 func (m *UseItemGymMessage) String() string            { return proto.CompactTextString(m) }
 func (*UseItemGymMessage) ProtoMessage()               {}
-func (*UseItemGymMessage) Descriptor() ([]byte, []int) { return fileDescriptor5, []int{43} }
+func (*UseItemGymMessage) Descriptor() ([]byte, []int) { return fileDescriptor14, []int{48} }
 
-type EvolvePokemonMessage struct {
-	PokemonId uint64 `protobuf:"fixed64,1,opt,name=pokemon_id,json=pokemonId" json:"pokemon_id,omitempty"`
+type UseItemPotionMessage struct {
+	ItemId    ItemId `protobuf:"varint,1,opt,name=item_id,json=itemId,enum=POGOProtos.Inventory.Item.ItemId" json:"item_id,omitempty"`
+	PokemonId uint64 `protobuf:"fixed64,2,opt,name=pokemon_id,json=pokemonId" json:"pokemon_id,omitempty"`
 }
 
-func (m *EvolvePokemonMessage) Reset()                    { *m = EvolvePokemonMessage{} }
-func (m *EvolvePokemonMessage) String() string            { return proto.CompactTextString(m) }
-func (*EvolvePokemonMessage) ProtoMessage()               {}
-func (*EvolvePokemonMessage) Descriptor() ([]byte, []int) { return fileDescriptor5, []int{44} }
-
-type SetAvatarMessage struct {
-	PlayerAvatar *PlayerAvatar `protobuf:"bytes,2,opt,name=player_avatar,json=playerAvatar" json:"player_avatar,omitempty"`
-}
-
-func (m *SetAvatarMessage) Reset()                    { *m = SetAvatarMessage{} }
-func (m *SetAvatarMessage) String() string            { return proto.CompactTextString(m) }
-func (*SetAvatarMessage) ProtoMessage()               {}
-func (*SetAvatarMessage) Descriptor() ([]byte, []int) { return fileDescriptor5, []int{45} }
-
-func (m *SetAvatarMessage) GetPlayerAvatar() *PlayerAvatar {
-	if m != nil {
-		return m.PlayerAvatar
-	}
-	return nil
-}
-
-type SetPlayerTeamMessage struct {
-	Team TeamColor `protobuf:"varint,1,opt,name=team,enum=POGOProtos.Enums.TeamColor" json:"team,omitempty"`
-}
-
-func (m *SetPlayerTeamMessage) Reset()                    { *m = SetPlayerTeamMessage{} }
-func (m *SetPlayerTeamMessage) String() string            { return proto.CompactTextString(m) }
-func (*SetPlayerTeamMessage) ProtoMessage()               {}
-func (*SetPlayerTeamMessage) Descriptor() ([]byte, []int) { return fileDescriptor5, []int{46} }
-
-type StartGymBattleMessage struct {
-	GymId               string   `protobuf:"bytes,1,opt,name=gym_id,json=gymId" json:"gym_id,omitempty"`
-	AttackingPokemonIds []uint64 `protobuf:"fixed64,2,rep,name=attacking_pokemon_ids,json=attackingPokemonIds" json:"attacking_pokemon_ids,omitempty"`
-	DefendingPokemonId  uint64   `protobuf:"varint,3,opt,name=defending_pokemon_id,json=defendingPokemonId" json:"defending_pokemon_id,omitempty"`
-	PlayerLatitude      float64  `protobuf:"fixed64,4,opt,name=player_latitude,json=playerLatitude" json:"player_latitude,omitempty"`
-	PlayerLongitude     float64  `protobuf:"fixed64,5,opt,name=player_longitude,json=playerLongitude" json:"player_longitude,omitempty"`
-}
-
-func (m *StartGymBattleMessage) Reset()                    { *m = StartGymBattleMessage{} }
-func (m *StartGymBattleMessage) String() string            { return proto.CompactTextString(m) }
-func (*StartGymBattleMessage) ProtoMessage()               {}
-func (*StartGymBattleMessage) Descriptor() ([]byte, []int) { return fileDescriptor5, []int{47} }
-
-type EncounterMessage struct {
-	EncounterId     uint64  `protobuf:"fixed64,1,opt,name=encounter_id,json=encounterId" json:"encounter_id,omitempty"`
-	SpawnPointId    string  `protobuf:"bytes,2,opt,name=spawn_point_id,json=spawnPointId" json:"spawn_point_id,omitempty"`
-	PlayerLatitude  float64 `protobuf:"fixed64,3,opt,name=player_latitude,json=playerLatitude" json:"player_latitude,omitempty"`
-	PlayerLongitude float64 `protobuf:"fixed64,4,opt,name=player_longitude,json=playerLongitude" json:"player_longitude,omitempty"`
-}
-
-func (m *EncounterMessage) Reset()                    { *m = EncounterMessage{} }
-func (m *EncounterMessage) String() string            { return proto.CompactTextString(m) }
-func (*EncounterMessage) ProtoMessage()               {}
-func (*EncounterMessage) Descriptor() ([]byte, []int) { return fileDescriptor5, []int{48} }
-
-type UpgradePokemonMessage struct {
-	PokemonId uint64 `protobuf:"fixed64,1,opt,name=pokemon_id,json=pokemonId" json:"pokemon_id,omitempty"`
-}
-
-func (m *UpgradePokemonMessage) Reset()                    { *m = UpgradePokemonMessage{} }
-func (m *UpgradePokemonMessage) String() string            { return proto.CompactTextString(m) }
-func (*UpgradePokemonMessage) ProtoMessage()               {}
-func (*UpgradePokemonMessage) Descriptor() ([]byte, []int) { return fileDescriptor5, []int{49} }
-
-type CheckAwardedBadgesMessage struct {
-}
-
-func (m *CheckAwardedBadgesMessage) Reset()                    { *m = CheckAwardedBadgesMessage{} }
-func (m *CheckAwardedBadgesMessage) String() string            { return proto.CompactTextString(m) }
-func (*CheckAwardedBadgesMessage) ProtoMessage()               {}
-func (*CheckAwardedBadgesMessage) Descriptor() ([]byte, []int) { return fileDescriptor5, []int{50} }
+func (m *UseItemPotionMessage) Reset()                    { *m = UseItemPotionMessage{} }
+func (m *UseItemPotionMessage) String() string            { return proto.CompactTextString(m) }
+func (*UseItemPotionMessage) ProtoMessage()               {}
+func (*UseItemPotionMessage) Descriptor() ([]byte, []int) { return fileDescriptor14, []int{49} }
 
 type UseItemReviveMessage struct {
 	ItemId    ItemId `protobuf:"varint,1,opt,name=item_id,json=itemId,enum=POGOProtos.Inventory.Item.ItemId" json:"item_id,omitempty"`
@@ -648,185 +639,193 @@ type UseItemReviveMessage struct {
 func (m *UseItemReviveMessage) Reset()                    { *m = UseItemReviveMessage{} }
 func (m *UseItemReviveMessage) String() string            { return proto.CompactTextString(m) }
 func (*UseItemReviveMessage) ProtoMessage()               {}
-func (*UseItemReviveMessage) Descriptor() ([]byte, []int) { return fileDescriptor5, []int{51} }
+func (*UseItemReviveMessage) Descriptor() ([]byte, []int) { return fileDescriptor14, []int{50} }
 
-func init() {
-	proto.RegisterType((*FortSearchMessage)(nil), "POGOProtos.Networking.Requests.Messages.FortSearchMessage")
-	proto.RegisterType((*SetFavoritePokemonMessage)(nil), "POGOProtos.Networking.Requests.Messages.SetFavoritePokemonMessage")
-	proto.RegisterType((*CollectDailyBonusMessage)(nil), "POGOProtos.Networking.Requests.Messages.CollectDailyBonusMessage")
-	proto.RegisterType((*GetIncensePokemonMessage)(nil), "POGOProtos.Networking.Requests.Messages.GetIncensePokemonMessage")
-	proto.RegisterType((*DiskEncounterMessage)(nil), "POGOProtos.Networking.Requests.Messages.DiskEncounterMessage")
-	proto.RegisterType((*SetContactSettingsMessage)(nil), "POGOProtos.Networking.Requests.Messages.SetContactSettingsMessage")
-	proto.RegisterType((*GetGymDetailsMessage)(nil), "POGOProtos.Networking.Requests.Messages.GetGymDetailsMessage")
-	proto.RegisterType((*CollectDailyDefenderBonusMessage)(nil), "POGOProtos.Networking.Requests.Messages.CollectDailyDefenderBonusMessage")
-	proto.RegisterType((*UseIncenseMessage)(nil), "POGOProtos.Networking.Requests.Messages.UseIncenseMessage")
-	proto.RegisterType((*FortDeployPokemonMessage)(nil), "POGOProtos.Networking.Requests.Messages.FortDeployPokemonMessage")
-	proto.RegisterType((*UseItemPotionMessage)(nil), "POGOProtos.Networking.Requests.Messages.UseItemPotionMessage")
-	proto.RegisterType((*GetInventoryMessage)(nil), "POGOProtos.Networking.Requests.Messages.GetInventoryMessage")
-	proto.RegisterType((*GetDownloadUrlsMessage)(nil), "POGOProtos.Networking.Requests.Messages.GetDownloadUrlsMessage")
-	proto.RegisterType((*GetMapObjectsMessage)(nil), "POGOProtos.Networking.Requests.Messages.GetMapObjectsMessage")
-	proto.RegisterType((*CatchPokemonMessage)(nil), "POGOProtos.Networking.Requests.Messages.CatchPokemonMessage")
-	proto.RegisterType((*EchoMessage)(nil), "POGOProtos.Networking.Requests.Messages.EchoMessage")
-	proto.RegisterType((*GetHatchedEggsMessage)(nil), "POGOProtos.Networking.Requests.Messages.GetHatchedEggsMessage")
-	proto.RegisterType((*UseItemCaptureMessage)(nil), "POGOProtos.Networking.Requests.Messages.UseItemCaptureMessage")
-	proto.RegisterType((*IncenseEncounterMessage)(nil), "POGOProtos.Networking.Requests.Messages.IncenseEncounterMessage")
-	proto.RegisterType((*UseItemEggIncubatorMessage)(nil), "POGOProtos.Networking.Requests.Messages.UseItemEggIncubatorMessage")
-	proto.RegisterType((*DownloadSettingsMessage)(nil), "POGOProtos.Networking.Requests.Messages.DownloadSettingsMessage")
-	proto.RegisterType((*MarkTutorialCompleteMessage)(nil), "POGOProtos.Networking.Requests.Messages.MarkTutorialCompleteMessage")
-	proto.RegisterType((*NicknamePokemonMessage)(nil), "POGOProtos.Networking.Requests.Messages.NicknamePokemonMessage")
-	proto.RegisterType((*DownloadRemoteConfigVersionMessage)(nil), "POGOProtos.Networking.Requests.Messages.DownloadRemoteConfigVersionMessage")
-	proto.RegisterType((*GetSuggestedCodenamesMessage)(nil), "POGOProtos.Networking.Requests.Messages.GetSuggestedCodenamesMessage")
-	proto.RegisterType((*PlayerUpdateMessage)(nil), "POGOProtos.Networking.Requests.Messages.PlayerUpdateMessage")
-	proto.RegisterType((*AttackGymMessage)(nil), "POGOProtos.Networking.Requests.Messages.AttackGymMessage")
-	proto.RegisterType((*ClaimCodenameMessage)(nil), "POGOProtos.Networking.Requests.Messages.ClaimCodenameMessage")
-	proto.RegisterType((*RecycleInventoryItemMessage)(nil), "POGOProtos.Networking.Requests.Messages.RecycleInventoryItemMessage")
-	proto.RegisterType((*SfidaActionLogMessage)(nil), "POGOProtos.Networking.Requests.Messages.SfidaActionLogMessage")
-	proto.RegisterType((*EquipBadgeMessage)(nil), "POGOProtos.Networking.Requests.Messages.EquipBadgeMessage")
-	proto.RegisterType((*GetAssetDigestMessage)(nil), "POGOProtos.Networking.Requests.Messages.GetAssetDigestMessage")
-	proto.RegisterType((*FortRecallPokemonMessage)(nil), "POGOProtos.Networking.Requests.Messages.FortRecallPokemonMessage")
-	proto.RegisterType((*GetPlayerProfileMessage)(nil), "POGOProtos.Networking.Requests.Messages.GetPlayerProfileMessage")
-	proto.RegisterType((*DownloadItemTemplatesMessage)(nil), "POGOProtos.Networking.Requests.Messages.DownloadItemTemplatesMessage")
-	proto.RegisterType((*ReleasePokemonMessage)(nil), "POGOProtos.Networking.Requests.Messages.ReleasePokemonMessage")
-	proto.RegisterType((*UseItemXpBoostMessage)(nil), "POGOProtos.Networking.Requests.Messages.UseItemXpBoostMessage")
-	proto.RegisterType((*FortDetailsMessage)(nil), "POGOProtos.Networking.Requests.Messages.FortDetailsMessage")
-	proto.RegisterType((*CheckCodenameAvailableMessage)(nil), "POGOProtos.Networking.Requests.Messages.CheckCodenameAvailableMessage")
-	proto.RegisterType((*GetPlayerMessage)(nil), "POGOProtos.Networking.Requests.Messages.GetPlayerMessage")
-	proto.RegisterType((*AddFortModifierMessage)(nil), "POGOProtos.Networking.Requests.Messages.AddFortModifierMessage")
-	proto.RegisterType((*LevelUpRewardsMessage)(nil), "POGOProtos.Networking.Requests.Messages.LevelUpRewardsMessage")
-	proto.RegisterType((*EncounterTutorialCompleteMessage)(nil), "POGOProtos.Networking.Requests.Messages.EncounterTutorialCompleteMessage")
-	proto.RegisterType((*UseItemGymMessage)(nil), "POGOProtos.Networking.Requests.Messages.UseItemGymMessage")
-	proto.RegisterType((*EvolvePokemonMessage)(nil), "POGOProtos.Networking.Requests.Messages.EvolvePokemonMessage")
-	proto.RegisterType((*SetAvatarMessage)(nil), "POGOProtos.Networking.Requests.Messages.SetAvatarMessage")
-	proto.RegisterType((*SetPlayerTeamMessage)(nil), "POGOProtos.Networking.Requests.Messages.SetPlayerTeamMessage")
-	proto.RegisterType((*StartGymBattleMessage)(nil), "POGOProtos.Networking.Requests.Messages.StartGymBattleMessage")
-	proto.RegisterType((*EncounterMessage)(nil), "POGOProtos.Networking.Requests.Messages.EncounterMessage")
-	proto.RegisterType((*UpgradePokemonMessage)(nil), "POGOProtos.Networking.Requests.Messages.UpgradePokemonMessage")
-	proto.RegisterType((*CheckAwardedBadgesMessage)(nil), "POGOProtos.Networking.Requests.Messages.CheckAwardedBadgesMessage")
-	proto.RegisterType((*UseItemReviveMessage)(nil), "POGOProtos.Networking.Requests.Messages.UseItemReviveMessage")
+type UseItemXpBoostMessage struct {
+	ItemId ItemId `protobuf:"varint,1,opt,name=item_id,json=itemId,enum=POGOProtos.Inventory.Item.ItemId" json:"item_id,omitempty"`
 }
 
-func init() { proto.RegisterFile("networking_requests_messages.proto", fileDescriptor5) }
+func (m *UseItemXpBoostMessage) Reset()                    { *m = UseItemXpBoostMessage{} }
+func (m *UseItemXpBoostMessage) String() string            { return proto.CompactTextString(m) }
+func (*UseItemXpBoostMessage) ProtoMessage()               {}
+func (*UseItemXpBoostMessage) Descriptor() ([]byte, []int) { return fileDescriptor14, []int{51} }
 
-var fileDescriptor5 = []byte{
-	// 1910 bytes of a gzipped FileDescriptorProto
-	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x09, 0x6e, 0x88, 0x02, 0xff, 0xdc, 0x58, 0x4b, 0x6f, 0x1b, 0xc9,
-	0x11, 0x0e, 0x1f, 0xa2, 0xa4, 0xd2, 0xc3, 0xd2, 0x88, 0x7a, 0x58, 0xf2, 0xee, 0x7a, 0x27, 0x1b,
-	0x38, 0x09, 0x60, 0x39, 0xd0, 0x22, 0x3e, 0x38, 0xc8, 0x41, 0x22, 0x65, 0xaf, 0x10, 0xc9, 0x26,
-	0x86, 0x52, 0x90, 0x6c, 0x90, 0x0c, 0x9a, 0x33, 0x4d, 0x72, 0xc2, 0x99, 0xe9, 0xf1, 0x4c, 0x93,
-	0x86, 0xf2, 0x5b, 0x02, 0xe4, 0x96, 0x6b, 0xee, 0xb9, 0xe6, 0x14, 0x20, 0x39, 0xe5, 0x98, 0xfc,
-	0x80, 0xe4, 0x5f, 0xa4, 0xfa, 0x35, 0x1c, 0x52, 0xb4, 0x45, 0xc1, 0xab, 0x20, 0xd8, 0x83, 0x2d,
-	0x76, 0x55, 0x77, 0x75, 0x77, 0xd5, 0x57, 0x5f, 0x55, 0x0f, 0xd8, 0x31, 0xe5, 0xef, 0x58, 0x3a,
-	0x08, 0xe2, 0x9e, 0x9b, 0xd2, 0xb7, 0x43, 0x9a, 0xf1, 0xcc, 0x8d, 0x68, 0x96, 0x91, 0x1e, 0xcd,
-	0x0e, 0x93, 0x94, 0x71, 0x66, 0x3d, 0x69, 0xbd, 0x79, 0xf5, 0xa6, 0x25, 0x7e, 0x66, 0x87, 0xaf,
-	0xf3, 0xe9, 0x87, 0x8e, 0x9e, 0x7e, 0x78, 0xa1, 0xa7, 0xef, 0x6f, 0xfa, 0x84, 0x13, 0x37, 0x09,
-	0xc9, 0x35, 0x4d, 0xd5, 0xda, 0xfd, 0x7a, 0x10, 0x8f, 0x68, 0xcc, 0x59, 0x7a, 0xed, 0x06, 0x9c,
-	0x46, 0x5a, 0xba, 0x42, 0xe3, 0x61, 0xa4, 0xcd, 0xeb, 0x55, 0x1d, 0xc2, 0x79, 0x48, 0x95, 0xc8,
-	0xfe, 0x5b, 0x09, 0x36, 0x5f, 0xb2, 0x94, 0xb7, 0x29, 0x49, 0xbd, 0xbe, 0xb6, 0x6f, 0xed, 0xc2,
-	0x62, 0x17, 0x85, 0x6e, 0xe0, 0xef, 0x95, 0x1e, 0x97, 0xbe, 0xbf, 0xec, 0xd4, 0xc4, 0xf0, 0xcc,
-	0xb7, 0x9e, 0xc0, 0x03, 0xb5, 0xa9, 0x1b, 0x12, 0x1e, 0xf0, 0xa1, 0x4f, 0xf7, 0xca, 0x38, 0xa1,
-	0xe4, 0xac, 0x2b, 0xf1, 0xb9, 0x96, 0x5a, 0x3f, 0x80, 0x0d, 0x33, 0x91, 0xc5, 0x3d, 0x35, 0xb3,
-	0x22, 0x67, 0x6a, 0x03, 0xe7, 0x46, 0x6c, 0x7d, 0x17, 0xd6, 0xe4, 0x66, 0xb9, 0xc5, 0xaa, 0x9c,
-	0xb7, 0x2a, 0x84, 0xb9, 0xbd, 0xef, 0xc1, 0xba, 0x9a, 0x94, 0x5b, 0x5b, 0x90, 0xb3, 0xe4, 0xd2,
-	0xdc, 0x96, 0xfd, 0x2b, 0x78, 0xd8, 0xa6, 0xfc, 0x25, 0x19, 0xb1, 0x14, 0x9d, 0xd0, 0x62, 0x03,
-	0x1a, 0xb1, 0xd8, 0xdc, 0xea, 0x13, 0x80, 0x44, 0x49, 0xcc, 0xc5, 0x6a, 0xce, 0xb2, 0x96, 0xe0,
-	0xdd, 0x3e, 0x83, 0x95, 0x20, 0x73, 0xbb, 0x7a, 0xad, 0xbc, 0xd7, 0x92, 0x03, 0x41, 0x66, 0xac,
-	0xd9, 0xfb, 0xb0, 0xd7, 0x60, 0x61, 0x48, 0x3d, 0xde, 0x24, 0x41, 0x78, 0x7d, 0xc2, 0xe2, 0x61,
-	0xa6, 0x6d, 0xdb, 0x31, 0xec, 0xbd, 0xa2, 0xfc, 0x2c, 0xf6, 0x68, 0x9c, 0x4d, 0xef, 0x3b, 0xc3,
-	0x69, 0xa5, 0xb9, 0x9d, 0x56, 0x9e, 0xe9, 0x34, 0xfb, 0x8f, 0x25, 0xa8, 0x37, 0x83, 0x6c, 0x70,
-	0x1a, 0x7b, 0x6c, 0x18, 0x73, 0x9a, 0x9a, 0xcd, 0x3e, 0x87, 0x55, 0x6a, 0x64, 0xe6, 0x9a, 0x55,
-	0x67, 0x25, 0x97, 0xe1, 0x45, 0x0b, 0xd1, 0x2d, 0xdf, 0x16, 0xdd, 0xca, 0xdc, 0x07, 0xad, 0xce,
-	0x3e, 0x28, 0x93, 0x11, 0x69, 0xb0, 0x98, 0x13, 0x0f, 0x51, 0xc6, 0x39, 0x02, 0xda, 0x78, 0xcd,
-	0x72, 0x60, 0xc3, 0x53, 0x1a, 0x37, 0xd3, 0x2a, 0x79, 0xe0, 0x95, 0xa3, 0x27, 0x87, 0x85, 0x54,
-	0x68, 0x22, 0x6c, 0x0f, 0x5b, 0x0a, 0xec, 0x53, 0x96, 0x9c, 0x07, 0xde, 0xa4, 0xc0, 0xfe, 0x2b,
-	0x7a, 0x06, 0x43, 0xf1, 0xea, 0x3a, 0x6a, 0x52, 0x8e, 0x71, 0xca, 0x37, 0xdb, 0x86, 0x5a, 0xef,
-	0x3a, 0x1a, 0x63, 0x7a, 0x01, 0x47, 0xf7, 0x04, 0x69, 0x0c, 0x82, 0xd8, 0x6a, 0x0a, 0xd1, 0x2b,
-	0x28, 0xcb, 0xad, 0x21, 0xea, 0xe5, 0x94, 0x29, 0x3c, 0x8b, 0x75, 0x63, 0xe7, 0xd9, 0xf0, 0xb8,
-	0x88, 0xb8, 0x26, 0xed, 0xd2, 0xd8, 0xa7, 0xe9, 0x04, 0xf2, 0x7e, 0x09, 0x9b, 0x57, 0x19, 0xd5,
-	0xc8, 0x33, 0x77, 0x6d, 0xc2, 0x6a, 0xa0, 0x24, 0x2e, 0xbf, 0x4e, 0x14, 0xde, 0xd6, 0x8f, 0x3e,
-	0x2f, 0x3a, 0xf5, 0xcc, 0xd0, 0xc5, 0xe1, 0x99, 0xa0, 0x0b, 0xf1, 0xdf, 0x99, 0xef, 0xac, 0xe8,
-	0x65, 0x97, 0xb8, 0x4a, 0x80, 0x6c, 0x4f, 0x90, 0x43, 0x93, 0x26, 0x21, 0xbb, 0x9e, 0x42, 0xf5,
-	0x7b, 0x39, 0x62, 0x32, 0xcd, 0xca, 0xd3, 0x69, 0x76, 0x1f, 0x20, 0x7b, 0x0b, 0x75, 0xe1, 0x03,
-	0xbc, 0x42, 0x8b, 0xf1, 0x60, 0x7c, 0xc6, 0x17, 0xb0, 0x28, 0xb8, 0xd0, 0x9c, 0x71, 0x2e, 0x0f,
-	0xd4, 0x02, 0xf9, 0xf7, 0x96, 0x6b, 0xd8, 0x3d, 0xd8, 0x92, 0x09, 0xaf, 0x4d, 0x98, 0x1d, 0x7f,
-	0x08, 0x9b, 0x21, 0xc9, 0xb8, 0xcb, 0x03, 0xa4, 0x76, 0x4e, 0xa2, 0xc4, 0x8d, 0x14, 0xa4, 0x2b,
-	0xce, 0x03, 0xa1, 0xb8, 0x34, 0xf2, 0x8b, 0xcc, 0xfa, 0x02, 0xd6, 0xe5, 0xe9, 0x3a, 0x94, 0xc6,
-	0x88, 0x7f, 0x1a, 0xcb, 0x5d, 0x16, 0x9c, 0x55, 0x21, 0x3d, 0xc1, 0x71, 0x1b, 0xff, 0xd9, 0x5f,
-	0xc2, 0x0e, 0x6e, 0xd4, 0x64, 0xef, 0xe2, 0x90, 0x11, 0xff, 0x2a, 0x1d, 0x03, 0xfa, 0x21, 0x2c,
-	0x91, 0x0c, 0xf3, 0x46, 0x5d, 0xaf, 0x82, 0x21, 0x58, 0x94, 0x63, 0x3c, 0xdd, 0x1f, 0x54, 0x12,
-	0x5c, 0x90, 0xe4, 0x4d, 0xe7, 0xb7, 0x08, 0x9f, 0x7c, 0xcd, 0x01, 0x2c, 0x7a, 0x34, 0x0c, 0xcd,
-	0x92, 0xea, 0x49, 0x79, 0xa3, 0xe4, 0xd4, 0x84, 0x08, 0xaf, 0xfc, 0x23, 0xb0, 0x32, 0x11, 0xff,
-	0xc9, 0xd3, 0x97, 0x71, 0x5e, 0x45, 0xce, 0xdb, 0x90, 0xda, 0xe2, 0x15, 0xf6, 0x61, 0x69, 0x2a,
-	0x8a, 0xf9, 0xd8, 0x7a, 0x04, 0xcb, 0xd3, 0x81, 0x1b, 0x0b, 0xec, 0x7f, 0x94, 0x61, 0xab, 0x41,
-	0xb8, 0xd7, 0x9f, 0x82, 0xd5, 0x2c, 0xfe, 0xaa, 0x4d, 0xf2, 0xd7, 0x4f, 0x61, 0x49, 0xc4, 0xa1,
-	0x43, 0xc2, 0x50, 0x7a, 0x6c, 0xae, 0xb0, 0xe6, 0x4b, 0xac, 0xe7, 0xb0, 0x1b, 0xb3, 0x34, 0x22,
-	0x61, 0xf0, 0x3b, 0xea, 0x63, 0x29, 0xe6, 0x81, 0x17, 0x52, 0x37, 0xc3, 0x91, 0xbe, 0xc2, 0xf6,
-	0x58, 0xed, 0x28, 0x6d, 0x1b, 0x7f, 0x8b, 0x70, 0x65, 0x09, 0x79, 0x17, 0xbb, 0x09, 0x0b, 0x62,
-	0xe9, 0xf4, 0xaa, 0xc4, 0xfd, 0xaa, 0x94, 0xb6, 0x84, 0x50, 0x55, 0x91, 0x7e, 0xc0, 0x5d, 0x0d,
-	0x14, 0x99, 0xd5, 0x58, 0x45, 0x50, 0xa4, 0xef, 0x29, 0x12, 0x3f, 0x4b, 0x82, 0xd8, 0x8d, 0x98,
-	0x1f, 0x74, 0x03, 0x9a, 0xee, 0xd5, 0x54, 0xe2, 0x0b, 0xe1, 0x85, 0x96, 0x4d, 0x9d, 0x51, 0x19,
-	0xcc, 0x02, 0x01, 0xed, 0xbd, 0xc5, 0xe9, 0x33, 0x7e, 0x25, 0x6c, 0x2b, 0xa5, 0xbd, 0x06, 0x2b,
-	0xa7, 0x5e, 0x9f, 0x19, 0x6e, 0xd8, 0x85, 0x6d, 0x44, 0xc1, 0x57, 0xc2, 0xcd, 0xd4, 0x3f, 0xed,
-	0xe5, 0xc4, 0x6b, 0xff, 0xbe, 0x04, 0xdb, 0x3a, 0x63, 0x1a, 0x24, 0xe1, 0xc3, 0x94, 0x7e, 0x13,
-	0x29, 0x33, 0x1d, 0xbb, 0xf2, 0xcd, 0xd8, 0xdd, 0x74, 0x62, 0xe5, 0xa6, 0x13, 0xed, 0x01, 0xec,
-	0x6a, 0x42, 0x9b, 0xab, 0xbe, 0x55, 0x26, 0xf7, 0x78, 0x0a, 0xd6, 0x78, 0x4a, 0xc8, 0x3c, 0x22,
-	0xfd, 0xa6, 0x4a, 0xdd, 0x66, 0xae, 0x39, 0xd7, 0x0a, 0xfb, 0x12, 0xf6, 0xb5, 0x2b, 0xd0, 0x43,
-	0xb8, 0xed, 0x10, 0x1b, 0x24, 0x96, 0x16, 0x68, 0xae, 0xe8, 0x8f, 0xe5, 0x0f, 0xf0, 0x43, 0xb5,
-	0xc8, 0x0f, 0x4f, 0x61, 0xd7, 0xe4, 0xec, 0x74, 0xd5, 0xb3, 0xa0, 0xda, 0x27, 0x59, 0x5f, 0xdb,
-	0x93, 0xbf, 0xed, 0x7f, 0x96, 0xe0, 0xe0, 0x82, 0xa4, 0x83, 0xcb, 0x21, 0xee, 0x1d, 0x90, 0xb0,
-	0xc1, 0xa2, 0x24, 0xa4, 0x3c, 0x0f, 0x4b, 0x0b, 0xb6, 0xb8, 0x56, 0x65, 0xae, 0xa7, 0x95, 0x2a,
-	0x87, 0xd7, 0x8f, 0x3e, 0x2b, 0x86, 0xe8, 0x54, 0x36, 0x7c, 0xc6, 0x4e, 0x9b, 0x13, 0x4e, 0x1d,
-	0x2b, 0x5f, 0x6b, 0xec, 0xfa, 0xd6, 0x11, 0x6c, 0x67, 0x58, 0x4d, 0xdc, 0x08, 0x77, 0xa5, 0xe2,
-	0x7c, 0x2e, 0x8d, 0x44, 0xb9, 0xd4, 0x8d, 0xcf, 0x96, 0x50, 0x5e, 0x18, 0xdd, 0xa9, 0x54, 0x09,
-	0x58, 0xca, 0x35, 0xc9, 0x30, 0xeb, 0xbb, 0x31, 0x52, 0x6d, 0x37, 0x50, 0x4e, 0xcc, 0x64, 0x18,
-	0x97, 0x1c, 0x69, 0xb2, 0x85, 0xda, 0xd7, 0x45, 0xa5, 0xdd, 0x86, 0x9d, 0xd7, 0x81, 0x37, 0x88,
-	0x49, 0x74, 0xc7, 0x9e, 0x0c, 0xf9, 0x25, 0xd6, 0x0b, 0x75, 0x00, 0xf3, 0xb1, 0xfd, 0x9f, 0x12,
-	0xd8, 0xc6, 0xc5, 0x0e, 0xce, 0xe7, 0x14, 0x7b, 0x83, 0x6e, 0xd0, 0xfb, 0x39, 0x4d, 0xb3, 0x42,
-	0x0d, 0x78, 0x8e, 0x6c, 0x81, 0x9c, 0x84, 0xc5, 0x29, 0xd2, 0x88, 0xde, 0xbf, 0xe9, 0xae, 0x96,
-	0x9e, 0xe1, 0xe4, 0x73, 0xad, 0x67, 0xb0, 0xe5, 0xd3, 0x51, 0x80, 0x6c, 0x18, 0x91, 0x78, 0xd8,
-	0xc5, 0x16, 0x03, 0xb3, 0x24, 0xd5, 0xa7, 0xb0, 0x94, 0xea, 0xa2, 0xa0, 0x11, 0xc8, 0x34, 0x0b,
-	0x98, 0x4f, 0x43, 0x0d, 0xec, 0x15, 0x3d, 0x53, 0x88, 0xac, 0x1d, 0xa8, 0x09, 0x3c, 0x86, 0x54,
-	0x53, 0x87, 0x1e, 0x09, 0xd2, 0x20, 0x49, 0xe2, 0x8e, 0xd4, 0xc9, 0x25, 0x69, 0xac, 0x39, 0x80,
-	0x22, 0x7d, 0x17, 0xfb, 0x53, 0x78, 0x84, 0x89, 0xdc, 0x1e, 0xf6, 0xb0, 0xf9, 0xc7, 0xe0, 0x35,
-	0xd0, 0x9a, 0xf0, 0x41, 0x9e, 0xcf, 0x6f, 0x60, 0x4b, 0xf5, 0x47, 0x57, 0x09, 0xf6, 0xf8, 0x39,
-	0x6a, 0x8a, 0xf4, 0x5c, 0xfa, 0x10, 0x3d, 0x97, 0xa7, 0xe9, 0xf9, 0x2f, 0x65, 0xd8, 0x38, 0xe6,
-	0xd8, 0x58, 0x0d, 0xb0, 0x91, 0xba, 0xa5, 0x83, 0x3a, 0x80, 0x65, 0xf5, 0xa6, 0x18, 0x77, 0x94,
-	0x4b, 0x4a, 0x80, 0xca, 0x9f, 0xc1, 0x3a, 0x91, 0x76, 0x5c, 0xf4, 0x93, 0x46, 0x4a, 0x05, 0x1b,
-	0xbc, 0x2f, 0x6e, 0x34, 0x78, 0x27, 0xea, 0x5d, 0xa2, 0xfe, 0x1c, 0xcb, 0xc9, 0xce, 0x9a, 0x5a,
-	0xab, 0x46, 0x99, 0xf5, 0x35, 0xec, 0xc8, 0xea, 0x8a, 0xa4, 0x9d, 0x06, 0x74, 0x84, 0xd4, 0x68,
-	0x8c, 0x56, 0x65, 0xd7, 0x38, 0x9f, 0xd1, 0xba, 0xb0, 0xe1, 0x18, 0x13, 0xc6, 0xf6, 0x8c, 0xbe,
-	0x64, 0x61, 0xee, 0xbe, 0xa4, 0x36, 0xbb, 0x2f, 0x39, 0x82, 0x7a, 0x23, 0x24, 0x41, 0x64, 0xe2,
-	0x55, 0x88, 0x8b, 0xa7, 0x45, 0xda, 0x95, 0xf9, 0x18, 0x1b, 0xe6, 0x03, 0x87, 0x7a, 0xd7, 0x58,
-	0x75, 0x72, 0xb2, 0x15, 0xdc, 0xf4, 0x4d, 0xf0, 0x73, 0x1d, 0x16, 0x24, 0xf9, 0xe9, 0x3e, 0x43,
-	0x0d, 0x44, 0x91, 0x68, 0x77, 0x03, 0x9f, 0x28, 0x47, 0x9c, 0xb3, 0xde, 0x18, 0x54, 0x9b, 0xa7,
-	0x6f, 0x87, 0x41, 0x72, 0x42, 0xfc, 0x5e, 0xa1, 0x3e, 0x40, 0x47, 0x8c, 0x8b, 0x7d, 0xe5, 0xc1,
-	0xcd, 0x84, 0x92, 0x6b, 0x44, 0x13, 0xe9, 0x2c, 0x77, 0xcc, 0x4f, 0xfb, 0x5f, 0x25, 0x59, 0x8f,
-	0x8e, 0x45, 0x93, 0xd2, 0x0c, 0x04, 0x94, 0xbf, 0x55, 0x49, 0x6a, 0xda, 0x65, 0x0c, 0x1f, 0xf6,
-	0x19, 0xff, 0xc7, 0xed, 0xf2, 0x0b, 0xd8, 0xc5, 0x30, 0x28, 0xc2, 0x40, 0x0f, 0x77, 0x83, 0x30,
-	0x0f, 0x2f, 0x5e, 0x52, 0x5b, 0x29, 0x80, 0x13, 0x94, 0xe8, 0xb5, 0x80, 0x27, 0x32, 0x91, 0x21,
-	0x5d, 0x81, 0xae, 0x4b, 0x1a, 0x89, 0x60, 0x8c, 0x99, 0xe8, 0x39, 0x6c, 0x3b, 0x34, 0xa4, 0x24,
-	0xbb, 0x1b, 0xd3, 0x63, 0x89, 0x30, 0x0d, 0xc9, 0x2f, 0x92, 0x13, 0xc6, 0xc6, 0xd0, 0xf8, 0x08,
-	0xc0, 0x63, 0x93, 0x6e, 0xa9, 0xf7, 0xcb, 0xc4, 0x43, 0xf0, 0xbd, 0xa1, 0x28, 0xd2, 0x65, 0xf9,
-	0x43, 0x74, 0x59, 0x99, 0xa6, 0xcb, 0x9f, 0xc0, 0x27, 0x8d, 0x3e, 0xf5, 0x06, 0x26, 0xd1, 0x8f,
-	0x47, 0xb8, 0x21, 0xe9, 0x84, 0x73, 0x65, 0xbc, 0x05, 0x1b, 0x79, 0x38, 0x8c, 0x1b, 0xff, 0x5e,
-	0x82, 0x9d, 0x63, 0xdf, 0x17, 0xa7, 0x37, 0x4d, 0xa1, 0x31, 0xf5, 0x12, 0xd6, 0x4c, 0xef, 0x78,
-	0xc7, 0xc7, 0xdd, 0xaa, 0x59, 0x27, 0xb2, 0xf1, 0x7f, 0xfb, 0x19, 0xe0, 0x29, 0x6c, 0x9f, 0x23,
-	0xdb, 0x86, 0x57, 0x89, 0x43, 0xdf, 0x91, 0xd4, 0xcf, 0x83, 0x81, 0x9c, 0x14, 0x0a, 0x85, 0xbc,
-	0x05, 0x72, 0x92, 0x1c, 0xd8, 0xbf, 0x81, 0xc7, 0x79, 0xe7, 0xf7, 0xbe, 0x96, 0xe8, 0xc5, 0x0d,
-	0x40, 0xcd, 0x64, 0xa2, 0x96, 0x81, 0x58, 0x11, 0x6d, 0x7f, 0x2e, 0xa9, 0x57, 0x33, 0xfa, 0xa5,
-	0x50, 0xdf, 0x3e, 0x86, 0x5b, 0xc7, 0xb5, 0xb1, 0x7c, 0xcb, 0xd7, 0x85, 0x8f, 0xf6, 0xe5, 0x8f,
-	0xa1, 0x7e, 0x3a, 0x62, 0xe1, 0xe8, 0x8e, 0x19, 0xf6, 0x6b, 0xd8, 0xc0, 0x4e, 0x14, 0x91, 0xc9,
-	0x49, 0x8e, 0xa5, 0x33, 0x58, 0xd3, 0xbb, 0x12, 0x29, 0x97, 0x87, 0x9f, 0x55, 0x47, 0xf5, 0xd7,
-	0x17, 0xf5, 0x47, 0xd9, 0x70, 0x56, 0x93, 0xc2, 0xc8, 0x7e, 0x05, 0xf5, 0xb6, 0x41, 0xf1, 0x25,
-	0x25, 0xb9, 0x53, 0x9f, 0x41, 0x95, 0xe3, 0xf0, 0xfd, 0x01, 0x12, 0x93, 0x1b, 0x2c, 0x64, 0xa9,
-	0x23, 0x27, 0xda, 0xff, 0xc6, 0x2a, 0x81, 0x6d, 0x6b, 0x2a, 0x3e, 0xe1, 0xa8, 0xba, 0x7d, 0x4b,
-	0xff, 0x81, 0x9d, 0xac, 0x6a, 0x13, 0x44, 0x13, 0x3b, 0xf6, 0x80, 0x7a, 0xb9, 0xd6, 0x9c, 0xad,
-	0x5c, 0x99, 0x43, 0x21, 0xc3, 0xa7, 0x6e, 0xdd, 0x97, 0x5f, 0x53, 0x26, 0xd7, 0xc8, 0xe0, 0x54,
-	0x45, 0xe5, 0xd0, 0xba, 0xd6, 0x87, 0x88, 0xb8, 0x3a, 0x77, 0x24, 0x17, 0x66, 0x47, 0xf2, 0x4f,
-	0x25, 0xd8, 0x98, 0xeb, 0x85, 0x73, 0xeb, 0x2b, 0xaa, 0x3c, 0xe3, 0x29, 0x7a, 0x1f, 0xd8, 0x43,
-	0x7a, 0xbf, 0x4a, 0x7a, 0x29, 0xf1, 0xef, 0x08, 0xbe, 0x03, 0x78, 0x28, 0x09, 0xf2, 0x58, 0x24,
-	0x3f, 0xf5, 0x65, 0x7b, 0x90, 0xd7, 0x8c, 0xf1, 0xe7, 0x1b, 0x07, 0xeb, 0xf0, 0x88, 0xde, 0xff,
-	0xe7, 0x9b, 0x93, 0x4f, 0xbf, 0x7e, 0x84, 0x37, 0xea, 0x0f, 0x3b, 0x87, 0xf8, 0x98, 0x7a, 0x96,
-	0x0c, 0xa2, 0xb8, 0xc7, 0x9e, 0x22, 0x3b, 0x3e, 0x93, 0x9f, 0xc5, 0xb3, 0xd6, 0x77, 0x5a, 0xa5,
-	0x56, 0xb9, 0x55, 0xe9, 0xd4, 0xe4, 0xf8, 0xcb, 0xff, 0x06, 0x00, 0x00, 0xff, 0xff, 0x86, 0xb3,
-	0x9f, 0x61, 0xbe, 0x17, 0x00, 0x00,
+func init() {
+	proto.RegisterType((*AddFortModifierMessage)(nil), "POGOProtos.Networking.Requests.Messages.AddFortModifierMessage")
+	proto.RegisterType((*AttackGymMessage)(nil), "POGOProtos.Networking.Requests.Messages.AttackGymMessage")
+	proto.RegisterType((*CatchPokemonMessage)(nil), "POGOProtos.Networking.Requests.Messages.CatchPokemonMessage")
+	proto.RegisterType((*CheckAwardedBadgesMessage)(nil), "POGOProtos.Networking.Requests.Messages.CheckAwardedBadgesMessage")
+	proto.RegisterType((*CheckCodenameAvailableMessage)(nil), "POGOProtos.Networking.Requests.Messages.CheckCodenameAvailableMessage")
+	proto.RegisterType((*ClaimCodenameMessage)(nil), "POGOProtos.Networking.Requests.Messages.ClaimCodenameMessage")
+	proto.RegisterType((*CollectDailyBonusMessage)(nil), "POGOProtos.Networking.Requests.Messages.CollectDailyBonusMessage")
+	proto.RegisterType((*CollectDailyDefenderBonusMessage)(nil), "POGOProtos.Networking.Requests.Messages.CollectDailyDefenderBonusMessage")
+	proto.RegisterType((*DiskEncounterMessage)(nil), "POGOProtos.Networking.Requests.Messages.DiskEncounterMessage")
+	proto.RegisterType((*DownloadItemTemplatesMessage)(nil), "POGOProtos.Networking.Requests.Messages.DownloadItemTemplatesMessage")
+	proto.RegisterType((*DownloadRemoteConfigVersionMessage)(nil), "POGOProtos.Networking.Requests.Messages.DownloadRemoteConfigVersionMessage")
+	proto.RegisterType((*DownloadSettingsMessage)(nil), "POGOProtos.Networking.Requests.Messages.DownloadSettingsMessage")
+	proto.RegisterType((*EchoMessage)(nil), "POGOProtos.Networking.Requests.Messages.EchoMessage")
+	proto.RegisterType((*EncounterMessage)(nil), "POGOProtos.Networking.Requests.Messages.EncounterMessage")
+	proto.RegisterType((*EncounterTutorialCompleteMessage)(nil), "POGOProtos.Networking.Requests.Messages.EncounterTutorialCompleteMessage")
+	proto.RegisterType((*EquipBadgeMessage)(nil), "POGOProtos.Networking.Requests.Messages.EquipBadgeMessage")
+	proto.RegisterType((*EvolvePokemonMessage)(nil), "POGOProtos.Networking.Requests.Messages.EvolvePokemonMessage")
+	proto.RegisterType((*FortDeployPokemonMessage)(nil), "POGOProtos.Networking.Requests.Messages.FortDeployPokemonMessage")
+	proto.RegisterType((*FortDetailsMessage)(nil), "POGOProtos.Networking.Requests.Messages.FortDetailsMessage")
+	proto.RegisterType((*FortRecallPokemonMessage)(nil), "POGOProtos.Networking.Requests.Messages.FortRecallPokemonMessage")
+	proto.RegisterType((*FortSearchMessage)(nil), "POGOProtos.Networking.Requests.Messages.FortSearchMessage")
+	proto.RegisterType((*GetAssetDigestMessage)(nil), "POGOProtos.Networking.Requests.Messages.GetAssetDigestMessage")
+	proto.RegisterType((*GetDownloadUrlsMessage)(nil), "POGOProtos.Networking.Requests.Messages.GetDownloadUrlsMessage")
+	proto.RegisterType((*GetGymDetailsMessage)(nil), "POGOProtos.Networking.Requests.Messages.GetGymDetailsMessage")
+	proto.RegisterType((*GetHatchedEggsMessage)(nil), "POGOProtos.Networking.Requests.Messages.GetHatchedEggsMessage")
+	proto.RegisterType((*GetIncensePokemonMessage)(nil), "POGOProtos.Networking.Requests.Messages.GetIncensePokemonMessage")
+	proto.RegisterType((*GetInventoryMessage)(nil), "POGOProtos.Networking.Requests.Messages.GetInventoryMessage")
+	proto.RegisterType((*GetMapObjectsMessage)(nil), "POGOProtos.Networking.Requests.Messages.GetMapObjectsMessage")
+	proto.RegisterType((*GetPlayerMessage)(nil), "POGOProtos.Networking.Requests.Messages.GetPlayerMessage")
+	proto.RegisterType((*GetPlayerProfileMessage)(nil), "POGOProtos.Networking.Requests.Messages.GetPlayerProfileMessage")
+	proto.RegisterType((*GetSuggestedCodenamesMessage)(nil), "POGOProtos.Networking.Requests.Messages.GetSuggestedCodenamesMessage")
+	proto.RegisterType((*IncenseEncounterMessage)(nil), "POGOProtos.Networking.Requests.Messages.IncenseEncounterMessage")
+	proto.RegisterType((*LevelUpRewardsMessage)(nil), "POGOProtos.Networking.Requests.Messages.LevelUpRewardsMessage")
+	proto.RegisterType((*MarkTutorialCompleteMessage)(nil), "POGOProtos.Networking.Requests.Messages.MarkTutorialCompleteMessage")
+	proto.RegisterType((*NicknamePokemonMessage)(nil), "POGOProtos.Networking.Requests.Messages.NicknamePokemonMessage")
+	proto.RegisterType((*PlayerUpdateMessage)(nil), "POGOProtos.Networking.Requests.Messages.PlayerUpdateMessage")
+	proto.RegisterType((*RecycleInventoryItemMessage)(nil), "POGOProtos.Networking.Requests.Messages.RecycleInventoryItemMessage")
+	proto.RegisterType((*ReleasePokemonMessage)(nil), "POGOProtos.Networking.Requests.Messages.ReleasePokemonMessage")
+	proto.RegisterType((*SetAvatarMessage)(nil), "POGOProtos.Networking.Requests.Messages.SetAvatarMessage")
+	proto.RegisterType((*SetContactSettingsMessage)(nil), "POGOProtos.Networking.Requests.Messages.SetContactSettingsMessage")
+	proto.RegisterType((*SetFavoritePokemonMessage)(nil), "POGOProtos.Networking.Requests.Messages.SetFavoritePokemonMessage")
+	proto.RegisterType((*SetPlayerTeamMessage)(nil), "POGOProtos.Networking.Requests.Messages.SetPlayerTeamMessage")
+	proto.RegisterType((*SfidaActionLogMessage)(nil), "POGOProtos.Networking.Requests.Messages.SfidaActionLogMessage")
+	proto.RegisterType((*StartGymBattleMessage)(nil), "POGOProtos.Networking.Requests.Messages.StartGymBattleMessage")
+	proto.RegisterType((*UpgradePokemonMessage)(nil), "POGOProtos.Networking.Requests.Messages.UpgradePokemonMessage")
+	proto.RegisterType((*UseIncenseMessage)(nil), "POGOProtos.Networking.Requests.Messages.UseIncenseMessage")
+	proto.RegisterType((*UseItemCaptureMessage)(nil), "POGOProtos.Networking.Requests.Messages.UseItemCaptureMessage")
+	proto.RegisterType((*UseItemEggIncubatorMessage)(nil), "POGOProtos.Networking.Requests.Messages.UseItemEggIncubatorMessage")
+	proto.RegisterType((*UseItemGymMessage)(nil), "POGOProtos.Networking.Requests.Messages.UseItemGymMessage")
+	proto.RegisterType((*UseItemPotionMessage)(nil), "POGOProtos.Networking.Requests.Messages.UseItemPotionMessage")
+	proto.RegisterType((*UseItemReviveMessage)(nil), "POGOProtos.Networking.Requests.Messages.UseItemReviveMessage")
+	proto.RegisterType((*UseItemXpBoostMessage)(nil), "POGOProtos.Networking.Requests.Messages.UseItemXpBoostMessage")
+}
+
+func init() { proto.RegisterFile("networking_requests_messages.proto", fileDescriptor14) }
+
+var fileDescriptor14 = []byte{
+	// 1893 bytes of a gzipped FileDescriptorProto
+	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x09, 0x6e, 0x88, 0x02, 0xff, 0xdc, 0x18, 0x4b, 0x6f, 0x23, 0x49,
+	0x19, 0x3f, 0xe2, 0x24, 0x9f, 0x93, 0x4c, 0xd2, 0x71, 0x1e, 0x93, 0xec, 0xb2, 0xb3, 0xcd, 0xa2,
+	0x59, 0x90, 0x36, 0x8b, 0xb2, 0x62, 0x0e, 0x8b, 0x38, 0xe4, 0x35, 0xb3, 0x11, 0xc9, 0x8c, 0xd5,
+	0x4e, 0x10, 0x2c, 0x82, 0x56, 0xb9, 0xbb, 0xe2, 0x14, 0x69, 0x77, 0xf7, 0x74, 0x95, 0x3d, 0x32,
+	0xbf, 0x05, 0x89, 0x1b, 0x57, 0xee, 0x5c, 0x39, 0x21, 0xc1, 0x89, 0x23, 0xfc, 0x00, 0xf8, 0x17,
+	0x7c, 0xf5, 0x6a, 0xb7, 0x3b, 0xce, 0xc4, 0xa3, 0x30, 0x2b, 0xb4, 0x87, 0x99, 0xb8, 0xbe, 0x77,
+	0x7d, 0xaf, 0xfa, 0xbe, 0x06, 0x37, 0xa6, 0xe2, 0x4d, 0x92, 0xdd, 0xb0, 0xb8, 0xe7, 0x67, 0xf4,
+	0xf5, 0x80, 0x72, 0xc1, 0xfd, 0x3e, 0xe5, 0x9c, 0xf4, 0x28, 0xdf, 0x4b, 0xb3, 0x44, 0x24, 0xce,
+	0xd3, 0xf6, 0xab, 0x17, 0xaf, 0xda, 0xf2, 0x27, 0xdf, 0x7b, 0x99, 0x93, 0xef, 0x79, 0x86, 0x7c,
+	0xef, 0xdc, 0x90, 0xef, 0xb4, 0x58, 0x3c, 0xa4, 0xb1, 0x48, 0xb2, 0x91, 0xcf, 0x04, 0xed, 0x6b,
+	0xf6, 0x9d, 0xb5, 0x90, 0x08, 0xe2, 0x77, 0x89, 0x10, 0x11, 0x35, 0xa0, 0x26, 0x8d, 0x07, 0x7d,
+	0x3e, 0x81, 0x4f, 0x23, 0x32, 0xa2, 0x99, 0x06, 0xb9, 0x7f, 0xaf, 0xc0, 0xe6, 0x41, 0x18, 0x3e,
+	0x4f, 0x32, 0x71, 0x9e, 0x84, 0xec, 0x8a, 0xd1, 0xcc, 0x28, 0x71, 0x9e, 0xc3, 0x72, 0xdf, 0x80,
+	0x7c, 0x31, 0x4a, 0xe9, 0x76, 0xe5, 0x49, 0xe5, 0xd3, 0x95, 0xfd, 0x8f, 0xf7, 0x0a, 0x46, 0x9e,
+	0x5a, 0x33, 0xf6, 0x4e, 0xa5, 0x19, 0xf2, 0xbf, 0xd3, 0xd0, 0x5b, 0xb2, 0x7c, 0x17, 0xc8, 0xe6,
+	0x6c, 0xc1, 0xfc, 0x15, 0x8a, 0xf7, 0x59, 0xb8, 0x5d, 0x45, 0x09, 0x8b, 0x5e, 0x43, 0x1e, 0x4f,
+	0x43, 0xe7, 0x29, 0x3c, 0xd2, 0xb6, 0xf8, 0x11, 0x11, 0x4c, 0x0c, 0x42, 0xba, 0x5d, 0x43, 0x82,
+	0x8a, 0xb7, 0xa2, 0xc1, 0x67, 0x06, 0xea, 0xfc, 0x00, 0x56, 0x2d, 0x61, 0x12, 0xf7, 0x34, 0x65,
+	0x5d, 0x51, 0x1a, 0x01, 0x67, 0x16, 0xec, 0xfe, 0xa5, 0x0a, 0xab, 0x07, 0x42, 0x90, 0xe0, 0xe6,
+	0xc5, 0xa8, 0x6f, 0x6f, 0xb2, 0x01, 0x8d, 0xde, 0xa8, 0x2f, 0x0d, 0xa8, 0x28, 0x03, 0xe6, 0xf0,
+	0x84, 0xfa, 0x77, 0x61, 0x51, 0xfb, 0x6a, 0x6c, 0xda, 0x82, 0x06, 0x20, 0xf2, 0x67, 0xb0, 0x42,
+	0x94, 0x1c, 0x9f, 0x04, 0x82, 0x25, 0x31, 0x47, 0xdb, 0x6a, 0x9f, 0x36, 0xf7, 0x3f, 0x29, 0x5e,
+	0xff, 0x18, 0xfd, 0xb9, 0x77, 0xa8, 0xfd, 0xad, 0xff, 0x1c, 0x28, 0x62, 0x6f, 0x59, 0xf3, 0xea,
+	0x13, 0x77, 0xbe, 0x86, 0xcd, 0x88, 0x70, 0x81, 0x71, 0x17, 0x19, 0xa3, 0x43, 0x1a, 0xe6, 0x42,
+	0xe5, 0x35, 0x66, 0x15, 0xda, 0x92, 0x32, 0x3c, 0x2b, 0xc2, 0xca, 0x9e, 0xe2, 0xc5, 0xb9, 0x99,
+	0xbd, 0xd8, 0x98, 0xee, 0xc5, 0x7f, 0x54, 0x61, 0xfd, 0x88, 0x88, 0xe0, 0xba, 0x9d, 0xdc, 0xd0,
+	0x7e, 0x12, 0x5b, 0x47, 0x7e, 0x0c, 0x4b, 0x34, 0x0e, 0x92, 0x41, 0x2c, 0x50, 0x8a, 0x71, 0x67,
+	0xc3, 0x6b, 0xe6, 0x30, 0xf4, 0xdb, 0x4f, 0x61, 0x21, 0x45, 0xa6, 0x2e, 0x89, 0x22, 0xe5, 0xd3,
+	0x99, 0x12, 0x26, 0x67, 0x71, 0x9e, 0xc1, 0x56, 0x9c, 0x64, 0x7d, 0x12, 0xb1, 0xdf, 0xa1, 0x97,
+	0xd0, 0x5f, 0x2c, 0xc0, 0xf8, 0x70, 0x3c, 0x99, 0xdc, 0xd8, 0x18, 0xa3, 0x3d, 0x8d, 0xed, 0xe0,
+	0x6f, 0xe7, 0x13, 0x58, 0xe1, 0x29, 0x79, 0x13, 0xfb, 0x69, 0xc2, 0x62, 0x95, 0x6b, 0x75, 0x15,
+	0xd0, 0x25, 0x05, 0x6d, 0x4b, 0x20, 0x1a, 0xf7, 0x11, 0x34, 0xaf, 0x99, 0xf0, 0x53, 0x7d, 0x2b,
+	0xe5, 0xa7, 0x05, 0x0f, 0x10, 0x64, 0xee, 0xe9, 0x7c, 0x0f, 0x96, 0x79, 0xca, 0x62, 0xdf, 0x26,
+	0xb0, 0x71, 0xd0, 0x92, 0x04, 0xda, 0xfa, 0x28, 0xd9, 0xa8, 0x05, 0x72, 0x26, 0xa3, 0xb1, 0x3d,
+	0x5f, 0xb6, 0xf1, 0x2b, 0x29, 0x5b, 0x23, 0xdd, 0x5d, 0x78, 0x7c, 0x74, 0x4d, 0x31, 0x2b, 0xde,
+	0x90, 0x2c, 0xa4, 0xe1, 0x21, 0x09, 0xb1, 0x94, 0x8d, 0x6b, 0xdd, 0x9f, 0xc0, 0x87, 0x0a, 0x79,
+	0x94, 0x84, 0x34, 0x26, 0x7d, 0x7a, 0x30, 0x24, 0x2c, 0x22, 0xdd, 0x88, 0x5a, 0xdf, 0xef, 0xc0,
+	0x42, 0x60, 0x70, 0x26, 0x8d, 0xf3, 0xb3, 0xbb, 0x0f, 0xad, 0xa3, 0x88, 0xb0, 0xbe, 0x65, 0x9e,
+	0x85, 0x67, 0x07, 0xb6, 0x8f, 0x92, 0x28, 0xa2, 0x81, 0x38, 0x46, 0x4d, 0xa3, 0xc3, 0x24, 0x1e,
+	0xe4, 0xc6, 0xb8, 0xf0, 0xa4, 0x88, 0x3b, 0xa6, 0x57, 0x34, 0x0e, 0x69, 0x36, 0x41, 0xf3, 0xc7,
+	0x0a, 0xb4, 0x8e, 0x19, 0xbf, 0x39, 0xb1, 0xc1, 0x7f, 0x5b, 0x92, 0xd4, 0x27, 0x93, 0xe4, 0x1b,
+	0x6d, 0x09, 0xdf, 0x85, 0x0f, 0x8e, 0x93, 0x37, 0x71, 0x94, 0x90, 0x50, 0xa6, 0xdb, 0x05, 0xed,
+	0x23, 0x85, 0x18, 0x7b, 0xfe, 0x3f, 0x15, 0x70, 0x2d, 0x81, 0x87, 0x59, 0x20, 0xe8, 0x51, 0x12,
+	0x5f, 0xb1, 0xde, 0xcf, 0x69, 0xc6, 0xd9, 0x38, 0xf7, 0x9f, 0x61, 0x62, 0x23, 0x1f, 0x1a, 0xda,
+	0x37, 0x9d, 0x70, 0xa7, 0x98, 0xd8, 0x27, 0xaa, 0xcf, 0xb6, 0x0d, 0x85, 0x97, 0xd3, 0x3a, 0x9f,
+	0xc3, 0x7a, 0x48, 0x87, 0x2c, 0xa0, 0x7e, 0x9f, 0xc4, 0x83, 0x2b, 0x2c, 0xfc, 0x41, 0x86, 0x89,
+	0xa5, 0xef, 0xed, 0x68, 0xd4, 0x79, 0x01, 0x23, 0xfd, 0x67, 0x19, 0x30, 0x56, 0x91, 0x72, 0xc0,
+	0xa2, 0xd7, 0x34, 0x94, 0x12, 0xe4, 0x6c, 0x42, 0x23, 0x4a, 0x02, 0x12, 0x51, 0x93, 0xe5, 0xe6,
+	0x24, 0xf3, 0x9b, 0xa4, 0xa9, 0x3f, 0xd4, 0x96, 0xab, 0xfc, 0x5e, 0xf6, 0x00, 0x41, 0xe6, 0x2e,
+	0xee, 0x67, 0xb0, 0x65, 0xaf, 0xda, 0xa1, 0x42, 0xe0, 0xe3, 0x62, 0xdd, 0xe0, 0x38, 0x50, 0xbf,
+	0x26, 0xfc, 0xda, 0xe4, 0x89, 0xfa, 0xed, 0x2e, 0x43, 0xf3, 0x24, 0xb8, 0x4e, 0xac, 0xa7, 0xfe,
+	0x54, 0x81, 0xd5, 0x99, 0xc2, 0x5d, 0xea, 0x09, 0xb7, 0x8b, 0xb3, 0x3a, 0xa5, 0x38, 0xdf, 0x47,
+	0xec, 0x7f, 0x03, 0x4f, 0x72, 0x83, 0x2f, 0x06, 0xd8, 0x77, 0x18, 0x89, 0x8e, 0x12, 0x4c, 0x00,
+	0x2a, 0xf2, 0x22, 0xf9, 0x12, 0xc0, 0x34, 0x04, 0x6b, 0xfe, 0xca, 0xfe, 0xee, 0x94, 0xd0, 0x6a,
+	0x1a, 0xec, 0x56, 0x8b, 0xa9, 0xfd, 0xe9, 0xbe, 0x82, 0xb5, 0x93, 0xd7, 0x03, 0x96, 0xaa, 0x5a,
+	0x2e, 0x08, 0xec, 0xca, 0x73, 0xf1, 0xd5, 0x9c, 0x22, 0x50, 0xf1, 0xc8, 0x17, 0xd2, 0x5b, 0xec,
+	0xda, 0x9f, 0xee, 0x8f, 0xa1, 0x75, 0x32, 0x4c, 0xa2, 0x21, 0x2d, 0x75, 0xde, 0x0f, 0x6f, 0x19,
+	0xd9, 0x28, 0xda, 0x81, 0xc5, 0xb8, 0x2d, 0xdf, 0xf0, 0x63, 0x9a, 0x46, 0xc9, 0xa8, 0xc4, 0x5b,
+	0xa8, 0xb6, 0xca, 0x44, 0xb5, 0x4d, 0x0a, 0xad, 0x96, 0x84, 0xbe, 0x97, 0x80, 0xf4, 0xc0, 0xd1,
+	0x76, 0x0a, 0x6c, 0x2c, 0xfc, 0x5e, 0x0b, 0xb1, 0x81, 0xe5, 0xba, 0xab, 0x4a, 0x62, 0x7e, 0x76,
+	0x3e, 0x80, 0xc5, 0xb1, 0x3a, 0x6d, 0xd8, 0x18, 0x90, 0x7b, 0xc4, 0xa3, 0x58, 0x19, 0xd1, 0xff,
+	0xb1, 0x47, 0xfe, 0x56, 0x81, 0x35, 0x69, 0x68, 0x87, 0x92, 0x2c, 0xb8, 0xbe, 0xd7, 0xc2, 0x29,
+	0x26, 0x54, 0x67, 0x36, 0xa1, 0x36, 0xd5, 0x04, 0xf9, 0xea, 0x29, 0x65, 0xb9, 0x44, 0x6d, 0xea,
+	0x92, 0x04, 0xe6, 0xf2, 0xbe, 0x0f, 0x2b, 0x9a, 0x28, 0x97, 0xa6, 0xc7, 0x0c, 0xc5, 0x3a, 0xbe,
+	0xce, 0xbf, 0x2a, 0xb0, 0xf1, 0x82, 0x8a, 0x03, 0xce, 0xa9, 0x38, 0x66, 0xf8, 0xc0, 0x89, 0x6f,
+	0x55, 0x03, 0xfd, 0x02, 0x36, 0xf1, 0x76, 0xb6, 0x87, 0x5e, 0x66, 0xe3, 0x1c, 0x7e, 0x0c, 0x0b,
+	0x44, 0x5e, 0x5a, 0x87, 0xac, 0x86, 0x42, 0xe7, 0xd5, 0x19, 0xab, 0xf3, 0xaf, 0xf8, 0x54, 0x22,
+	0x17, 0x4e, 0xa4, 0xa5, 0xbc, 0xbf, 0x63, 0x30, 0x7d, 0x1f, 0x31, 0x46, 0xa7, 0x48, 0x55, 0xa5,
+	0x10, 0x37, 0x11, 0x96, 0x4b, 0xc3, 0x34, 0x50, 0x24, 0xa5, 0x00, 0x4b, 0xbe, 0x71, 0x7c, 0xb7,
+	0x54, 0x78, 0xbf, 0x92, 0xc3, 0x21, 0x0d, 0x4f, 0x7a, 0xf9, 0xfb, 0xe1, 0xc6, 0xb0, 0x8d, 0x88,
+	0xd3, 0x38, 0xa0, 0x31, 0x2f, 0x77, 0xaf, 0x29, 0x17, 0xaa, 0xcc, 0x7c, 0xa1, 0xea, 0x5d, 0x9d,
+	0x64, 0x5d, 0xe9, 0x33, 0xf3, 0xa4, 0x55, 0xf5, 0x43, 0x58, 0x53, 0xa3, 0xb6, 0x60, 0xb8, 0x5b,
+	0x09, 0xd2, 0x4f, 0xfd, 0x3e, 0x57, 0xca, 0x6a, 0xde, 0x23, 0x89, 0xb8, 0xb0, 0xf0, 0x73, 0x2e,
+	0xdf, 0x25, 0xb9, 0x3d, 0xf9, 0x5d, 0x4a, 0x63, 0x9f, 0xe3, 0x7f, 0x4a, 0xd7, 0x9c, 0xb7, 0x24,
+	0xa1, 0x87, 0x78, 0xee, 0xe0, 0x3f, 0xf7, 0x0f, 0x3a, 0x7a, 0xe7, 0x24, 0x7d, 0xd5, 0xfd, 0x2d,
+	0x8e, 0x44, 0x79, 0xf4, 0x76, 0x61, 0x3e, 0xa0, 0x51, 0x64, 0x03, 0x5e, 0x3f, 0xac, 0xae, 0x56,
+	0xbc, 0x86, 0x04, 0x61, 0x0c, 0x7f, 0x04, 0x0e, 0x67, 0xe8, 0x8c, 0x49, 0x43, 0xaa, 0x48, 0x57,
+	0x53, 0x74, 0xab, 0x0a, 0x5b, 0xb4, 0xa6, 0xd8, 0xeb, 0x6a, 0x6f, 0xeb, 0x75, 0xf5, 0x72, 0xaf,
+	0x73, 0x60, 0x15, 0x0d, 0x6c, 0x2b, 0x07, 0xd9, 0x70, 0x7c, 0x09, 0x5b, 0x39, 0x0c, 0x2b, 0xec,
+	0x8a, 0x8d, 0x27, 0x49, 0x4c, 0x72, 0xe3, 0xe4, 0xc2, 0x60, 0x08, 0x1a, 0xf4, 0x52, 0x8e, 0x86,
+	0x38, 0x31, 0x21, 0x6f, 0x67, 0xd0, 0x93, 0xe5, 0x4b, 0x43, 0x3b, 0x55, 0xe6, 0xa1, 0xbe, 0x81,
+	0x2d, 0x13, 0xe7, 0x99, 0xa6, 0x81, 0xda, 0xe4, 0x34, 0xf0, 0x19, 0x38, 0x63, 0x12, 0x59, 0x77,
+	0x6a, 0x72, 0xd6, 0xe5, 0xbc, 0x96, 0x63, 0xce, 0x0c, 0x02, 0x47, 0x96, 0x8d, 0x33, 0xdc, 0x77,
+	0xa2, 0xcb, 0xd4, 0xa3, 0x72, 0x70, 0xce, 0xdd, 0xdf, 0x82, 0xb9, 0x48, 0x22, 0x94, 0x8e, 0x39,
+	0x4f, 0x1f, 0xdc, 0x7f, 0x56, 0x60, 0xf7, 0x9c, 0x64, 0x37, 0x77, 0xbd, 0xf6, 0x6d, 0x58, 0x17,
+	0x06, 0xc5, 0xfd, 0xc0, 0x20, 0x75, 0x00, 0x57, 0xf6, 0x3f, 0xba, 0xdd, 0x90, 0xac, 0x9c, 0x8e,
+	0xc0, 0x99, 0xd1, 0x73, 0x72, 0x5e, 0x2b, 0x37, 0x74, 0xf6, 0x61, 0x83, 0xe3, 0x78, 0x8c, 0xdd,
+	0x29, 0xbb, 0xa1, 0x72, 0xa4, 0xf2, 0x69, 0x5f, 0x16, 0xb9, 0xba, 0xd2, 0x82, 0xb7, 0x2e, 0x91,
+	0xe7, 0x16, 0x77, 0xa2, 0x50, 0x72, 0x85, 0x50, 0x3c, 0xe9, 0x80, 0x5f, 0xfb, 0x71, 0x22, 0x70,
+	0xb1, 0xd0, 0xd7, 0xe5, 0x2a, 0xf4, 0x0b, 0x9e, 0x12, 0xd9, 0x46, 0xec, 0xcb, 0x22, 0xd2, 0xed,
+	0xc0, 0xe6, 0x4b, 0x16, 0xdc, 0xc8, 0x68, 0xbc, 0xd3, 0x80, 0x20, 0x93, 0x2b, 0x36, 0x8c, 0x76,
+	0xd5, 0xb5, 0x67, 0x1c, 0x62, 0xd6, 0x75, 0x9e, 0x5c, 0xa6, 0x21, 0x11, 0xc5, 0xe5, 0xa1, 0x54,
+	0xad, 0x77, 0xe4, 0x63, 0xb5, 0x9c, 0x8f, 0x09, 0xec, 0xe2, 0xb3, 0x3b, 0xc2, 0xdd, 0x2c, 0x2f,
+	0x4f, 0x39, 0x79, 0x8f, 0xe7, 0xa3, 0x79, 0x55, 0x76, 0xf9, 0xb4, 0x35, 0xc3, 0x86, 0xd8, 0x60,
+	0xea, 0xaf, 0x0c, 0xba, 0x4a, 0x10, 0x53, 0xa9, 0xfa, 0xe0, 0x3e, 0x83, 0x0d, 0x8f, 0x46, 0x94,
+	0xf0, 0x77, 0x1c, 0x9b, 0x7e, 0x0d, 0xab, 0x38, 0x06, 0xe3, 0xaa, 0x25, 0x48, 0x9e, 0xc1, 0xa7,
+	0xb0, 0x6c, 0xaa, 0x83, 0x28, 0xb8, 0xd2, 0x34, 0x6d, 0x45, 0xd7, 0x3e, 0x33, 0x7f, 0xb4, 0x0c,
+	0x6f, 0x29, 0x2d, 0x9c, 0xd0, 0x0f, 0x8f, 0x51, 0x3c, 0x6e, 0x13, 0x02, 0x9f, 0xa6, 0xf2, 0xbc,
+	0xed, 0xc1, 0x6a, 0xa0, 0x31, 0xd8, 0x7a, 0x34, 0x4a, 0x19, 0xd8, 0xdc, 0x7f, 0x7a, 0x97, 0xaa,
+	0x92, 0x24, 0xef, 0x51, 0x30, 0x09, 0x70, 0x7f, 0xa5, 0x14, 0x3e, 0x27, 0x43, 0xcc, 0x51, 0x71,
+	0xbf, 0x2f, 0xea, 0xc5, 0x0c, 0xc1, 0xae, 0xc0, 0xb8, 0x7f, 0x65, 0x78, 0x4d, 0xf2, 0x02, 0xe3,
+	0x56, 0x9a, 0xfb, 0x02, 0x5a, 0x1d, 0xdb, 0x51, 0x2e, 0x28, 0xc9, 0xc3, 0xf9, 0x39, 0xd4, 0x05,
+	0x1e, 0xef, 0x1e, 0x74, 0x25, 0x31, 0xae, 0x93, 0x49, 0xe6, 0x29, 0x42, 0xf9, 0x84, 0x74, 0xae,
+	0x58, 0x48, 0xf4, 0x17, 0x8c, 0xb3, 0xa4, 0x67, 0xfb, 0xca, 0xbf, 0x71, 0x76, 0xc0, 0x3a, 0xcb,
+	0xe4, 0x4b, 0xa9, 0xbf, 0x7c, 0xdc, 0xf3, 0x50, 0x62, 0xe9, 0xe9, 0x0f, 0x2d, 0xb2, 0xea, 0xc6,
+	0x97, 0xd3, 0x7d, 0xb6, 0xe1, 0xad, 0xe7, 0xc8, 0x7c, 0x78, 0xe7, 0xd8, 0x98, 0x5b, 0xa1, 0xda,
+	0x67, 0x27, 0x79, 0x54, 0xdd, 0x35, 0xe4, 0x3c, 0x61, 0x70, 0xed, 0xb7, 0x4d, 0x7d, 0xf5, 0x99,
+	0x5f, 0xaf, 0xb9, 0xe9, 0xaf, 0x17, 0x66, 0xec, 0x65, 0xda, 0xcb, 0x48, 0xf8, 0x8e, 0x19, 0xfb,
+	0x4b, 0x58, 0xbb, 0xe4, 0xd4, 0x74, 0x5f, 0xcb, 0x73, 0x0c, 0x4b, 0x4c, 0x43, 0xde, 0xf1, 0x43,
+	0x5d, 0xd3, 0xb0, 0xa9, 0xd5, 0xe3, 0xf7, 0xe8, 0x7d, 0x29, 0x1b, 0x51, 0x47, 0x24, 0x95, 0xa3,
+	0xd4, 0xff, 0xa2, 0x60, 0xcb, 0x0f, 0x42, 0x75, 0x96, 0xf5, 0xb0, 0x76, 0x7b, 0x3d, 0x74, 0x2f,
+	0x60, 0xc7, 0x58, 0x87, 0x53, 0x07, 0x3a, 0x60, 0xd0, 0x25, 0xa8, 0xb4, 0x30, 0x2f, 0x17, 0x4d,
+	0x5c, 0xcc, 0xf5, 0xdf, 0x9e, 0xe8, 0x8b, 0x59, 0xef, 0xfe, 0xb9, 0xa2, 0x1d, 0x8a, 0xc4, 0x85,
+	0x0f, 0x86, 0x0f, 0xb9, 0xf0, 0x38, 0x55, 0xab, 0xf7, 0xcc, 0x74, 0x0f, 0x5e, 0x1d, 0x5e, 0x43,
+	0xcb, 0xd8, 0xde, 0x4e, 0x44, 0xe1, 0x53, 0xc5, 0x43, 0xcc, 0x7f, 0xfb, 0x06, 0x54, 0x50, 0xe9,
+	0xe1, 0x38, 0x3d, 0xa4, 0xdf, 0x80, 0xca, 0x4e, 0x9e, 0x96, 0xbf, 0x48, 0x0f, 0x93, 0x64, 0xbc,
+	0x50, 0x3c, 0x40, 0xe7, 0xe1, 0xc2, 0xd7, 0x0d, 0xf5, 0x01, 0x9c, 0xb7, 0xbf, 0xd3, 0xae, 0xb4,
+	0xab, 0xed, 0x5a, 0x57, 0x9f, 0xbf, 0xf8, 0x6f, 0x00, 0x00, 0x00, 0xff, 0xff, 0xff, 0x9e, 0x90,
+	0x4d, 0xa8, 0x17, 0x00, 0x00,
 }
