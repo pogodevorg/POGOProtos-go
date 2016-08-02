@@ -27,6 +27,8 @@ var _ = math.Inf
 
 // Ignoring public import of InventoryItem from inventory.proto
 
+// Ignoring public import of DeletedItem from inventory.proto
+
 // Ignoring public import of InventoryItemData from inventory.proto
 
 // Ignoring public import of InventoryUpgrade from inventory.proto
