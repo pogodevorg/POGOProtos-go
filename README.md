@@ -23,10 +23,8 @@ Install the Go protoc extensions through `go get`
 go get -u github.com/golang/protobuf/{proto,protoc-gen-go}
 ```
 
-Check out the [AeonLucid/POGOProtos](https://github.com/AeonLucid/POGOProtos) repository and run their scripts.
+Run the update script which will commit any changes.
 
 ```bash
-$ git clone git@github.com:AeonLucid/POGOProtos.git
-$ cd POGOProtos
-$ python ./compile_single.py -l=go --out_path=$GOPATH/src/github.com/pkmngo-odi/pogo-protos --go_root_package=github.com/pkmngo-odi/pogo-protos
+$ ./update.sh
 ```
