@@ -79,6 +79,7 @@ It has these top-level messages:
 	AuthTicket
 	RequestEnvelope
 	ResponseEnvelope
+	Signature
 	Unknown6
 	Unknown6Response
 	Request
