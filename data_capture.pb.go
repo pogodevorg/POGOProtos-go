@@ -13,47 +13,47 @@ var _ = proto.Marshal
 var _ = fmt.Errorf
 var _ = math.Inf
 
-// Ignoring public import of ActivityType from enums.proto
-
-// Ignoring public import of BadgeType from enums.proto
-
-// Ignoring public import of CameraInterpolation from enums.proto
-
-// Ignoring public import of CameraTarget from enums.proto
-
 // Ignoring public import of Gender from enums.proto
 
-// Ignoring public import of HoloIapItemCategory from enums.proto
-
 // Ignoring public import of ItemCategory from enums.proto
-
-// Ignoring public import of ItemEffect from enums.proto
-
-// Ignoring public import of Platform from enums.proto
 
 // Ignoring public import of PokemonFamilyId from enums.proto
 
 // Ignoring public import of PokemonId from enums.proto
 
-// Ignoring public import of PokemonMove from enums.proto
+// Ignoring public import of Platform from enums.proto
+
+// Ignoring public import of ActivityType from enums.proto
+
+// Ignoring public import of TutorialState from enums.proto
 
 // Ignoring public import of PokemonMovementType from enums.proto
 
+// Ignoring public import of ItemEffect from enums.proto
+
+// Ignoring public import of HoloIapItemCategory from enums.proto
+
 // Ignoring public import of PokemonRarity from enums.proto
 
-// Ignoring public import of PokemonType from enums.proto
+// Ignoring public import of BadgeType from enums.proto
+
+// Ignoring public import of CameraInterpolation from enums.proto
+
+// Ignoring public import of PokemonMove from enums.proto
 
 // Ignoring public import of TeamColor from enums.proto
 
-// Ignoring public import of TutorialState from enums.proto
+// Ignoring public import of CameraTarget from enums.proto
+
+// Ignoring public import of PokemonType from enums.proto
 
 // Ignoring public import of ItemAward from inventory_item.proto
 
 // Ignoring public import of ItemData from inventory_item.proto
 
-// Ignoring public import of ItemId from inventory_item.proto
-
 // Ignoring public import of ItemType from inventory_item.proto
+
+// Ignoring public import of ItemId from inventory_item.proto
 
 type CaptureAward struct {
 	ActivityType []ActivityType `protobuf:"varint,1,rep,packed,name=activity_type,json=activityType,enum=POGOProtos.Enums.ActivityType" json:"activity_type,omitempty"`
@@ -65,7 +65,7 @@ type CaptureAward struct {
 func (m *CaptureAward) Reset()                    { *m = CaptureAward{} }
 func (m *CaptureAward) String() string            { return proto.CompactTextString(m) }
 func (*CaptureAward) ProtoMessage()               {}
-func (*CaptureAward) Descriptor() ([]byte, []int) { return fileDescriptor2, []int{0} }
+func (*CaptureAward) Descriptor() ([]byte, []int) { return fileDescriptor6, []int{0} }
 
 type CaptureProbability struct {
 	PokeballType           []ItemId  `protobuf:"varint,1,rep,packed,name=pokeball_type,json=pokeballType,enum=POGOProtos.Inventory.Item.ItemId" json:"pokeball_type,omitempty"`
@@ -76,16 +76,16 @@ type CaptureProbability struct {
 func (m *CaptureProbability) Reset()                    { *m = CaptureProbability{} }
 func (m *CaptureProbability) String() string            { return proto.CompactTextString(m) }
 func (*CaptureProbability) ProtoMessage()               {}
-func (*CaptureProbability) Descriptor() ([]byte, []int) { return fileDescriptor2, []int{1} }
+func (*CaptureProbability) Descriptor() ([]byte, []int) { return fileDescriptor6, []int{1} }
 
 func init() {
 	proto.RegisterType((*CaptureAward)(nil), "POGOProtos.Data.Capture.CaptureAward")
 	proto.RegisterType((*CaptureProbability)(nil), "POGOProtos.Data.Capture.CaptureProbability")
 }
 
-func init() { proto.RegisterFile("data_capture.proto", fileDescriptor2) }
+func init() { proto.RegisterFile("data_capture.proto", fileDescriptor6) }
 
-var fileDescriptor2 = []byte{
+var fileDescriptor6 = []byte{
 	// 310 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x09, 0x6e, 0x88, 0x02, 0xff, 0x64, 0x51, 0xb1, 0x4e, 0xc3, 0x30,
 	0x14, 0xc4, 0x29, 0x45, 0x95, 0x49, 0x11, 0x32, 0x08, 0xac, 0x0e, 0x55, 0xe9, 0xd4, 0x29, 0x03,
