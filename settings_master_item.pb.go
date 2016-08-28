@@ -104,8 +104,8 @@ func (*ExperienceBoostAttributes) ProtoMessage()               {}
 func (*ExperienceBoostAttributes) Descriptor() ([]byte, []int) { return fileDescriptor18, []int{2} }
 
 type FoodAttributes struct {
-	ItemEffect        []ItemEffect `protobuf:"varint,1,rep,name=item_effect,json=itemEffect,enum=POGOProtos.Enums.ItemEffect" json:"item_effect,omitempty"`
-	ItemEffectPercent []float32    `protobuf:"fixed32,2,rep,name=item_effect_percent,json=itemEffectPercent" json:"item_effect_percent,omitempty"`
+	ItemEffect        []ItemEffect `protobuf:"varint,1,rep,packed,name=item_effect,json=itemEffect,enum=POGOProtos.Enums.ItemEffect" json:"item_effect,omitempty"`
+	ItemEffectPercent []float32    `protobuf:"fixed32,2,rep,packed,name=item_effect_percent,json=itemEffectPercent" json:"item_effect_percent,omitempty"`
 	GrowthPercent     float32      `protobuf:"fixed32,3,opt,name=growth_percent,json=growthPercent" json:"growth_percent,omitempty"`
 }
 
@@ -126,7 +126,7 @@ func (*FortModifierAttributes) Descriptor() ([]byte, []int) { return fileDescrip
 
 type IncenseAttributes struct {
 	IncenseLifetimeSeconds                   int32         `protobuf:"varint,1,opt,name=incense_lifetime_seconds,json=incenseLifetimeSeconds" json:"incense_lifetime_seconds,omitempty"`
-	PokemonType                              []PokemonType `protobuf:"varint,2,rep,name=pokemon_type,json=pokemonType,enum=POGOProtos.Enums.PokemonType" json:"pokemon_type,omitempty"`
+	PokemonType                              []PokemonType `protobuf:"varint,2,rep,packed,name=pokemon_type,json=pokemonType,enum=POGOProtos.Enums.PokemonType" json:"pokemon_type,omitempty"`
 	PokemonIncenseTypeProbability            float32       `protobuf:"fixed32,3,opt,name=pokemon_incense_type_probability,json=pokemonIncenseTypeProbability" json:"pokemon_incense_type_probability,omitempty"`
 	StandingTimeBetweenEncountersSeconds     int32         `protobuf:"varint,4,opt,name=standing_time_between_encounters_seconds,json=standingTimeBetweenEncountersSeconds" json:"standing_time_between_encounters_seconds,omitempty"`
 	MovingTimeBetweenEncounterSeconds        int32         `protobuf:"varint,5,opt,name=moving_time_between_encounter_seconds,json=movingTimeBetweenEncounterSeconds" json:"moving_time_between_encounter_seconds,omitempty"`

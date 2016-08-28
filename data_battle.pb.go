@@ -33,6 +33,8 @@ var _ = math.Inf
 
 // Ignoring public import of AssetDigestEntry from data.proto
 
+// Ignoring public import of BuddyPokemon from data.proto
+
 // Ignoring public import of DownloadUrlEntry from data.proto
 
 // Ignoring public import of PlayerBadge from data.proto
@@ -273,7 +275,7 @@ func (m *BattlePokemonInfo) GetPokemonData() *PokemonData {
 type BattleResults struct {
 	GymState                *GymState            `protobuf:"bytes,1,opt,name=gym_state,json=gymState" json:"gym_state,omitempty"`
 	Attackers               []*BattleParticipant `protobuf:"bytes,2,rep,name=attackers" json:"attackers,omitempty"`
-	PlayerExperienceAwarded []int32              `protobuf:"varint,3,rep,name=player_experience_awarded,json=playerExperienceAwarded" json:"player_experience_awarded,omitempty"`
+	PlayerExperienceAwarded []int32              `protobuf:"varint,3,rep,packed,name=player_experience_awarded,json=playerExperienceAwarded" json:"player_experience_awarded,omitempty"`
 	NextDefenderPokemonId   int64                `protobuf:"varint,4,opt,name=next_defender_pokemon_id,json=nextDefenderPokemonId" json:"next_defender_pokemon_id,omitempty"`
 	GymPointsDelta          int32                `protobuf:"varint,5,opt,name=gym_points_delta,json=gymPointsDelta" json:"gym_points_delta,omitempty"`
 }
