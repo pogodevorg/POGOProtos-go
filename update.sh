@@ -4,7 +4,7 @@ git submodule foreach git pull
 
 # Collect paths of current script
 origin_dir=$(pwd)
-script_path=$(stat -f "%N" "$0")
+script_path=`realpath $0`
 base_dir=$(dirname $script_path)
 
 # Collect full path of the submodule and base directory

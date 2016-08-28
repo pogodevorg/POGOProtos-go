@@ -13,73 +13,47 @@ var _ = proto.Marshal
 var _ = fmt.Errorf
 var _ = math.Inf
 
-// Ignoring public import of ActivityType from enums.proto
+// Ignoring public import of ItemAward from inventory_item.proto
 
-// Ignoring public import of BadgeType from enums.proto
+// Ignoring public import of ItemData from inventory_item.proto
 
-// Ignoring public import of CameraInterpolation from enums.proto
+// Ignoring public import of ItemType from inventory_item.proto
 
-// Ignoring public import of CameraTarget from enums.proto
+// Ignoring public import of ItemId from inventory_item.proto
 
 // Ignoring public import of Gender from enums.proto
 
-// Ignoring public import of HoloIapItemCategory from enums.proto
-
 // Ignoring public import of ItemCategory from enums.proto
-
-// Ignoring public import of ItemEffect from enums.proto
-
-// Ignoring public import of Platform from enums.proto
 
 // Ignoring public import of PokemonFamilyId from enums.proto
 
 // Ignoring public import of PokemonId from enums.proto
 
-// Ignoring public import of PokemonMove from enums.proto
+// Ignoring public import of Platform from enums.proto
 
-// Ignoring public import of PokemonMovementType from enums.proto
-
-// Ignoring public import of PokemonRarity from enums.proto
-
-// Ignoring public import of PokemonType from enums.proto
-
-// Ignoring public import of TeamColor from enums.proto
+// Ignoring public import of ActivityType from enums.proto
 
 // Ignoring public import of TutorialState from enums.proto
 
-// Ignoring public import of ItemAward from inventory_item.proto
+// Ignoring public import of PokemonMovementType from enums.proto
 
-// Ignoring public import of ItemData from inventory_item.proto
+// Ignoring public import of ItemEffect from enums.proto
 
-// Ignoring public import of ItemId from inventory_item.proto
+// Ignoring public import of HoloIapItemCategory from enums.proto
 
-// Ignoring public import of ItemType from inventory_item.proto
+// Ignoring public import of PokemonRarity from enums.proto
 
-type CatchPokemonLogEntry_Result int32
+// Ignoring public import of BadgeType from enums.proto
 
-const (
-	CatchPokemonLogEntry_UNSET            CatchPokemonLogEntry_Result = 0
-	CatchPokemonLogEntry_POKEMON_CAPTURED CatchPokemonLogEntry_Result = 1
-	CatchPokemonLogEntry_POKEMON_FLED     CatchPokemonLogEntry_Result = 2
-)
+// Ignoring public import of CameraInterpolation from enums.proto
 
-var CatchPokemonLogEntry_Result_name = map[int32]string{
-	0: "UNSET",
-	1: "POKEMON_CAPTURED",
-	2: "POKEMON_FLED",
-}
-var CatchPokemonLogEntry_Result_value = map[string]int32{
-	"UNSET":            0,
-	"POKEMON_CAPTURED": 1,
-	"POKEMON_FLED":     2,
-}
+// Ignoring public import of PokemonMove from enums.proto
 
-func (x CatchPokemonLogEntry_Result) String() string {
-	return proto.EnumName(CatchPokemonLogEntry_Result_name, int32(x))
-}
-func (CatchPokemonLogEntry_Result) EnumDescriptor() ([]byte, []int) {
-	return fileDescriptor4, []int{1, 0}
-}
+// Ignoring public import of TeamColor from enums.proto
+
+// Ignoring public import of CameraTarget from enums.proto
+
+// Ignoring public import of PokemonType from enums.proto
 
 type FortSearchLogEntry_Result int32
 
@@ -100,7 +74,90 @@ var FortSearchLogEntry_Result_value = map[string]int32{
 func (x FortSearchLogEntry_Result) String() string {
 	return proto.EnumName(FortSearchLogEntry_Result_name, int32(x))
 }
-func (FortSearchLogEntry_Result) EnumDescriptor() ([]byte, []int) { return fileDescriptor4, []int{2, 0} }
+func (FortSearchLogEntry_Result) EnumDescriptor() ([]byte, []int) { return fileDescriptor7, []int{0, 0} }
+
+type CatchPokemonLogEntry_Result int32
+
+const (
+	CatchPokemonLogEntry_UNSET            CatchPokemonLogEntry_Result = 0
+	CatchPokemonLogEntry_POKEMON_CAPTURED CatchPokemonLogEntry_Result = 1
+	CatchPokemonLogEntry_POKEMON_FLED     CatchPokemonLogEntry_Result = 2
+	CatchPokemonLogEntry_POKEMON_HATCHED  CatchPokemonLogEntry_Result = 3
+)
+
+var CatchPokemonLogEntry_Result_name = map[int32]string{
+	0: "UNSET",
+	1: "POKEMON_CAPTURED",
+	2: "POKEMON_FLED",
+	3: "POKEMON_HATCHED",
+}
+var CatchPokemonLogEntry_Result_value = map[string]int32{
+	"UNSET":            0,
+	"POKEMON_CAPTURED": 1,
+	"POKEMON_FLED":     2,
+	"POKEMON_HATCHED":  3,
+}
+
+func (x CatchPokemonLogEntry_Result) String() string {
+	return proto.EnumName(CatchPokemonLogEntry_Result_name, int32(x))
+}
+func (CatchPokemonLogEntry_Result) EnumDescriptor() ([]byte, []int) {
+	return fileDescriptor7, []int{1, 0}
+}
+
+type BuddyPokemonLogEntry_Result int32
+
+const (
+	BuddyPokemonLogEntry_UNSET       BuddyPokemonLogEntry_Result = 0
+	BuddyPokemonLogEntry_CANDY_FOUND BuddyPokemonLogEntry_Result = 1
+)
+
+var BuddyPokemonLogEntry_Result_name = map[int32]string{
+	0: "UNSET",
+	1: "CANDY_FOUND",
+}
+var BuddyPokemonLogEntry_Result_value = map[string]int32{
+	"UNSET":       0,
+	"CANDY_FOUND": 1,
+}
+
+func (x BuddyPokemonLogEntry_Result) String() string {
+	return proto.EnumName(BuddyPokemonLogEntry_Result_name, int32(x))
+}
+func (BuddyPokemonLogEntry_Result) EnumDescriptor() ([]byte, []int) {
+	return fileDescriptor7, []int{3, 0}
+}
+
+type FortSearchLogEntry struct {
+	Result FortSearchLogEntry_Result `protobuf:"varint,1,opt,name=result,enum=POGOProtos.Data.Logs.FortSearchLogEntry_Result" json:"result,omitempty"`
+	FortId string                    `protobuf:"bytes,2,opt,name=fort_id,json=fortId" json:"fort_id,omitempty"`
+	Items  []*ItemData               `protobuf:"bytes,3,rep,name=items" json:"items,omitempty"`
+	Eggs   int32                     `protobuf:"varint,4,opt,name=eggs" json:"eggs,omitempty"`
+}
+
+func (m *FortSearchLogEntry) Reset()                    { *m = FortSearchLogEntry{} }
+func (m *FortSearchLogEntry) String() string            { return proto.CompactTextString(m) }
+func (*FortSearchLogEntry) ProtoMessage()               {}
+func (*FortSearchLogEntry) Descriptor() ([]byte, []int) { return fileDescriptor7, []int{0} }
+
+func (m *FortSearchLogEntry) GetItems() []*ItemData {
+	if m != nil {
+		return m.Items
+	}
+	return nil
+}
+
+type CatchPokemonLogEntry struct {
+	Result        CatchPokemonLogEntry_Result `protobuf:"varint,1,opt,name=result,enum=POGOProtos.Data.Logs.CatchPokemonLogEntry_Result" json:"result,omitempty"`
+	PokemonId     PokemonId                   `protobuf:"varint,2,opt,name=pokemon_id,json=pokemonId,enum=POGOProtos.Enums.PokemonId" json:"pokemon_id,omitempty"`
+	CombatPoints  int32                       `protobuf:"varint,3,opt,name=combat_points,json=combatPoints" json:"combat_points,omitempty"`
+	PokemonDataId uint64                      `protobuf:"fixed64,4,opt,name=pokemon_data_id,json=pokemonDataId" json:"pokemon_data_id,omitempty"`
+}
+
+func (m *CatchPokemonLogEntry) Reset()                    { *m = CatchPokemonLogEntry{} }
+func (m *CatchPokemonLogEntry) String() string            { return proto.CompactTextString(m) }
+func (*CatchPokemonLogEntry) ProtoMessage()               {}
+func (*CatchPokemonLogEntry) Descriptor() ([]byte, []int) { return fileDescriptor7, []int{1} }
 
 type ActionLogEntry struct {
 	TimestampMs int64 `protobuf:"varint,1,opt,name=timestamp_ms,json=timestampMs" json:"timestamp_ms,omitempty"`
@@ -108,13 +165,14 @@ type ActionLogEntry struct {
 	// Types that are valid to be assigned to Action:
 	//	*ActionLogEntry_CatchPokemon
 	//	*ActionLogEntry_FortSearch
+	//	*ActionLogEntry_BuddyPokemon
 	Action isActionLogEntry_Action `protobuf_oneof:"Action"`
 }
 
 func (m *ActionLogEntry) Reset()                    { *m = ActionLogEntry{} }
 func (m *ActionLogEntry) String() string            { return proto.CompactTextString(m) }
 func (*ActionLogEntry) ProtoMessage()               {}
-func (*ActionLogEntry) Descriptor() ([]byte, []int) { return fileDescriptor4, []int{0} }
+func (*ActionLogEntry) Descriptor() ([]byte, []int) { return fileDescriptor7, []int{2} }
 
 type isActionLogEntry_Action interface {
 	isActionLogEntry_Action()
@@ -126,9 +184,13 @@ type ActionLogEntry_CatchPokemon struct {
 type ActionLogEntry_FortSearch struct {
 	FortSearch *FortSearchLogEntry `protobuf:"bytes,4,opt,name=fort_search,json=fortSearch,oneof"`
 }
+type ActionLogEntry_BuddyPokemon struct {
+	BuddyPokemon *BuddyPokemonLogEntry `protobuf:"bytes,5,opt,name=buddy_pokemon,json=buddyPokemon,oneof"`
+}
 
 func (*ActionLogEntry_CatchPokemon) isActionLogEntry_Action() {}
 func (*ActionLogEntry_FortSearch) isActionLogEntry_Action()   {}
+func (*ActionLogEntry_BuddyPokemon) isActionLogEntry_Action() {}
 
 func (m *ActionLogEntry) GetAction() isActionLogEntry_Action {
 	if m != nil {
@@ -151,11 +213,19 @@ func (m *ActionLogEntry) GetFortSearch() *FortSearchLogEntry {
 	return nil
 }
 
+func (m *ActionLogEntry) GetBuddyPokemon() *BuddyPokemonLogEntry {
+	if x, ok := m.GetAction().(*ActionLogEntry_BuddyPokemon); ok {
+		return x.BuddyPokemon
+	}
+	return nil
+}
+
 // XXX_OneofFuncs is for the internal use of the proto package.
 func (*ActionLogEntry) XXX_OneofFuncs() (func(msg proto.Message, b *proto.Buffer) error, func(msg proto.Message, tag, wire int, b *proto.Buffer) (bool, error), func(msg proto.Message) (n int), []interface{}) {
 	return _ActionLogEntry_OneofMarshaler, _ActionLogEntry_OneofUnmarshaler, _ActionLogEntry_OneofSizer, []interface{}{
 		(*ActionLogEntry_CatchPokemon)(nil),
 		(*ActionLogEntry_FortSearch)(nil),
+		(*ActionLogEntry_BuddyPokemon)(nil),
 	}
 }
 
@@ -171,6 +241,11 @@ func _ActionLogEntry_OneofMarshaler(msg proto.Message, b *proto.Buffer) error {
 	case *ActionLogEntry_FortSearch:
 		b.EncodeVarint(4<<3 | proto.WireBytes)
 		if err := b.EncodeMessage(x.FortSearch); err != nil {
+			return err
+		}
+	case *ActionLogEntry_BuddyPokemon:
+		b.EncodeVarint(5<<3 | proto.WireBytes)
+		if err := b.EncodeMessage(x.BuddyPokemon); err != nil {
 			return err
 		}
 	case nil:
@@ -199,6 +274,14 @@ func _ActionLogEntry_OneofUnmarshaler(msg proto.Message, tag, wire int, b *proto
 		err := b.DecodeMessage(msg)
 		m.Action = &ActionLogEntry_FortSearch{msg}
 		return true, err
+	case 5: // Action.buddy_pokemon
+		if wire != proto.WireBytes {
+			return true, proto.ErrInternalBadWireType
+		}
+		msg := new(BuddyPokemonLogEntry)
+		err := b.DecodeMessage(msg)
+		m.Action = &ActionLogEntry_BuddyPokemon{msg}
+		return true, err
 	default:
 		return false, nil
 	}
@@ -218,6 +301,11 @@ func _ActionLogEntry_OneofSizer(msg proto.Message) (n int) {
 		n += proto.SizeVarint(4<<3 | proto.WireBytes)
 		n += proto.SizeVarint(uint64(s))
 		n += s
+	case *ActionLogEntry_BuddyPokemon:
+		s := proto.Size(x.BuddyPokemon)
+		n += proto.SizeVarint(5<<3 | proto.WireBytes)
+		n += proto.SizeVarint(uint64(s))
+		n += s
 	case nil:
 	default:
 		panic(fmt.Sprintf("proto: unexpected type %T in oneof", x))
@@ -225,77 +313,64 @@ func _ActionLogEntry_OneofSizer(msg proto.Message) (n int) {
 	return n
 }
 
-type CatchPokemonLogEntry struct {
-	Result        CatchPokemonLogEntry_Result `protobuf:"varint,1,opt,name=result,enum=POGOProtos.Data.Logs.CatchPokemonLogEntry_Result" json:"result,omitempty"`
-	PokemonId     PokemonId                   `protobuf:"varint,2,opt,name=pokemon_id,json=pokemonId,enum=POGOProtos.Enums.PokemonId" json:"pokemon_id,omitempty"`
-	CombatPoints  int32                       `protobuf:"varint,3,opt,name=combat_points,json=combatPoints" json:"combat_points,omitempty"`
-	PokemonDataId uint64                      `protobuf:"varint,4,opt,name=pokemon_data_id,json=pokemonDataId" json:"pokemon_data_id,omitempty"`
+type BuddyPokemonLogEntry struct {
+	Result    BuddyPokemonLogEntry_Result `protobuf:"varint,1,opt,name=result,enum=POGOProtos.Data.Logs.BuddyPokemonLogEntry_Result" json:"result,omitempty"`
+	PokemonId PokemonId                   `protobuf:"varint,2,opt,name=pokemon_id,json=pokemonId,enum=POGOProtos.Enums.PokemonId" json:"pokemon_id,omitempty"`
+	Amount    int32                       `protobuf:"varint,3,opt,name=amount" json:"amount,omitempty"`
 }
 
-func (m *CatchPokemonLogEntry) Reset()                    { *m = CatchPokemonLogEntry{} }
-func (m *CatchPokemonLogEntry) String() string            { return proto.CompactTextString(m) }
-func (*CatchPokemonLogEntry) ProtoMessage()               {}
-func (*CatchPokemonLogEntry) Descriptor() ([]byte, []int) { return fileDescriptor4, []int{1} }
-
-type FortSearchLogEntry struct {
-	Result FortSearchLogEntry_Result `protobuf:"varint,1,opt,name=result,enum=POGOProtos.Data.Logs.FortSearchLogEntry_Result" json:"result,omitempty"`
-	FortId string                    `protobuf:"bytes,2,opt,name=fort_id,json=fortId" json:"fort_id,omitempty"`
-	Items  []*ItemData               `protobuf:"bytes,3,rep,name=items" json:"items,omitempty"`
-	Eggs   int32                     `protobuf:"varint,4,opt,name=eggs" json:"eggs,omitempty"`
-}
-
-func (m *FortSearchLogEntry) Reset()                    { *m = FortSearchLogEntry{} }
-func (m *FortSearchLogEntry) String() string            { return proto.CompactTextString(m) }
-func (*FortSearchLogEntry) ProtoMessage()               {}
-func (*FortSearchLogEntry) Descriptor() ([]byte, []int) { return fileDescriptor4, []int{2} }
-
-func (m *FortSearchLogEntry) GetItems() []*ItemData {
-	if m != nil {
-		return m.Items
-	}
-	return nil
-}
+func (m *BuddyPokemonLogEntry) Reset()                    { *m = BuddyPokemonLogEntry{} }
+func (m *BuddyPokemonLogEntry) String() string            { return proto.CompactTextString(m) }
+func (*BuddyPokemonLogEntry) ProtoMessage()               {}
+func (*BuddyPokemonLogEntry) Descriptor() ([]byte, []int) { return fileDescriptor7, []int{3} }
 
 func init() {
-	proto.RegisterType((*ActionLogEntry)(nil), "POGOProtos.Data.Logs.ActionLogEntry")
-	proto.RegisterType((*CatchPokemonLogEntry)(nil), "POGOProtos.Data.Logs.CatchPokemonLogEntry")
 	proto.RegisterType((*FortSearchLogEntry)(nil), "POGOProtos.Data.Logs.FortSearchLogEntry")
-	proto.RegisterEnum("POGOProtos.Data.Logs.CatchPokemonLogEntry_Result", CatchPokemonLogEntry_Result_name, CatchPokemonLogEntry_Result_value)
+	proto.RegisterType((*CatchPokemonLogEntry)(nil), "POGOProtos.Data.Logs.CatchPokemonLogEntry")
+	proto.RegisterType((*ActionLogEntry)(nil), "POGOProtos.Data.Logs.ActionLogEntry")
+	proto.RegisterType((*BuddyPokemonLogEntry)(nil), "POGOProtos.Data.Logs.BuddyPokemonLogEntry")
 	proto.RegisterEnum("POGOProtos.Data.Logs.FortSearchLogEntry_Result", FortSearchLogEntry_Result_name, FortSearchLogEntry_Result_value)
+	proto.RegisterEnum("POGOProtos.Data.Logs.CatchPokemonLogEntry_Result", CatchPokemonLogEntry_Result_name, CatchPokemonLogEntry_Result_value)
+	proto.RegisterEnum("POGOProtos.Data.Logs.BuddyPokemonLogEntry_Result", BuddyPokemonLogEntry_Result_name, BuddyPokemonLogEntry_Result_value)
 }
 
-func init() { proto.RegisterFile("data_logs.proto", fileDescriptor4) }
+func init() { proto.RegisterFile("data_logs.proto", fileDescriptor7) }
 
-var fileDescriptor4 = []byte{
-	// 477 bytes of a gzipped FileDescriptorProto
-	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x09, 0x6e, 0x88, 0x02, 0xff, 0x8c, 0x93, 0xcd, 0x6e, 0x9b, 0x40,
-	0x10, 0xc7, 0x8d, 0x6d, 0x88, 0x3d, 0x38, 0x0e, 0x5a, 0x59, 0xaa, 0x95, 0x5e, 0x52, 0x22, 0x55,
-	0x51, 0x0f, 0x54, 0x75, 0x4f, 0x6d, 0x4f, 0x89, 0x43, 0x52, 0x94, 0x0f, 0x6f, 0x97, 0xf8, 0xd2,
-	0x0b, 0x22, 0xb0, 0x76, 0x50, 0x03, 0x6b, 0xb1, 0x9b, 0x4a, 0x79, 0xa2, 0x3e, 0x5a, 0x1f, 0xa0,
-	0x2f, 0xd0, 0xdd, 0x05, 0x22, 0x2b, 0xe1, 0x90, 0x0b, 0x9a, 0xfd, 0xcf, 0xec, 0xcc, 0xec, 0x6f,
-	0x06, 0xd8, 0x4b, 0x63, 0x11, 0x47, 0xf7, 0x6c, 0xcd, 0xbd, 0x4d, 0xc9, 0x04, 0x43, 0x13, 0xbc,
-	0x38, 0x5f, 0x60, 0x65, 0x72, 0xef, 0x54, 0xfa, 0xbc, 0x4b, 0xe9, 0xdb, 0xb7, 0x69, 0xf1, 0x90,
-	0xd7, 0x21, 0xfb, 0x93, 0xac, 0xf8, 0x4d, 0x0b, 0xc1, 0xca, 0xc7, 0x28, 0x13, 0x34, 0xaf, 0x54,
-	0xf7, 0x9f, 0x01, 0xe3, 0xe3, 0x44, 0x64, 0xac, 0x90, 0x37, 0xfc, 0x42, 0x94, 0x8f, 0xe8, 0x1d,
-	0x8c, 0x44, 0x96, 0x53, 0x2e, 0xe2, 0x7c, 0x13, 0xe5, 0x7c, 0x6a, 0x1c, 0x18, 0x47, 0x3d, 0x62,
-	0x3f, 0x69, 0x57, 0x1c, 0x4d, 0xc0, 0xe4, 0xab, 0x2c, 0x8d, 0xa7, 0x5d, 0xe9, 0x1b, 0x90, 0xea,
-	0x80, 0x7e, 0xc0, 0x6e, 0x12, 0x8b, 0xe4, 0x2e, 0xda, 0xb0, 0x5f, 0x34, 0x67, 0xc5, 0xb4, 0x27,
-	0xbd, 0xf6, 0xec, 0x83, 0xd7, 0xd6, 0x9c, 0x37, 0x57, 0xa1, 0xb8, 0x8a, 0x6c, 0x6a, 0x7f, 0xef,
-	0x90, 0x51, 0xb2, 0xa5, 0xa3, 0x0b, 0xb0, 0x57, 0xac, 0x14, 0x11, 0xa7, 0x71, 0x99, 0xdc, 0x4d,
-	0xfb, 0x3a, 0xe1, 0x51, 0x7b, 0xc2, 0x33, 0x19, 0x18, 0xea, 0xb8, 0xad, 0x74, 0xb0, 0x7a, 0x52,
-	0x4f, 0x06, 0x60, 0x55, 0x4f, 0x75, 0xff, 0x74, 0x61, 0xd2, 0x56, 0x1f, 0x05, 0x60, 0x95, 0x94,
-	0x3f, 0xdc, 0x0b, 0xfd, 0xea, 0xf1, 0xec, 0xd3, 0xeb, 0x7b, 0xf7, 0x88, 0xbe, 0x48, 0xea, 0x04,
-	0xe8, 0x2b, 0x40, 0xcd, 0x21, 0xca, 0x52, 0x0d, 0x6a, 0x3c, 0x7b, 0xbb, 0x9d, 0xce, 0xd7, 0xc3,
-	0xa9, 0xb3, 0x04, 0x29, 0x19, 0x6e, 0x1a, 0x13, 0x1d, 0x4a, 0x92, 0x2c, 0xbf, 0x8d, 0x85, 0x44,
-	0x99, 0x15, 0x82, 0x6b, 0x92, 0xa6, 0x64, 0xa3, 0x45, 0xac, 0x35, 0xf4, 0x1e, 0xf6, 0x9a, 0x02,
-	0x7a, 0x1d, 0x64, 0x15, 0xc5, 0xa7, 0x4f, 0x76, 0x6b, 0x59, 0xf5, 0x1b, 0xa4, 0xee, 0x37, 0xb0,
-	0xaa, 0xd6, 0xd0, 0x10, 0xcc, 0xe5, 0x75, 0xe8, 0xdf, 0x38, 0x1d, 0x39, 0x41, 0x07, 0x2f, 0x2e,
-	0xfc, 0xab, 0xc5, 0x75, 0x34, 0x3f, 0xc6, 0x37, 0x4b, 0xe2, 0x9f, 0x3a, 0x06, 0x72, 0x60, 0xd4,
-	0xa8, 0x67, 0x97, 0x52, 0xe9, 0xba, 0x7f, 0x0d, 0x40, 0x2f, 0xc1, 0xa2, 0xf3, 0x67, 0x9c, 0x3e,
-	0xbe, 0x76, 0x24, 0xcf, 0x29, 0xbd, 0x81, 0x1d, 0x3d, 0xe0, 0x1a, 0xd1, 0x90, 0x58, 0xea, 0x28,
-	0x11, 0x7c, 0x01, 0x53, 0xad, 0xa9, 0x7a, 0x7a, 0x4f, 0xce, 0xfc, 0x70, 0xbb, 0x40, 0xd0, 0x6c,
-	0xb2, 0x17, 0xa8, 0x4d, 0x56, 0x1f, 0x55, 0x93, 0x54, 0x37, 0x10, 0x82, 0x3e, 0x5d, 0xaf, 0xb9,
-	0xa6, 0x61, 0x12, 0x6d, 0xbb, 0x07, 0x6d, 0x10, 0x6c, 0xd8, 0x09, 0x97, 0xf3, 0xb9, 0x1f, 0x86,
-	0x8e, 0x71, 0x32, 0xf8, 0x69, 0xe9, 0x5f, 0x82, 0xe3, 0x0e, 0x36, 0x6e, 0x2b, 0xfb, 0xf3, 0xff,
-	0x00, 0x00, 0x00, 0xff, 0xff, 0xe7, 0xd9, 0x10, 0xa6, 0x6a, 0x03, 0x00, 0x00,
+var fileDescriptor7 = []byte{
+	// 550 bytes of a gzipped FileDescriptorProto
+	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x09, 0x6e, 0x88, 0x02, 0xff, 0xac, 0x54, 0xc1, 0x6e, 0xda, 0x40,
+	0x10, 0x8d, 0x21, 0x38, 0x30, 0x26, 0x80, 0xb6, 0xa8, 0x45, 0xe9, 0x85, 0x3a, 0x55, 0x85, 0x7a,
+	0x70, 0x55, 0x7a, 0x6a, 0x6f, 0x60, 0x4c, 0xb0, 0x92, 0x80, 0x6b, 0xe0, 0xd0, 0x5e, 0x2c, 0x83,
+	0x0d, 0xb1, 0x1a, 0x7b, 0x91, 0x77, 0xa9, 0xc4, 0xbf, 0xf5, 0xdc, 0x9f, 0xe8, 0x07, 0xf4, 0x37,
+	0xba, 0xbb, 0xb6, 0x91, 0x95, 0x5a, 0x15, 0x87, 0x5e, 0xd0, 0xee, 0xdb, 0x79, 0x33, 0x6f, 0x1e,
+	0x4f, 0x86, 0xa6, 0xe7, 0x52, 0xd7, 0x79, 0xc4, 0x5b, 0xa2, 0xed, 0x62, 0x4c, 0x31, 0x6a, 0x5b,
+	0xb3, 0x9b, 0x99, 0xc5, 0x8f, 0x44, 0x1b, 0xb1, 0x37, 0xed, 0x8e, 0xbd, 0x5d, 0xb5, 0x83, 0xe8,
+	0xbb, 0x1f, 0x51, 0x1c, 0x1f, 0x9c, 0x80, 0xfa, 0x61, 0x52, 0x7b, 0xa5, 0xf8, 0xd1, 0x3e, 0x4c,
+	0x89, 0xea, 0x6f, 0x09, 0xd0, 0x18, 0xc7, 0x74, 0xee, 0xbb, 0xf1, 0xfa, 0x81, 0xb1, 0x8c, 0x88,
+	0xc6, 0x07, 0x74, 0x03, 0x72, 0xec, 0x93, 0xfd, 0x23, 0xed, 0x48, 0x5d, 0xa9, 0xd7, 0xe8, 0xbf,
+	0xd3, 0x8a, 0x06, 0x68, 0x7f, 0x33, 0x35, 0x5b, 0xd0, 0xec, 0x94, 0x8e, 0x5e, 0xc0, 0xc5, 0x86,
+	0x15, 0x39, 0x81, 0xd7, 0x29, 0xb1, 0x4e, 0x35, 0x5b, 0xe6, 0x57, 0xd3, 0x43, 0x1f, 0xa1, 0xc2,
+	0x35, 0x91, 0x4e, 0xb9, 0x5b, 0xee, 0x29, 0xfd, 0xeb, 0xfc, 0x00, 0x33, 0x93, 0xad, 0x99, 0x5c,
+	0x36, 0xff, 0xe1, 0x33, 0xed, 0x84, 0x81, 0x10, 0x9c, 0xfb, 0xdb, 0x2d, 0xe9, 0x9c, 0xb3, 0x86,
+	0x15, 0x5b, 0x9c, 0xd5, 0x2e, 0xc8, 0xc9, 0x64, 0x54, 0x83, 0xca, 0x72, 0x3a, 0x37, 0x16, 0xad,
+	0x33, 0xa4, 0xc0, 0xc5, 0x7c, 0xa9, 0xeb, 0xc6, 0x7c, 0xde, 0x92, 0xd4, 0x1f, 0x25, 0x68, 0xeb,
+	0x2e, 0x5d, 0x3f, 0x58, 0xf8, 0x9b, 0x1f, 0xe2, 0xe8, 0xb8, 0xab, 0xf9, 0x64, 0xd7, 0xf7, 0xc5,
+	0xbb, 0x16, 0x71, 0x9f, 0x6e, 0xfb, 0x09, 0x60, 0x97, 0x54, 0x64, 0x0b, 0x37, 0xfa, 0x2f, 0xf3,
+	0xed, 0x0c, 0x61, 0x7d, 0xda, 0xc5, 0xf4, 0xec, 0xda, 0x2e, 0x3b, 0xa2, 0x6b, 0xb8, 0x5c, 0xe3,
+	0x70, 0xe5, 0x52, 0x67, 0x87, 0x83, 0x88, 0x72, 0x63, 0xf8, 0x7a, 0xf5, 0x04, 0xb4, 0x04, 0x86,
+	0xde, 0x40, 0x33, 0x1b, 0x20, 0x22, 0xc0, 0xa6, 0x70, 0x17, 0x64, 0xfb, 0x32, 0x85, 0xb9, 0x5e,
+	0xd3, 0x53, 0xad, 0x22, 0x3b, 0xda, 0xd0, 0xb2, 0x66, 0xb7, 0xc6, 0xfd, 0x6c, 0xea, 0xe8, 0x03,
+	0x6b, 0xb1, 0xb4, 0x8d, 0x51, 0x4b, 0x42, 0x2d, 0xa8, 0x67, 0xe8, 0xf8, 0x8e, 0x21, 0x25, 0xf4,
+	0x0c, 0x9a, 0x19, 0x32, 0x19, 0x2c, 0xf4, 0x09, 0x03, 0xcb, 0xea, 0xcf, 0x12, 0x34, 0x06, 0x6b,
+	0x1a, 0xe4, 0x8c, 0x7b, 0x05, 0x75, 0x1a, 0x84, 0x3e, 0xa1, 0x6e, 0xb8, 0x73, 0xd8, 0x3f, 0xc9,
+	0xed, 0x2b, 0xdb, 0xca, 0x11, 0xbb, 0x27, 0x6c, 0x64, 0x85, 0x6c, 0x02, 0xcf, 0x15, 0x5e, 0x54,
+	0xed, 0xe4, 0x82, 0x3e, 0xb3, 0x55, 0xb9, 0x9b, 0x4e, 0x2a, 0x5a, 0xac, 0xaa, 0xf4, 0xdf, 0x9e,
+	0x6e, 0xfc, 0xe4, 0x8c, 0x19, 0x93, 0xc3, 0xd1, 0x2d, 0x28, 0x22, 0x67, 0x44, 0xa4, 0x51, 0x98,
+	0xa2, 0xf4, 0x7b, 0xa7, 0xa6, 0x96, 0xb5, 0x83, 0xcd, 0x11, 0xe5, 0xfa, 0x56, 0x7b, 0xcf, 0x3b,
+	0x1c, 0xf5, 0x55, 0xfe, 0xa5, 0x6f, 0xc8, 0x4b, 0x0b, 0xf4, 0xad, 0x72, 0xf8, 0xb0, 0x0a, 0x72,
+	0xe2, 0x9e, 0xfa, 0x4b, 0x82, 0x76, 0x11, 0xe5, 0xd4, 0x1c, 0x16, 0x71, 0xff, 0x67, 0x0e, 0x9f,
+	0x83, 0xec, 0x86, 0x78, 0x1f, 0xd1, 0x34, 0x80, 0xe9, 0x4d, 0x7d, 0x5d, 0x14, 0xa9, 0x26, 0x28,
+	0xfa, 0x60, 0x3a, 0xfa, 0xe2, 0x8c, 0x67, 0xcb, 0x29, 0x4b, 0xd3, 0xb0, 0xfa, 0x55, 0x16, 0x1f,
+	0x16, 0x62, 0x9d, 0x59, 0xd2, 0x2a, 0x39, 0x7f, 0xf8, 0x13, 0x00, 0x00, 0xff, 0xff, 0x79, 0x17,
+	0x92, 0x13, 0xb0, 0x04, 0x00, 0x00,
 }

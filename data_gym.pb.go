@@ -17,43 +17,45 @@ var _ = math.Inf
 
 // Ignoring public import of DownloadUrlEntry from data.proto
 
-// Ignoring public import of PlayerBadge from data.proto
+// Ignoring public import of BuddyPokemon from data.proto
 
 // Ignoring public import of PlayerData from data.proto
 
-// Ignoring public import of PokedexEntry from data.proto
+// Ignoring public import of PlayerBadge from data.proto
 
 // Ignoring public import of PokemonData from data.proto
 
-// Ignoring public import of ContactSettings from data_player.proto
-
-// Ignoring public import of Currency from data_player.proto
-
-// Ignoring public import of DailyBonus from data_player.proto
-
-// Ignoring public import of EquippedBadge from data_player.proto
+// Ignoring public import of PokedexEntry from data.proto
 
 // Ignoring public import of PlayerAvatar from data_player.proto
-
-// Ignoring public import of PlayerCamera from data_player.proto
-
-// Ignoring public import of PlayerCurrency from data_player.proto
 
 // Ignoring public import of PlayerPublicProfile from data_player.proto
 
 // Ignoring public import of PlayerStats from data_player.proto
 
+// Ignoring public import of PlayerCamera from data_player.proto
+
+// Ignoring public import of ContactSettings from data_player.proto
+
+// Ignoring public import of DailyBonus from data_player.proto
+
+// Ignoring public import of PlayerCurrency from data_player.proto
+
+// Ignoring public import of EquippedBadge from data_player.proto
+
+// Ignoring public import of Currency from data_player.proto
+
+// Ignoring public import of FortSummary from map_fort.proto
+
+// Ignoring public import of FortModifier from map_fort.proto
+
 // Ignoring public import of FortData from map_fort.proto
 
 // Ignoring public import of FortLureInfo from map_fort.proto
 
-// Ignoring public import of FortModifier from map_fort.proto
-
-// Ignoring public import of FortSummary from map_fort.proto
+// Ignoring public import of FortSponsor from map_fort.proto
 
 // Ignoring public import of FortRenderingType from map_fort.proto
-
-// Ignoring public import of FortSponsor from map_fort.proto
 
 // Ignoring public import of FortType from map_fort.proto
 
@@ -65,7 +67,7 @@ type GymMembership struct {
 func (m *GymMembership) Reset()                    { *m = GymMembership{} }
 func (m *GymMembership) String() string            { return proto.CompactTextString(m) }
 func (*GymMembership) ProtoMessage()               {}
-func (*GymMembership) Descriptor() ([]byte, []int) { return fileDescriptor3, []int{0} }
+func (*GymMembership) Descriptor() ([]byte, []int) { return fileDescriptor2, []int{0} }
 
 func (m *GymMembership) GetPokemonData() *PokemonData {
 	if m != nil {
@@ -89,7 +91,7 @@ type GymState struct {
 func (m *GymState) Reset()                    { *m = GymState{} }
 func (m *GymState) String() string            { return proto.CompactTextString(m) }
 func (*GymState) ProtoMessage()               {}
-func (*GymState) Descriptor() ([]byte, []int) { return fileDescriptor3, []int{1} }
+func (*GymState) Descriptor() ([]byte, []int) { return fileDescriptor2, []int{1} }
 
 func (m *GymState) GetFortData() *FortData {
 	if m != nil {
@@ -110,9 +112,9 @@ func init() {
 	proto.RegisterType((*GymState)(nil), "POGOProtos.Data.Gym.GymState")
 }
 
-func init() { proto.RegisterFile("data_gym.proto", fileDescriptor3) }
+func init() { proto.RegisterFile("data_gym.proto", fileDescriptor2) }
 
-var fileDescriptor3 = []byte{
+var fileDescriptor2 = []byte{
 	// 268 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x09, 0x6e, 0x88, 0x02, 0xff, 0xe2, 0xe2, 0x4b, 0x49, 0x2c, 0x49,
 	0x8c, 0x4f, 0xaf, 0xcc, 0xd5, 0x2b, 0x28, 0xca, 0x2f, 0xc9, 0x17, 0x12, 0x0e, 0xf0, 0x77, 0xf7,
