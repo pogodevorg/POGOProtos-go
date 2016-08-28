@@ -49,6 +49,8 @@ var _ = math.Inf
 
 // Ignoring public import of AssetDigestEntry from data.proto
 
+// Ignoring public import of BuddyPokemon from data.proto
+
 // Ignoring public import of DownloadUrlEntry from data.proto
 
 // Ignoring public import of PlayerBadge from data.proto

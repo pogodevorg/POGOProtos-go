@@ -58,7 +58,7 @@ type CameraAttributes struct {
 func (m *CameraAttributes) Reset()                    { *m = CameraAttributes{} }
 func (m *CameraAttributes) String() string            { return proto.CompactTextString(m) }
 func (*CameraAttributes) ProtoMessage()               {}
-func (*CameraAttributes) Descriptor() ([]byte, []int) { return fileDescriptor19, []int{0} }
+func (*CameraAttributes) Descriptor() ([]byte, []int) { return fileDescriptor22, []int{0} }
 
 type EncounterAttributes struct {
 	BaseCaptureRate      float32             `protobuf:"fixed32,1,opt,name=base_capture_rate,json=baseCaptureRate" json:"base_capture_rate,omitempty"`
@@ -75,7 +75,7 @@ type EncounterAttributes struct {
 func (m *EncounterAttributes) Reset()                    { *m = EncounterAttributes{} }
 func (m *EncounterAttributes) String() string            { return proto.CompactTextString(m) }
 func (*EncounterAttributes) ProtoMessage()               {}
-func (*EncounterAttributes) Descriptor() ([]byte, []int) { return fileDescriptor19, []int{1} }
+func (*EncounterAttributes) Descriptor() ([]byte, []int) { return fileDescriptor22, []int{1} }
 
 type StatsAttributes struct {
 	BaseStamina      int32 `protobuf:"varint,1,opt,name=base_stamina,json=baseStamina" json:"base_stamina,omitempty"`
@@ -87,7 +87,7 @@ type StatsAttributes struct {
 func (m *StatsAttributes) Reset()                    { *m = StatsAttributes{} }
 func (m *StatsAttributes) String() string            { return proto.CompactTextString(m) }
 func (*StatsAttributes) ProtoMessage()               {}
-func (*StatsAttributes) Descriptor() ([]byte, []int) { return fileDescriptor19, []int{2} }
+func (*StatsAttributes) Descriptor() ([]byte, []int) { return fileDescriptor22, []int{2} }
 
 func init() {
 	proto.RegisterType((*CameraAttributes)(nil), "POGOProtos.Settings.Master.Pokemon.CameraAttributes")
@@ -95,9 +95,9 @@ func init() {
 	proto.RegisterType((*StatsAttributes)(nil), "POGOProtos.Settings.Master.Pokemon.StatsAttributes")
 }
 
-func init() { proto.RegisterFile("settings_master_pokemon.proto", fileDescriptor19) }
+func init() { proto.RegisterFile("settings_master_pokemon.proto", fileDescriptor22) }
 
-var fileDescriptor19 = []byte{
+var fileDescriptor22 = []byte{
 	// 507 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x09, 0x6e, 0x88, 0x02, 0xff, 0x6c, 0x93, 0xdf, 0x6e, 0xd3, 0x3c,
 	0x14, 0xc0, 0xbf, 0x6e, 0xeb, 0xbe, 0xcd, 0xdd, 0xda, 0x2e, 0x43, 0xa2, 0x42, 0xe2, 0x5f, 0x05,
