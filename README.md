@@ -8,11 +8,11 @@ package main
 
 import (
   "fmt"
-  p "github.com/pkmngo-odi/pogo-protos"
+  protos "github.com/pogodevorg/POGOProtos-go"
 )
 
 func main() {
-  fmt.Println(p.TeamColor_BLUE)
+  fmt.Println(protos.TeamColor_BLUE)
 }
 ```
 
