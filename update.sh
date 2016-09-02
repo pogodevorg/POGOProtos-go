@@ -21,6 +21,7 @@ fi
 # Compile protobuffers and clean submodule
 cd $protos_dir
 current_commit=$(git rev-parse HEAD)
+declare -a current_tags=($(git tag -l --contains $(git rev-parse HEAD)))
 python ./compile_single.py -l=go --out_path=$base_dir
 rm -rf "$protos_dir/tmp"
 
@@ -29,3 +30,7 @@ cd $origin_dir
 
 git add -A
 git commit -m "Update POGOProtos $current_commit"
+
+for tag in "${current_tags[@]}"; do
+   git tag $tag
+done
