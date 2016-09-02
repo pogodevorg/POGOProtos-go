@@ -16,6 +16,9 @@ protos_dir="$base_dir/POGOProtos"
 # Get the project
 if ! [ -d "$protos_dir" ]; then
 	git clone $protos_repo $protos_dir
+else
+	cd $protos_dir
+	git pull
 fi
 
 # Compile protobuffers and clean submodule
