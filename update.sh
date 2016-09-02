@@ -1,6 +1,7 @@
 #!/bin/sh
 
-git submodule foreach git pull
+# Configure script
+protos_repo="git@github.com:AeonLucid/POGOProtos.git"
 
 # Collect paths of current script
 origin_dir=$(pwd)
@@ -11,6 +12,11 @@ base_dir=$(dirname $script_path)
 cd $base_dir
 base_dir=$(pwd)
 protos_dir="$base_dir/POGOProtos"
+
+# Get the project
+if ! [ -d "$protos_dir" ]; then
+	git clone $protos_repo $protos_dir
+fi
 
 # Compile protobuffers and clean submodule
 cd $protos_dir
