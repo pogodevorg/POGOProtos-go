@@ -5,81 +5,77 @@
 package protos
 
 import proto "github.com/golang/protobuf/proto"
-import fmt "fmt"
-import math "math"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
-var _ = fmt.Errorf
-var _ = math.Inf
-
-// Ignoring public import of ActivityType from enums.proto
 
 // Ignoring public import of BadgeType from enums.proto
 
-// Ignoring public import of CameraInterpolation from enums.proto
-
-// Ignoring public import of CameraTarget from enums.proto
-
-// Ignoring public import of Gender from enums.proto
-
-// Ignoring public import of HoloIapItemCategory from enums.proto
-
-// Ignoring public import of ItemCategory from enums.proto
-
-// Ignoring public import of ItemEffect from enums.proto
-
-// Ignoring public import of Platform from enums.proto
-
-// Ignoring public import of PokemonFamilyId from enums.proto
+// Ignoring public import of TutorialState from enums.proto
 
 // Ignoring public import of PokemonId from enums.proto
 
-// Ignoring public import of PokemonMove from enums.proto
-
 // Ignoring public import of PokemonMovementType from enums.proto
 
-// Ignoring public import of PokemonRarity from enums.proto
+// Ignoring public import of Gender from enums.proto
 
-// Ignoring public import of PokemonType from enums.proto
+// Ignoring public import of ActivityType from enums.proto
+
+// Ignoring public import of CameraTarget from enums.proto
+
+// Ignoring public import of PokemonFamilyId from enums.proto
+
+// Ignoring public import of ItemCategory from enums.proto
+
+// Ignoring public import of CameraInterpolation from enums.proto
+
+// Ignoring public import of Platform from enums.proto
 
 // Ignoring public import of TeamColor from enums.proto
 
-// Ignoring public import of TutorialState from enums.proto
+// Ignoring public import of PokemonMove from enums.proto
 
-// Ignoring public import of ItemAward from inventory_item.proto
+// Ignoring public import of ItemEffect from enums.proto
 
-// Ignoring public import of ItemData from inventory_item.proto
+// Ignoring public import of PokemonType from enums.proto
 
-// Ignoring public import of ItemId from inventory_item.proto
+// Ignoring public import of HoloIapItemCategory from enums.proto
 
-// Ignoring public import of ItemType from inventory_item.proto
-
-// Ignoring public import of BattleAttributes from settings_master_item.proto
-
-// Ignoring public import of EggIncubatorAttributes from settings_master_item.proto
-
-// Ignoring public import of ExperienceBoostAttributes from settings_master_item.proto
-
-// Ignoring public import of FoodAttributes from settings_master_item.proto
-
-// Ignoring public import of FortModifierAttributes from settings_master_item.proto
-
-// Ignoring public import of IncenseAttributes from settings_master_item.proto
-
-// Ignoring public import of InventoryUpgradeAttributes from settings_master_item.proto
-
-// Ignoring public import of PokeballAttributes from settings_master_item.proto
-
-// Ignoring public import of PotionAttributes from settings_master_item.proto
-
-// Ignoring public import of ReviveAttributes from settings_master_item.proto
+// Ignoring public import of PokemonRarity from enums.proto
 
 // Ignoring public import of CameraAttributes from settings_master_pokemon.proto
 
 // Ignoring public import of EncounterAttributes from settings_master_pokemon.proto
 
 // Ignoring public import of StatsAttributes from settings_master_pokemon.proto
+
+// Ignoring public import of ItemData from inventory_item.proto
+
+// Ignoring public import of ItemAward from inventory_item.proto
+
+// Ignoring public import of ItemId from inventory_item.proto
+
+// Ignoring public import of ItemType from inventory_item.proto
+
+// Ignoring public import of FortModifierAttributes from settings_master_item.proto
+
+// Ignoring public import of ReviveAttributes from settings_master_item.proto
+
+// Ignoring public import of PokeballAttributes from settings_master_item.proto
+
+// Ignoring public import of PotionAttributes from settings_master_item.proto
+
+// Ignoring public import of IncenseAttributes from settings_master_item.proto
+
+// Ignoring public import of InventoryUpgradeAttributes from settings_master_item.proto
+
+// Ignoring public import of ExperienceBoostAttributes from settings_master_item.proto
+
+// Ignoring public import of FoodAttributes from settings_master_item.proto
+
+// Ignoring public import of BattleAttributes from settings_master_item.proto
+
+// Ignoring public import of EggIncubatorAttributes from settings_master_item.proto
 
 type PokemonSettings_BuddySize int32
 
@@ -106,154 +102,226 @@ var PokemonSettings_BuddySize_value = map[string]int32{
 func (x PokemonSettings_BuddySize) String() string {
 	return proto.EnumName(PokemonSettings_BuddySize_name, int32(x))
 }
-func (PokemonSettings_BuddySize) EnumDescriptor() ([]byte, []int) {
-	return fileDescriptor20, []int{12, 0}
+
+type IapSettings struct {
+	DailyBonusCoins                int32    `protobuf:"varint,1,opt,name=daily_bonus_coins" json:"daily_bonus_coins,omitempty"`
+	DailyDefenderBonusPerPokemon   []int32  `protobuf:"varint,2,rep,name=daily_defender_bonus_per_pokemon" json:"daily_defender_bonus_per_pokemon,omitempty"`
+	DailyDefenderBonusMaxDefenders int32    `protobuf:"varint,3,opt,name=daily_defender_bonus_max_defenders" json:"daily_defender_bonus_max_defenders,omitempty"`
+	DailyDefenderBonusCurrency     []string `protobuf:"bytes,4,rep,name=daily_defender_bonus_currency" json:"daily_defender_bonus_currency,omitempty"`
+	MinTimeBetweenClaimsMs         int64    `protobuf:"varint,5,opt,name=min_time_between_claims_ms" json:"min_time_between_claims_ms,omitempty"`
+	DailyBonusEnabled              bool     `protobuf:"varint,6,opt,name=daily_bonus_enabled" json:"daily_bonus_enabled,omitempty"`
+	DailyDefenderBonusEnabled      bool     `protobuf:"varint,7,opt,name=daily_defender_bonus_enabled" json:"daily_defender_bonus_enabled,omitempty"`
 }
 
-type BadgeSettings struct {
-	BadgeType BadgeType `protobuf:"varint,1,opt,name=badge_type,json=badgeType,enum=POGOProtos.Enums.BadgeType" json:"badge_type,omitempty"`
-	BadgeRank int32     `protobuf:"varint,2,opt,name=badge_rank,json=badgeRank" json:"badge_rank,omitempty"`
-	Targets   []int32   `protobuf:"varint,3,rep,packed,name=targets" json:"targets,omitempty"`
+func (m *IapSettings) Reset()         { *m = IapSettings{} }
+func (m *IapSettings) String() string { return proto.CompactTextString(m) }
+func (*IapSettings) ProtoMessage()    {}
+
+type TypeEffectiveSettings struct {
+	AttackScalar []float32   `protobuf:"fixed32,1,rep,name=attack_scalar" json:"attack_scalar,omitempty"`
+	AttackType   PokemonType `protobuf:"varint,2,opt,name=attack_type,enum=POGOProtos.Enums.PokemonType" json:"attack_type,omitempty"`
 }
 
-func (m *BadgeSettings) Reset()                    { *m = BadgeSettings{} }
-func (m *BadgeSettings) String() string            { return proto.CompactTextString(m) }
-func (*BadgeSettings) ProtoMessage()               {}
-func (*BadgeSettings) Descriptor() ([]byte, []int) { return fileDescriptor20, []int{0} }
+func (m *TypeEffectiveSettings) Reset()         { *m = TypeEffectiveSettings{} }
+func (m *TypeEffectiveSettings) String() string { return proto.CompactTextString(m) }
+func (*TypeEffectiveSettings) ProtoMessage()    {}
 
 type CameraSettings struct {
-	NextCamera        string                `protobuf:"bytes,1,opt,name=next_camera,json=nextCamera" json:"next_camera,omitempty"`
-	Interpolation     []CameraInterpolation `protobuf:"varint,2,rep,packed,name=interpolation,enum=POGOProtos.Enums.CameraInterpolation" json:"interpolation,omitempty"`
-	TargetType        []CameraTarget        `protobuf:"varint,3,rep,packed,name=target_type,json=targetType,enum=POGOProtos.Enums.CameraTarget" json:"target_type,omitempty"`
-	EaseInSpeed       []float32             `protobuf:"fixed32,4,rep,packed,name=ease_in_speed,json=easeInSpeed" json:"ease_in_speed,omitempty"`
-	EastOutSpeed      []float32             `protobuf:"fixed32,5,rep,packed,name=east_out_speed,json=eastOutSpeed" json:"east_out_speed,omitempty"`
-	DurationSeconds   []float32             `protobuf:"fixed32,6,rep,packed,name=duration_seconds,json=durationSeconds" json:"duration_seconds,omitempty"`
-	WaitSeconds       []float32             `protobuf:"fixed32,7,rep,packed,name=wait_seconds,json=waitSeconds" json:"wait_seconds,omitempty"`
-	TransitionSeconds []float32             `protobuf:"fixed32,8,rep,packed,name=transition_seconds,json=transitionSeconds" json:"transition_seconds,omitempty"`
-	AngleDegree       []float32             `protobuf:"fixed32,9,rep,packed,name=angle_degree,json=angleDegree" json:"angle_degree,omitempty"`
-	AngleOffsetDegree []float32             `protobuf:"fixed32,10,rep,packed,name=angle_offset_degree,json=angleOffsetDegree" json:"angle_offset_degree,omitempty"`
-	PitchDegree       []float32             `protobuf:"fixed32,11,rep,packed,name=pitch_degree,json=pitchDegree" json:"pitch_degree,omitempty"`
-	PitchOffsetDegree []float32             `protobuf:"fixed32,12,rep,packed,name=pitch_offset_degree,json=pitchOffsetDegree" json:"pitch_offset_degree,omitempty"`
-	RollDegree        []float32             `protobuf:"fixed32,13,rep,packed,name=roll_degree,json=rollDegree" json:"roll_degree,omitempty"`
-	DistanceMeters    []float32             `protobuf:"fixed32,14,rep,packed,name=distance_meters,json=distanceMeters" json:"distance_meters,omitempty"`
-	HeightPercent     []float32             `protobuf:"fixed32,15,rep,packed,name=height_percent,json=heightPercent" json:"height_percent,omitempty"`
-	VertCtrRatio      []float32             `protobuf:"fixed32,16,rep,packed,name=vert_ctr_ratio,json=vertCtrRatio" json:"vert_ctr_ratio,omitempty"`
+	NextCamera        string                `protobuf:"bytes,1,opt,name=next_camera" json:"next_camera,omitempty"`
+	Interpolation     []CameraInterpolation `protobuf:"varint,2,rep,name=interpolation,enum=POGOProtos.Enums.CameraInterpolation" json:"interpolation,omitempty"`
+	TargetType        []CameraTarget        `protobuf:"varint,3,rep,name=target_type,enum=POGOProtos.Enums.CameraTarget" json:"target_type,omitempty"`
+	EaseInSpeed       []float32             `protobuf:"fixed32,4,rep,name=ease_in_speed" json:"ease_in_speed,omitempty"`
+	EastOutSpeed      []float32             `protobuf:"fixed32,5,rep,name=east_out_speed" json:"east_out_speed,omitempty"`
+	DurationSeconds   []float32             `protobuf:"fixed32,6,rep,name=duration_seconds" json:"duration_seconds,omitempty"`
+	WaitSeconds       []float32             `protobuf:"fixed32,7,rep,name=wait_seconds" json:"wait_seconds,omitempty"`
+	TransitionSeconds []float32             `protobuf:"fixed32,8,rep,name=transition_seconds" json:"transition_seconds,omitempty"`
+	AngleDegree       []float32             `protobuf:"fixed32,9,rep,name=angle_degree" json:"angle_degree,omitempty"`
+	AngleOffsetDegree []float32             `protobuf:"fixed32,10,rep,name=angle_offset_degree" json:"angle_offset_degree,omitempty"`
+	PitchDegree       []float32             `protobuf:"fixed32,11,rep,name=pitch_degree" json:"pitch_degree,omitempty"`
+	PitchOffsetDegree []float32             `protobuf:"fixed32,12,rep,name=pitch_offset_degree" json:"pitch_offset_degree,omitempty"`
+	RollDegree        []float32             `protobuf:"fixed32,13,rep,name=roll_degree" json:"roll_degree,omitempty"`
+	DistanceMeters    []float32             `protobuf:"fixed32,14,rep,name=distance_meters" json:"distance_meters,omitempty"`
+	HeightPercent     []float32             `protobuf:"fixed32,15,rep,name=height_percent" json:"height_percent,omitempty"`
+	VertCtrRatio      []float32             `protobuf:"fixed32,16,rep,name=vert_ctr_ratio" json:"vert_ctr_ratio,omitempty"`
 }
 
-func (m *CameraSettings) Reset()                    { *m = CameraSettings{} }
-func (m *CameraSettings) String() string            { return proto.CompactTextString(m) }
-func (*CameraSettings) ProtoMessage()               {}
-func (*CameraSettings) Descriptor() ([]byte, []int) { return fileDescriptor20, []int{1} }
-
-type EncounterSettings struct {
-	SpinBonusThreshold      float32 `protobuf:"fixed32,1,opt,name=spin_bonus_threshold,json=spinBonusThreshold" json:"spin_bonus_threshold,omitempty"`
-	ExcellentThrowThreshold float32 `protobuf:"fixed32,2,opt,name=excellent_throw_threshold,json=excellentThrowThreshold" json:"excellent_throw_threshold,omitempty"`
-	GreatThrowThreshold     float32 `protobuf:"fixed32,3,opt,name=great_throw_threshold,json=greatThrowThreshold" json:"great_throw_threshold,omitempty"`
-	NiceThrowThreshold      float32 `protobuf:"fixed32,4,opt,name=nice_throw_threshold,json=niceThrowThreshold" json:"nice_throw_threshold,omitempty"`
-	MilestoneThreshold      int32   `protobuf:"varint,5,opt,name=milestone_threshold,json=milestoneThreshold" json:"milestone_threshold,omitempty"`
-}
-
-func (m *EncounterSettings) Reset()                    { *m = EncounterSettings{} }
-func (m *EncounterSettings) String() string            { return proto.CompactTextString(m) }
-func (*EncounterSettings) ProtoMessage()               {}
-func (*EncounterSettings) Descriptor() ([]byte, []int) { return fileDescriptor20, []int{2} }
+func (m *CameraSettings) Reset()         { *m = CameraSettings{} }
+func (m *CameraSettings) String() string { return proto.CompactTextString(m) }
+func (*CameraSettings) ProtoMessage()    {}
 
 type EquippedBadgeSettings struct {
-	EquipBadgeCooldownMs  int64     `protobuf:"varint,1,opt,name=equip_badge_cooldown_ms,json=equipBadgeCooldownMs" json:"equip_badge_cooldown_ms,omitempty"`
-	CatchProbabilityBonus []float32 `protobuf:"fixed32,2,rep,packed,name=catch_probability_bonus,json=catchProbabilityBonus" json:"catch_probability_bonus,omitempty"`
-	FleeProbabilityBonus  []float32 `protobuf:"fixed32,3,rep,packed,name=flee_probability_bonus,json=fleeProbabilityBonus" json:"flee_probability_bonus,omitempty"`
+	EquipBadgeCooldownMs  int64     `protobuf:"varint,1,opt,name=equip_badge_cooldown_ms" json:"equip_badge_cooldown_ms,omitempty"`
+	CatchProbabilityBonus []float32 `protobuf:"fixed32,2,rep,name=catch_probability_bonus" json:"catch_probability_bonus,omitempty"`
+	FleeProbabilityBonus  []float32 `protobuf:"fixed32,3,rep,name=flee_probability_bonus" json:"flee_probability_bonus,omitempty"`
 }
 
-func (m *EquippedBadgeSettings) Reset()                    { *m = EquippedBadgeSettings{} }
-func (m *EquippedBadgeSettings) String() string            { return proto.CompactTextString(m) }
-func (*EquippedBadgeSettings) ProtoMessage()               {}
-func (*EquippedBadgeSettings) Descriptor() ([]byte, []int) { return fileDescriptor20, []int{3} }
+func (m *EquippedBadgeSettings) Reset()         { *m = EquippedBadgeSettings{} }
+func (m *EquippedBadgeSettings) String() string { return proto.CompactTextString(m) }
+func (*EquippedBadgeSettings) ProtoMessage()    {}
+
+type PlayerLevelSettings struct {
+	RankNum                 []int32   `protobuf:"varint,1,rep,name=rank_num" json:"rank_num,omitempty"`
+	RequiredExperience      []int32   `protobuf:"varint,2,rep,name=required_experience" json:"required_experience,omitempty"`
+	CpMultiplier            []float32 `protobuf:"fixed32,3,rep,name=cp_multiplier" json:"cp_multiplier,omitempty"`
+	MaxEggPlayerLevel       int32     `protobuf:"varint,4,opt,name=max_egg_player_level" json:"max_egg_player_level,omitempty"`
+	MaxEncounterPlayerLevel int32     `protobuf:"varint,5,opt,name=max_encounter_player_level" json:"max_encounter_player_level,omitempty"`
+}
+
+func (m *PlayerLevelSettings) Reset()         { *m = PlayerLevelSettings{} }
+func (m *PlayerLevelSettings) String() string { return proto.CompactTextString(m) }
+func (*PlayerLevelSettings) ProtoMessage()    {}
 
 type GymBattleSettings struct {
-	EnergyPerSec                  float32 `protobuf:"fixed32,1,opt,name=energy_per_sec,json=energyPerSec" json:"energy_per_sec,omitempty"`
-	DodgeEnergyCost               float32 `protobuf:"fixed32,2,opt,name=dodge_energy_cost,json=dodgeEnergyCost" json:"dodge_energy_cost,omitempty"`
-	RetargetSeconds               float32 `protobuf:"fixed32,3,opt,name=retarget_seconds,json=retargetSeconds" json:"retarget_seconds,omitempty"`
-	EnemyAttackInterval           float32 `protobuf:"fixed32,4,opt,name=enemy_attack_interval,json=enemyAttackInterval" json:"enemy_attack_interval,omitempty"`
-	AttackServerInterval          float32 `protobuf:"fixed32,5,opt,name=attack_server_interval,json=attackServerInterval" json:"attack_server_interval,omitempty"`
-	RoundDurationSeconds          float32 `protobuf:"fixed32,6,opt,name=round_duration_seconds,json=roundDurationSeconds" json:"round_duration_seconds,omitempty"`
-	BonusTimePerAllySeconds       float32 `protobuf:"fixed32,7,opt,name=bonus_time_per_ally_seconds,json=bonusTimePerAllySeconds" json:"bonus_time_per_ally_seconds,omitempty"`
-	MaximumAttackersPerBattle     int32   `protobuf:"varint,8,opt,name=maximum_attackers_per_battle,json=maximumAttackersPerBattle" json:"maximum_attackers_per_battle,omitempty"`
-	SameTypeAttackBonusMultiplier float32 `protobuf:"fixed32,9,opt,name=same_type_attack_bonus_multiplier,json=sameTypeAttackBonusMultiplier" json:"same_type_attack_bonus_multiplier,omitempty"`
-	MaximumEnergy                 int32   `protobuf:"varint,10,opt,name=maximum_energy,json=maximumEnergy" json:"maximum_energy,omitempty"`
-	EnergyDeltaPerHealthLost      float32 `protobuf:"fixed32,11,opt,name=energy_delta_per_health_lost,json=energyDeltaPerHealthLost" json:"energy_delta_per_health_lost,omitempty"`
-	DodgeDurationMs               int32   `protobuf:"varint,12,opt,name=dodge_duration_ms,json=dodgeDurationMs" json:"dodge_duration_ms,omitempty"`
-	MinimumPlayerLevel            int32   `protobuf:"varint,13,opt,name=minimum_player_level,json=minimumPlayerLevel" json:"minimum_player_level,omitempty"`
-	SwapDurationMs                int32   `protobuf:"varint,14,opt,name=swap_duration_ms,json=swapDurationMs" json:"swap_duration_ms,omitempty"`
-	DodgeDamageReductionPercent   float32 `protobuf:"fixed32,15,opt,name=dodge_damage_reduction_percent,json=dodgeDamageReductionPercent" json:"dodge_damage_reduction_percent,omitempty"`
+	EnergyPerSec                  float32 `protobuf:"fixed32,1,opt,name=energy_per_sec" json:"energy_per_sec,omitempty"`
+	DodgeEnergyCost               float32 `protobuf:"fixed32,2,opt,name=dodge_energy_cost" json:"dodge_energy_cost,omitempty"`
+	RetargetSeconds               float32 `protobuf:"fixed32,3,opt,name=retarget_seconds" json:"retarget_seconds,omitempty"`
+	EnemyAttackInterval           float32 `protobuf:"fixed32,4,opt,name=enemy_attack_interval" json:"enemy_attack_interval,omitempty"`
+	AttackServerInterval          float32 `protobuf:"fixed32,5,opt,name=attack_server_interval" json:"attack_server_interval,omitempty"`
+	RoundDurationSeconds          float32 `protobuf:"fixed32,6,opt,name=round_duration_seconds" json:"round_duration_seconds,omitempty"`
+	BonusTimePerAllySeconds       float32 `protobuf:"fixed32,7,opt,name=bonus_time_per_ally_seconds" json:"bonus_time_per_ally_seconds,omitempty"`
+	MaximumAttackersPerBattle     int32   `protobuf:"varint,8,opt,name=maximum_attackers_per_battle" json:"maximum_attackers_per_battle,omitempty"`
+	SameTypeAttackBonusMultiplier float32 `protobuf:"fixed32,9,opt,name=same_type_attack_bonus_multiplier" json:"same_type_attack_bonus_multiplier,omitempty"`
+	MaximumEnergy                 int32   `protobuf:"varint,10,opt,name=maximum_energy" json:"maximum_energy,omitempty"`
+	EnergyDeltaPerHealthLost      float32 `protobuf:"fixed32,11,opt,name=energy_delta_per_health_lost" json:"energy_delta_per_health_lost,omitempty"`
+	DodgeDurationMs               int32   `protobuf:"varint,12,opt,name=dodge_duration_ms" json:"dodge_duration_ms,omitempty"`
+	MinimumPlayerLevel            int32   `protobuf:"varint,13,opt,name=minimum_player_level" json:"minimum_player_level,omitempty"`
+	SwapDurationMs                int32   `protobuf:"varint,14,opt,name=swap_duration_ms" json:"swap_duration_ms,omitempty"`
+	DodgeDamageReductionPercent   float32 `protobuf:"fixed32,15,opt,name=dodge_damage_reduction_percent" json:"dodge_damage_reduction_percent,omitempty"`
 }
 
-func (m *GymBattleSettings) Reset()                    { *m = GymBattleSettings{} }
-func (m *GymBattleSettings) String() string            { return proto.CompactTextString(m) }
-func (*GymBattleSettings) ProtoMessage()               {}
-func (*GymBattleSettings) Descriptor() ([]byte, []int) { return fileDescriptor20, []int{4} }
+func (m *GymBattleSettings) Reset()         { *m = GymBattleSettings{} }
+func (m *GymBattleSettings) String() string { return proto.CompactTextString(m) }
+func (*GymBattleSettings) ProtoMessage()    {}
 
-type GymLevelSettings struct {
-	RequiredExperience []int32 `protobuf:"varint,1,rep,packed,name=required_experience,json=requiredExperience" json:"required_experience,omitempty"`
-	LeaderSlots        []int32 `protobuf:"varint,2,rep,packed,name=leader_slots,json=leaderSlots" json:"leader_slots,omitempty"`
-	TrainerSlots       []int32 `protobuf:"varint,3,rep,packed,name=trainer_slots,json=trainerSlots" json:"trainer_slots,omitempty"`
-	SearchRollBonus    []int32 `protobuf:"varint,4,rep,packed,name=search_roll_bonus,json=searchRollBonus" json:"search_roll_bonus,omitempty"`
+type MoveSettings struct {
+	MovementId          PokemonMove `protobuf:"varint,1,opt,name=movement_id,enum=POGOProtos.Enums.PokemonMove" json:"movement_id,omitempty"`
+	AnimationId         int32       `protobuf:"varint,2,opt,name=animation_id" json:"animation_id,omitempty"`
+	PokemonType         PokemonType `protobuf:"varint,3,opt,name=pokemon_type,enum=POGOProtos.Enums.PokemonType" json:"pokemon_type,omitempty"`
+	Power               float32     `protobuf:"fixed32,4,opt,name=power" json:"power,omitempty"`
+	AccuracyChance      float32     `protobuf:"fixed32,5,opt,name=accuracy_chance" json:"accuracy_chance,omitempty"`
+	CriticalChance      float32     `protobuf:"fixed32,6,opt,name=critical_chance" json:"critical_chance,omitempty"`
+	HealScalar          float32     `protobuf:"fixed32,7,opt,name=heal_scalar" json:"heal_scalar,omitempty"`
+	StaminaLossScalar   float32     `protobuf:"fixed32,8,opt,name=stamina_loss_scalar" json:"stamina_loss_scalar,omitempty"`
+	TrainerLevelMin     int32       `protobuf:"varint,9,opt,name=trainer_level_min" json:"trainer_level_min,omitempty"`
+	TrainerLevelMax     int32       `protobuf:"varint,10,opt,name=trainer_level_max" json:"trainer_level_max,omitempty"`
+	VfxName             string      `protobuf:"bytes,11,opt,name=vfx_name" json:"vfx_name,omitempty"`
+	DurationMs          int32       `protobuf:"varint,12,opt,name=duration_ms" json:"duration_ms,omitempty"`
+	DamageWindowStartMs int32       `protobuf:"varint,13,opt,name=damage_window_start_ms" json:"damage_window_start_ms,omitempty"`
+	DamageWindowEndMs   int32       `protobuf:"varint,14,opt,name=damage_window_end_ms" json:"damage_window_end_ms,omitempty"`
+	EnergyDelta         int32       `protobuf:"varint,15,opt,name=energy_delta" json:"energy_delta,omitempty"`
 }
 
-func (m *GymLevelSettings) Reset()                    { *m = GymLevelSettings{} }
-func (m *GymLevelSettings) String() string            { return proto.CompactTextString(m) }
-func (*GymLevelSettings) ProtoMessage()               {}
-func (*GymLevelSettings) Descriptor() ([]byte, []int) { return fileDescriptor20, []int{5} }
+func (m *MoveSettings) Reset()         { *m = MoveSettings{} }
+func (m *MoveSettings) String() string { return proto.CompactTextString(m) }
+func (*MoveSettings) ProtoMessage()    {}
+
+type PokemonSettings struct {
+	PokemonId         PokemonId                 `protobuf:"varint,1,opt,name=pokemon_id,enum=POGOProtos.Enums.PokemonId" json:"pokemon_id,omitempty"`
+	ModelScale        float32                   `protobuf:"fixed32,3,opt,name=model_scale" json:"model_scale,omitempty"`
+	Type              PokemonType               `protobuf:"varint,4,opt,name=type,enum=POGOProtos.Enums.PokemonType" json:"type,omitempty"`
+	Type_2            PokemonType               `protobuf:"varint,5,opt,name=type_2,enum=POGOProtos.Enums.PokemonType" json:"type_2,omitempty"`
+	Camera            *CameraAttributes         `protobuf:"bytes,6,opt,name=camera" json:"camera,omitempty"`
+	Encounter         *EncounterAttributes      `protobuf:"bytes,7,opt,name=encounter" json:"encounter,omitempty"`
+	Stats             *StatsAttributes          `protobuf:"bytes,8,opt,name=stats" json:"stats,omitempty"`
+	QuickMoves        []PokemonMove             `protobuf:"varint,9,rep,name=quick_moves,enum=POGOProtos.Enums.PokemonMove" json:"quick_moves,omitempty"`
+	CinematicMoves    []PokemonMove             `protobuf:"varint,10,rep,name=cinematic_moves,enum=POGOProtos.Enums.PokemonMove" json:"cinematic_moves,omitempty"`
+	AnimationTime     []float32                 `protobuf:"fixed32,11,rep,name=animation_time" json:"animation_time,omitempty"`
+	EvolutionIds      []PokemonId               `protobuf:"varint,12,rep,name=evolution_ids,enum=POGOProtos.Enums.PokemonId" json:"evolution_ids,omitempty"`
+	EvolutionPips     int32                     `protobuf:"varint,13,opt,name=evolution_pips" json:"evolution_pips,omitempty"`
+	Rarity            PokemonRarity             `protobuf:"varint,14,opt,name=rarity,enum=POGOProtos.Enums.PokemonRarity" json:"rarity,omitempty"`
+	PokedexHeightM    float32                   `protobuf:"fixed32,15,opt,name=pokedex_height_m" json:"pokedex_height_m,omitempty"`
+	PokedexWeightKg   float32                   `protobuf:"fixed32,16,opt,name=pokedex_weight_kg" json:"pokedex_weight_kg,omitempty"`
+	ParentPokemonId   PokemonId                 `protobuf:"varint,17,opt,name=parent_pokemon_id,enum=POGOProtos.Enums.PokemonId" json:"parent_pokemon_id,omitempty"`
+	HeightStdDev      float32                   `protobuf:"fixed32,18,opt,name=height_std_dev" json:"height_std_dev,omitempty"`
+	WeightStdDev      float32                   `protobuf:"fixed32,19,opt,name=weight_std_dev" json:"weight_std_dev,omitempty"`
+	KmDistanceToHatch float32                   `protobuf:"fixed32,20,opt,name=km_distance_to_hatch" json:"km_distance_to_hatch,omitempty"`
+	FamilyId          PokemonFamilyId           `protobuf:"varint,21,opt,name=family_id,enum=POGOProtos.Enums.PokemonFamilyId" json:"family_id,omitempty"`
+	CandyToEvolve     int32                     `protobuf:"varint,22,opt,name=candy_to_evolve" json:"candy_to_evolve,omitempty"`
+	KmBuddyDistance   float32                   `protobuf:"fixed32,23,opt,name=km_buddy_distance" json:"km_buddy_distance,omitempty"`
+	BuddySize         PokemonSettings_BuddySize `protobuf:"varint,24,opt,name=buddy_size,enum=POGOProtos.Settings.Master.PokemonSettings_BuddySize" json:"buddy_size,omitempty"`
+}
+
+func (m *PokemonSettings) Reset()         { *m = PokemonSettings{} }
+func (m *PokemonSettings) String() string { return proto.CompactTextString(m) }
+func (*PokemonSettings) ProtoMessage()    {}
+
+func (m *PokemonSettings) GetCamera() *CameraAttributes {
+	if m != nil {
+		return m.Camera
+	}
+	return nil
+}
+
+func (m *PokemonSettings) GetEncounter() *EncounterAttributes {
+	if m != nil {
+		return m.Encounter
+	}
+	return nil
+}
+
+func (m *PokemonSettings) GetStats() *StatsAttributes {
+	if m != nil {
+		return m.Stats
+	}
+	return nil
+}
 
 type IapItemDisplay struct {
 	Sku       string              `protobuf:"bytes,1,opt,name=sku" json:"sku,omitempty"`
 	Category  HoloIapItemCategory `protobuf:"varint,2,opt,name=category,enum=POGOProtos.Enums.HoloIapItemCategory" json:"category,omitempty"`
-	SortOrder int32               `protobuf:"varint,3,opt,name=sort_order,json=sortOrder" json:"sort_order,omitempty"`
-	ItemIds   []ItemId            `protobuf:"varint,4,rep,packed,name=item_ids,json=itemIds,enum=POGOProtos.Inventory.Item.ItemId" json:"item_ids,omitempty"`
-	Counts    []int32             `protobuf:"varint,5,rep,packed,name=counts" json:"counts,omitempty"`
+	SortOrder int32               `protobuf:"varint,3,opt,name=sort_order" json:"sort_order,omitempty"`
+	ItemIds   []ItemId            `protobuf:"varint,4,rep,name=item_ids,enum=POGOProtos.Inventory.Item.ItemId" json:"item_ids,omitempty"`
+	Counts    []int32             `protobuf:"varint,5,rep,name=counts" json:"counts,omitempty"`
 }
 
-func (m *IapItemDisplay) Reset()                    { *m = IapItemDisplay{} }
-func (m *IapItemDisplay) String() string            { return proto.CompactTextString(m) }
-func (*IapItemDisplay) ProtoMessage()               {}
-func (*IapItemDisplay) Descriptor() ([]byte, []int) { return fileDescriptor20, []int{6} }
+func (m *IapItemDisplay) Reset()         { *m = IapItemDisplay{} }
+func (m *IapItemDisplay) String() string { return proto.CompactTextString(m) }
+func (*IapItemDisplay) ProtoMessage()    {}
 
-type IapSettings struct {
-	DailyBonusCoins                int32    `protobuf:"varint,1,opt,name=daily_bonus_coins,json=dailyBonusCoins" json:"daily_bonus_coins,omitempty"`
-	DailyDefenderBonusPerPokemon   []int32  `protobuf:"varint,2,rep,packed,name=daily_defender_bonus_per_pokemon,json=dailyDefenderBonusPerPokemon" json:"daily_defender_bonus_per_pokemon,omitempty"`
-	DailyDefenderBonusMaxDefenders int32    `protobuf:"varint,3,opt,name=daily_defender_bonus_max_defenders,json=dailyDefenderBonusMaxDefenders" json:"daily_defender_bonus_max_defenders,omitempty"`
-	DailyDefenderBonusCurrency     []string `protobuf:"bytes,4,rep,name=daily_defender_bonus_currency,json=dailyDefenderBonusCurrency" json:"daily_defender_bonus_currency,omitempty"`
-	MinTimeBetweenClaimsMs         int64    `protobuf:"varint,5,opt,name=min_time_between_claims_ms,json=minTimeBetweenClaimsMs" json:"min_time_between_claims_ms,omitempty"`
-	DailyBonusEnabled              bool     `protobuf:"varint,6,opt,name=daily_bonus_enabled,json=dailyBonusEnabled" json:"daily_bonus_enabled,omitempty"`
-	DailyDefenderBonusEnabled      bool     `protobuf:"varint,7,opt,name=daily_defender_bonus_enabled,json=dailyDefenderBonusEnabled" json:"daily_defender_bonus_enabled,omitempty"`
+type EncounterSettings struct {
+	SpinBonusThreshold      float32 `protobuf:"fixed32,1,opt,name=spin_bonus_threshold" json:"spin_bonus_threshold,omitempty"`
+	ExcellentThrowThreshold float32 `protobuf:"fixed32,2,opt,name=excellent_throw_threshold" json:"excellent_throw_threshold,omitempty"`
+	GreatThrowThreshold     float32 `protobuf:"fixed32,3,opt,name=great_throw_threshold" json:"great_throw_threshold,omitempty"`
+	NiceThrowThreshold      float32 `protobuf:"fixed32,4,opt,name=nice_throw_threshold" json:"nice_throw_threshold,omitempty"`
+	MilestoneThreshold      int32   `protobuf:"varint,5,opt,name=milestone_threshold" json:"milestone_threshold,omitempty"`
 }
 
-func (m *IapSettings) Reset()                    { *m = IapSettings{} }
-func (m *IapSettings) String() string            { return proto.CompactTextString(m) }
-func (*IapSettings) ProtoMessage()               {}
-func (*IapSettings) Descriptor() ([]byte, []int) { return fileDescriptor20, []int{7} }
+func (m *EncounterSettings) Reset()         { *m = EncounterSettings{} }
+func (m *EncounterSettings) String() string { return proto.CompactTextString(m) }
+func (*EncounterSettings) ProtoMessage()    {}
+
+type PokemonUpgradeSettings struct {
+	UpgradesPerLevel         int32   `protobuf:"varint,1,opt,name=upgrades_per_level" json:"upgrades_per_level,omitempty"`
+	AllowedLevelsAbovePlayer int32   `protobuf:"varint,2,opt,name=allowed_levels_above_player" json:"allowed_levels_above_player,omitempty"`
+	CandyCost                []int32 `protobuf:"varint,3,rep,name=candy_cost" json:"candy_cost,omitempty"`
+	StardustCost             []int32 `protobuf:"varint,4,rep,name=stardust_cost" json:"stardust_cost,omitempty"`
+}
+
+func (m *PokemonUpgradeSettings) Reset()         { *m = PokemonUpgradeSettings{} }
+func (m *PokemonUpgradeSettings) String() string { return proto.CompactTextString(m) }
+func (*PokemonUpgradeSettings) ProtoMessage()    {}
 
 type ItemSettings struct {
-	ItemId           ItemId                      `protobuf:"varint,1,opt,name=item_id,json=itemId,enum=POGOProtos.Inventory.Item.ItemId" json:"item_id,omitempty"`
-	ItemType         ItemType                    `protobuf:"varint,2,opt,name=item_type,json=itemType,enum=POGOProtos.Inventory.Item.ItemType" json:"item_type,omitempty"`
+	ItemId           ItemId                      `protobuf:"varint,1,opt,name=item_id,enum=POGOProtos.Inventory.Item.ItemId" json:"item_id,omitempty"`
+	ItemType         ItemType                    `protobuf:"varint,2,opt,name=item_type,enum=POGOProtos.Inventory.Item.ItemType" json:"item_type,omitempty"`
 	Category         ItemCategory                `protobuf:"varint,3,opt,name=category,enum=POGOProtos.Enums.ItemCategory" json:"category,omitempty"`
-	DropFreq         float32                     `protobuf:"fixed32,4,opt,name=drop_freq,json=dropFreq" json:"drop_freq,omitempty"`
-	DropTrainerLevel int32                       `protobuf:"varint,5,opt,name=drop_trainer_level,json=dropTrainerLevel" json:"drop_trainer_level,omitempty"`
+	DropFreq         float32                     `protobuf:"fixed32,4,opt,name=drop_freq" json:"drop_freq,omitempty"`
+	DropTrainerLevel int32                       `protobuf:"varint,5,opt,name=drop_trainer_level" json:"drop_trainer_level,omitempty"`
 	Pokeball         *PokeballAttributes         `protobuf:"bytes,6,opt,name=pokeball" json:"pokeball,omitempty"`
 	Potion           *PotionAttributes           `protobuf:"bytes,7,opt,name=potion" json:"potion,omitempty"`
 	Revive           *ReviveAttributes           `protobuf:"bytes,8,opt,name=revive" json:"revive,omitempty"`
 	Battle           *BattleAttributes           `protobuf:"bytes,9,opt,name=battle" json:"battle,omitempty"`
 	Food             *FoodAttributes             `protobuf:"bytes,10,opt,name=food" json:"food,omitempty"`
-	InventoryUpgrade *InventoryUpgradeAttributes `protobuf:"bytes,11,opt,name=inventory_upgrade,json=inventoryUpgrade" json:"inventory_upgrade,omitempty"`
-	XpBoost          *ExperienceBoostAttributes  `protobuf:"bytes,12,opt,name=xp_boost,json=xpBoost" json:"xp_boost,omitempty"`
+	InventoryUpgrade *InventoryUpgradeAttributes `protobuf:"bytes,11,opt,name=inventory_upgrade" json:"inventory_upgrade,omitempty"`
+	XpBoost          *ExperienceBoostAttributes  `protobuf:"bytes,12,opt,name=xp_boost" json:"xp_boost,omitempty"`
 	Incense          *IncenseAttributes          `protobuf:"bytes,13,opt,name=incense" json:"incense,omitempty"`
-	EggIncubator     *EggIncubatorAttributes     `protobuf:"bytes,14,opt,name=egg_incubator,json=eggIncubator" json:"egg_incubator,omitempty"`
-	FortModifier     *FortModifierAttributes     `protobuf:"bytes,15,opt,name=fort_modifier,json=fortModifier" json:"fort_modifier,omitempty"`
+	EggIncubator     *EggIncubatorAttributes     `protobuf:"bytes,14,opt,name=egg_incubator" json:"egg_incubator,omitempty"`
+	FortModifier     *FortModifierAttributes     `protobuf:"bytes,15,opt,name=fort_modifier" json:"fort_modifier,omitempty"`
 }
 
-func (m *ItemSettings) Reset()                    { *m = ItemSettings{} }
-func (m *ItemSettings) String() string            { return proto.CompactTextString(m) }
-func (*ItemSettings) ProtoMessage()               {}
-func (*ItemSettings) Descriptor() ([]byte, []int) { return fileDescriptor20, []int{8} }
+func (m *ItemSettings) Reset()         { *m = ItemSettings{} }
+func (m *ItemSettings) String() string { return proto.CompactTextString(m) }
+func (*ItemSettings) ProtoMessage()    {}
 
 func (m *ItemSettings) GetPokeball() *PokeballAttributes {
 	if m != nil {
@@ -329,317 +397,31 @@ type MoveSequenceSettings struct {
 	Sequence []string `protobuf:"bytes,1,rep,name=sequence" json:"sequence,omitempty"`
 }
 
-func (m *MoveSequenceSettings) Reset()                    { *m = MoveSequenceSettings{} }
-func (m *MoveSequenceSettings) String() string            { return proto.CompactTextString(m) }
-func (*MoveSequenceSettings) ProtoMessage()               {}
-func (*MoveSequenceSettings) Descriptor() ([]byte, []int) { return fileDescriptor20, []int{9} }
+func (m *MoveSequenceSettings) Reset()         { *m = MoveSequenceSettings{} }
+func (m *MoveSequenceSettings) String() string { return proto.CompactTextString(m) }
+func (*MoveSequenceSettings) ProtoMessage()    {}
 
-type MoveSettings struct {
-	MovementId          PokemonMove `protobuf:"varint,1,opt,name=movement_id,json=movementId,enum=POGOProtos.Enums.PokemonMove" json:"movement_id,omitempty"`
-	AnimationId         int32       `protobuf:"varint,2,opt,name=animation_id,json=animationId" json:"animation_id,omitempty"`
-	PokemonType         PokemonType `protobuf:"varint,3,opt,name=pokemon_type,json=pokemonType,enum=POGOProtos.Enums.PokemonType" json:"pokemon_type,omitempty"`
-	Power               float32     `protobuf:"fixed32,4,opt,name=power" json:"power,omitempty"`
-	AccuracyChance      float32     `protobuf:"fixed32,5,opt,name=accuracy_chance,json=accuracyChance" json:"accuracy_chance,omitempty"`
-	CriticalChance      float32     `protobuf:"fixed32,6,opt,name=critical_chance,json=criticalChance" json:"critical_chance,omitempty"`
-	HealScalar          float32     `protobuf:"fixed32,7,opt,name=heal_scalar,json=healScalar" json:"heal_scalar,omitempty"`
-	StaminaLossScalar   float32     `protobuf:"fixed32,8,opt,name=stamina_loss_scalar,json=staminaLossScalar" json:"stamina_loss_scalar,omitempty"`
-	TrainerLevelMin     int32       `protobuf:"varint,9,opt,name=trainer_level_min,json=trainerLevelMin" json:"trainer_level_min,omitempty"`
-	TrainerLevelMax     int32       `protobuf:"varint,10,opt,name=trainer_level_max,json=trainerLevelMax" json:"trainer_level_max,omitempty"`
-	VfxName             string      `protobuf:"bytes,11,opt,name=vfx_name,json=vfxName" json:"vfx_name,omitempty"`
-	DurationMs          int32       `protobuf:"varint,12,opt,name=duration_ms,json=durationMs" json:"duration_ms,omitempty"`
-	DamageWindowStartMs int32       `protobuf:"varint,13,opt,name=damage_window_start_ms,json=damageWindowStartMs" json:"damage_window_start_ms,omitempty"`
-	DamageWindowEndMs   int32       `protobuf:"varint,14,opt,name=damage_window_end_ms,json=damageWindowEndMs" json:"damage_window_end_ms,omitempty"`
-	EnergyDelta         int32       `protobuf:"varint,15,opt,name=energy_delta,json=energyDelta" json:"energy_delta,omitempty"`
+type BadgeSettings struct {
+	BadgeType BadgeType `protobuf:"varint,1,opt,name=badge_type,enum=POGOProtos.Enums.BadgeType" json:"badge_type,omitempty"`
+	BadgeRank int32     `protobuf:"varint,2,opt,name=badge_rank" json:"badge_rank,omitempty"`
+	Targets   []int32   `protobuf:"varint,3,rep,name=targets" json:"targets,omitempty"`
 }
 
-func (m *MoveSettings) Reset()                    { *m = MoveSettings{} }
-func (m *MoveSettings) String() string            { return proto.CompactTextString(m) }
-func (*MoveSettings) ProtoMessage()               {}
-func (*MoveSettings) Descriptor() ([]byte, []int) { return fileDescriptor20, []int{10} }
+func (m *BadgeSettings) Reset()         { *m = BadgeSettings{} }
+func (m *BadgeSettings) String() string { return proto.CompactTextString(m) }
+func (*BadgeSettings) ProtoMessage()    {}
 
-type PlayerLevelSettings struct {
-	RankNum                 []int32   `protobuf:"varint,1,rep,packed,name=rank_num,json=rankNum" json:"rank_num,omitempty"`
-	RequiredExperience      []int32   `protobuf:"varint,2,rep,packed,name=required_experience,json=requiredExperience" json:"required_experience,omitempty"`
-	CpMultiplier            []float32 `protobuf:"fixed32,3,rep,packed,name=cp_multiplier,json=cpMultiplier" json:"cp_multiplier,omitempty"`
-	MaxEggPlayerLevel       int32     `protobuf:"varint,4,opt,name=max_egg_player_level,json=maxEggPlayerLevel" json:"max_egg_player_level,omitempty"`
-	MaxEncounterPlayerLevel int32     `protobuf:"varint,5,opt,name=max_encounter_player_level,json=maxEncounterPlayerLevel" json:"max_encounter_player_level,omitempty"`
+type GymLevelSettings struct {
+	RequiredExperience []int32 `protobuf:"varint,1,rep,name=required_experience" json:"required_experience,omitempty"`
+	LeaderSlots        []int32 `protobuf:"varint,2,rep,name=leader_slots" json:"leader_slots,omitempty"`
+	TrainerSlots       []int32 `protobuf:"varint,3,rep,name=trainer_slots" json:"trainer_slots,omitempty"`
+	SearchRollBonus    []int32 `protobuf:"varint,4,rep,name=search_roll_bonus" json:"search_roll_bonus,omitempty"`
 }
 
-func (m *PlayerLevelSettings) Reset()                    { *m = PlayerLevelSettings{} }
-func (m *PlayerLevelSettings) String() string            { return proto.CompactTextString(m) }
-func (*PlayerLevelSettings) ProtoMessage()               {}
-func (*PlayerLevelSettings) Descriptor() ([]byte, []int) { return fileDescriptor20, []int{11} }
-
-type PokemonSettings struct {
-	PokemonId         PokemonId                 `protobuf:"varint,1,opt,name=pokemon_id,json=pokemonId,enum=POGOProtos.Enums.PokemonId" json:"pokemon_id,omitempty"`
-	ModelScale        float32                   `protobuf:"fixed32,3,opt,name=model_scale,json=modelScale" json:"model_scale,omitempty"`
-	Type              PokemonType               `protobuf:"varint,4,opt,name=type,enum=POGOProtos.Enums.PokemonType" json:"type,omitempty"`
-	Type_2            PokemonType               `protobuf:"varint,5,opt,name=type_2,json=type2,enum=POGOProtos.Enums.PokemonType" json:"type_2,omitempty"`
-	Camera            *CameraAttributes         `protobuf:"bytes,6,opt,name=camera" json:"camera,omitempty"`
-	Encounter         *EncounterAttributes      `protobuf:"bytes,7,opt,name=encounter" json:"encounter,omitempty"`
-	Stats             *StatsAttributes          `protobuf:"bytes,8,opt,name=stats" json:"stats,omitempty"`
-	QuickMoves        []PokemonMove             `protobuf:"varint,9,rep,packed,name=quick_moves,json=quickMoves,enum=POGOProtos.Enums.PokemonMove" json:"quick_moves,omitempty"`
-	CinematicMoves    []PokemonMove             `protobuf:"varint,10,rep,packed,name=cinematic_moves,json=cinematicMoves,enum=POGOProtos.Enums.PokemonMove" json:"cinematic_moves,omitempty"`
-	AnimationTime     []float32                 `protobuf:"fixed32,11,rep,packed,name=animation_time,json=animationTime" json:"animation_time,omitempty"`
-	EvolutionIds      []PokemonId               `protobuf:"varint,12,rep,packed,name=evolution_ids,json=evolutionIds,enum=POGOProtos.Enums.PokemonId" json:"evolution_ids,omitempty"`
-	EvolutionPips     int32                     `protobuf:"varint,13,opt,name=evolution_pips,json=evolutionPips" json:"evolution_pips,omitempty"`
-	Rarity            PokemonRarity             `protobuf:"varint,14,opt,name=rarity,enum=POGOProtos.Enums.PokemonRarity" json:"rarity,omitempty"`
-	PokedexHeightM    float32                   `protobuf:"fixed32,15,opt,name=pokedex_height_m,json=pokedexHeightM" json:"pokedex_height_m,omitempty"`
-	PokedexWeightKg   float32                   `protobuf:"fixed32,16,opt,name=pokedex_weight_kg,json=pokedexWeightKg" json:"pokedex_weight_kg,omitempty"`
-	ParentPokemonId   PokemonId                 `protobuf:"varint,17,opt,name=parent_pokemon_id,json=parentPokemonId,enum=POGOProtos.Enums.PokemonId" json:"parent_pokemon_id,omitempty"`
-	HeightStdDev      float32                   `protobuf:"fixed32,18,opt,name=height_std_dev,json=heightStdDev" json:"height_std_dev,omitempty"`
-	WeightStdDev      float32                   `protobuf:"fixed32,19,opt,name=weight_std_dev,json=weightStdDev" json:"weight_std_dev,omitempty"`
-	KmDistanceToHatch float32                   `protobuf:"fixed32,20,opt,name=km_distance_to_hatch,json=kmDistanceToHatch" json:"km_distance_to_hatch,omitempty"`
-	FamilyId          PokemonFamilyId           `protobuf:"varint,21,opt,name=family_id,json=familyId,enum=POGOProtos.Enums.PokemonFamilyId" json:"family_id,omitempty"`
-	CandyToEvolve     int32                     `protobuf:"varint,22,opt,name=candy_to_evolve,json=candyToEvolve" json:"candy_to_evolve,omitempty"`
-	KmBuddyDistance   float32                   `protobuf:"fixed32,23,opt,name=km_buddy_distance,json=kmBuddyDistance" json:"km_buddy_distance,omitempty"`
-	BuddySize         PokemonSettings_BuddySize `protobuf:"varint,24,opt,name=buddy_size,json=buddySize,enum=POGOProtos.Settings.Master.PokemonSettings_BuddySize" json:"buddy_size,omitempty"`
-}
-
-func (m *PokemonSettings) Reset()                    { *m = PokemonSettings{} }
-func (m *PokemonSettings) String() string            { return proto.CompactTextString(m) }
-func (*PokemonSettings) ProtoMessage()               {}
-func (*PokemonSettings) Descriptor() ([]byte, []int) { return fileDescriptor20, []int{12} }
-
-func (m *PokemonSettings) GetCamera() *CameraAttributes {
-	if m != nil {
-		return m.Camera
-	}
-	return nil
-}
-
-func (m *PokemonSettings) GetEncounter() *EncounterAttributes {
-	if m != nil {
-		return m.Encounter
-	}
-	return nil
-}
-
-func (m *PokemonSettings) GetStats() *StatsAttributes {
-	if m != nil {
-		return m.Stats
-	}
-	return nil
-}
-
-type PokemonUpgradeSettings struct {
-	UpgradesPerLevel         int32   `protobuf:"varint,1,opt,name=upgrades_per_level,json=upgradesPerLevel" json:"upgrades_per_level,omitempty"`
-	AllowedLevelsAbovePlayer int32   `protobuf:"varint,2,opt,name=allowed_levels_above_player,json=allowedLevelsAbovePlayer" json:"allowed_levels_above_player,omitempty"`
-	CandyCost                []int32 `protobuf:"varint,3,rep,packed,name=candy_cost,json=candyCost" json:"candy_cost,omitempty"`
-	StardustCost             []int32 `protobuf:"varint,4,rep,packed,name=stardust_cost,json=stardustCost" json:"stardust_cost,omitempty"`
-}
-
-func (m *PokemonUpgradeSettings) Reset()                    { *m = PokemonUpgradeSettings{} }
-func (m *PokemonUpgradeSettings) String() string            { return proto.CompactTextString(m) }
-func (*PokemonUpgradeSettings) ProtoMessage()               {}
-func (*PokemonUpgradeSettings) Descriptor() ([]byte, []int) { return fileDescriptor20, []int{13} }
-
-type TypeEffectiveSettings struct {
-	AttackScalar []float32   `protobuf:"fixed32,1,rep,packed,name=attack_scalar,json=attackScalar" json:"attack_scalar,omitempty"`
-	AttackType   PokemonType `protobuf:"varint,2,opt,name=attack_type,json=attackType,enum=POGOProtos.Enums.PokemonType" json:"attack_type,omitempty"`
-}
-
-func (m *TypeEffectiveSettings) Reset()                    { *m = TypeEffectiveSettings{} }
-func (m *TypeEffectiveSettings) String() string            { return proto.CompactTextString(m) }
-func (*TypeEffectiveSettings) ProtoMessage()               {}
-func (*TypeEffectiveSettings) Descriptor() ([]byte, []int) { return fileDescriptor20, []int{14} }
+func (m *GymLevelSettings) Reset()         { *m = GymLevelSettings{} }
+func (m *GymLevelSettings) String() string { return proto.CompactTextString(m) }
+func (*GymLevelSettings) ProtoMessage()    {}
 
 func init() {
-	proto.RegisterType((*BadgeSettings)(nil), "POGOProtos.Settings.Master.BadgeSettings")
-	proto.RegisterType((*CameraSettings)(nil), "POGOProtos.Settings.Master.CameraSettings")
-	proto.RegisterType((*EncounterSettings)(nil), "POGOProtos.Settings.Master.EncounterSettings")
-	proto.RegisterType((*EquippedBadgeSettings)(nil), "POGOProtos.Settings.Master.EquippedBadgeSettings")
-	proto.RegisterType((*GymBattleSettings)(nil), "POGOProtos.Settings.Master.GymBattleSettings")
-	proto.RegisterType((*GymLevelSettings)(nil), "POGOProtos.Settings.Master.GymLevelSettings")
-	proto.RegisterType((*IapItemDisplay)(nil), "POGOProtos.Settings.Master.IapItemDisplay")
-	proto.RegisterType((*IapSettings)(nil), "POGOProtos.Settings.Master.IapSettings")
-	proto.RegisterType((*ItemSettings)(nil), "POGOProtos.Settings.Master.ItemSettings")
-	proto.RegisterType((*MoveSequenceSettings)(nil), "POGOProtos.Settings.Master.MoveSequenceSettings")
-	proto.RegisterType((*MoveSettings)(nil), "POGOProtos.Settings.Master.MoveSettings")
-	proto.RegisterType((*PlayerLevelSettings)(nil), "POGOProtos.Settings.Master.PlayerLevelSettings")
-	proto.RegisterType((*PokemonSettings)(nil), "POGOProtos.Settings.Master.PokemonSettings")
-	proto.RegisterType((*PokemonUpgradeSettings)(nil), "POGOProtos.Settings.Master.PokemonUpgradeSettings")
-	proto.RegisterType((*TypeEffectiveSettings)(nil), "POGOProtos.Settings.Master.TypeEffectiveSettings")
 	proto.RegisterEnum("POGOProtos.Settings.Master.PokemonSettings_BuddySize", PokemonSettings_BuddySize_name, PokemonSettings_BuddySize_value)
-}
-
-func init() { proto.RegisterFile("settings_master.proto", fileDescriptor20) }
-
-var fileDescriptor20 = []byte{
-	// 2785 bytes of a gzipped FileDescriptorProto
-	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x09, 0x6e, 0x88, 0x02, 0xff, 0x8c, 0x59, 0xdd, 0x72, 0x1b, 0xc7,
-	0xb1, 0x36, 0x49, 0x81, 0x04, 0x1a, 0x3f, 0x24, 0x87, 0x94, 0x04, 0x51, 0x96, 0x25, 0x41, 0xd6,
-	0x39, 0x3a, 0x2e, 0x1f, 0xc9, 0x86, 0xec, 0xb8, 0x4a, 0x76, 0x64, 0x8b, 0x3f, 0x92, 0x10, 0x0b,
-	0x16, 0x6a, 0x49, 0x95, 0xcb, 0xa9, 0x54, 0x6d, 0x0d, 0x76, 0x07, 0xe0, 0x14, 0xf7, 0x4f, 0x33,
-	0x03, 0x90, 0x70, 0xe5, 0x32, 0x37, 0x79, 0x83, 0xbc, 0x44, 0xae, 0x73, 0x93, 0x5c, 0xe5, 0x2a,
-	0x0f, 0x90, 0x9b, 0x3c, 0x46, 0x2a, 0x0f, 0x90, 0xea, 0x9e, 0xd9, 0xc5, 0x52, 0xa4, 0x4c, 0xde,
-	0x48, 0xd8, 0xaf, 0xbf, 0xfe, 0x76, 0x76, 0xa6, 0xa7, 0xbb, 0x67, 0x08, 0x57, 0xb5, 0x30, 0x46,
-	0x26, 0x63, 0xed, 0xc7, 0x5c, 0x1b, 0xa1, 0x1e, 0x66, 0x2a, 0x35, 0x29, 0xdb, 0x1a, 0xbc, 0x7e,
-	0xf1, 0x7a, 0x80, 0x3f, 0xf5, 0xc3, 0x7d, 0xc7, 0x78, 0xd8, 0x27, 0xc6, 0x56, 0x5d, 0x24, 0x93,
-	0x58, 0x5b, 0xe2, 0xd6, 0xa6, 0x4c, 0xa6, 0x22, 0x31, 0xa9, 0x9a, 0xf9, 0xd2, 0x88, 0xd8, 0xa1,
-	0x5b, 0xef, 0xa8, 0x96, 0x6d, 0xb7, 0xde, 0xb5, 0x65, 0xe9, 0x91, 0x88, 0xd3, 0xc4, 0x9a, 0x3b,
-	0x7f, 0x58, 0x80, 0xe6, 0x36, 0x0f, 0xc7, 0x22, 0x7f, 0x2d, 0x7b, 0x02, 0x30, 0x44, 0xc0, 0x37,
-	0xb3, 0x4c, 0xb4, 0x17, 0xee, 0x2c, 0x3c, 0x68, 0x75, 0x6f, 0x3e, 0x2c, 0x0d, 0x70, 0x8f, 0xc6,
-	0x43, 0x4e, 0x07, 0xb3, 0x4c, 0x78, 0xb5, 0x61, 0xfe, 0x93, 0xdd, 0xca, 0x7d, 0x15, 0x4f, 0x8e,
-	0xda, 0x8b, 0x77, 0x16, 0x1e, 0x54, 0x9c, 0xd9, 0xe3, 0xc9, 0x11, 0x6b, 0xc3, 0x8a, 0xe1, 0x6a,
-	0x2c, 0x8c, 0x6e, 0x2f, 0xdd, 0x59, 0x7a, 0x50, 0xf1, 0xf2, 0xc7, 0xce, 0xdf, 0x2b, 0xd0, 0xda,
-	0xe1, 0xb1, 0x50, 0xbc, 0x18, 0xc7, 0x6d, 0xa8, 0x27, 0xe2, 0xc4, 0xf8, 0x01, 0xc1, 0x34, 0x90,
-	0x9a, 0x07, 0x08, 0x59, 0x22, 0xfb, 0x1e, 0x9a, 0x32, 0x31, 0x42, 0x65, 0x69, 0xc4, 0x8d, 0x4c,
-	0x93, 0xf6, 0xe2, 0x9d, 0xa5, 0x07, 0xad, 0xee, 0xfd, 0xb3, 0x63, 0xb5, 0x0e, 0xbd, 0x32, 0xd9,
-	0x3b, 0xed, 0xcb, 0xbe, 0x85, 0xba, 0x1d, 0x8b, 0xfd, 0xec, 0x25, 0x92, 0xfa, 0xe8, 0x7d, 0x52,
-	0x07, 0x44, 0xf5, 0xc0, 0xba, 0xd0, 0xa7, 0x77, 0xa0, 0x29, 0xb8, 0x16, 0xbe, 0x4c, 0x7c, 0x9d,
-	0x09, 0x11, 0xb6, 0xaf, 0xdc, 0x59, 0x7a, 0xb0, 0xe8, 0xd5, 0x11, 0xec, 0x25, 0xfb, 0x08, 0xb1,
-	0x8f, 0xa1, 0x25, 0xb8, 0x36, 0x7e, 0x3a, 0x31, 0x8e, 0x54, 0x21, 0x52, 0x03, 0xd1, 0xd7, 0x13,
-	0x63, 0x59, 0xff, 0x07, 0x6b, 0xe1, 0x44, 0xd1, 0xb0, 0x7c, 0x2d, 0x82, 0x34, 0x09, 0x75, 0x7b,
-	0x99, 0x78, 0xab, 0x39, 0xbe, 0x6f, 0x61, 0x76, 0x17, 0x1a, 0xc7, 0x5c, 0x9a, 0x82, 0xb6, 0x62,
-	0xdf, 0x89, 0x58, 0x4e, 0xf9, 0x7f, 0x60, 0x46, 0xf1, 0x44, 0xcb, 0x53, 0x7a, 0x55, 0x22, 0xae,
-	0xcf, 0x2d, 0x25, 0x45, 0x9e, 0x8c, 0x23, 0xe1, 0x87, 0x62, 0xac, 0x84, 0x68, 0xd7, 0xac, 0x22,
-	0x61, 0xbb, 0x04, 0xb1, 0x87, 0xb0, 0x61, 0x29, 0xe9, 0x68, 0xa4, 0x85, 0xc9, 0x99, 0x60, 0x25,
-	0xc9, 0xf4, 0x9a, 0x2c, 0x8e, 0x7f, 0x17, 0x1a, 0x99, 0x34, 0xc1, 0x61, 0x4e, 0xac, 0x5b, 0x49,
-	0xc2, 0xe6, 0x92, 0x96, 0x72, 0x5a, 0xb2, 0x61, 0x25, 0xc9, 0x74, 0x4a, 0xf2, 0x36, 0xd4, 0x55,
-	0x1a, 0x45, 0x39, 0xaf, 0x49, 0x3c, 0x40, 0xc8, 0x11, 0xfe, 0x17, 0x56, 0x43, 0xa9, 0x0d, 0x4f,
-	0x02, 0xe1, 0xc7, 0xc2, 0x08, 0xa5, 0xdb, 0x2d, 0x22, 0xb5, 0x72, 0xb8, 0x4f, 0x28, 0xbb, 0x0f,
-	0xad, 0x43, 0x21, 0xc7, 0x87, 0xc6, 0xcf, 0x84, 0x0a, 0x44, 0x62, 0xda, 0xab, 0xc4, 0x6b, 0x5a,
-	0x74, 0x60, 0x41, 0x5c, 0xb9, 0xa9, 0x50, 0xc6, 0x0f, 0x8c, 0xf2, 0x69, 0x09, 0xda, 0x6b, 0x76,
-	0xe5, 0x10, 0xdd, 0x31, 0xca, 0x43, 0xac, 0xf3, 0xa7, 0x45, 0x58, 0xdf, 0x4b, 0x82, 0x74, 0x82,
-	0xa1, 0x55, 0x04, 0xf2, 0x67, 0xb0, 0xa9, 0x33, 0x99, 0xf8, 0xc3, 0x34, 0x99, 0x68, 0xdf, 0x1c,
-	0x2a, 0xa1, 0x0f, 0xd3, 0x28, 0xa4, 0x88, 0x5e, 0xf4, 0x18, 0xda, 0xb6, 0xd1, 0x74, 0x90, 0x5b,
-	0xd8, 0x13, 0xb8, 0x21, 0x4e, 0x02, 0x11, 0x45, 0x22, 0x31, 0xe8, 0x90, 0x1e, 0x97, 0xdc, 0x16,
-	0xc9, 0xed, 0x7a, 0x41, 0x38, 0x40, 0xfb, 0xdc, 0xb7, 0x0b, 0x57, 0xc7, 0x4a, 0xf0, 0xb3, 0x7e,
-	0x4b, 0xe4, 0xb7, 0x41, 0xc6, 0x77, 0x7c, 0x3e, 0x83, 0xcd, 0x44, 0x06, 0xe2, 0x8c, 0xcb, 0x15,
-	0x3b, 0x42, 0xb4, 0xbd, 0xe3, 0xf1, 0x08, 0x36, 0x62, 0x19, 0x09, 0x6d, 0xd2, 0x44, 0x94, 0x1c,
-	0x2a, 0xb4, 0xe3, 0x59, 0x61, 0x2a, 0x1c, 0x3a, 0x7f, 0x5d, 0x80, 0xab, 0x7b, 0x6f, 0x27, 0x32,
-	0xcb, 0x44, 0x78, 0x3a, 0xdf, 0x7c, 0x09, 0xd7, 0x05, 0x1a, 0x7c, 0x9b, 0x39, 0x82, 0x34, 0x8d,
-	0xc2, 0xf4, 0x38, 0xf1, 0x63, 0x4d, 0x33, 0xb4, 0xe4, 0x6d, 0x92, 0x99, 0x9c, 0x76, 0x9c, 0xb1,
-	0xaf, 0xd9, 0xaf, 0xe0, 0x7a, 0xc0, 0x31, 0x64, 0x32, 0x95, 0x0e, 0xf9, 0x50, 0x46, 0xd2, 0xcc,
-	0xec, 0x14, 0x53, 0x1e, 0x58, 0xf4, 0xae, 0x92, 0x79, 0x30, 0xb7, 0xd2, 0x24, 0xb3, 0x2f, 0xe0,
-	0xda, 0x28, 0x12, 0xe2, 0x1c, 0xb7, 0x25, 0x72, 0xdb, 0x44, 0xeb, 0xbb, 0x5e, 0x9d, 0x3f, 0x2f,
-	0xc3, 0xfa, 0x8b, 0x59, 0xbc, 0xcd, 0x8d, 0x89, 0xe6, 0x43, 0xc7, 0xfd, 0x9c, 0x08, 0x35, 0x9e,
-	0x61, 0xf0, 0xe0, 0xde, 0x72, 0x6b, 0xda, 0xb0, 0xe8, 0x00, 0x83, 0x20, 0x60, 0x9f, 0xc0, 0x7a,
-	0x98, 0xe2, 0xa7, 0x39, 0x6e, 0x90, 0x6a, 0xe3, 0x56, 0x71, 0x95, 0x0c, 0x7b, 0x84, 0xef, 0xa4,
-	0xda, 0xe0, 0xde, 0x57, 0xc2, 0x25, 0xa2, 0x7c, 0xaf, 0xda, 0x85, 0x5b, 0xcd, 0xf1, 0x7c, 0xa7,
-	0x76, 0xe1, 0xaa, 0x48, 0x44, 0x3c, 0xf3, 0xb9, 0x31, 0x3c, 0x38, 0xf2, 0x29, 0x9f, 0x4d, 0x79,
-	0xe4, 0x56, 0x6d, 0x83, 0x8c, 0xcf, 0xc8, 0xd6, 0x73, 0x26, 0xfc, 0x78, 0xc7, 0xd6, 0x42, 0x4d,
-	0xb1, 0x50, 0xe4, 0x4e, 0x15, 0x72, 0xda, 0xb4, 0xd6, 0x7d, 0x32, 0x96, 0xbd, 0x54, 0x3a, 0x49,
-	0x42, 0xff, 0x9c, 0xb4, 0x44, 0x5e, 0x64, 0xdd, 0x7d, 0x27, 0x37, 0x7d, 0x03, 0x37, 0x5d, 0xc4,
-	0xcb, 0x58, 0xd0, 0x04, 0xf1, 0x28, 0x9a, 0x95, 0x52, 0x15, 0x85, 0x31, 0x51, 0x0e, 0x64, 0x2c,
-	0x06, 0x42, 0x3d, 0x8b, 0xa2, 0x59, 0xee, 0xfd, 0x2d, 0x7c, 0x18, 0xf3, 0x13, 0x19, 0x4f, 0x62,
-	0xf7, 0x7d, 0x42, 0x69, 0x12, 0x19, 0xd2, 0x12, 0xb4, 0xab, 0x14, 0x69, 0x37, 0x1c, 0xe7, 0x59,
-	0x4e, 0x19, 0x08, 0x65, 0xd7, 0x88, 0xbd, 0x84, 0xbb, 0x9a, 0xc7, 0xb6, 0x8a, 0xe5, 0x53, 0x64,
-	0xc7, 0x13, 0x4f, 0x22, 0x23, 0xb3, 0x48, 0x0a, 0xd5, 0xae, 0xd1, 0x20, 0x6e, 0x21, 0x11, 0x93,
-	0xb8, 0x95, 0xa1, 0x15, 0xef, 0x17, 0x24, 0x4c, 0x11, 0xf9, 0x50, 0xec, 0x0a, 0xb6, 0x81, 0x5e,
-	0xde, 0x74, 0xa8, 0x5d, 0x3e, 0xf6, 0x14, 0x3e, 0x74, 0x0b, 0x1c, 0x8a, 0xc8, 0x70, 0x1a, 0xec,
-	0xa1, 0xe0, 0x91, 0x39, 0xf4, 0x23, 0x5c, 0xf1, 0x3a, 0xbd, 0xab, 0x6d, 0x39, 0xbb, 0x48, 0x19,
-	0x08, 0xf5, 0x92, 0x08, 0xaf, 0x70, 0xe9, 0x8b, 0x30, 0x29, 0x66, 0x39, 0xd6, 0xed, 0x06, 0xbd,
-	0xc9, 0x86, 0x49, 0x3e, 0xc1, 0x7d, 0x4a, 0x29, 0xb1, 0x4c, 0x68, 0x48, 0x59, 0xc4, 0x67, 0x42,
-	0xf9, 0x91, 0x98, 0x8a, 0xa8, 0xdd, 0xcc, 0xf7, 0x1f, 0xd9, 0x06, 0x64, 0x7a, 0x85, 0x16, 0xf6,
-	0x00, 0xd6, 0xf4, 0x31, 0xcf, 0x4e, 0x89, 0xb7, 0x88, 0xdd, 0x42, 0xbc, 0xa4, 0xbd, 0x03, 0x1f,
-	0xb9, 0x71, 0xf0, 0x98, 0x63, 0x29, 0x17, 0xe1, 0x24, 0x20, 0x97, 0x79, 0x86, 0xc4, 0x2f, 0xb9,
-	0x69, 0x07, 0x45, 0x24, 0x2f, 0xe7, 0xb8, 0x7c, 0xd9, 0xf9, 0xcb, 0x02, 0xac, 0xbd, 0x98, 0xc5,
-	0xf4, 0xee, 0x62, 0xbb, 0x3c, 0x82, 0x0d, 0x85, 0x7b, 0x59, 0x89, 0xd0, 0x17, 0x27, 0x99, 0x50,
-	0x52, 0x24, 0x01, 0xb6, 0x18, 0xd8, 0x0a, 0xb0, 0xdc, 0xb4, 0x57, 0x58, 0xb0, 0x72, 0x44, 0x82,
-	0x87, 0xb8, 0xb7, 0xa2, 0xd4, 0xd8, 0x8d, 0x5d, 0xf1, 0xea, 0x16, 0xdb, 0x47, 0x88, 0xdd, 0x83,
-	0xa6, 0x51, 0x5c, 0x26, 0x05, 0xc7, 0x36, 0x16, 0x0d, 0x07, 0x5a, 0xd2, 0x27, 0xb0, 0xae, 0x05,
-	0x57, 0xc1, 0xa1, 0x4f, 0x55, 0xc3, 0x6e, 0xf7, 0x2b, 0x44, 0x5c, 0xb5, 0x06, 0x2f, 0x8d, 0x22,
-	0xbb, 0xd3, 0xff, 0xb5, 0x00, 0xad, 0x1e, 0xcf, 0x7a, 0x46, 0xc4, 0xbb, 0x52, 0xe3, 0xec, 0xb2,
-	0x35, 0x58, 0xd2, 0x47, 0x13, 0xd7, 0x81, 0xe0, 0x4f, 0xf6, 0x0c, 0xaa, 0x01, 0x37, 0x62, 0x9c,
-	0xaa, 0x19, 0xed, 0xe4, 0x73, 0xbb, 0x8e, 0x97, 0x69, 0x94, 0x3a, 0xa5, 0x1d, 0x47, 0xf6, 0x0a,
-	0x37, 0x6c, 0x95, 0x74, 0xaa, 0x8c, 0x9f, 0xaa, 0x50, 0x28, 0xda, 0xe3, 0x15, 0xaf, 0x86, 0xc8,
-	0x6b, 0x04, 0xd8, 0x37, 0x50, 0xc5, 0x26, 0xce, 0x97, 0xa1, 0x1d, 0x69, 0xab, 0x7b, 0xb7, 0xfc,
-	0x86, 0x5e, 0xde, 0x06, 0x3e, 0x44, 0x79, 0xfa, 0xa7, 0x17, 0x7a, 0x2b, 0x92, 0xfe, 0xd7, 0xec,
-	0x1a, 0x2c, 0x53, 0x15, 0xd2, 0xd4, 0x60, 0x54, 0x3c, 0xf7, 0xd4, 0xf9, 0xdb, 0x12, 0xd4, 0x7b,
-	0x3c, 0x2b, 0x56, 0x04, 0x63, 0x8e, 0xcb, 0xc8, 0x65, 0x40, 0x3f, 0x48, 0x65, 0x62, 0xb3, 0x2e,
-	0xc6, 0x1c, 0x1a, 0x68, 0x4e, 0x76, 0x10, 0x66, 0xcf, 0xe1, 0x8e, 0xe5, 0x86, 0x62, 0x24, 0x12,
-	0x5c, 0x14, 0xeb, 0x94, 0xcd, 0x7b, 0x4a, 0xb7, 0x40, 0x1f, 0x12, 0x6f, 0xd7, 0xd1, 0x48, 0x62,
-	0x20, 0xd4, 0xc0, 0x72, 0xd8, 0x6f, 0xa0, 0x73, 0xae, 0x4e, 0xcc, 0x4f, 0x0a, 0x48, 0xbb, 0x09,
-	0xf9, 0xe8, 0xac, 0x52, 0x9f, 0x9f, 0xe4, 0xcf, 0x9a, 0x3d, 0x83, 0x5b, 0xe7, 0x6a, 0x05, 0x13,
-	0xa5, 0x44, 0x12, 0xcc, 0x68, 0xea, 0x6a, 0xde, 0xd6, 0x59, 0x99, 0x1d, 0xc7, 0x60, 0x4f, 0x60,
-	0x2b, 0x96, 0x89, 0x4d, 0x52, 0x43, 0x61, 0x8e, 0x85, 0x48, 0xfc, 0x20, 0xe2, 0x32, 0xd6, 0xb8,
-	0x45, 0x2a, 0x54, 0x81, 0xae, 0xc5, 0x32, 0xc1, 0x1c, 0xb5, 0x6d, 0xed, 0x3b, 0x64, 0xee, 0x6b,
-	0x6c, 0x5b, 0xca, 0xd3, 0x27, 0x12, 0x3e, 0x8c, 0x44, 0x48, 0x59, 0xb1, 0xea, 0xad, 0xcf, 0x27,
-	0x70, 0xcf, 0x1a, 0x30, 0xa9, 0x9d, 0x3b, 0xdc, 0xdc, 0x71, 0x85, 0x1c, 0x6f, 0x9c, 0x1d, 0xad,
-	0x13, 0xe8, 0xfc, 0xb3, 0x0a, 0x0d, 0x5c, 0xeb, 0x52, 0xb3, 0xbe, 0xe2, 0xc2, 0xc4, 0x75, 0xea,
-	0x97, 0x88, 0x92, 0x65, 0x1b, 0x25, 0xec, 0x3b, 0xa8, 0x91, 0x2f, 0x35, 0xbc, 0x36, 0x8a, 0xef,
-	0x5d, 0xe0, 0x4d, 0xfd, 0x3e, 0x05, 0x26, 0xf5, 0xbc, 0x4f, 0x4a, 0xdb, 0x60, 0x89, 0x04, 0xce,
-	0xe9, 0x98, 0xdf, 0x13, 0xff, 0x37, 0xa1, 0x16, 0xaa, 0x34, 0xf3, 0x47, 0x4a, 0xbc, 0x75, 0x25,
-	0xab, 0x8a, 0xc0, 0x73, 0x25, 0xde, 0xb2, 0x4f, 0x81, 0x91, 0x31, 0xdf, 0xda, 0x36, 0xbb, 0xd9,
-	0xee, 0x62, 0x0d, 0x2d, 0x07, 0xd6, 0x60, 0x73, 0xdb, 0x6b, 0xa8, 0x62, 0x00, 0x0e, 0x79, 0x14,
-	0xd1, 0xdc, 0xd7, 0xbb, 0x8f, 0x1f, 0xbe, 0xff, 0x40, 0x65, 0xbf, 0x66, 0xe0, 0x1c, 0x9e, 0x19,
-	0xa3, 0xe4, 0x70, 0x62, 0x84, 0xf6, 0x0a, 0x11, 0xd6, 0x83, 0xe5, 0x2c, 0xa5, 0x23, 0xc5, 0x0a,
-	0xc9, 0x7d, 0x7e, 0x09, 0x39, 0xa4, 0x97, 0xc4, 0x9c, 0x00, 0x4a, 0x29, 0x31, 0x95, 0x53, 0x5b,
-	0xb1, 0x2e, 0x23, 0xe5, 0x11, 0xbd, 0x2c, 0x65, 0x05, 0x50, 0xca, 0x15, 0xbf, 0xda, 0x25, 0xa5,
-	0x6c, 0x29, 0x2c, 0x4b, 0x59, 0x01, 0xb6, 0x03, 0x57, 0x46, 0x69, 0x1a, 0x52, 0x21, 0xab, 0x77,
-	0x1f, 0x5d, 0x28, 0xf4, 0x3c, 0x4d, 0xc3, 0x92, 0x0c, 0x39, 0xb3, 0x43, 0x58, 0x9f, 0x9f, 0x46,
-	0x27, 0xd9, 0x58, 0xf1, 0x50, 0x50, 0x95, 0xab, 0x77, 0xbf, 0xbe, 0x50, 0xb1, 0x08, 0xae, 0x37,
-	0xd6, 0xb1, 0xa4, 0xbe, 0x26, 0xdf, 0xb1, 0xb1, 0x37, 0x50, 0x3d, 0xc9, 0xfc, 0x61, 0x8a, 0x65,
-	0xb4, 0x41, 0x2f, 0x78, 0x72, 0xe1, 0x0b, 0xe6, 0x65, 0x64, 0x1b, 0xfd, 0x4a, 0xfa, 0x2b, 0x27,
-	0x19, 0x41, 0xec, 0x15, 0xac, 0xc8, 0x24, 0x10, 0x89, 0x16, 0x54, 0x38, 0xeb, 0xdd, 0xee, 0x25,
-	0x86, 0x4d, 0xfc, 0xb2, 0x9a, 0x93, 0x60, 0xbf, 0x83, 0xa6, 0x18, 0x8f, 0x7d, 0x99, 0x04, 0x93,
-	0x21, 0x37, 0xa9, 0xa2, 0xf2, 0x5a, 0xef, 0x7e, 0x75, 0xf1, 0x48, 0xc7, 0xe3, 0x5e, 0xee, 0x54,
-	0x12, 0x6e, 0x88, 0x12, 0x8e, 0xea, 0x23, 0x2c, 0x17, 0x71, 0x1a, 0xca, 0x11, 0xb6, 0x2e, 0xab,
-	0x97, 0x54, 0x7f, 0x9e, 0x2a, 0xd3, 0x77, 0x4e, 0x65, 0xf5, 0x51, 0x09, 0xef, 0x74, 0x61, 0xb3,
-	0x9f, 0x4e, 0xc5, 0xbe, 0x78, 0x3b, 0xc1, 0x19, 0x2b, 0xd2, 0xcb, 0x16, 0x54, 0xb5, 0xc3, 0xa8,
-	0x4c, 0xd7, 0xbc, 0xe2, 0xb9, 0xf3, 0xc7, 0x0a, 0x34, 0xac, 0x93, 0x23, 0x3f, 0x85, 0x7a, 0x9c,
-	0x4e, 0x45, 0x8c, 0x87, 0x96, 0x22, 0x1f, 0xdd, 0x3a, 0x9b, 0x10, 0x5c, 0x21, 0x40, 0x5f, 0x0f,
-	0x72, 0x8f, 0x5e, 0x68, 0x8f, 0x9e, 0x32, 0xb6, 0xed, 0x89, 0x0c, 0xdd, 0xf5, 0x41, 0xbd, 0xc0,
-	0x28, 0x65, 0x35, 0x5c, 0xa9, 0xc9, 0x8f, 0xe9, 0xbf, 0xfc, 0x0e, 0xca, 0x57, 0xf5, 0x6c, 0xfe,
-	0xc0, 0x36, 0xa1, 0x92, 0xa5, 0xc7, 0x42, 0xb9, 0x94, 0x63, 0x1f, 0xf0, 0xb8, 0xc8, 0x83, 0x60,
-	0xa2, 0x78, 0x30, 0xf3, 0x83, 0x43, 0x3c, 0x1e, 0xba, 0x86, 0xb8, 0x95, 0xc3, 0x3b, 0x84, 0x22,
-	0x31, 0x50, 0xd2, 0xc8, 0x80, 0x47, 0x39, 0xd1, 0xf6, 0xc0, 0xad, 0x1c, 0x76, 0xc4, 0xdb, 0x50,
-	0xc7, 0xe6, 0xcf, 0xd7, 0x01, 0x8f, 0xb8, 0x72, 0xdd, 0x2e, 0x20, 0xb4, 0x4f, 0x08, 0xd6, 0x0e,
-	0x6d, 0x78, 0x2c, 0x13, 0x8e, 0xed, 0xa1, 0xce, 0x89, 0x55, 0x22, 0xae, 0x3b, 0xd3, 0xab, 0x54,
-	0x6b, 0xc7, 0xff, 0x04, 0xd6, 0x4f, 0x65, 0x43, 0x3f, 0x96, 0x09, 0x25, 0x82, 0x8a, 0xb7, 0x6a,
-	0x4a, 0xd9, 0xb0, 0x2f, 0x93, 0x73, 0xb8, 0xfc, 0xc4, 0x35, 0xad, 0xa7, 0xb9, 0xfc, 0x84, 0xdd,
-	0x80, 0xea, 0x74, 0x74, 0xe2, 0x27, 0x3c, 0xb6, 0x9b, 0xb7, 0xe6, 0xad, 0x4c, 0x47, 0x27, 0x3f,
-	0xf0, 0x98, 0xbe, 0xe1, 0x6c, 0x2f, 0x0a, 0xe1, 0xbc, 0x55, 0x7c, 0x0c, 0xd7, 0x5c, 0x93, 0x78,
-	0x2c, 0x93, 0x30, 0x3d, 0xf6, 0xb5, 0xe1, 0x18, 0xa3, 0xda, 0x35, 0xa2, 0x1b, 0xd6, 0xfa, 0x23,
-	0x19, 0xf7, 0xd1, 0xd6, 0xc7, 0x2e, 0x70, 0xf3, 0xb4, 0x93, 0x48, 0xc2, 0x79, 0x37, 0xba, 0x5e,
-	0x76, 0xd9, 0x4b, 0xc2, 0x3e, 0x5d, 0x49, 0x94, 0x1b, 0x6b, 0x8a, 0xfc, 0x8a, 0x57, 0x2f, 0x35,
-	0xd2, 0x9d, 0xff, 0x2c, 0xc0, 0x46, 0xa9, 0xdb, 0x2d, 0x42, 0xf2, 0x06, 0x54, 0x15, 0x4f, 0x8e,
-	0xfc, 0x64, 0x12, 0xbb, 0x36, 0x73, 0x05, 0x9f, 0x7f, 0x98, 0xc4, 0xef, 0x6b, 0x46, 0x17, 0xdf,
-	0xdb, 0x8c, 0xde, 0x83, 0x66, 0x90, 0x95, 0x0f, 0x0f, 0xf6, 0xbc, 0xd8, 0x08, 0xb2, 0xd2, 0x59,
-	0xe1, 0x11, 0x6c, 0x62, 0x1f, 0x83, 0x89, 0xe0, 0x54, 0x63, 0x7e, 0xc5, 0x7e, 0x5c, 0xcc, 0x4f,
-	0xf6, 0xc6, 0xe3, 0x72, 0x5f, 0xfe, 0x35, 0x6c, 0x91, 0x43, 0x7e, 0x6b, 0x70, 0xda, 0xcd, 0x56,
-	0xbc, 0xeb, 0xe8, 0x96, 0x13, 0x4a, 0xce, 0x9d, 0x7f, 0x03, 0xac, 0xba, 0x48, 0x2f, 0x5f, 0xdf,
-	0xe5, 0x5b, 0xa4, 0xd8, 0x84, 0x37, 0xdf, 0xbb, 0x41, 0x7a, 0xa1, 0x57, 0xcb, 0xf2, 0x9f, 0xb8,
-	0xe0, 0x71, 0x1a, 0x0a, 0x1b, 0xb5, 0xc2, 0x1d, 0x3c, 0x81, 0x20, 0x8c, 0x42, 0xc1, 0x3e, 0x87,
-	0x2b, 0xb4, 0xef, 0xae, 0x5c, 0x66, 0xdf, 0x11, 0x95, 0x7d, 0x01, 0xcb, 0x74, 0x04, 0xeb, 0xd2,
-	0xc7, 0x5c, 0xe8, 0x54, 0x41, 0x72, 0x97, 0xbd, 0x82, 0x65, 0x77, 0xef, 0x67, 0x0b, 0xfa, 0x17,
-	0xbf, 0x94, 0xe7, 0x9c, 0xbf, 0xbb, 0x9b, 0x2b, 0x97, 0x3b, 0xab, 0xc1, 0xde, 0x40, 0xad, 0x98,
-	0x60, 0x57, 0xd2, 0xbf, 0xba, 0x8c, 0x60, 0x31, 0xe9, 0x25, 0xcd, 0xb9, 0x12, 0xeb, 0x41, 0x45,
-	0x1b, 0x6e, 0xb4, 0x2b, 0xed, 0x8f, 0x2f, 0x23, 0xb9, 0x8f, 0x0e, 0x25, 0x39, 0xab, 0x80, 0xb9,
-	0xf3, 0xed, 0x44, 0x06, 0x47, 0x3e, 0xe6, 0x43, 0x4d, 0xb7, 0x6e, 0x17, 0xe7, 0x4e, 0xf2, 0xc0,
-	0x9f, 0xd8, 0x9c, 0xaf, 0x06, 0x32, 0x11, 0x98, 0x28, 0x03, 0xa7, 0x01, 0x97, 0xd1, 0x68, 0x15,
-	0x5e, 0x56, 0xe7, 0x3e, 0xb4, 0xe6, 0x39, 0x18, 0x7b, 0x62, 0x77, 0x5b, 0xd7, 0x2c, 0x50, 0xec,
-	0x83, 0xd9, 0x77, 0xd0, 0x14, 0xd3, 0x34, 0x9a, 0xb8, 0x54, 0xad, 0xe9, 0xa6, 0xee, 0x82, 0x38,
-	0x6b, 0x14, 0x1e, 0x78, 0x42, 0xb9, 0x0f, 0xad, 0xb9, 0x42, 0x26, 0xb3, 0x3c, 0x65, 0xcc, 0x75,
-	0x07, 0x32, 0xd3, 0xec, 0x2b, 0x58, 0x56, 0x5c, 0x49, 0x33, 0xa3, 0xf4, 0xd0, 0xea, 0xde, 0x7e,
-	0xef, 0x1b, 0x3c, 0xa2, 0x79, 0x8e, 0x8e, 0xe7, 0x5d, 0x8c, 0xeb, 0x50, 0x9c, 0xf8, 0xee, 0x7e,
-	0x2f, 0x76, 0xe7, 0xd6, 0x96, 0xc3, 0x5f, 0x12, 0xdc, 0xc7, 0x64, 0x99, 0x33, 0x8f, 0x2d, 0xf3,
-	0x68, 0xdc, 0x5e, 0xb3, 0x77, 0x2e, 0xce, 0xf0, 0x23, 0xe1, 0xdf, 0x8f, 0xd9, 0x0b, 0x58, 0xcf,
-	0xb8, 0xc2, 0x02, 0x57, 0xda, 0x63, 0xeb, 0x17, 0xef, 0xb1, 0x55, 0xeb, 0x55, 0x00, 0xec, 0xe3,
-	0xe2, 0xda, 0x51, 0x9b, 0xd0, 0x0f, 0xc5, 0xb4, 0xcd, 0xec, 0xcd, 0x91, 0x45, 0xf7, 0x4d, 0xb8,
-	0x2b, 0xa6, 0xc8, 0x3a, 0x3e, 0xcd, 0xda, 0xb0, 0xac, 0xe3, 0x32, 0xeb, 0x11, 0x6c, 0x1e, 0xc5,
-	0x7e, 0x71, 0xdd, 0x69, 0x52, 0xff, 0x90, 0x9b, 0xe0, 0xb0, 0xbd, 0x69, 0x4b, 0xc9, 0x11, 0x9e,
-	0x63, 0xc9, 0x74, 0x90, 0xbe, 0x44, 0x03, 0x7b, 0x0a, 0xb5, 0x11, 0x8f, 0xf1, 0x1c, 0x22, 0xc3,
-	0xf6, 0xd5, 0xb3, 0xc7, 0x86, 0x53, 0xa3, 0x7f, 0x4e, 0xcc, 0x5e, 0xe8, 0x55, 0x47, 0xee, 0x17,
-	0xfb, 0x1f, 0x58, 0x0d, 0x78, 0x12, 0xce, 0xf0, 0x55, 0xb8, 0x5c, 0x53, 0xd1, 0xbe, 0x66, 0x17,
-	0x8f, 0xe0, 0x83, 0x74, 0x8f, 0x40, 0x9c, 0xd9, 0xa3, 0xd8, 0x1f, 0x4e, 0xc2, 0x70, 0x56, 0x0c,
-	0xaf, 0x7d, 0xdd, 0xce, 0xec, 0x51, 0xbc, 0x8d, 0x78, 0x3e, 0x34, 0x76, 0x00, 0x60, 0x89, 0x5a,
-	0xfe, 0x2c, 0xda, 0x6d, 0x1a, 0xd4, 0x97, 0x97, 0xd8, 0x50, 0x05, 0x4c, 0x72, 0xfb, 0xf2, 0x67,
-	0xe1, 0xd5, 0x86, 0xf9, 0xcf, 0x8e, 0x07, 0xb5, 0x02, 0x67, 0x6b, 0xd0, 0xd8, 0x7e, 0xb3, 0xbb,
-	0xfb, 0x93, 0xdf, 0xdf, 0xdb, 0xed, 0xbd, 0xe9, 0xaf, 0x7d, 0xc0, 0x18, 0xb4, 0x2c, 0xb2, 0xff,
-	0xf2, 0xf5, 0x9b, 0x57, 0xbb, 0x7b, 0xde, 0xda, 0x02, 0x6b, 0x42, 0xcd, 0x62, 0xdb, 0xbd, 0x17,
-	0x6b, 0x8b, 0x73, 0xa7, 0xe7, 0xaf, 0x7e, 0xea, 0xfd, 0xf0, 0x62, 0x6d, 0xa9, 0xf3, 0x8f, 0x05,
-	0xb8, 0xe6, 0x5e, 0xee, 0xfa, 0xd3, 0x22, 0xf7, 0x7e, 0x0a, 0xcc, 0xf5, 0xc1, 0xf6, 0x58, 0x6c,
-	0x93, 0xb8, 0x3d, 0x4f, 0xaf, 0xe5, 0x96, 0x41, 0x9e, 0xfa, 0x7f, 0x0d, 0x37, 0x79, 0x14, 0xa5,
-	0xc7, 0x22, 0xb4, 0x44, 0xed, 0xf3, 0x61, 0x3a, 0x15, 0xae, 0x02, 0xb8, 0xf6, 0xa7, 0xed, 0x28,
-	0xe4, 0xa2, 0x9f, 0x21, 0xc1, 0x56, 0x00, 0x76, 0x0b, 0xc0, 0xae, 0x02, 0xdd, 0x27, 0xda, 0x6b,
-	0x8f, 0x1a, 0x21, 0x74, 0x93, 0x78, 0x0f, 0x9a, 0x58, 0x8d, 0xc3, 0x89, 0x36, 0x96, 0x61, 0xef,
-	0x3b, 0x1a, 0x39, 0x88, 0xa4, 0xce, 0xef, 0xe1, 0x2a, 0x66, 0xdd, 0xbd, 0xd1, 0x48, 0x04, 0x46,
-	0x96, 0x7a, 0xb9, 0x7b, 0xd0, 0xcc, 0x2f, 0x0a, 0x6d, 0x5f, 0xb2, 0x60, 0x8b, 0x9d, 0xbb, 0x1f,
-	0xb4, 0x2d, 0xc9, 0x53, 0xa8, 0x3b, 0x52, 0xe9, 0x08, 0x79, 0x41, 0x7e, 0x07, 0xeb, 0x81, 0xbf,
-	0xb7, 0xab, 0xbf, 0x5d, 0xa6, 0x3f, 0x42, 0xe9, 0xc1, 0x07, 0x83, 0x85, 0xc1, 0xe2, 0x60, 0x69,
-	0x68, 0x9f, 0x1f, 0xff, 0x37, 0x00, 0x00, 0xff, 0xff, 0xbd, 0x26, 0x91, 0x6e, 0x27, 0x1b, 0x00,
-	0x00,
 }

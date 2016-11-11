@@ -5,23 +5,19 @@
 package protos
 
 import proto "github.com/golang/protobuf/proto"
-import fmt "fmt"
-import math "math"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
-var _ = fmt.Errorf
-var _ = math.Inf
 
 // Ignoring public import of ContactSettings from data_player.proto
 
-// Ignoring public import of Currency from data_player.proto
+// Ignoring public import of PlayerAvatar from data_player.proto
 
-// Ignoring public import of DailyBonus from data_player.proto
+// Ignoring public import of Currency from data_player.proto
 
 // Ignoring public import of EquippedBadge from data_player.proto
 
-// Ignoring public import of PlayerAvatar from data_player.proto
+// Ignoring public import of PlayerStats from data_player.proto
 
 // Ignoring public import of PlayerCamera from data_player.proto
 
@@ -29,25 +25,77 @@ var _ = math.Inf
 
 // Ignoring public import of PlayerPublicProfile from data_player.proto
 
-// Ignoring public import of PlayerStats from data_player.proto
-
-// Ignoring public import of AssetDigestEntry from data.proto
-
-// Ignoring public import of BuddyPokemon from data.proto
-
-// Ignoring public import of DownloadUrlEntry from data.proto
-
-// Ignoring public import of PlayerBadge from data.proto
-
-// Ignoring public import of PlayerData from data.proto
+// Ignoring public import of DailyBonus from data_player.proto
 
 // Ignoring public import of PokedexEntry from data.proto
 
+// Ignoring public import of PlayerData from data.proto
+
+// Ignoring public import of DownloadUrlEntry from data.proto
+
+// Ignoring public import of AssetDigestEntry from data.proto
+
+// Ignoring public import of PlayerBadge from data.proto
+
 // Ignoring public import of PokemonData from data.proto
+
+// Ignoring public import of BuddyPokemon from data.proto
+
+// Ignoring public import of GymState from data_gym.proto
 
 // Ignoring public import of GymMembership from data_gym.proto
 
-// Ignoring public import of GymState from data_gym.proto
+type BattleType int32
+
+const (
+	BattleType_BATTLE_TYPE_UNSET    BattleType = 0
+	BattleType_BATTLE_TYPE_NORMAL   BattleType = 1
+	BattleType_BATTLE_TYPE_TRAINING BattleType = 2
+)
+
+var BattleType_name = map[int32]string{
+	0: "BATTLE_TYPE_UNSET",
+	1: "BATTLE_TYPE_NORMAL",
+	2: "BATTLE_TYPE_TRAINING",
+}
+var BattleType_value = map[string]int32{
+	"BATTLE_TYPE_UNSET":    0,
+	"BATTLE_TYPE_NORMAL":   1,
+	"BATTLE_TYPE_TRAINING": 2,
+}
+
+func (x BattleType) String() string {
+	return proto.EnumName(BattleType_name, int32(x))
+}
+
+type BattleState int32
+
+const (
+	BattleState_STATE_UNSET BattleState = 0
+	BattleState_ACTIVE      BattleState = 1
+	BattleState_VICTORY     BattleState = 2
+	BattleState_DEFEATED    BattleState = 3
+	BattleState_TIMED_OUT   BattleState = 4
+)
+
+var BattleState_name = map[int32]string{
+	0: "STATE_UNSET",
+	1: "ACTIVE",
+	2: "VICTORY",
+	3: "DEFEATED",
+	4: "TIMED_OUT",
+}
+var BattleState_value = map[string]int32{
+	"STATE_UNSET": 0,
+	"ACTIVE":      1,
+	"VICTORY":     2,
+	"DEFEATED":    3,
+	"TIMED_OUT":   4,
+}
+
+func (x BattleState) String() string {
+	return proto.EnumName(BattleState_name, int32(x))
+}
 
 type BattleActionType int32
 
@@ -95,82 +143,26 @@ var BattleActionType_value = map[string]int32{
 func (x BattleActionType) String() string {
 	return proto.EnumName(BattleActionType_name, int32(x))
 }
-func (BattleActionType) EnumDescriptor() ([]byte, []int) { return fileDescriptor1, []int{0} }
-
-type BattleState int32
-
-const (
-	BattleState_STATE_UNSET BattleState = 0
-	BattleState_ACTIVE      BattleState = 1
-	BattleState_VICTORY     BattleState = 2
-	BattleState_DEFEATED    BattleState = 3
-	BattleState_TIMED_OUT   BattleState = 4
-)
-
-var BattleState_name = map[int32]string{
-	0: "STATE_UNSET",
-	1: "ACTIVE",
-	2: "VICTORY",
-	3: "DEFEATED",
-	4: "TIMED_OUT",
-}
-var BattleState_value = map[string]int32{
-	"STATE_UNSET": 0,
-	"ACTIVE":      1,
-	"VICTORY":     2,
-	"DEFEATED":    3,
-	"TIMED_OUT":   4,
-}
-
-func (x BattleState) String() string {
-	return proto.EnumName(BattleState_name, int32(x))
-}
-func (BattleState) EnumDescriptor() ([]byte, []int) { return fileDescriptor1, []int{1} }
-
-type BattleType int32
-
-const (
-	BattleType_BATTLE_TYPE_UNSET    BattleType = 0
-	BattleType_BATTLE_TYPE_NORMAL   BattleType = 1
-	BattleType_BATTLE_TYPE_TRAINING BattleType = 2
-)
-
-var BattleType_name = map[int32]string{
-	0: "BATTLE_TYPE_UNSET",
-	1: "BATTLE_TYPE_NORMAL",
-	2: "BATTLE_TYPE_TRAINING",
-}
-var BattleType_value = map[string]int32{
-	"BATTLE_TYPE_UNSET":    0,
-	"BATTLE_TYPE_NORMAL":   1,
-	"BATTLE_TYPE_TRAINING": 2,
-}
-
-func (x BattleType) String() string {
-	return proto.EnumName(BattleType_name, int32(x))
-}
-func (BattleType) EnumDescriptor() ([]byte, []int) { return fileDescriptor1, []int{2} }
 
 type BattleAction struct {
-	Type                           BattleActionType   `protobuf:"varint,1,opt,name=Type,enum=POGOProtos.Data.Battle.BattleActionType" json:"Type,omitempty"`
-	ActionStartMs                  int64              `protobuf:"varint,2,opt,name=action_start_ms,json=actionStartMs" json:"action_start_ms,omitempty"`
-	DurationMs                     int32              `protobuf:"varint,3,opt,name=duration_ms,json=durationMs" json:"duration_ms,omitempty"`
-	EnergyDelta                    int32              `protobuf:"varint,5,opt,name=energy_delta,json=energyDelta" json:"energy_delta,omitempty"`
-	AttackerIndex                  int32              `protobuf:"varint,6,opt,name=attacker_index,json=attackerIndex" json:"attacker_index,omitempty"`
-	TargetIndex                    int32              `protobuf:"varint,7,opt,name=target_index,json=targetIndex" json:"target_index,omitempty"`
-	ActivePokemonId                uint64             `protobuf:"fixed64,8,opt,name=active_pokemon_id,json=activePokemonId" json:"active_pokemon_id,omitempty"`
-	PlayerJoined                   *BattleParticipant `protobuf:"bytes,9,opt,name=player_joined,json=playerJoined" json:"player_joined,omitempty"`
-	BattleResults                  *BattleResults     `protobuf:"bytes,10,opt,name=battle_results,json=battleResults" json:"battle_results,omitempty"`
-	DamageWindowsStartTimestampMss int64              `protobuf:"varint,11,opt,name=damage_windows_start_timestamp_mss,json=damageWindowsStartTimestampMss" json:"damage_windows_start_timestamp_mss,omitempty"`
-	DamageWindowsEndTimestampMss   int64              `protobuf:"varint,12,opt,name=damage_windows_end_timestamp_mss,json=damageWindowsEndTimestampMss" json:"damage_windows_end_timestamp_mss,omitempty"`
-	PlayerLeft                     *BattleParticipant `protobuf:"bytes,13,opt,name=player_left,json=playerLeft" json:"player_left,omitempty"`
-	TargetPokemonId                uint64             `protobuf:"fixed64,14,opt,name=target_pokemon_id,json=targetPokemonId" json:"target_pokemon_id,omitempty"`
+	Type                          BattleActionType   `protobuf:"varint,1,opt,enum=POGOProtos.Data.Battle.BattleActionType" json:"Type,omitempty"`
+	ActionStartMs                 int64              `protobuf:"varint,2,opt,name=action_start_ms" json:"action_start_ms,omitempty"`
+	DurationMs                    int32              `protobuf:"varint,3,opt,name=duration_ms" json:"duration_ms,omitempty"`
+	EnergyDelta                   int32              `protobuf:"varint,5,opt,name=energy_delta" json:"energy_delta,omitempty"`
+	AttackerIndex                 int32              `protobuf:"varint,6,opt,name=attacker_index" json:"attacker_index,omitempty"`
+	TargetIndex                   int32              `protobuf:"varint,7,opt,name=target_index" json:"target_index,omitempty"`
+	ActivePokemonId               uint64             `protobuf:"fixed64,8,opt,name=active_pokemon_id" json:"active_pokemon_id,omitempty"`
+	PlayerJoined                  *BattleParticipant `protobuf:"bytes,9,opt,name=player_joined" json:"player_joined,omitempty"`
+	BattleResults                 *BattleResults     `protobuf:"bytes,10,opt,name=battle_results" json:"battle_results,omitempty"`
+	DamageWindowsStartTimestampMs int64              `protobuf:"varint,11,opt,name=damage_windows_start_timestamp_ms" json:"damage_windows_start_timestamp_ms,omitempty"`
+	DamageWindowsEndTimestampMs   int64              `protobuf:"varint,12,opt,name=damage_windows_end_timestamp_ms" json:"damage_windows_end_timestamp_ms,omitempty"`
+	PlayerLeft                    *BattleParticipant `protobuf:"bytes,13,opt,name=player_left" json:"player_left,omitempty"`
+	TargetPokemonId               uint64             `protobuf:"fixed64,14,opt,name=target_pokemon_id" json:"target_pokemon_id,omitempty"`
 }
 
-func (m *BattleAction) Reset()                    { *m = BattleAction{} }
-func (m *BattleAction) String() string            { return proto.CompactTextString(m) }
-func (*BattleAction) ProtoMessage()               {}
-func (*BattleAction) Descriptor() ([]byte, []int) { return fileDescriptor1, []int{0} }
+func (m *BattleAction) Reset()         { *m = BattleAction{} }
+func (m *BattleAction) String() string { return proto.CompactTextString(m) }
+func (*BattleAction) ProtoMessage()    {}
 
 func (m *BattleAction) GetPlayerJoined() *BattleParticipant {
 	if m != nil {
@@ -193,38 +185,16 @@ func (m *BattleAction) GetPlayerLeft() *BattleParticipant {
 	return nil
 }
 
-type BattleLog struct {
-	State                  BattleState     `protobuf:"varint,1,opt,name=state,enum=POGOProtos.Data.Battle.BattleState" json:"state,omitempty"`
-	BattleType             BattleType      `protobuf:"varint,2,opt,name=battle_type,json=battleType,enum=POGOProtos.Data.Battle.BattleType" json:"battle_type,omitempty"`
-	ServerMs               int64           `protobuf:"varint,3,opt,name=server_ms,json=serverMs" json:"server_ms,omitempty"`
-	BattleActions          []*BattleAction `protobuf:"bytes,4,rep,name=battle_actions,json=battleActions" json:"battle_actions,omitempty"`
-	BattleStartTimestampMs int64           `protobuf:"varint,5,opt,name=battle_start_timestamp_ms,json=battleStartTimestampMs" json:"battle_start_timestamp_ms,omitempty"`
-	BattleEndTimestampMs   int64           `protobuf:"varint,6,opt,name=battle_end_timestamp_ms,json=battleEndTimestampMs" json:"battle_end_timestamp_ms,omitempty"`
-}
-
-func (m *BattleLog) Reset()                    { *m = BattleLog{} }
-func (m *BattleLog) String() string            { return proto.CompactTextString(m) }
-func (*BattleLog) ProtoMessage()               {}
-func (*BattleLog) Descriptor() ([]byte, []int) { return fileDescriptor1, []int{1} }
-
-func (m *BattleLog) GetBattleActions() []*BattleAction {
-	if m != nil {
-		return m.BattleActions
-	}
-	return nil
-}
-
 type BattleParticipant struct {
-	ActivePokemon        *BattlePokemonInfo   `protobuf:"bytes,1,opt,name=active_pokemon,json=activePokemon" json:"active_pokemon,omitempty"`
-	TrainerPublicProfile *PlayerPublicProfile `protobuf:"bytes,2,opt,name=trainer_public_profile,json=trainerPublicProfile" json:"trainer_public_profile,omitempty"`
-	ReversePokemon       []*BattlePokemonInfo `protobuf:"bytes,3,rep,name=reverse_pokemon,json=reversePokemon" json:"reverse_pokemon,omitempty"`
-	DefeatedPokemon      []*BattlePokemonInfo `protobuf:"bytes,4,rep,name=defeated_pokemon,json=defeatedPokemon" json:"defeated_pokemon,omitempty"`
+	ActivePokemon        *BattlePokemonInfo   `protobuf:"bytes,1,opt,name=active_pokemon" json:"active_pokemon,omitempty"`
+	TrainerPublicProfile *PlayerPublicProfile `protobuf:"bytes,2,opt,name=trainer_public_profile" json:"trainer_public_profile,omitempty"`
+	ReversePokemon       []*BattlePokemonInfo `protobuf:"bytes,3,rep,name=reverse_pokemon" json:"reverse_pokemon,omitempty"`
+	DefeatedPokemon      []*BattlePokemonInfo `protobuf:"bytes,4,rep,name=defeated_pokemon" json:"defeated_pokemon,omitempty"`
 }
 
-func (m *BattleParticipant) Reset()                    { *m = BattleParticipant{} }
-func (m *BattleParticipant) String() string            { return proto.CompactTextString(m) }
-func (*BattleParticipant) ProtoMessage()               {}
-func (*BattleParticipant) Descriptor() ([]byte, []int) { return fileDescriptor1, []int{2} }
+func (m *BattleParticipant) Reset()         { *m = BattleParticipant{} }
+func (m *BattleParticipant) String() string { return proto.CompactTextString(m) }
+func (*BattleParticipant) ProtoMessage()    {}
 
 func (m *BattleParticipant) GetActivePokemon() *BattlePokemonInfo {
 	if m != nil {
@@ -255,15 +225,14 @@ func (m *BattleParticipant) GetDefeatedPokemon() []*BattlePokemonInfo {
 }
 
 type BattlePokemonInfo struct {
-	PokemonData   *PokemonData `protobuf:"bytes,1,opt,name=pokemon_data,json=pokemonData" json:"pokemon_data,omitempty"`
-	CurrentHealth int32        `protobuf:"varint,2,opt,name=current_health,json=currentHealth" json:"current_health,omitempty"`
-	CurrentEnergy int32        `protobuf:"varint,3,opt,name=current_energy,json=currentEnergy" json:"current_energy,omitempty"`
+	PokemonData   *PokemonData `protobuf:"bytes,1,opt,name=pokemon_data" json:"pokemon_data,omitempty"`
+	CurrentHealth int32        `protobuf:"varint,2,opt,name=current_health" json:"current_health,omitempty"`
+	CurrentEnergy int32        `protobuf:"varint,3,opt,name=current_energy" json:"current_energy,omitempty"`
 }
 
-func (m *BattlePokemonInfo) Reset()                    { *m = BattlePokemonInfo{} }
-func (m *BattlePokemonInfo) String() string            { return proto.CompactTextString(m) }
-func (*BattlePokemonInfo) ProtoMessage()               {}
-func (*BattlePokemonInfo) Descriptor() ([]byte, []int) { return fileDescriptor1, []int{3} }
+func (m *BattlePokemonInfo) Reset()         { *m = BattlePokemonInfo{} }
+func (m *BattlePokemonInfo) String() string { return proto.CompactTextString(m) }
+func (*BattlePokemonInfo) ProtoMessage()    {}
 
 func (m *BattlePokemonInfo) GetPokemonData() *PokemonData {
 	if m != nil {
@@ -272,18 +241,37 @@ func (m *BattlePokemonInfo) GetPokemonData() *PokemonData {
 	return nil
 }
 
-type BattleResults struct {
-	GymState                *GymState            `protobuf:"bytes,1,opt,name=gym_state,json=gymState" json:"gym_state,omitempty"`
-	Attackers               []*BattleParticipant `protobuf:"bytes,2,rep,name=attackers" json:"attackers,omitempty"`
-	PlayerExperienceAwarded []int32              `protobuf:"varint,3,rep,packed,name=player_experience_awarded,json=playerExperienceAwarded" json:"player_experience_awarded,omitempty"`
-	NextDefenderPokemonId   int64                `protobuf:"varint,4,opt,name=next_defender_pokemon_id,json=nextDefenderPokemonId" json:"next_defender_pokemon_id,omitempty"`
-	GymPointsDelta          int32                `protobuf:"varint,5,opt,name=gym_points_delta,json=gymPointsDelta" json:"gym_points_delta,omitempty"`
+type BattleLog struct {
+	State                  BattleState     `protobuf:"varint,1,opt,name=state,enum=POGOProtos.Data.Battle.BattleState" json:"state,omitempty"`
+	BattleType             BattleType      `protobuf:"varint,2,opt,name=battle_type,enum=POGOProtos.Data.Battle.BattleType" json:"battle_type,omitempty"`
+	ServerMs               int64           `protobuf:"varint,3,opt,name=server_ms" json:"server_ms,omitempty"`
+	BattleActions          []*BattleAction `protobuf:"bytes,4,rep,name=battle_actions" json:"battle_actions,omitempty"`
+	BattleStartTimestampMs int64           `protobuf:"varint,5,opt,name=battle_start_timestamp_ms" json:"battle_start_timestamp_ms,omitempty"`
+	BattleEndTimestampMs   int64           `protobuf:"varint,6,opt,name=battle_end_timestamp_ms" json:"battle_end_timestamp_ms,omitempty"`
 }
 
-func (m *BattleResults) Reset()                    { *m = BattleResults{} }
-func (m *BattleResults) String() string            { return proto.CompactTextString(m) }
-func (*BattleResults) ProtoMessage()               {}
-func (*BattleResults) Descriptor() ([]byte, []int) { return fileDescriptor1, []int{4} }
+func (m *BattleLog) Reset()         { *m = BattleLog{} }
+func (m *BattleLog) String() string { return proto.CompactTextString(m) }
+func (*BattleLog) ProtoMessage()    {}
+
+func (m *BattleLog) GetBattleActions() []*BattleAction {
+	if m != nil {
+		return m.BattleActions
+	}
+	return nil
+}
+
+type BattleResults struct {
+	GymState                *GymState            `protobuf:"bytes,1,opt,name=gym_state" json:"gym_state,omitempty"`
+	Attackers               []*BattleParticipant `protobuf:"bytes,2,rep,name=attackers" json:"attackers,omitempty"`
+	PlayerExperienceAwarded []int32              `protobuf:"varint,3,rep,name=player_experience_awarded" json:"player_experience_awarded,omitempty"`
+	NextDefenderPokemonId   int64                `protobuf:"varint,4,opt,name=next_defender_pokemon_id" json:"next_defender_pokemon_id,omitempty"`
+	GymPointsDelta          int32                `protobuf:"varint,5,opt,name=gym_points_delta" json:"gym_points_delta,omitempty"`
+}
+
+func (m *BattleResults) Reset()         { *m = BattleResults{} }
+func (m *BattleResults) String() string { return proto.CompactTextString(m) }
+func (*BattleResults) ProtoMessage()    {}
 
 func (m *BattleResults) GetGymState() *GymState {
 	if m != nil {
@@ -300,86 +288,7 @@ func (m *BattleResults) GetAttackers() []*BattleParticipant {
 }
 
 func init() {
-	proto.RegisterType((*BattleAction)(nil), "POGOProtos.Data.Battle.BattleAction")
-	proto.RegisterType((*BattleLog)(nil), "POGOProtos.Data.Battle.BattleLog")
-	proto.RegisterType((*BattleParticipant)(nil), "POGOProtos.Data.Battle.BattleParticipant")
-	proto.RegisterType((*BattlePokemonInfo)(nil), "POGOProtos.Data.Battle.BattlePokemonInfo")
-	proto.RegisterType((*BattleResults)(nil), "POGOProtos.Data.Battle.BattleResults")
-	proto.RegisterEnum("POGOProtos.Data.Battle.BattleActionType", BattleActionType_name, BattleActionType_value)
-	proto.RegisterEnum("POGOProtos.Data.Battle.BattleState", BattleState_name, BattleState_value)
 	proto.RegisterEnum("POGOProtos.Data.Battle.BattleType", BattleType_name, BattleType_value)
-}
-
-func init() { proto.RegisterFile("data_battle.proto", fileDescriptor1) }
-
-var fileDescriptor1 = []byte{
-	// 1085 bytes of a gzipped FileDescriptorProto
-	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x09, 0x6e, 0x88, 0x02, 0xff, 0x94, 0x56, 0x5b, 0x6f, 0xe3, 0x44,
-	0x14, 0x5e, 0xe7, 0xd2, 0x4d, 0x8e, 0x93, 0xd4, 0x1d, 0xba, 0x5d, 0x77, 0x59, 0x20, 0x04, 0x16,
-	0x85, 0x22, 0xf5, 0xa1, 0x08, 0xa1, 0x5d, 0x21, 0x21, 0xb7, 0x71, 0x4b, 0xda, 0x5c, 0x8c, 0xeb,
-	0xee, 0xaa, 0xbc, 0x8c, 0x26, 0xf1, 0x34, 0x6b, 0x36, 0xbe, 0xc8, 0x33, 0xbd, 0xe4, 0xef, 0xf0,
-	0x17, 0xf8, 0x33, 0xfc, 0x03, 0xde, 0x79, 0xe6, 0x01, 0x79, 0x66, 0x9c, 0x4b, 0x83, 0x0a, 0x7d,
-	0xa8, 0xea, 0xf9, 0xce, 0x77, 0x3e, 0x8f, 0xcf, 0x37, 0xe7, 0x4c, 0x60, 0xcb, 0x27, 0x9c, 0xe0,
-	0x11, 0xe1, 0x7c, 0x4a, 0xf7, 0x93, 0x34, 0xe6, 0x31, 0xda, 0x71, 0x86, 0x27, 0x43, 0x27, 0x7b,
-	0x64, 0xfb, 0x1d, 0xc2, 0xc9, 0xfe, 0xa1, 0x88, 0xbe, 0x90, 0xd4, 0x64, 0x4a, 0x66, 0x34, 0x95,
-	0xd4, 0x17, 0x90, 0x41, 0xea, 0xb9, 0x21, 0xc2, 0x93, 0x59, 0x28, 0xd7, 0xad, 0x3f, 0xca, 0x50,
-	0x93, 0x99, 0xd6, 0x98, 0x07, 0x71, 0x84, 0x7e, 0x80, 0x92, 0x37, 0x4b, 0xa8, 0xa9, 0x35, 0xb5,
-	0x76, 0xe3, 0xa0, 0xbd, 0xff, 0xef, 0xaf, 0xd9, 0x5f, 0xce, 0xc9, 0xf8, 0xae, 0xc8, 0x42, 0x5f,
-	0xc1, 0x26, 0x11, 0x18, 0x66, 0x9c, 0xa4, 0x1c, 0x87, 0xcc, 0x2c, 0x34, 0xb5, 0x76, 0xd1, 0xad,
-	0x4b, 0xf8, 0x3c, 0x43, 0xfb, 0x0c, 0x7d, 0x06, 0xba, 0x7f, 0x9d, 0x12, 0xc1, 0x0c, 0x99, 0x59,
-	0x6c, 0x6a, 0xed, 0xb2, 0x0b, 0x39, 0xd4, 0x67, 0xe8, 0x73, 0xa8, 0xd1, 0x88, 0xa6, 0x93, 0x19,
-	0xf6, 0xe9, 0x94, 0x13, 0xb3, 0x2c, 0x18, 0xba, 0xc4, 0x3a, 0x19, 0x84, 0x5e, 0x41, 0x83, 0x70,
-	0x4e, 0xc6, 0x1f, 0x68, 0x8a, 0x83, 0xc8, 0xa7, 0x77, 0xe6, 0x86, 0x20, 0xd5, 0x73, 0xb4, 0x9b,
-	0x81, 0x99, 0x12, 0x27, 0xe9, 0x84, 0x72, 0x45, 0x7a, 0x2a, 0x95, 0x24, 0x26, 0x29, 0x7b, 0xb0,
-	0x95, 0x6d, 0xef, 0x86, 0xe2, 0x24, 0xfe, 0x40, 0xc3, 0x38, 0xc2, 0x81, 0x6f, 0x56, 0x9a, 0x5a,
-	0x7b, 0xc3, 0xdd, 0x94, 0x01, 0x47, 0xe2, 0x5d, 0x1f, 0x0d, 0xa0, 0x2e, 0x8b, 0x8b, 0x7f, 0x8d,
-	0x83, 0x88, 0xfa, 0x66, 0xb5, 0xa9, 0xb5, 0xf5, 0x83, 0xaf, 0x1f, 0x2e, 0x94, 0x43, 0x52, 0x1e,
-	0x8c, 0x83, 0x84, 0x44, 0xdc, 0xad, 0xc9, 0xfc, 0x53, 0x91, 0x8e, 0x7a, 0xd0, 0x90, 0xbe, 0xe2,
-	0x94, 0xb2, 0xeb, 0x29, 0x67, 0x26, 0x08, 0xc1, 0x57, 0x0f, 0x0b, 0xba, 0x92, 0xec, 0xd6, 0x47,
-	0xcb, 0x4b, 0x74, 0x0a, 0x2d, 0x9f, 0x84, 0x64, 0x42, 0xf1, 0x6d, 0x10, 0xf9, 0xf1, 0x2d, 0x53,
-	0x3e, 0xf0, 0x20, 0xa4, 0x8c, 0x93, 0x30, 0xc1, 0x21, 0x63, 0xa6, 0x2e, 0x2c, 0xf9, 0x54, 0x32,
-	0xdf, 0x49, 0xa2, 0x70, 0xc6, 0xcb, 0x69, 0x7d, 0xc6, 0xd0, 0x31, 0x34, 0xef, 0x69, 0xd1, 0xc8,
-	0xbf, 0xa7, 0x54, 0x13, 0x4a, 0x2f, 0x57, 0x94, 0xec, 0xc8, 0x5f, 0xd1, 0x39, 0x05, 0x5d, 0x55,
-	0x6c, 0x4a, 0xaf, 0xb8, 0x59, 0x7f, 0x6c, 0xbd, 0x40, 0x66, 0xf7, 0xe8, 0x15, 0xcf, 0x9c, 0x52,
-	0x66, 0x2e, 0x39, 0xd5, 0x90, 0x4e, 0xc9, 0xc0, 0xdc, 0xa9, 0xd6, 0x9f, 0x05, 0xa8, 0x4a, 0xb5,
-	0x5e, 0x3c, 0x41, 0xaf, 0xa1, 0xcc, 0x38, 0xe1, 0xf9, 0xc1, 0xfe, 0xe2, 0xe1, 0xf7, 0x9f, 0x67,
-	0x54, 0x57, 0x66, 0xa0, 0x23, 0xd0, 0x95, 0x45, 0x3c, 0xeb, 0x8c, 0x82, 0x10, 0x68, 0x3d, 0x2c,
-	0x20, 0x7a, 0x02, 0x46, 0xf3, 0x67, 0xf4, 0x31, 0x54, 0x19, 0x4d, 0x6f, 0x68, 0x9a, 0x9f, 0xf7,
-	0xa2, 0x5b, 0x91, 0x40, 0x9f, 0xa1, 0xb3, 0xf9, 0x21, 0x90, 0x6d, 0xc2, 0xcc, 0x52, 0xb3, 0xd8,
-	0xd6, 0x0f, 0xbe, 0xfc, 0x3f, 0xed, 0x97, 0x9f, 0x01, 0xb9, 0x62, 0xe8, 0x35, 0xec, 0x2a, 0xb1,
-	0x75, 0xef, 0x45, 0x1f, 0x15, 0xdd, 0x9d, 0x51, 0xfe, 0x95, 0x2b, 0x9e, 0xa3, 0xef, 0xe0, 0xb9,
-	0x4a, 0xbd, 0x6f, 0xb5, 0xe8, 0xad, 0xa2, 0xbb, 0x2d, 0xc3, 0xab, 0x16, 0xb7, 0xfe, 0x2a, 0xc0,
-	0xd6, 0x9a, 0x6f, 0xc8, 0x81, 0xc6, 0x6a, 0x57, 0x89, 0xd2, 0xff, 0xb7, 0xf5, 0xca, 0xc0, 0xe8,
-	0x2a, 0x96, 0x53, 0x63, 0xde, 0x7d, 0x88, 0xc0, 0x0e, 0x4f, 0x49, 0x10, 0xd1, 0x14, 0x27, 0xd7,
-	0xa3, 0x69, 0x30, 0xc6, 0x49, 0x1a, 0x5f, 0x05, 0x53, 0xe9, 0x89, 0x7e, 0xf0, 0xcd, 0x9a, 0xb2,
-	0x23, 0xe7, 0xa0, 0xfc, 0xe7, 0x88, 0x1c, 0x47, 0xa6, 0xb8, 0xdb, 0x4a, 0x6a, 0x05, 0x45, 0x2e,
-	0x6c, 0xa6, 0xf4, 0x86, 0xa6, 0x6c, 0xb1, 0xeb, 0xa2, 0xb0, 0xe2, 0x11, 0xbb, 0x6e, 0x28, 0x85,
-	0x7c, 0xdb, 0x1e, 0x18, 0x3e, 0xbd, 0xa2, 0x84, 0x53, 0x7f, 0x2e, 0x5a, 0x7a, 0xac, 0xe8, 0x66,
-	0x2e, 0xa1, 0xc0, 0xd6, 0x6f, 0xda, 0xbc, 0xe8, 0x0b, 0x1a, 0xfa, 0x11, 0x6a, 0x79, 0x67, 0x64,
-	0x93, 0x5e, 0x95, 0xfc, 0xe5, 0x7a, 0x61, 0x24, 0x29, 0x7b, 0x76, 0xf5, 0x64, 0xb1, 0xc8, 0xa6,
-	0xea, 0xf8, 0x3a, 0x4d, 0x69, 0xc4, 0xf1, 0x7b, 0x4a, 0xa6, 0xfc, 0xbd, 0xa8, 0x6d, 0xd9, 0xad,
-	0x2b, 0xf4, 0x27, 0x01, 0x2e, 0xd3, 0xe4, 0x4c, 0x56, 0x33, 0x3c, 0xa7, 0xd9, 0x02, 0x6c, 0xfd,
-	0x5e, 0x80, 0xfa, 0xca, 0xc0, 0x42, 0x6f, 0xa0, 0x3a, 0x99, 0x85, 0x78, 0xd1, 0x8b, 0xfa, 0xc1,
-	0x27, 0x6b, 0xbb, 0x3b, 0x99, 0x85, 0xd9, 0x9f, 0xec, 0xc2, 0xca, 0x44, 0x3d, 0xa1, 0x13, 0xa8,
-	0xe6, 0xb3, 0x3d, 0xbb, 0x57, 0x8a, 0x8f, 0x9b, 0x23, 0x8b, 0x5c, 0xf4, 0x06, 0x76, 0xd5, 0x48,
-	0xa2, 0x77, 0x09, 0x4d, 0x03, 0x1a, 0x8d, 0x29, 0x26, 0xb7, 0x24, 0xf5, 0xa9, 0x2f, 0xfc, 0x2e,
-	0xbb, 0xcf, 0x25, 0xc1, 0x9e, 0xc7, 0x2d, 0x19, 0x46, 0xdf, 0x83, 0x19, 0xd1, 0x3b, 0x8e, 0x33,
-	0x3f, 0x22, 0x3f, 0x3b, 0x8a, 0x8b, 0x49, 0x54, 0x12, 0x4d, 0xf2, 0x2c, 0x8b, 0x77, 0x54, 0x78,
-	0x71, 0x73, 0xb4, 0xc1, 0xc8, 0xbe, 0x3c, 0x89, 0x83, 0x88, 0xb3, 0x95, 0x6b, 0xad, 0x31, 0x99,
-	0x85, 0x8e, 0x80, 0xc5, 0xcd, 0xb6, 0xf7, 0xb7, 0x06, 0xc6, 0xfd, 0x0b, 0x16, 0x19, 0x50, 0xb3,
-	0x8e, 0xbc, 0xee, 0x70, 0x80, 0x2f, 0x06, 0xe7, 0xb6, 0x67, 0x3c, 0x41, 0x5b, 0x50, 0x57, 0x88,
-	0xe5, 0x79, 0xd6, 0xd1, 0x99, 0xa1, 0x2d, 0x91, 0x3a, 0xc3, 0xce, 0x89, 0x6d, 0x14, 0xd0, 0x2e,
-	0x3c, 0x53, 0xc8, 0xb9, 0x63, 0x1f, 0x75, 0xad, 0x5e, 0x4e, 0x2e, 0xa2, 0xe7, 0xf0, 0x51, 0x1e,
-	0x7a, 0x67, 0x39, 0xd8, 0x19, 0x9e, 0xd9, 0xfd, 0xe1, 0xc0, 0x28, 0x2d, 0xa9, 0x1c, 0x5b, 0xdd,
-	0x81, 0x67, 0x94, 0xd1, 0x0e, 0x20, 0x85, 0x38, 0x3d, 0xeb, 0xd2, 0x76, 0xf1, 0xe9, 0xb0, 0x3b,
-	0x30, 0x36, 0xd6, 0xf1, 0x9f, 0x2f, 0xba, 0x9e, 0xf1, 0x14, 0x21, 0x68, 0x28, 0xfc, 0x6d, 0xf7,
-	0xc8, 0x1b, 0xba, 0x97, 0x46, 0x65, 0x69, 0xbb, 0x1d, 0xfb, 0xd8, 0xb6, 0x3c, 0xa3, 0x8a, 0xb6,
-	0xc1, 0x50, 0x90, 0xd7, 0xed, 0xdb, 0x1d, 0x3c, 0xbc, 0xf0, 0x0c, 0xd8, 0xf3, 0x40, 0x5f, 0x9a,
-	0xc2, 0x68, 0x13, 0xf4, 0x73, 0xcf, 0xf2, 0xec, 0xf9, 0x77, 0x03, 0x6c, 0x64, 0x59, 0x6f, 0x6d,
-	0x43, 0x43, 0x3a, 0x3c, 0xcd, 0xdf, 0x50, 0x40, 0x35, 0xa8, 0x48, 0x69, 0xbb, 0x63, 0x14, 0x51,
-	0x1d, 0xaa, 0x0b, 0xd5, 0xd2, 0xde, 0x05, 0xc0, 0x62, 0x34, 0xa3, 0x67, 0xb0, 0x75, 0x68, 0x79,
-	0x5e, 0xcf, 0xc6, 0xde, 0xa5, 0xb3, 0x90, 0xde, 0x01, 0xb4, 0x0c, 0x0f, 0x86, 0x6e, 0xdf, 0xea,
-	0x19, 0x1a, 0x32, 0x61, 0x7b, 0x19, 0xf7, 0x5c, 0xab, 0x3b, 0xe8, 0x0e, 0x4e, 0x8c, 0xc2, 0x61,
-	0xe5, 0x97, 0x0d, 0xf1, 0x4b, 0x8a, 0x39, 0x4f, 0x1c, 0xcd, 0x29, 0x8c, 0xe4, 0xea, 0xdb, 0x7f,
-	0x02, 0x00, 0x00, 0xff, 0xff, 0x99, 0x55, 0x5e, 0x4b, 0xb3, 0x09, 0x00, 0x00,
+	proto.RegisterEnum("POGOProtos.Data.Battle.BattleState", BattleState_name, BattleState_value)
+	proto.RegisterEnum("POGOProtos.Data.Battle.BattleActionType", BattleActionType_name, BattleActionType_value)
 }
