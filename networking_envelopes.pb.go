@@ -5,19 +5,15 @@
 package protos
 
 import proto "github.com/golang/protobuf/proto"
-import fmt "fmt"
-import math "math"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
-var _ = fmt.Errorf
-var _ = math.Inf
+
+// Ignoring public import of PlatformRequestType from networking_platform.proto
 
 // Ignoring public import of Request from networking_requests.proto
 
 // Ignoring public import of RequestType from networking_requests.proto
-
-// Ignoring public import of PlatformRequestType from networking_platform.proto
 
 type ResponseEnvelope_StatusCode int32
 
@@ -59,38 +55,70 @@ var ResponseEnvelope_StatusCode_value = map[string]int32{
 func (x ResponseEnvelope_StatusCode) String() string {
 	return proto.EnumName(ResponseEnvelope_StatusCode_name, int32(x))
 }
-func (ResponseEnvelope_StatusCode) EnumDescriptor() ([]byte, []int) {
-	return fileDescriptor12, []int{2, 0}
-}
 
 type AuthTicket struct {
 	Start             []byte `protobuf:"bytes,1,opt,name=start,proto3" json:"start,omitempty"`
-	ExpireTimestampMs uint64 `protobuf:"varint,2,opt,name=expire_timestamp_ms,json=expireTimestampMs" json:"expire_timestamp_ms,omitempty"`
+	ExpireTimestampMs uint64 `protobuf:"varint,2,opt,name=expire_timestamp_ms" json:"expire_timestamp_ms,omitempty"`
 	End               []byte `protobuf:"bytes,3,opt,name=end,proto3" json:"end,omitempty"`
 }
 
-func (m *AuthTicket) Reset()                    { *m = AuthTicket{} }
-func (m *AuthTicket) String() string            { return proto.CompactTextString(m) }
-func (*AuthTicket) ProtoMessage()               {}
-func (*AuthTicket) Descriptor() ([]byte, []int) { return fileDescriptor12, []int{0} }
+func (m *AuthTicket) Reset()         { *m = AuthTicket{} }
+func (m *AuthTicket) String() string { return proto.CompactTextString(m) }
+func (*AuthTicket) ProtoMessage()    {}
 
-type RequestEnvelope struct {
-	StatusCode             int32                              `protobuf:"varint,1,opt,name=status_code,json=statusCode" json:"status_code,omitempty"`
-	RequestId              uint64                             `protobuf:"varint,3,opt,name=request_id,json=requestId" json:"request_id,omitempty"`
-	Requests               []*Request                         `protobuf:"bytes,4,rep,name=requests" json:"requests,omitempty"`
-	PlatformRequests       []*RequestEnvelope_PlatformRequest `protobuf:"bytes,6,rep,name=platform_requests,json=platformRequests" json:"platform_requests,omitempty"`
-	Latitude               float64                            `protobuf:"fixed64,7,opt,name=latitude" json:"latitude,omitempty"`
-	Longitude              float64                            `protobuf:"fixed64,8,opt,name=longitude" json:"longitude,omitempty"`
-	Accuracy               int32                              `protobuf:"varint,9,opt,name=accuracy" json:"accuracy,omitempty"`
-	AuthInfo               *RequestEnvelope_AuthInfo          `protobuf:"bytes,10,opt,name=auth_info,json=authInfo" json:"auth_info,omitempty"`
-	AuthTicket             *AuthTicket                        `protobuf:"bytes,11,opt,name=auth_ticket,json=authTicket" json:"auth_ticket,omitempty"`
-	MsSinceLastLocationfix int64                              `protobuf:"varint,12,opt,name=ms_since_last_locationfix,json=msSinceLastLocationfix" json:"ms_since_last_locationfix,omitempty"`
+type ResponseEnvelope struct {
+	StatusCode      ResponseEnvelope_StatusCode          `protobuf:"varint,1,opt,name=status_code,enum=POGOProtos.Networking.Envelopes.ResponseEnvelope_StatusCode" json:"status_code,omitempty"`
+	RequestId       uint64                               `protobuf:"varint,2,opt,name=request_id" json:"request_id,omitempty"`
+	ApiUrl          string                               `protobuf:"bytes,3,opt,name=api_url" json:"api_url,omitempty"`
+	PlatformReturns []*ResponseEnvelope_PlatformResponse `protobuf:"bytes,6,rep,name=platform_returns" json:"platform_returns,omitempty"`
+	AuthTicket      *AuthTicket                          `protobuf:"bytes,7,opt,name=auth_ticket" json:"auth_ticket,omitempty"`
+	Returns         [][]byte                             `protobuf:"bytes,100,rep,name=returns,proto3" json:"returns,omitempty"`
+	Error           string                               `protobuf:"bytes,101,opt,name=error" json:"error,omitempty"`
 }
 
-func (m *RequestEnvelope) Reset()                    { *m = RequestEnvelope{} }
-func (m *RequestEnvelope) String() string            { return proto.CompactTextString(m) }
-func (*RequestEnvelope) ProtoMessage()               {}
-func (*RequestEnvelope) Descriptor() ([]byte, []int) { return fileDescriptor12, []int{1} }
+func (m *ResponseEnvelope) Reset()         { *m = ResponseEnvelope{} }
+func (m *ResponseEnvelope) String() string { return proto.CompactTextString(m) }
+func (*ResponseEnvelope) ProtoMessage()    {}
+
+func (m *ResponseEnvelope) GetPlatformReturns() []*ResponseEnvelope_PlatformResponse {
+	if m != nil {
+		return m.PlatformReturns
+	}
+	return nil
+}
+
+func (m *ResponseEnvelope) GetAuthTicket() *AuthTicket {
+	if m != nil {
+		return m.AuthTicket
+	}
+	return nil
+}
+
+type ResponseEnvelope_PlatformResponse struct {
+	Type     PlatformRequestType `protobuf:"varint,1,opt,name=type,enum=POGOProtos.Networking.Platform.PlatformRequestType" json:"type,omitempty"`
+	Response []byte              `protobuf:"bytes,2,opt,name=response,proto3" json:"response,omitempty"`
+}
+
+func (m *ResponseEnvelope_PlatformResponse) Reset()         { *m = ResponseEnvelope_PlatformResponse{} }
+func (m *ResponseEnvelope_PlatformResponse) String() string { return proto.CompactTextString(m) }
+func (*ResponseEnvelope_PlatformResponse) ProtoMessage()    {}
+
+type RequestEnvelope struct {
+	StatusCode             int32                              `protobuf:"varint,1,opt,name=status_code" json:"status_code,omitempty"`
+	RequestId              uint64                             `protobuf:"varint,3,opt,name=request_id" json:"request_id,omitempty"`
+	Requests               []*Request                         `protobuf:"bytes,4,rep,name=requests" json:"requests,omitempty"`
+	PlatformRequests       []*RequestEnvelope_PlatformRequest `protobuf:"bytes,6,rep,name=platform_requests" json:"platform_requests,omitempty"`
+	Latitude               float64                            `protobuf:"fixed64,7,opt,name=latitude" json:"latitude,omitempty"`
+	Longitude              float64                            `protobuf:"fixed64,8,opt,name=longitude" json:"longitude,omitempty"`
+	Accuracy               float64                            `protobuf:"fixed64,9,opt,name=accuracy" json:"accuracy,omitempty"`
+	AuthInfo               *RequestEnvelope_AuthInfo          `protobuf:"bytes,10,opt,name=auth_info" json:"auth_info,omitempty"`
+	AuthTicket             *AuthTicket                        `protobuf:"bytes,11,opt,name=auth_ticket" json:"auth_ticket,omitempty"`
+	MsSinceLastLocationfix int64                              `protobuf:"varint,12,opt,name=ms_since_last_locationfix" json:"ms_since_last_locationfix,omitempty"`
+}
+
+func (m *RequestEnvelope) Reset()         { *m = RequestEnvelope{} }
+func (m *RequestEnvelope) String() string { return proto.CompactTextString(m) }
+func (*RequestEnvelope) ProtoMessage()    {}
 
 func (m *RequestEnvelope) GetRequests() []*Request {
 	if m != nil {
@@ -125,10 +153,9 @@ type RequestEnvelope_AuthInfo struct {
 	Token    *RequestEnvelope_AuthInfo_JWT `protobuf:"bytes,2,opt,name=token" json:"token,omitempty"`
 }
 
-func (m *RequestEnvelope_AuthInfo) Reset()                    { *m = RequestEnvelope_AuthInfo{} }
-func (m *RequestEnvelope_AuthInfo) String() string            { return proto.CompactTextString(m) }
-func (*RequestEnvelope_AuthInfo) ProtoMessage()               {}
-func (*RequestEnvelope_AuthInfo) Descriptor() ([]byte, []int) { return fileDescriptor12, []int{1, 0} }
+func (m *RequestEnvelope_AuthInfo) Reset()         { *m = RequestEnvelope_AuthInfo{} }
+func (m *RequestEnvelope_AuthInfo) String() string { return proto.CompactTextString(m) }
+func (*RequestEnvelope_AuthInfo) ProtoMessage()    {}
 
 func (m *RequestEnvelope_AuthInfo) GetToken() *RequestEnvelope_AuthInfo_JWT {
 	if m != nil {
@@ -145,74 +172,27 @@ type RequestEnvelope_AuthInfo_JWT struct {
 func (m *RequestEnvelope_AuthInfo_JWT) Reset()         { *m = RequestEnvelope_AuthInfo_JWT{} }
 func (m *RequestEnvelope_AuthInfo_JWT) String() string { return proto.CompactTextString(m) }
 func (*RequestEnvelope_AuthInfo_JWT) ProtoMessage()    {}
-func (*RequestEnvelope_AuthInfo_JWT) Descriptor() ([]byte, []int) {
-	return fileDescriptor12, []int{1, 0, 0}
-}
 
 type RequestEnvelope_PlatformRequest struct {
 	Type           PlatformRequestType `protobuf:"varint,1,opt,name=type,enum=POGOProtos.Networking.Platform.PlatformRequestType" json:"type,omitempty"`
-	RequestMessage []byte              `protobuf:"bytes,2,opt,name=request_message,json=requestMessage,proto3" json:"request_message,omitempty"`
+	RequestMessage []byte              `protobuf:"bytes,2,opt,name=request_message,proto3" json:"request_message,omitempty"`
 }
 
 func (m *RequestEnvelope_PlatformRequest) Reset()         { *m = RequestEnvelope_PlatformRequest{} }
 func (m *RequestEnvelope_PlatformRequest) String() string { return proto.CompactTextString(m) }
 func (*RequestEnvelope_PlatformRequest) ProtoMessage()    {}
-func (*RequestEnvelope_PlatformRequest) Descriptor() ([]byte, []int) {
-	return fileDescriptor12, []int{1, 1}
-}
-
-type ResponseEnvelope struct {
-	StatusCode      ResponseEnvelope_StatusCode          `protobuf:"varint,1,opt,name=status_code,json=statusCode,enum=POGOProtos.Networking.Envelopes.ResponseEnvelope_StatusCode" json:"status_code,omitempty"`
-	RequestId       uint64                               `protobuf:"varint,2,opt,name=request_id,json=requestId" json:"request_id,omitempty"`
-	ApiUrl          string                               `protobuf:"bytes,3,opt,name=api_url,json=apiUrl" json:"api_url,omitempty"`
-	PlatformReturns []*ResponseEnvelope_PlatformResponse `protobuf:"bytes,6,rep,name=platform_returns,json=platformReturns" json:"platform_returns,omitempty"`
-	AuthTicket      *AuthTicket                          `protobuf:"bytes,7,opt,name=auth_ticket,json=authTicket" json:"auth_ticket,omitempty"`
-	Returns         [][]byte                             `protobuf:"bytes,100,rep,name=returns,proto3" json:"returns,omitempty"`
-	Error           string                               `protobuf:"bytes,101,opt,name=error" json:"error,omitempty"`
-}
-
-func (m *ResponseEnvelope) Reset()                    { *m = ResponseEnvelope{} }
-func (m *ResponseEnvelope) String() string            { return proto.CompactTextString(m) }
-func (*ResponseEnvelope) ProtoMessage()               {}
-func (*ResponseEnvelope) Descriptor() ([]byte, []int) { return fileDescriptor12, []int{2} }
-
-func (m *ResponseEnvelope) GetPlatformReturns() []*ResponseEnvelope_PlatformResponse {
-	if m != nil {
-		return m.PlatformReturns
-	}
-	return nil
-}
-
-func (m *ResponseEnvelope) GetAuthTicket() *AuthTicket {
-	if m != nil {
-		return m.AuthTicket
-	}
-	return nil
-}
-
-type ResponseEnvelope_PlatformResponse struct {
-	Type     PlatformRequestType `protobuf:"varint,1,opt,name=type,enum=POGOProtos.Networking.Platform.PlatformRequestType" json:"type,omitempty"`
-	Response []byte              `protobuf:"bytes,2,opt,name=response,proto3" json:"response,omitempty"`
-}
-
-func (m *ResponseEnvelope_PlatformResponse) Reset()         { *m = ResponseEnvelope_PlatformResponse{} }
-func (m *ResponseEnvelope_PlatformResponse) String() string { return proto.CompactTextString(m) }
-func (*ResponseEnvelope_PlatformResponse) ProtoMessage()    {}
-func (*ResponseEnvelope_PlatformResponse) Descriptor() ([]byte, []int) {
-	return fileDescriptor12, []int{2, 0}
-}
 
 type Signature struct {
 	Field1              []*UnknownMessage           `protobuf:"bytes,1,rep,name=field1" json:"field1,omitempty"`
-	TimestampSinceStart uint64                      `protobuf:"varint,2,opt,name=timestamp_since_start,json=timestampSinceStart" json:"timestamp_since_start,omitempty"`
+	TimestampSinceStart uint64                      `protobuf:"varint,2,opt,name=timestamp_since_start" json:"timestamp_since_start,omitempty"`
 	Field3              string                      `protobuf:"bytes,3,opt,name=field3" json:"field3,omitempty"`
-	LocationFix         []*Signature_LocationFix    `protobuf:"bytes,4,rep,name=location_fix,json=locationFix" json:"location_fix,omitempty"`
-	GpsInfo             []*Signature_AndroidGpsInfo `protobuf:"bytes,5,rep,name=gps_info,json=gpsInfo" json:"gps_info,omitempty"`
+	LocationFix         []*Signature_LocationFix    `protobuf:"bytes,4,rep,name=location_fix" json:"location_fix,omitempty"`
+	GpsInfo             []*Signature_AndroidGpsInfo `protobuf:"bytes,5,rep,name=gps_info" json:"gps_info,omitempty"`
 	Field6              []*UnknownMessage           `protobuf:"bytes,6,rep,name=field6" json:"field6,omitempty"`
-	SensorInfo          []*Signature_SensorInfo     `protobuf:"bytes,7,rep,name=sensor_info,json=sensorInfo" json:"sensor_info,omitempty"`
-	DeviceInfo          *Signature_DeviceInfo       `protobuf:"bytes,8,opt,name=device_info,json=deviceInfo" json:"device_info,omitempty"`
-	ActivityStatus      *Signature_ActivityStatus   `protobuf:"bytes,9,opt,name=activity_status,json=activityStatus" json:"activity_status,omitempty"`
-	LocationHash1       int32                       `protobuf:"varint,10,opt,name=location_hash1,json=locationHash1" json:"location_hash1,omitempty"`
+	SensorInfo          []*Signature_SensorInfo     `protobuf:"bytes,7,rep,name=sensor_info" json:"sensor_info,omitempty"`
+	DeviceInfo          *Signature_DeviceInfo       `protobuf:"bytes,8,opt,name=device_info" json:"device_info,omitempty"`
+	ActivityStatus      *Signature_ActivityStatus   `protobuf:"bytes,9,opt,name=activity_status" json:"activity_status,omitempty"`
+	LocationHash1       int32                      `protobuf:"varint,10,opt,name=location_hash1" json:"location_hash1,omitempty"`
 	Field11             bool                        `protobuf:"varint,11,opt,name=field11" json:"field11,omitempty"`
 	Field12             bool                        `protobuf:"varint,12,opt,name=field12" json:"field12,omitempty"`
 	Field13             int32                       `protobuf:"varint,13,opt,name=field13" json:"field13,omitempty"`
@@ -222,18 +202,17 @@ type Signature struct {
 	Field17             string                      `protobuf:"bytes,17,opt,name=field17" json:"field17,omitempty"`
 	Field18             string                      `protobuf:"bytes,18,opt,name=field18" json:"field18,omitempty"`
 	Field19             bool                        `protobuf:"varint,19,opt,name=field19" json:"field19,omitempty"`
-	LocationHash2       int32                       `protobuf:"varint,20,opt,name=location_hash2,json=locationHash2" json:"location_hash2,omitempty"`
+	LocationHash2       int32                      `protobuf:"varint,20,opt,name=location_hash2" json:"location_hash2,omitempty"`
 	Field21             bool                        `protobuf:"varint,21,opt,name=field21" json:"field21,omitempty"`
-	SessionHash         []byte                      `protobuf:"bytes,22,opt,name=session_hash,json=sessionHash,proto3" json:"session_hash,omitempty"`
+	SessionHash         []byte                      `protobuf:"bytes,22,opt,name=session_hash,proto3" json:"session_hash,omitempty"`
 	Timestamp           uint64                      `protobuf:"varint,23,opt,name=timestamp" json:"timestamp,omitempty"`
-	RequestHash         []uint64                    `protobuf:"varint,24,rep,packed,name=request_hash,json=requestHash" json:"request_hash,omitempty"`
+	RequestHash         []uint64                    `protobuf:"varint,24,rep,name=request_hash" json:"request_hash,omitempty"`
 	Unknown25           int64                       `protobuf:"varint,25,opt,name=unknown25" json:"unknown25,omitempty"`
 }
 
-func (m *Signature) Reset()                    { *m = Signature{} }
-func (m *Signature) String() string            { return proto.CompactTextString(m) }
-func (*Signature) ProtoMessage()               {}
-func (*Signature) Descriptor() ([]byte, []int) { return fileDescriptor12, []int{3} }
+func (m *Signature) Reset()         { *m = Signature{} }
+func (m *Signature) String() string { return proto.CompactTextString(m) }
+func (*Signature) ProtoMessage()    {}
 
 func (m *Signature) GetField1() []*UnknownMessage {
 	if m != nil {
@@ -286,94 +265,90 @@ func (m *Signature) GetActivityStatus() *Signature_ActivityStatus {
 
 type Signature_LocationFix struct {
 	Provider           string  `protobuf:"bytes,1,opt,name=provider" json:"provider,omitempty"`
-	TimestampSnapshot  uint64  `protobuf:"varint,2,opt,name=timestamp_snapshot,json=timestampSnapshot" json:"timestamp_snapshot,omitempty"`
+	TimestampSnapshot  uint64  `protobuf:"varint,2,opt,name=timestamp_snapshot" json:"timestamp_snapshot,omitempty"`
 	Altitude           float32 `protobuf:"fixed32,4,opt,name=altitude" json:"altitude,omitempty"`
 	Latitude           float32 `protobuf:"fixed32,13,opt,name=latitude" json:"latitude,omitempty"`
 	Longitude          float32 `protobuf:"fixed32,14,opt,name=longitude" json:"longitude,omitempty"`
 	Speed              float32 `protobuf:"fixed32,18,opt,name=speed" json:"speed,omitempty"`
 	Course             float32 `protobuf:"fixed32,20,opt,name=course" json:"course,omitempty"`
-	HorizontalAccuracy float32 `protobuf:"fixed32,21,opt,name=horizontal_accuracy,json=horizontalAccuracy" json:"horizontal_accuracy,omitempty"`
-	VerticalAccuracy   float32 `protobuf:"fixed32,22,opt,name=vertical_accuracy,json=verticalAccuracy" json:"vertical_accuracy,omitempty"`
-	ProviderStatus     uint64  `protobuf:"varint,26,opt,name=provider_status,json=providerStatus" json:"provider_status,omitempty"`
+	HorizontalAccuracy float32 `protobuf:"fixed32,21,opt,name=horizontal_accuracy" json:"horizontal_accuracy,omitempty"`
+	VerticalAccuracy   float32 `protobuf:"fixed32,22,opt,name=vertical_accuracy" json:"vertical_accuracy,omitempty"`
+	ProviderStatus     uint64  `protobuf:"varint,26,opt,name=provider_status" json:"provider_status,omitempty"`
 	// On iOS there are some LocationFixes with unk26=1 and everything else empty
 	Floor        uint32 `protobuf:"varint,27,opt,name=floor" json:"floor,omitempty"`
-	LocationType uint64 `protobuf:"varint,28,opt,name=location_type,json=locationType" json:"location_type,omitempty"`
+	LocationType uint64 `protobuf:"varint,28,opt,name=location_type" json:"location_type,omitempty"`
 }
 
-func (m *Signature_LocationFix) Reset()                    { *m = Signature_LocationFix{} }
-func (m *Signature_LocationFix) String() string            { return proto.CompactTextString(m) }
-func (*Signature_LocationFix) ProtoMessage()               {}
-func (*Signature_LocationFix) Descriptor() ([]byte, []int) { return fileDescriptor12, []int{3, 0} }
+func (m *Signature_LocationFix) Reset()         { *m = Signature_LocationFix{} }
+func (m *Signature_LocationFix) String() string { return proto.CompactTextString(m) }
+func (*Signature_LocationFix) ProtoMessage()    {}
 
 // don't really care about this since we're not using it
 type Signature_AndroidGpsInfo struct {
-	TimeToFix     uint64    `protobuf:"varint,1,opt,name=time_to_fix,json=timeToFix" json:"time_to_fix,omitempty"`
-	SatellitesPrn []int32   `protobuf:"varint,2,rep,packed,name=satellites_prn,json=satellitesPrn" json:"satellites_prn,omitempty"`
-	Azimuth       []float32 `protobuf:"fixed32,3,rep,packed,name=azimuth" json:"azimuth,omitempty"`
-	Elevation     []float32 `protobuf:"fixed32,4,rep,packed,name=elevation" json:"elevation,omitempty"`
-	Snr           []float32 `protobuf:"fixed32,5,rep,packed,name=snr" json:"snr,omitempty"`
-	HasAlmanac    []bool    `protobuf:"varint,6,rep,packed,name=has_almanac,json=hasAlmanac" json:"has_almanac,omitempty"`
-	HasEphemeris  []bool    `protobuf:"varint,7,rep,packed,name=has_ephemeris,json=hasEphemeris" json:"has_ephemeris,omitempty"`
-	UsedInFix     []bool    `protobuf:"varint,8,rep,packed,name=used_in_fix,json=usedInFix" json:"used_in_fix,omitempty"`
+	TimeToFix     uint64    `protobuf:"varint,1,opt,name=time_to_fix" json:"time_to_fix,omitempty"`
+	SatellitesPrn []int32   `protobuf:"varint,2,rep,name=satellites_prn" json:"satellites_prn,omitempty"`
+	Azimuth       []float32 `protobuf:"fixed32,3,rep,name=azimuth" json:"azimuth,omitempty"`
+	Elevation     []float32 `protobuf:"fixed32,4,rep,name=elevation" json:"elevation,omitempty"`
+	Snr           []float32 `protobuf:"fixed32,5,rep,name=snr" json:"snr,omitempty"`
+	HasAlmanac    []bool    `protobuf:"varint,6,rep,name=has_almanac" json:"has_almanac,omitempty"`
+	HasEphemeris  []bool    `protobuf:"varint,7,rep,name=has_ephemeris" json:"has_ephemeris,omitempty"`
+	UsedInFix     []bool    `protobuf:"varint,8,rep,name=used_in_fix" json:"used_in_fix,omitempty"`
 }
 
-func (m *Signature_AndroidGpsInfo) Reset()                    { *m = Signature_AndroidGpsInfo{} }
-func (m *Signature_AndroidGpsInfo) String() string            { return proto.CompactTextString(m) }
-func (*Signature_AndroidGpsInfo) ProtoMessage()               {}
-func (*Signature_AndroidGpsInfo) Descriptor() ([]byte, []int) { return fileDescriptor12, []int{3, 1} }
+func (m *Signature_AndroidGpsInfo) Reset()         { *m = Signature_AndroidGpsInfo{} }
+func (m *Signature_AndroidGpsInfo) String() string { return proto.CompactTextString(m) }
+func (*Signature_AndroidGpsInfo) ProtoMessage()    {}
 
 type Signature_SensorInfo struct {
-	TimestampSnapshot     uint64  `protobuf:"varint,1,opt,name=timestamp_snapshot,json=timestampSnapshot" json:"timestamp_snapshot,omitempty"`
-	LinearAccelerationX   float64 `protobuf:"fixed64,3,opt,name=linear_acceleration_x,json=linearAccelerationX" json:"linear_acceleration_x,omitempty"`
-	LinearAccelerationY   float64 `protobuf:"fixed64,4,opt,name=linear_acceleration_y,json=linearAccelerationY" json:"linear_acceleration_y,omitempty"`
-	LinearAccelerationZ   float64 `protobuf:"fixed64,5,opt,name=linear_acceleration_z,json=linearAccelerationZ" json:"linear_acceleration_z,omitempty"`
-	MagneticFieldX        float64 `protobuf:"fixed64,6,opt,name=magnetic_field_x,json=magneticFieldX" json:"magnetic_field_x,omitempty"`
-	MagneticFieldY        float64 `protobuf:"fixed64,7,opt,name=magnetic_field_y,json=magneticFieldY" json:"magnetic_field_y,omitempty"`
-	MagneticFieldZ        float64 `protobuf:"fixed64,8,opt,name=magnetic_field_z,json=magneticFieldZ" json:"magnetic_field_z,omitempty"`
-	MagneticFieldAccuracy int32   `protobuf:"varint,9,opt,name=magnetic_field_accuracy,json=magneticFieldAccuracy" json:"magnetic_field_accuracy,omitempty"`
-	AttitudePitch         float64 `protobuf:"fixed64,10,opt,name=attitude_pitch,json=attitudePitch" json:"attitude_pitch,omitempty"`
-	AttitudeYaw           float64 `protobuf:"fixed64,11,opt,name=attitude_yaw,json=attitudeYaw" json:"attitude_yaw,omitempty"`
-	AttitudeRoll          float64 `protobuf:"fixed64,12,opt,name=attitude_roll,json=attitudeRoll" json:"attitude_roll,omitempty"`
-	RotationRateX         float64 `protobuf:"fixed64,13,opt,name=rotation_rate_x,json=rotationRateX" json:"rotation_rate_x,omitempty"`
-	RotationRateY         float64 `protobuf:"fixed64,14,opt,name=rotation_rate_y,json=rotationRateY" json:"rotation_rate_y,omitempty"`
-	RotationRateZ         float64 `protobuf:"fixed64,15,opt,name=rotation_rate_z,json=rotationRateZ" json:"rotation_rate_z,omitempty"`
-	GravityX              float64 `protobuf:"fixed64,16,opt,name=gravity_x,json=gravityX" json:"gravity_x,omitempty"`
-	GravityY              float64 `protobuf:"fixed64,17,opt,name=gravity_y,json=gravityY" json:"gravity_y,omitempty"`
-	GravityZ              float64 `protobuf:"fixed64,18,opt,name=gravity_z,json=gravityZ" json:"gravity_z,omitempty"`
+	TimestampSnapshot     uint64  `protobuf:"varint,1,opt,name=timestamp_snapshot" json:"timestamp_snapshot,omitempty"`
+	LinearAccelerationX   float64 `protobuf:"fixed64,3,opt,name=linear_acceleration_x" json:"linear_acceleration_x,omitempty"`
+	LinearAccelerationY   float64 `protobuf:"fixed64,4,opt,name=linear_acceleration_y" json:"linear_acceleration_y,omitempty"`
+	LinearAccelerationZ   float64 `protobuf:"fixed64,5,opt,name=linear_acceleration_z" json:"linear_acceleration_z,omitempty"`
+	MagneticFieldX        float64 `protobuf:"fixed64,6,opt,name=magnetic_field_x" json:"magnetic_field_x,omitempty"`
+	MagneticFieldY        float64 `protobuf:"fixed64,7,opt,name=magnetic_field_y" json:"magnetic_field_y,omitempty"`
+	MagneticFieldZ        float64 `protobuf:"fixed64,8,opt,name=magnetic_field_z" json:"magnetic_field_z,omitempty"`
+	MagneticFieldAccuracy int32   `protobuf:"varint,9,opt,name=magnetic_field_accuracy" json:"magnetic_field_accuracy,omitempty"`
+	AttitudePitch         float64 `protobuf:"fixed64,10,opt,name=attitude_pitch" json:"attitude_pitch,omitempty"`
+	AttitudeYaw           float64 `protobuf:"fixed64,11,opt,name=attitude_yaw" json:"attitude_yaw,omitempty"`
+	AttitudeRoll          float64 `protobuf:"fixed64,12,opt,name=attitude_roll" json:"attitude_roll,omitempty"`
+	RotationRateX         float64 `protobuf:"fixed64,13,opt,name=rotation_rate_x" json:"rotation_rate_x,omitempty"`
+	RotationRateY         float64 `protobuf:"fixed64,14,opt,name=rotation_rate_y" json:"rotation_rate_y,omitempty"`
+	RotationRateZ         float64 `protobuf:"fixed64,15,opt,name=rotation_rate_z" json:"rotation_rate_z,omitempty"`
+	GravityX              float64 `protobuf:"fixed64,16,opt,name=gravity_x" json:"gravity_x,omitempty"`
+	GravityY              float64 `protobuf:"fixed64,17,opt,name=gravity_y" json:"gravity_y,omitempty"`
+	GravityZ              float64 `protobuf:"fixed64,18,opt,name=gravity_z" json:"gravity_z,omitempty"`
 	Status                int32   `protobuf:"varint,19,opt,name=status" json:"status,omitempty"`
 }
 
-func (m *Signature_SensorInfo) Reset()                    { *m = Signature_SensorInfo{} }
-func (m *Signature_SensorInfo) String() string            { return proto.CompactTextString(m) }
-func (*Signature_SensorInfo) ProtoMessage()               {}
-func (*Signature_SensorInfo) Descriptor() ([]byte, []int) { return fileDescriptor12, []int{3, 2} }
+func (m *Signature_SensorInfo) Reset()         { *m = Signature_SensorInfo{} }
+func (m *Signature_SensorInfo) String() string { return proto.CompactTextString(m) }
+func (*Signature_SensorInfo) ProtoMessage()    {}
 
 type Signature_DeviceInfo struct {
-	DeviceId              string `protobuf:"bytes,1,opt,name=device_id,json=deviceId" json:"device_id,omitempty"`
-	AndroidBoardName      string `protobuf:"bytes,2,opt,name=android_board_name,json=androidBoardName" json:"android_board_name,omitempty"`
-	AndroidBootloader     string `protobuf:"bytes,3,opt,name=android_bootloader,json=androidBootloader" json:"android_bootloader,omitempty"`
-	DeviceBrand           string `protobuf:"bytes,4,opt,name=device_brand,json=deviceBrand" json:"device_brand,omitempty"`
-	DeviceModel           string `protobuf:"bytes,5,opt,name=device_model,json=deviceModel" json:"device_model,omitempty"`
-	DeviceModelIdentifier string `protobuf:"bytes,6,opt,name=device_model_identifier,json=deviceModelIdentifier" json:"device_model_identifier,omitempty"`
-	DeviceModelBoot       string `protobuf:"bytes,7,opt,name=device_model_boot,json=deviceModelBoot" json:"device_model_boot,omitempty"`
-	HardwareManufacturer  string `protobuf:"bytes,8,opt,name=hardware_manufacturer,json=hardwareManufacturer" json:"hardware_manufacturer,omitempty"`
-	HardwareModel         string `protobuf:"bytes,9,opt,name=hardware_model,json=hardwareModel" json:"hardware_model,omitempty"`
-	FirmwareBrand         string `protobuf:"bytes,10,opt,name=firmware_brand,json=firmwareBrand" json:"firmware_brand,omitempty"`
-	FirmwareTags          string `protobuf:"bytes,12,opt,name=firmware_tags,json=firmwareTags" json:"firmware_tags,omitempty"`
-	FirmwareType          string `protobuf:"bytes,13,opt,name=firmware_type,json=firmwareType" json:"firmware_type,omitempty"`
-	FirmwareFingerprint   string `protobuf:"bytes,14,opt,name=firmware_fingerprint,json=firmwareFingerprint" json:"firmware_fingerprint,omitempty"`
+	DeviceId              string `protobuf:"bytes,1,opt,name=device_id" json:"device_id,omitempty"`
+	AndroidBoardName      string `protobuf:"bytes,2,opt,name=android_board_name" json:"android_board_name,omitempty"`
+	AndroidBootloader     string `protobuf:"bytes,3,opt,name=android_bootloader" json:"android_bootloader,omitempty"`
+	DeviceBrand           string `protobuf:"bytes,4,opt,name=device_brand" json:"device_brand,omitempty"`
+	DeviceModel           string `protobuf:"bytes,5,opt,name=device_model" json:"device_model,omitempty"`
+	DeviceModelIdentifier string `protobuf:"bytes,6,opt,name=device_model_identifier" json:"device_model_identifier,omitempty"`
+	DeviceModelBoot       string `protobuf:"bytes,7,opt,name=device_model_boot" json:"device_model_boot,omitempty"`
+	HardwareManufacturer  string `protobuf:"bytes,8,opt,name=hardware_manufacturer" json:"hardware_manufacturer,omitempty"`
+	HardwareModel         string `protobuf:"bytes,9,opt,name=hardware_model" json:"hardware_model,omitempty"`
+	FirmwareBrand         string `protobuf:"bytes,10,opt,name=firmware_brand" json:"firmware_brand,omitempty"`
+	FirmwareTags          string `protobuf:"bytes,12,opt,name=firmware_tags" json:"firmware_tags,omitempty"`
+	FirmwareType          string `protobuf:"bytes,13,opt,name=firmware_type" json:"firmware_type,omitempty"`
+	FirmwareFingerprint   string `protobuf:"bytes,14,opt,name=firmware_fingerprint" json:"firmware_fingerprint,omitempty"`
 }
 
-func (m *Signature_DeviceInfo) Reset()                    { *m = Signature_DeviceInfo{} }
-func (m *Signature_DeviceInfo) String() string            { return proto.CompactTextString(m) }
-func (*Signature_DeviceInfo) ProtoMessage()               {}
-func (*Signature_DeviceInfo) Descriptor() ([]byte, []int) { return fileDescriptor12, []int{3, 3} }
+func (m *Signature_DeviceInfo) Reset()         { *m = Signature_DeviceInfo{} }
+func (m *Signature_DeviceInfo) String() string { return proto.CompactTextString(m) }
+func (*Signature_DeviceInfo) ProtoMessage()    {}
 
 // Only used in iOS - Android just sends an empty version
 type Signature_ActivityStatus struct {
 	// all of these had 1 as their value
-	StartTimeMs   uint64 `protobuf:"varint,1,opt,name=start_time_ms,json=startTimeMs" json:"start_time_ms,omitempty"`
-	UnknownStatus bool   `protobuf:"varint,2,opt,name=unknown_status,json=unknownStatus" json:"unknown_status,omitempty"`
+	StartTimeMs   uint64 `protobuf:"varint,1,opt,name=start_time_ms" json:"start_time_ms,omitempty"`
+	UnknownStatus bool   `protobuf:"varint,2,opt,name=unknown_status" json:"unknown_status,omitempty"`
 	Walking       bool   `protobuf:"varint,3,opt,name=walking" json:"walking,omitempty"`
 	Running       bool   `protobuf:"varint,4,opt,name=running" json:"running,omitempty"`
 	Stationary    bool   `protobuf:"varint,5,opt,name=stationary" json:"stationary,omitempty"`
@@ -383,170 +358,18 @@ type Signature_ActivityStatus struct {
 	Status        []byte `protobuf:"bytes,9,opt,name=status,proto3" json:"status,omitempty"`
 }
 
-func (m *Signature_ActivityStatus) Reset()                    { *m = Signature_ActivityStatus{} }
-func (m *Signature_ActivityStatus) String() string            { return proto.CompactTextString(m) }
-func (*Signature_ActivityStatus) ProtoMessage()               {}
-func (*Signature_ActivityStatus) Descriptor() ([]byte, []int) { return fileDescriptor12, []int{3, 4} }
+func (m *Signature_ActivityStatus) Reset()         { *m = Signature_ActivityStatus{} }
+func (m *Signature_ActivityStatus) String() string { return proto.CompactTextString(m) }
+func (*Signature_ActivityStatus) ProtoMessage()    {}
 
 // Just a junk message to denote that we don't currently know what message something is.
 type UnknownMessage struct {
 }
 
-func (m *UnknownMessage) Reset()                    { *m = UnknownMessage{} }
-func (m *UnknownMessage) String() string            { return proto.CompactTextString(m) }
-func (*UnknownMessage) ProtoMessage()               {}
-func (*UnknownMessage) Descriptor() ([]byte, []int) { return fileDescriptor12, []int{4} }
+func (m *UnknownMessage) Reset()         { *m = UnknownMessage{} }
+func (m *UnknownMessage) String() string { return proto.CompactTextString(m) }
+func (*UnknownMessage) ProtoMessage()    {}
 
 func init() {
-	proto.RegisterType((*AuthTicket)(nil), "POGOProtos.Networking.Envelopes.AuthTicket")
-	proto.RegisterType((*RequestEnvelope)(nil), "POGOProtos.Networking.Envelopes.RequestEnvelope")
-	proto.RegisterType((*RequestEnvelope_AuthInfo)(nil), "POGOProtos.Networking.Envelopes.RequestEnvelope.AuthInfo")
-	proto.RegisterType((*RequestEnvelope_AuthInfo_JWT)(nil), "POGOProtos.Networking.Envelopes.RequestEnvelope.AuthInfo.JWT")
-	proto.RegisterType((*RequestEnvelope_PlatformRequest)(nil), "POGOProtos.Networking.Envelopes.RequestEnvelope.PlatformRequest")
-	proto.RegisterType((*ResponseEnvelope)(nil), "POGOProtos.Networking.Envelopes.ResponseEnvelope")
-	proto.RegisterType((*ResponseEnvelope_PlatformResponse)(nil), "POGOProtos.Networking.Envelopes.ResponseEnvelope.PlatformResponse")
-	proto.RegisterType((*Signature)(nil), "POGOProtos.Networking.Envelopes.Signature")
-	proto.RegisterType((*Signature_LocationFix)(nil), "POGOProtos.Networking.Envelopes.Signature.LocationFix")
-	proto.RegisterType((*Signature_AndroidGpsInfo)(nil), "POGOProtos.Networking.Envelopes.Signature.AndroidGpsInfo")
-	proto.RegisterType((*Signature_SensorInfo)(nil), "POGOProtos.Networking.Envelopes.Signature.SensorInfo")
-	proto.RegisterType((*Signature_DeviceInfo)(nil), "POGOProtos.Networking.Envelopes.Signature.DeviceInfo")
-	proto.RegisterType((*Signature_ActivityStatus)(nil), "POGOProtos.Networking.Envelopes.Signature.ActivityStatus")
-	proto.RegisterType((*UnknownMessage)(nil), "POGOProtos.Networking.Envelopes.UnknownMessage")
 	proto.RegisterEnum("POGOProtos.Networking.Envelopes.ResponseEnvelope_StatusCode", ResponseEnvelope_StatusCode_name, ResponseEnvelope_StatusCode_value)
-}
-
-func init() { proto.RegisterFile("networking_envelopes.proto", fileDescriptor12) }
-
-var fileDescriptor12 = []byte{
-	// 2073 bytes of a gzipped FileDescriptorProto
-	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x09, 0x6e, 0x88, 0x02, 0xff, 0xac, 0x58, 0xdd, 0x72, 0xdb, 0xc6,
-	0x15, 0x0e, 0x48, 0xfd, 0x90, 0x87, 0x12, 0x49, 0xad, 0x2c, 0x19, 0x61, 0xdc, 0x84, 0x55, 0xc6,
-	0x35, 0xa7, 0x69, 0x99, 0x11, 0x65, 0x2b, 0xf1, 0x4c, 0x33, 0x53, 0xd9, 0xa6, 0x1d, 0xc5, 0xfa,
-	0xeb, 0x92, 0xb2, 0x2d, 0xcf, 0x74, 0x30, 0x6b, 0x62, 0x49, 0x62, 0x0c, 0x02, 0x2c, 0x76, 0x29,
-	0x89, 0xba, 0xed, 0x45, 0x1f, 0xa2, 0x33, 0x7d, 0x86, 0x5e, 0xf7, 0xaa, 0xcf, 0xd0, 0x57, 0x68,
-	0xdf, 0xa3, 0x9d, 0x3d, 0x8b, 0x05, 0x40, 0x5a, 0x8a, 0xab, 0xb4, 0x77, 0x38, 0xe7, 0x3b, 0xe7,
-	0x60, 0x71, 0xf0, 0x9d, 0x1f, 0x00, 0x6a, 0x01, 0x97, 0x17, 0x61, 0xf4, 0xde, 0x0b, 0x06, 0x0e,
-	0x0f, 0xce, 0xb9, 0x1f, 0x8e, 0xb9, 0x68, 0x8e, 0xa3, 0x50, 0x86, 0xe4, 0x8b, 0x93, 0xe3, 0x17,
-	0xc7, 0x27, 0xea, 0x52, 0x34, 0x8f, 0x12, 0xb3, 0x66, 0xdb, 0x98, 0xd5, 0x3e, 0xcd, 0x38, 0x47,
-	0xfc, 0x0f, 0x13, 0x2e, 0x64, 0xec, 0x3b, 0x03, 0x8d, 0x7d, 0x26, 0xfb, 0x61, 0x34, 0xd2, 0xd0,
-	0x96, 0x0b, 0xb0, 0x37, 0x91, 0xc3, 0xae, 0xd7, 0x7b, 0xcf, 0x25, 0xb9, 0x03, 0x8b, 0x42, 0xb2,
-	0x48, 0xda, 0x56, 0xdd, 0x6a, 0xac, 0x50, 0x2d, 0x90, 0x26, 0xac, 0xf3, 0xcb, 0xb1, 0x17, 0x71,
-	0x47, 0x7a, 0x23, 0x2e, 0x24, 0x1b, 0x8d, 0x9d, 0x91, 0xb0, 0x73, 0x75, 0xab, 0xb1, 0x40, 0xd7,
-	0x34, 0xd4, 0x35, 0xc8, 0xa1, 0x20, 0x55, 0xc8, 0xf3, 0xc0, 0xb5, 0xf3, 0x18, 0x43, 0x5d, 0x6e,
-	0xfd, 0x7b, 0x09, 0x2a, 0x54, 0x9f, 0xc9, 0x1c, 0x98, 0x7c, 0x01, 0x25, 0x21, 0x99, 0x9c, 0x08,
-	0xa7, 0x17, 0xba, 0x1c, 0xef, 0xb8, 0x48, 0x41, 0xab, 0x9e, 0x86, 0x2e, 0x27, 0x3f, 0x03, 0x88,
-	0x9f, 0xc3, 0xf1, 0x74, 0xb4, 0x05, 0x5a, 0x8c, 0x35, 0xfb, 0x2e, 0x79, 0x0a, 0x05, 0xf3, 0x98,
-	0xf6, 0x42, 0x3d, 0xdf, 0x28, 0xb5, 0x1e, 0x34, 0xaf, 0xcf, 0x11, 0x35, 0xd9, 0x88, 0x2f, 0x68,
-	0xe2, 0x48, 0x46, 0xb0, 0x66, 0x12, 0x92, 0x24, 0xcd, 0x5e, 0xc2, 0x68, 0xbf, 0x6d, 0x7e, 0x24,
-	0xe3, 0xcd, 0xb9, 0x27, 0x6a, 0x9e, 0xc4, 0x91, 0xcc, 0x6d, 0xaa, 0xe3, 0x59, 0x85, 0x20, 0x35,
-	0x28, 0xf8, 0x4c, 0x7a, 0x72, 0xe2, 0x72, 0x7b, 0xb9, 0x6e, 0x35, 0x2c, 0x9a, 0xc8, 0xe4, 0x1e,
-	0x14, 0xfd, 0x30, 0x18, 0x68, 0xb0, 0x80, 0x60, 0xaa, 0x50, 0x9e, 0xac, 0xd7, 0x9b, 0x44, 0xac,
-	0x37, 0xb5, 0x8b, 0x98, 0xaa, 0x44, 0x26, 0xaf, 0xa0, 0xc8, 0x26, 0x72, 0xe8, 0x78, 0x41, 0x3f,
-	0xb4, 0xa1, 0x6e, 0x35, 0x4a, 0xad, 0xc7, 0xb7, 0x3e, 0xbc, 0x62, 0xc1, 0x7e, 0xd0, 0x0f, 0x69,
-	0x81, 0xc5, 0x57, 0xe4, 0x00, 0x4a, 0x18, 0x57, 0x22, 0x39, 0xec, 0x12, 0x46, 0xfe, 0xea, 0xa3,
-	0x91, 0x53, 0x3e, 0x51, 0x60, 0x29, 0xb7, 0x1e, 0xc3, 0xa7, 0x23, 0xe1, 0x08, 0x2f, 0xe8, 0x71,
-	0xc7, 0x67, 0x42, 0x3a, 0x7e, 0xd8, 0x63, 0xd2, 0x0b, 0x83, 0xbe, 0x77, 0x69, 0xaf, 0xd4, 0xad,
-	0x46, 0x9e, 0x6e, 0x8e, 0x44, 0x47, 0xe1, 0x07, 0x4c, 0xc8, 0x83, 0x14, 0xad, 0xfd, 0xcd, 0x82,
-	0x82, 0x39, 0x9f, 0xca, 0xc4, 0x38, 0x0a, 0xcf, 0x3d, 0x97, 0x47, 0x48, 0x9a, 0x22, 0x4d, 0x64,
-	0xd2, 0x81, 0x45, 0x19, 0xbe, 0xe7, 0x01, 0x72, 0xb3, 0xd4, 0xfa, 0xee, 0x27, 0x67, 0xa1, 0xf9,
-	0xc3, 0xeb, 0x2e, 0xd5, 0xb1, 0x6a, 0xdf, 0x41, 0xfe, 0x87, 0xd7, 0x5d, 0x75, 0xdf, 0x5e, 0x18,
-	0x48, 0x1e, 0x48, 0x61, 0xee, 0x6b, 0x64, 0x85, 0x4d, 0x82, 0xf7, 0x41, 0x78, 0x11, 0xb4, 0xf0,
-	0xd6, 0x8b, 0x34, 0x91, 0x6b, 0x7f, 0xb4, 0xa0, 0x32, 0xc7, 0x0c, 0xf2, 0x02, 0x16, 0xe4, 0x74,
-	0xac, 0x49, 0x5f, 0x6e, 0xed, 0xdc, 0x70, 0x4c, 0xe3, 0x35, 0x4f, 0xac, 0xee, 0x74, 0xcc, 0x29,
-	0x06, 0x20, 0x0f, 0xa0, 0x62, 0x6a, 0x64, 0xc4, 0x85, 0x60, 0x03, 0x8e, 0xf7, 0x5f, 0xa1, 0xe5,
-	0x58, 0x7d, 0xa8, 0xb5, 0x5b, 0xff, 0x58, 0x84, 0x2a, 0xe5, 0x62, 0x1c, 0x06, 0x82, 0x27, 0x25,
-	0xf8, 0xfb, 0x0f, 0x4b, 0xb0, 0xdc, 0xfa, 0xcd, 0x7f, 0x91, 0xb4, 0xd9, 0x38, 0xcd, 0x4e, 0x52,
-	0xb4, 0x3f, 0x52, 0xc0, 0xb9, 0xf9, 0x02, 0xbe, 0x0b, 0xcb, 0x6c, 0xec, 0x39, 0x93, 0xc8, 0xc7,
-	0xe2, 0x2e, 0xd2, 0x25, 0x36, 0xf6, 0x4e, 0x23, 0x9f, 0x8c, 0xa0, 0x9a, 0x29, 0x4a, 0x39, 0x89,
-	0x02, 0x53, 0x93, 0x4f, 0x6e, 0x7f, 0xb6, 0x34, 0x77, 0x1a, 0xa0, 0x95, 0xb4, 0x2a, 0x31, 0xf4,
-	0x3c, 0xcd, 0x97, 0xff, 0x37, 0x9a, 0xdb, 0xb0, 0x6c, 0xce, 0xec, 0xd6, 0xf3, 0x8d, 0x15, 0x6a,
-	0x44, 0xd5, 0x5c, 0x79, 0x14, 0x85, 0x91, 0xcd, 0xf1, 0x69, 0xb5, 0x50, 0xbb, 0x80, 0xea, 0xfc,
-	0x11, 0xff, 0x7f, 0xf4, 0xa8, 0xa9, 0x1e, 0xa9, 0x83, 0xc6, 0xbc, 0x48, 0xe4, 0xad, 0xbf, 0x5b,
-	0x00, 0xe9, 0x8b, 0x23, 0x25, 0x58, 0x3e, 0x3d, 0x7a, 0x79, 0x74, 0xfc, 0xfa, 0xa8, 0xfa, 0x09,
-	0x59, 0x82, 0xdc, 0xf1, 0xcb, 0xaa, 0x45, 0x6a, 0xb0, 0x79, 0xfc, 0xd2, 0xa1, 0x27, 0x4f, 0x9d,
-	0x53, 0x7a, 0xe0, 0xec, 0x1f, 0x39, 0xb4, 0xdd, 0x39, 0x39, 0x3e, 0xea, 0xb4, 0xab, 0x39, 0x52,
-	0x81, 0xd2, 0x93, 0xbd, 0x67, 0x0e, 0x6d, 0xff, 0xee, 0xb4, 0xdd, 0xe9, 0x56, 0xf3, 0x64, 0x1d,
-	0x2a, 0xfb, 0x47, 0xaf, 0xf6, 0x0e, 0xf6, 0x53, 0xe5, 0x0e, 0xb9, 0x07, 0xb6, 0x51, 0x9e, 0x1c,
-	0xec, 0x75, 0x9f, 0x1f, 0xd3, 0xc3, 0x04, 0x7d, 0x48, 0x56, 0xa0, 0x40, 0xdb, 0xcf, 0xf6, 0x69,
-	0xfb, 0x69, 0xb7, 0xfa, 0x88, 0xdc, 0x85, 0xf5, 0x4e, 0xbb, 0xd3, 0xd9, 0x3f, 0x3e, 0x72, 0x62,
-	0x9f, 0xbd, 0x6e, 0xfb, 0x59, 0xd5, 0x25, 0x9b, 0x40, 0x4c, 0x90, 0xbd, 0xd3, 0xee, 0xf7, 0x4e,
-	0xf7, 0xf8, 0x65, 0xfb, 0xa8, 0xda, 0xdf, 0xfa, 0x57, 0x0d, 0x8a, 0x1d, 0x6f, 0x10, 0x30, 0x39,
-	0x89, 0x54, 0xd6, 0x96, 0xfa, 0x1e, 0xf7, 0xdd, 0x6d, 0xdb, 0x42, 0xb2, 0x7c, 0xfd, 0xd1, 0x57,
-	0x78, 0xaa, 0x6b, 0x34, 0xae, 0x11, 0x1a, 0xbb, 0x93, 0x16, 0x6c, 0xa4, 0x83, 0x4e, 0x37, 0x2c,
-	0x3d, 0x15, 0x35, 0x85, 0xd7, 0x13, 0x10, 0x9b, 0x55, 0x07, 0x67, 0xe4, 0x66, 0x7c, 0xf3, 0x1d,
-	0xc3, 0x65, 0x2d, 0x91, 0x33, 0x58, 0x31, 0x7d, 0xce, 0x51, 0x8d, 0x4e, 0x4f, 0xaa, 0xdd, 0x8f,
-	0x1e, 0x2d, 0x79, 0xac, 0xa6, 0x69, 0x84, 0xcf, 0xbd, 0x4b, 0x5a, 0xf2, 0x53, 0x81, 0x74, 0xa1,
-	0x30, 0x18, 0x0b, 0xdd, 0xf5, 0x17, 0x31, 0xec, 0xe3, 0x5b, 0x84, 0xdd, 0x0b, 0xdc, 0x28, 0xf4,
-	0xdc, 0x17, 0x63, 0x81, 0x5d, 0x7f, 0x79, 0xa0, 0x2f, 0x92, 0x2c, 0xee, 0xc6, 0x25, 0xf7, 0x13,
-	0xb3, 0xb8, 0x4b, 0x5e, 0x41, 0x49, 0xf0, 0x40, 0x84, 0x91, 0x3e, 0xe1, 0x32, 0x46, 0x7b, 0x74,
-	0x8b, 0x13, 0x76, 0xd0, 0x1b, 0x4f, 0x07, 0x22, 0xb9, 0x56, 0x71, 0x5d, 0x7e, 0xee, 0xf5, 0xb8,
-	0x8e, 0x5b, 0xc0, 0x72, 0xbd, 0x4d, 0xdc, 0x67, 0xe8, 0xad, 0xe3, 0xba, 0xc9, 0x35, 0x79, 0x07,
-	0x15, 0xd6, 0x93, 0xde, 0xb9, 0x27, 0xa7, 0x8e, 0x6e, 0x62, 0x38, 0x68, 0x6f, 0x99, 0xd5, 0x38,
-	0x82, 0x2e, 0x2c, 0x5a, 0x66, 0x33, 0x32, 0xb9, 0x0f, 0xe5, 0x84, 0x0d, 0x43, 0x26, 0x86, 0xdb,
-	0x38, 0xae, 0x17, 0xe9, 0xaa, 0xd1, 0x7e, 0xaf, 0x94, 0xaa, 0x87, 0x68, 0x2a, 0x6e, 0xe3, 0xd0,
-	0x2d, 0x50, 0x23, 0xa6, 0x48, 0x0b, 0x47, 0x66, 0x82, 0xb4, 0x52, 0x64, 0xc7, 0x5e, 0xc5, 0x98,
-	0x46, 0x4c, 0x91, 0x87, 0x76, 0x39, 0x8b, 0x3c, 0x4c, 0x91, 0x47, 0x76, 0x05, 0x59, 0x6b, 0xc4,
-	0x14, 0xd9, 0xb5, 0xab, 0x59, 0x9f, 0xdd, 0x14, 0xf9, 0xc6, 0x5e, 0xcb, 0xfa, 0x7c, 0x93, 0x22,
-	0xdf, 0xda, 0x24, 0x8b, 0x7c, 0x9b, 0x22, 0x8f, 0xed, 0xf5, 0xec, 0xa9, 0x1f, 0x7f, 0x90, 0x90,
-	0x96, 0x7d, 0xe7, 0xc3, 0x84, 0xa4, 0x0f, 0xd7, 0xda, 0xb6, 0x37, 0x32, 0x01, 0x5a, 0xdb, 0xe4,
-	0xe7, 0xb0, 0x22, 0xb8, 0x10, 0xc6, 0xdf, 0xde, 0xc4, 0x2e, 0x57, 0x8a, 0x75, 0xca, 0x5b, 0x2d,
-	0x56, 0x49, 0xc5, 0xda, 0x77, 0xf5, 0x14, 0x4a, 0x14, 0x2a, 0x80, 0x19, 0x52, 0x18, 0xc0, 0xae,
-	0xe7, 0x1b, 0x0b, 0xb4, 0x14, 0xeb, 0x4c, 0x00, 0x33, 0xcd, 0x1f, 0xd9, 0x9f, 0xe2, 0xa6, 0x92,
-	0x2a, 0x6a, 0x7f, 0xc9, 0x43, 0x29, 0x53, 0xa3, 0x3f, 0xba, 0x9f, 0xfc, 0x1a, 0x48, 0xa6, 0xb3,
-	0x04, 0x6c, 0x2c, 0x86, 0xa1, 0x69, 0x2b, 0x6b, 0x69, 0x5b, 0x89, 0x01, 0x5c, 0xfa, 0xfc, 0x78,
-	0x5d, 0x5c, 0xa8, 0x5b, 0x8d, 0x1c, 0x4d, 0xe4, 0x99, 0x55, 0x72, 0x55, 0x63, 0xd7, 0xaf, 0x92,
-	0x65, 0x04, 0x33, 0xab, 0xa4, 0x5a, 0xf2, 0xc7, 0x9c, 0xbb, 0xf8, 0x96, 0x72, 0x54, 0x0b, 0xaa,
-	0x81, 0xf5, 0xc2, 0x49, 0x24, 0x38, 0xbe, 0x81, 0x1c, 0x8d, 0x25, 0xf2, 0x35, 0xac, 0x0f, 0xc3,
-	0xc8, 0xbb, 0x0a, 0x03, 0xc9, 0x7c, 0x27, 0xd9, 0x41, 0x37, 0xd0, 0x88, 0xa4, 0xd0, 0x9e, 0xd9,
-	0x46, 0xbf, 0x82, 0xb5, 0x73, 0x1e, 0x49, 0xaf, 0x97, 0x35, 0xdf, 0x44, 0xf3, 0xaa, 0x01, 0x12,
-	0xe3, 0x07, 0x50, 0x31, 0xc9, 0x31, 0x45, 0x57, 0xc3, 0x6c, 0x94, 0x8d, 0x3a, 0xae, 0x9c, 0x3b,
-	0xb0, 0xd8, 0xf7, 0xc3, 0x30, 0xb2, 0x3f, 0xab, 0x5b, 0x8d, 0x55, 0xaa, 0x05, 0xf2, 0x25, 0x24,
-	0x44, 0x71, 0x70, 0x62, 0xde, 0x43, 0xe7, 0xa4, 0xe5, 0xaa, 0x51, 0x58, 0xfb, 0x53, 0x0e, 0xca,
-	0xb3, 0xdd, 0x8e, 0x7c, 0x0e, 0x25, 0x95, 0x6d, 0x47, 0x86, 0xd8, 0x94, 0xad, 0x94, 0x14, 0xdd,
-	0x50, 0xbd, 0xc3, 0xfb, 0x50, 0x16, 0x4c, 0x72, 0xdf, 0xf7, 0x24, 0x17, 0xce, 0x38, 0x52, 0x0b,
-	0x65, 0x5e, 0xd1, 0x32, 0xd5, 0x9e, 0x44, 0x81, 0xa2, 0x25, 0xbb, 0xf2, 0x46, 0x13, 0x39, 0xb4,
-	0xf3, 0xf5, 0x7c, 0x23, 0x47, 0x8d, 0xa8, 0xde, 0x00, 0xf7, 0xf9, 0x39, 0x1e, 0x02, 0x7b, 0x7e,
-	0x8e, 0xa6, 0x0a, 0xf5, 0x81, 0x24, 0x82, 0x08, 0x9b, 0x76, 0x8e, 0xaa, 0x4b, 0xf5, 0x31, 0x34,
-	0x64, 0xc2, 0x61, 0xfe, 0x88, 0x05, 0xac, 0x87, 0xad, 0xb7, 0x40, 0x61, 0xc8, 0xc4, 0x9e, 0xd6,
-	0xa8, 0x27, 0x55, 0x06, 0x7c, 0x3c, 0xe4, 0x23, 0x1e, 0x79, 0x02, 0xfb, 0x69, 0x81, 0xae, 0x0c,
-	0x99, 0x68, 0x1b, 0x9d, 0x7a, 0xac, 0x89, 0xe0, 0xae, 0xe3, 0xe9, 0x59, 0x53, 0x40, 0x93, 0xa2,
-	0x52, 0xed, 0x2b, 0x6a, 0xd6, 0xfe, 0xb9, 0x08, 0x90, 0x76, 0xd5, 0x1b, 0xd8, 0x68, 0xdd, 0xc4,
-	0xc6, 0x16, 0x6c, 0xf8, 0x5e, 0xc0, 0x59, 0xa4, 0x5e, 0x2b, 0xf7, 0x79, 0xa4, 0xf3, 0x7e, 0x89,
-	0x13, 0xcf, 0xa2, 0xeb, 0x1a, 0xdc, 0xcb, 0x60, 0x6f, 0x6e, 0xf2, 0x99, 0x22, 0x9d, 0xaf, 0xf5,
-	0x39, 0xbb, 0xc9, 0xe7, 0xca, 0x5e, 0xbc, 0xc9, 0xe7, 0x2d, 0x69, 0x40, 0x75, 0xc4, 0x06, 0x01,
-	0x97, 0x5e, 0xcf, 0xc1, 0xd6, 0xe0, 0x5c, 0xda, 0x4b, 0x68, 0x5e, 0x36, 0xfa, 0xe7, 0x4a, 0xfd,
-	0xe6, 0x1a, 0xcb, 0x69, 0xfc, 0x29, 0x36, 0x6b, 0x79, 0x76, 0x8d, 0xe5, 0x55, 0xfc, 0x5d, 0x36,
-	0x6b, 0xf9, 0x96, 0xec, 0xc2, 0xdd, 0x39, 0xcb, 0xb9, 0x6f, 0xb5, 0x8d, 0x19, 0x87, 0x84, 0xfd,
-	0xf7, 0xa1, 0xcc, 0xa4, 0xae, 0x59, 0x67, 0xec, 0xc9, 0xde, 0x10, 0xc7, 0x81, 0x45, 0x57, 0x8d,
-	0xf6, 0x44, 0x29, 0x55, 0x8b, 0x4a, 0xcc, 0xa6, 0xec, 0x02, 0x67, 0x82, 0x45, 0x4b, 0x46, 0x77,
-	0xc6, 0x2e, 0x14, 0x3d, 0x12, 0x93, 0x28, 0xf4, 0x7d, 0x9c, 0x0e, 0x16, 0x4d, 0xfc, 0x68, 0xe8,
-	0xfb, 0xe4, 0x17, 0x50, 0x89, 0x42, 0xa9, 0xb3, 0x19, 0x31, 0xc9, 0x9d, 0x4b, 0xec, 0x1c, 0x16,
-	0x5d, 0x35, 0x6a, 0xca, 0x24, 0x7f, 0xf3, 0xa1, 0xdd, 0x14, 0x9b, 0xc8, 0x9c, 0xdd, 0xd9, 0x87,
-	0x76, 0x57, 0x38, 0x46, 0xe6, 0xec, 0xde, 0x92, 0xcf, 0xa0, 0x38, 0x88, 0x18, 0x0e, 0xd6, 0x4b,
-	0x1c, 0x27, 0x16, 0x2d, 0xc4, 0x8a, 0x37, 0x59, 0x70, 0x8a, 0x13, 0x25, 0x05, 0xcf, 0xb2, 0xe0,
-	0x15, 0xb6, 0xab, 0x14, 0x7c, 0xab, 0x3a, 0x56, 0xdc, 0x32, 0xd6, 0x31, 0xc9, 0xb1, 0x54, 0xfb,
-	0xeb, 0x02, 0x40, 0x3a, 0xe3, 0x55, 0x0c, 0xb3, 0x2f, 0xb8, 0xa6, 0x21, 0xc7, 0x63, 0xdf, 0x25,
-	0xbf, 0x02, 0xc2, 0x74, 0x6b, 0x70, 0xde, 0x85, 0x2c, 0x72, 0x9d, 0x80, 0x8d, 0xf4, 0xaa, 0x5c,
-	0xa4, 0xd5, 0x18, 0x79, 0xa2, 0x80, 0x23, 0x36, 0xe2, 0xaa, 0x60, 0x52, 0xeb, 0x50, 0xfa, 0x21,
-	0x53, 0x4d, 0x5e, 0x2f, 0x7c, 0x6b, 0x89, 0xb5, 0x01, 0xd4, 0x7b, 0x8b, 0xef, 0xfc, 0x2e, 0x62,
-	0x81, 0x8b, 0x9c, 0x2f, 0xd2, 0x78, 0x7b, 0x79, 0xa2, 0x54, 0x19, 0x93, 0x51, 0xe8, 0x72, 0x1f,
-	0x29, 0x9e, 0x98, 0x1c, 0x2a, 0x95, 0x22, 0x57, 0xd6, 0xc4, 0xf1, 0x5c, 0x1e, 0x48, 0xaf, 0xef,
-	0xf1, 0x08, 0x19, 0x5e, 0xa4, 0x1b, 0x19, 0xeb, 0xfd, 0x04, 0x24, 0xbf, 0x84, 0xb5, 0x19, 0x3f,
-	0x75, 0x62, 0x64, 0x7a, 0x91, 0x56, 0x32, 0x1e, 0xea, 0xbc, 0x64, 0x07, 0x36, 0x86, 0x2c, 0x72,
-	0x2f, 0x58, 0xc4, 0x9d, 0x11, 0x0b, 0x26, 0x7d, 0xd6, 0x53, 0xeb, 0x4c, 0x84, 0x7c, 0x2f, 0xd2,
-	0x3b, 0x06, 0x3c, 0xcc, 0x60, 0x8a, 0xbd, 0xa9, 0x13, 0x9e, 0xbe, 0x88, 0xd6, 0xab, 0x89, 0x35,
-	0x9e, 0xff, 0x3e, 0x94, 0xfb, 0x5e, 0x34, 0x42, 0x33, 0x9d, 0x07, 0xd0, 0x66, 0x46, 0xab, 0x33,
-	0xf1, 0x25, 0x24, 0x0a, 0x47, 0xb2, 0x81, 0x40, 0x06, 0x17, 0xe9, 0x8a, 0x51, 0x76, 0xd9, 0x40,
-	0xcc, 0x1a, 0xa9, 0x7e, 0xbf, 0x3a, 0x67, 0xa4, 0x3e, 0x7a, 0xb6, 0xe1, 0x4e, 0x62, 0xd4, 0xf7,
-	0x82, 0x01, 0x8f, 0xc6, 0x91, 0x17, 0x48, 0xe4, 0x70, 0x91, 0xae, 0x1b, 0xec, 0x79, 0x0a, 0xd5,
-	0xfe, 0xac, 0x46, 0xc4, 0xec, 0xaa, 0xb6, 0x05, 0xab, 0xb8, 0xf4, 0xe3, 0x3f, 0x2f, 0x67, 0x24,
-	0xe2, 0xbe, 0x58, 0x42, 0x65, 0xd7, 0x1b, 0xf1, 0x43, 0x5c, 0xe7, 0xe2, 0x3d, 0xc0, 0x0c, 0xaf,
-	0x1c, 0x6e, 0x27, 0xab, 0xb1, 0x36, 0x0e, 0x65, 0xc3, 0xf2, 0x05, 0xf3, 0xd5, 0xce, 0x88, 0x5c,
-	0x29, 0x50, 0x23, 0xe2, 0xc7, 0xe2, 0x24, 0x08, 0x14, 0xb2, 0xa0, 0x91, 0x58, 0x24, 0x9f, 0x03,
-	0x7e, 0x49, 0x7b, 0x61, 0xc0, 0xa2, 0x29, 0xd2, 0xa2, 0x40, 0x33, 0x1a, 0x85, 0xb3, 0x89, 0x0c,
-	0x47, 0xa1, 0xf4, 0xce, 0x39, 0x12, 0xa1, 0x40, 0x33, 0x1a, 0x15, 0x59, 0x7a, 0xbe, 0x54, 0x91,
-	0x97, 0x75, 0xe4, 0x58, 0x54, 0x48, 0x6f, 0xda, 0xf3, 0x15, 0x52, 0xd0, 0x48, 0x2c, 0x66, 0x0a,
-	0xaa, 0x88, 0x5b, 0x54, 0x2c, 0x6d, 0x55, 0xa1, 0x3c, 0xbb, 0xe3, 0x3f, 0x29, 0xbc, 0x5d, 0xc2,
-	0xdf, 0x87, 0xe2, 0xe4, 0x93, 0x13, 0xeb, 0x9d, 0xbe, 0xde, 0xf9, 0x4f, 0x00, 0x00, 0x00, 0xff,
-	0xff, 0x2c, 0x0d, 0x7d, 0xab, 0xbf, 0x14, 0x00, 0x00,
 }

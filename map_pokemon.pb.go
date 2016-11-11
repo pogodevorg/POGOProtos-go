@@ -5,104 +5,97 @@
 package protos
 
 import proto "github.com/golang/protobuf/proto"
-import fmt "fmt"
-import math "math"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
-var _ = fmt.Errorf
-var _ = math.Inf
-
-// Ignoring public import of ActivityType from enums.proto
 
 // Ignoring public import of BadgeType from enums.proto
 
-// Ignoring public import of CameraInterpolation from enums.proto
-
-// Ignoring public import of CameraTarget from enums.proto
-
-// Ignoring public import of Gender from enums.proto
-
-// Ignoring public import of HoloIapItemCategory from enums.proto
-
-// Ignoring public import of ItemCategory from enums.proto
-
-// Ignoring public import of ItemEffect from enums.proto
-
-// Ignoring public import of Platform from enums.proto
-
-// Ignoring public import of PokemonFamilyId from enums.proto
+// Ignoring public import of TutorialState from enums.proto
 
 // Ignoring public import of PokemonId from enums.proto
 
-// Ignoring public import of PokemonMove from enums.proto
-
 // Ignoring public import of PokemonMovementType from enums.proto
 
-// Ignoring public import of PokemonRarity from enums.proto
+// Ignoring public import of Gender from enums.proto
 
-// Ignoring public import of PokemonType from enums.proto
+// Ignoring public import of ActivityType from enums.proto
+
+// Ignoring public import of CameraTarget from enums.proto
+
+// Ignoring public import of PokemonFamilyId from enums.proto
+
+// Ignoring public import of ItemCategory from enums.proto
+
+// Ignoring public import of CameraInterpolation from enums.proto
+
+// Ignoring public import of Platform from enums.proto
 
 // Ignoring public import of TeamColor from enums.proto
 
-// Ignoring public import of TutorialState from enums.proto
+// Ignoring public import of PokemonMove from enums.proto
 
-// Ignoring public import of AssetDigestEntry from data.proto
+// Ignoring public import of ItemEffect from enums.proto
 
-// Ignoring public import of BuddyPokemon from data.proto
+// Ignoring public import of PokemonType from enums.proto
 
-// Ignoring public import of DownloadUrlEntry from data.proto
+// Ignoring public import of HoloIapItemCategory from enums.proto
 
-// Ignoring public import of PlayerBadge from data.proto
-
-// Ignoring public import of PlayerData from data.proto
+// Ignoring public import of PokemonRarity from enums.proto
 
 // Ignoring public import of PokedexEntry from data.proto
 
+// Ignoring public import of PlayerData from data.proto
+
+// Ignoring public import of DownloadUrlEntry from data.proto
+
+// Ignoring public import of AssetDigestEntry from data.proto
+
+// Ignoring public import of PlayerBadge from data.proto
+
 // Ignoring public import of PokemonData from data.proto
 
+// Ignoring public import of BuddyPokemon from data.proto
+
+type NearbyPokemon struct {
+	PokemonId        PokemonId `protobuf:"varint,1,opt,name=pokemon_id,enum=POGOProtos.Enums.PokemonId" json:"pokemon_id,omitempty"`
+	DistanceInMeters float32   `protobuf:"fixed32,2,opt,name=distance_in_meters" json:"distance_in_meters,omitempty"`
+	EncounterId      uint64    `protobuf:"fixed64,3,opt,name=encounter_id" json:"encounter_id,omitempty"`
+	FortId           string    `protobuf:"bytes,4,opt,name=fort_id" json:"fort_id,omitempty"`
+	FortImageUrl     string    `protobuf:"bytes,5,opt,name=fort_image_url" json:"fort_image_url,omitempty"`
+}
+
+func (m *NearbyPokemon) Reset()         { *m = NearbyPokemon{} }
+func (m *NearbyPokemon) String() string { return proto.CompactTextString(m) }
+func (*NearbyPokemon) ProtoMessage()    {}
+
 type MapPokemon struct {
-	SpawnPointId string    `protobuf:"bytes,1,opt,name=spawn_point_id,json=spawnPointId" json:"spawn_point_id,omitempty"`
-	EncounterId  uint64    `protobuf:"fixed64,2,opt,name=encounter_id,json=encounterId" json:"encounter_id,omitempty"`
-	PokemonId    PokemonId `protobuf:"varint,3,opt,name=pokemon_id,json=pokemonId,enum=POGOProtos.Enums.PokemonId" json:"pokemon_id,omitempty"`
+	SpawnPointId string    `protobuf:"bytes,1,opt,name=spawn_point_id" json:"spawn_point_id,omitempty"`
+	EncounterId  uint64    `protobuf:"fixed64,2,opt,name=encounter_id" json:"encounter_id,omitempty"`
+	PokemonId    PokemonId `protobuf:"varint,3,opt,name=pokemon_id,enum=POGOProtos.Enums.PokemonId" json:"pokemon_id,omitempty"`
 	// After this timestamp, the pokemon will be gone.
-	ExpirationTimestampMs int64   `protobuf:"varint,4,opt,name=expiration_timestamp_ms,json=expirationTimestampMs" json:"expiration_timestamp_ms,omitempty"`
+	ExpirationTimestampMs int64   `protobuf:"varint,4,opt,name=expiration_timestamp_ms" json:"expiration_timestamp_ms,omitempty"`
 	Latitude              float64 `protobuf:"fixed64,5,opt,name=latitude" json:"latitude,omitempty"`
 	Longitude             float64 `protobuf:"fixed64,6,opt,name=longitude" json:"longitude,omitempty"`
 }
 
-func (m *MapPokemon) Reset()                    { *m = MapPokemon{} }
-func (m *MapPokemon) String() string            { return proto.CompactTextString(m) }
-func (*MapPokemon) ProtoMessage()               {}
-func (*MapPokemon) Descriptor() ([]byte, []int) { return fileDescriptor10, []int{0} }
-
-type NearbyPokemon struct {
-	PokemonId        PokemonId `protobuf:"varint,1,opt,name=pokemon_id,json=pokemonId,enum=POGOProtos.Enums.PokemonId" json:"pokemon_id,omitempty"`
-	DistanceInMeters float32   `protobuf:"fixed32,2,opt,name=distance_in_meters,json=distanceInMeters" json:"distance_in_meters,omitempty"`
-	EncounterId      uint64    `protobuf:"fixed64,3,opt,name=encounter_id,json=encounterId" json:"encounter_id,omitempty"`
-	FortId           string    `protobuf:"bytes,4,opt,name=fort_id,json=fortId" json:"fort_id,omitempty"`
-	FortImageUrl     string    `protobuf:"bytes,5,opt,name=fort_image_url,json=fortImageUrl" json:"fort_image_url,omitempty"`
-}
-
-func (m *NearbyPokemon) Reset()                    { *m = NearbyPokemon{} }
-func (m *NearbyPokemon) String() string            { return proto.CompactTextString(m) }
-func (*NearbyPokemon) ProtoMessage()               {}
-func (*NearbyPokemon) Descriptor() ([]byte, []int) { return fileDescriptor10, []int{1} }
+func (m *MapPokemon) Reset()         { *m = MapPokemon{} }
+func (m *MapPokemon) String() string { return proto.CompactTextString(m) }
+func (*MapPokemon) ProtoMessage()    {}
 
 type WildPokemon struct {
-	EncounterId             uint64       `protobuf:"fixed64,1,opt,name=encounter_id,json=encounterId" json:"encounter_id,omitempty"`
-	LastModifiedTimestampMs int64        `protobuf:"varint,2,opt,name=last_modified_timestamp_ms,json=lastModifiedTimestampMs" json:"last_modified_timestamp_ms,omitempty"`
+	EncounterId             uint64       `protobuf:"fixed64,1,opt,name=encounter_id" json:"encounter_id,omitempty"`
+	LastModifiedTimestampMs int64        `protobuf:"varint,2,opt,name=last_modified_timestamp_ms" json:"last_modified_timestamp_ms,omitempty"`
 	Latitude                float64      `protobuf:"fixed64,3,opt,name=latitude" json:"latitude,omitempty"`
 	Longitude               float64      `protobuf:"fixed64,4,opt,name=longitude" json:"longitude,omitempty"`
-	SpawnPointId            string       `protobuf:"bytes,5,opt,name=spawn_point_id,json=spawnPointId" json:"spawn_point_id,omitempty"`
-	PokemonData             *PokemonData `protobuf:"bytes,7,opt,name=pokemon_data,json=pokemonData" json:"pokemon_data,omitempty"`
-	TimeTillHiddenMs        int32        `protobuf:"varint,11,opt,name=time_till_hidden_ms,json=timeTillHiddenMs" json:"time_till_hidden_ms,omitempty"`
+	SpawnPointId            string       `protobuf:"bytes,5,opt,name=spawn_point_id" json:"spawn_point_id,omitempty"`
+	PokemonData             *PokemonData `protobuf:"bytes,7,opt,name=pokemon_data" json:"pokemon_data,omitempty"`
+	TimeTillHiddenMs        int32        `protobuf:"varint,11,opt,name=time_till_hidden_ms" json:"time_till_hidden_ms,omitempty"`
 }
 
-func (m *WildPokemon) Reset()                    { *m = WildPokemon{} }
-func (m *WildPokemon) String() string            { return proto.CompactTextString(m) }
-func (*WildPokemon) ProtoMessage()               {}
-func (*WildPokemon) Descriptor() ([]byte, []int) { return fileDescriptor10, []int{2} }
+func (m *WildPokemon) Reset()         { *m = WildPokemon{} }
+func (m *WildPokemon) String() string { return proto.CompactTextString(m) }
+func (*WildPokemon) ProtoMessage()    {}
 
 func (m *WildPokemon) GetPokemonData() *PokemonData {
 	if m != nil {
@@ -112,42 +105,4 @@ func (m *WildPokemon) GetPokemonData() *PokemonData {
 }
 
 func init() {
-	proto.RegisterType((*MapPokemon)(nil), "POGOProtos.Map.Pokemon.MapPokemon")
-	proto.RegisterType((*NearbyPokemon)(nil), "POGOProtos.Map.Pokemon.NearbyPokemon")
-	proto.RegisterType((*WildPokemon)(nil), "POGOProtos.Map.Pokemon.WildPokemon")
-}
-
-func init() { proto.RegisterFile("map_pokemon.proto", fileDescriptor10) }
-
-var fileDescriptor10 = []byte{
-	// 462 bytes of a gzipped FileDescriptorProto
-	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x09, 0x6e, 0x88, 0x02, 0xff, 0x94, 0x53, 0x4d, 0x6f, 0xd4, 0x30,
-	0x10, 0xc5, 0xd9, 0x8f, 0x76, 0x27, 0x4b, 0x55, 0x82, 0x60, 0x57, 0x4b, 0x0f, 0x61, 0xc5, 0x21,
-	0x07, 0xd8, 0x43, 0x91, 0x38, 0xc0, 0x01, 0x09, 0x81, 0x20, 0x87, 0xd0, 0xc8, 0x2a, 0x42, 0xe2,
-	0x62, 0xb9, 0xb5, 0x5b, 0x2c, 0xfc, 0xa5, 0xd8, 0x2b, 0xe0, 0xcc, 0xef, 0xe2, 0x97, 0xf0, 0x67,
-	0x90, 0x9d, 0xa4, 0xdb, 0x76, 0x0b, 0x52, 0x6f, 0xe3, 0xf7, 0x9e, 0x34, 0xf3, 0xe6, 0x8d, 0xe1,
-	0x9e, 0xa2, 0x96, 0x58, 0xf3, 0x8d, 0x2b, 0xa3, 0x57, 0xb6, 0x31, 0xde, 0x64, 0x0f, 0xeb, 0xa3,
-	0xf7, 0x47, 0x75, 0x28, 0xdd, 0xaa, 0xa2, 0x76, 0x55, 0xb7, 0xec, 0x22, 0xe5, 0x7a, 0xad, 0x5c,
-	0x2b, 0x5a, 0x00, 0xa3, 0x9e, 0xb6, 0xf5, 0xf2, 0x57, 0x02, 0x50, 0x51, 0xdb, 0xe9, 0xb2, 0x27,
-	0xb0, 0xe7, 0x2c, 0xfd, 0xae, 0x89, 0x35, 0x42, 0x7b, 0x22, 0xd8, 0x1c, 0xe5, 0xa8, 0x98, 0xe0,
-	0x69, 0x44, 0xeb, 0x00, 0x96, 0x2c, 0x7b, 0x0c, 0x53, 0xae, 0x4f, 0xcd, 0x5a, 0x7b, 0xde, 0x04,
-	0x4d, 0x92, 0xa3, 0x62, 0x8c, 0xd3, 0x0b, 0xac, 0x64, 0xd9, 0x4b, 0x80, 0x6e, 0xb2, 0x20, 0x18,
-	0xe4, 0xa8, 0xd8, 0x3b, 0x7c, 0xb4, 0xba, 0x34, 0xdd, 0xbb, 0x38, 0x50, 0xd7, 0xb7, 0x64, 0x78,
-	0x62, 0xfb, 0x32, 0x7b, 0x01, 0x33, 0xfe, 0xc3, 0x8a, 0x86, 0x7a, 0x61, 0x34, 0xf1, 0x42, 0x71,
-	0xe7, 0xa9, 0xb2, 0x44, 0xb9, 0xf9, 0x30, 0x47, 0xc5, 0x00, 0x3f, 0xd8, 0xd0, 0xc7, 0x3d, 0x5b,
-	0xb9, 0x6c, 0x01, 0xbb, 0x92, 0x7a, 0xe1, 0xd7, 0x8c, 0xcf, 0x47, 0x39, 0x2a, 0x10, 0xbe, 0x78,
-	0x67, 0x07, 0x30, 0x91, 0x46, 0x9f, 0xb7, 0xe4, 0x38, 0x92, 0x1b, 0x60, 0xf9, 0x07, 0xc1, 0xdd,
-	0x8f, 0x9c, 0x36, 0x27, 0x3f, 0xfb, 0x45, 0x5c, 0x9d, 0x1f, 0xdd, 0x6a, 0xfe, 0xa7, 0x90, 0x31,
-	0xe1, 0x3c, 0xd5, 0xa7, 0x9c, 0x08, 0x4d, 0x14, 0xf7, 0xbc, 0x71, 0x71, 0x49, 0x09, 0xde, 0xef,
-	0x99, 0x52, 0x57, 0x11, 0xdf, 0x5a, 0xe6, 0x60, 0x7b, 0x99, 0x33, 0xd8, 0x39, 0x33, 0x4d, 0x8c,
-	0x63, 0x18, 0xe3, 0x18, 0x87, 0x67, 0xc9, 0x42, 0x5c, 0x2d, 0xa1, 0xe8, 0x39, 0x27, 0xeb, 0x46,
-	0x46, 0xdf, 0x13, 0x3c, 0x8d, 0x7c, 0x00, 0x3f, 0x35, 0x72, 0xf9, 0x3b, 0x81, 0xf4, 0xb3, 0x90,
-	0xac, 0xf7, 0x76, 0xbd, 0x23, 0xda, 0xee, 0xf8, 0x0a, 0x16, 0x92, 0x3a, 0x4f, 0x94, 0x61, 0xe2,
-	0x4c, 0x70, 0x76, 0x35, 0x85, 0x24, 0xa6, 0x30, 0x0b, 0x8a, 0xaa, 0x13, 0xfc, 0x2b, 0x87, 0xc1,
-	0xff, 0x72, 0x18, 0x5e, 0xcb, 0xe1, 0x86, 0xf3, 0x1b, 0xdd, 0x70, 0x7e, 0xaf, 0x61, 0xda, 0x67,
-	0x13, 0x2e, 0x79, 0xbe, 0x93, 0xa3, 0x22, 0x3d, 0x3c, 0xb8, 0x9c, 0xce, 0xdb, 0x70, 0xe1, 0x9d,
-	0xdf, 0x50, 0xe3, 0xd4, 0x6e, 0x1e, 0xd9, 0x33, 0xb8, 0x1f, 0xfc, 0x10, 0x2f, 0xa4, 0x24, 0x5f,
-	0x05, 0x63, 0x5c, 0x07, 0x5b, 0x69, 0x8e, 0x8a, 0x11, 0xde, 0x0f, 0xd4, 0xb1, 0x90, 0xf2, 0x43,
-	0x24, 0x2a, 0xf7, 0x66, 0xf7, 0xcb, 0x38, 0x7e, 0x16, 0x57, 0xdf, 0xa9, 0xd1, 0x49, 0x5b, 0x3f,
-	0xff, 0x1b, 0x00, 0x00, 0xff, 0xff, 0xed, 0xe3, 0x16, 0x7e, 0x7e, 0x03, 0x00, 0x00,
 }
